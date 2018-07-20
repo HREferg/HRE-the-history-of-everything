@@ -16,7 +16,8 @@ Require-Bundle: org.eclipse.jface,
  org.eclipse.e4.core.services,
  org.historyresearchenvironment.sample.server,
  org.historyresearchenvironment.server,
- org.historyresearchenvironment.dataaccess;bundle-version="0.1.0"
+ org.historyresearchenvironment.dataaccess;bundle-version="0.1.0",
+ org.eclipse.jetty.server
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: org.historyresearchenvironment.sample.client
 Import-Package: javax.annotation

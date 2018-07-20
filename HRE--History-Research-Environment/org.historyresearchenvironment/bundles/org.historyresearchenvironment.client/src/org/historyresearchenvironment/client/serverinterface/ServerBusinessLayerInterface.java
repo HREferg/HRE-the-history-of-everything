@@ -6,21 +6,22 @@ import java.net.URL;
 import java.util.logging.Logger;
 
 import org.eclipse.core.runtime.preferences.InstanceScope;
+import org.historyresearchenvironment.dataaccess.JsonAccessor;
 import org.historyresearchenvironment.dataaccess.providers.AbstractHreProvider;
 import org.historyresearchenvironment.server.ServerRequest;
 import org.historyresearchenvironment.server.ServerResponse;
-
-import com.opcoach.e4.preferences.ScopedPreferenceStore;
+import org.osgi.service.prefs.Preferences;
 
 /**
  * Flows a request from client to server.
  * 
- * @version 2018-06-29
+ * @version 2018-07-18
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
 public class ServerBusinessLayerInterface implements BusinessLayerInterface {
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+	private static Preferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 
 	/*
 	 * (non-Javadoc)
@@ -32,10 +33,9 @@ public class ServerBusinessLayerInterface implements BusinessLayerInterface {
 	 */
 	@Override
 	public ServerResponse callBusinessLayer(ServerRequest request) {
-		final ScopedPreferenceStore store = new ScopedPreferenceStore(InstanceScope.INSTANCE,
-				"org.historyresearchenvironment.usergui");
+		LOGGER.info("Invoking ServerBusinessLayerInterface");
 
-		final String serverAddress = "http://" + store.getString("SERVERADDRESS") + "/hre/v1/";
+		final String serverAddress = "http://" + preferences.get("SERVERADDRESS", "127.0.0.1:8000") + "/hre/v010/";
 		final StringBuilder sb = new StringBuilder();
 		String s = "";
 
@@ -60,8 +60,8 @@ public class ServerBusinessLayerInterface implements BusinessLayerInterface {
 			return new ServerResponse(request.getProvider(), 999, e.getClass() + " " + e.getMessage());
 		}
 
-		final AbstractHreProvider provider = request.getProvider();
-		provider.readJson(sb.toString());
+		AbstractHreProvider provider = request.getProvider();
+		provider = JsonAccessor.readJson(provider, sb.toString());
 		return new ServerResponse(provider, 0, "OK");
 	}
 }

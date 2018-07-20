@@ -50,7 +50,7 @@ public class HreLogger {
 			LOGGER.setLevel(Level.INFO);
 		}
 
-		String logFilePath = preferences.get("LOGFILEPATH", ".//");
+		String logFilePath = preferences.get("LOGFILEPATH", ".");
 
 		if (logFilePath.endsWith(";")) {
 			logFilePath = logFilePath.substring(0, logFilePath.length() - 1);

@@ -1,11 +1,9 @@
 package org.historyresearchenvironment.server;
 
-import java.awt.image.SampleModel;
-
 import org.historyresearchenvironment.dataaccess.providers.AbstractHreProvider;
 
 /**
- * @version 2018-06-29
+ * @version 2018-07-19
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -31,17 +29,6 @@ public class ServerResponse {
 		this.provider = provider;
 		this.returnCode = returnCode;
 		this.returnMessage = returnMessage;
-	}
-
-	/**
-	 * Constructor
-	 *
-	 * @param provider2
-	 * @param i
-	 * @param string
-	 */
-	public ServerResponse(SampleModel provider2, int i, String string) {
-		// TODO Auto-generated constructor stub
 	}
 
 	/**

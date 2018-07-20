@@ -68,6 +68,7 @@ public abstract class AbstractHreGuiPart {
 			try {
 				updateGui();
 			} catch (final Exception e2) {
+				e2.printStackTrace();
 				LOGGER.severe("Error in request " + request.getOperation() + " "
 						+ request.getProvider().getClass().getSimpleName() + ", "
 						+ request.getBusinessLogic().getClass().getSimpleName() + ", " + e2.getMessage());

@@ -40,11 +40,9 @@ Require-Bundle: org.eclipse.e4.ui.model.workbench,
  org.eclipse.e4.core.commands,
  com.opcoach.e4.preferences,
  org.eclipse.e4.core.services,
- org.eclipse.help.base,
  org.historyresearchenvironment.dataaccess,
  org.historyresearchenvironment.server,
  org.eclipse.help.ui,
- org.eclipse.help.webapp,
  org.eclipse.ui.forms
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy

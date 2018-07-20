@@ -7,11 +7,15 @@ Bundle-Activator: org.historyresearchenvironment.sample.server.Activator
 Bundle-Vendor: History Research Environment Ltd.
 Require-Bundle: org.eclipse.core.runtime,
  org.historyresearchenvironment.dataaccess,
- org.historyresearchenvironment.server
+ org.historyresearchenvironment.server,
+ javax.servlet,
+ org.eclipse.jetty.server,
+ org.eclipse.jetty.http
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: org.historyresearchenvironment.sample.server
 Bundle-ActivationPolicy: lazy
-Export-Package: org.historyresearchenvironment.sample.businesslogic;uses:="org.historyresearchenvironment.server",
- org.historyresearchenvironment.sample.dataaccess;uses:="org.osgi.framework,org.historyresearchenvironment.dataaccess.models",
+Export-Package: org.historyresearchenvironment.sample.businesslogic;uses:="org.historyresearchenvironment.server.businesslogic,org.historyresearchenvironment.server",
+ org.historyresearchenvironment.sample.dataaccess;uses:="org.historyresearchenvironment.dataaccess.models",
  org.historyresearchenvironment.sample.providers;uses:="org.historyresearchenvironment.dataaccess.providers",
- org.historyresearchenvironment.sample.server;uses:="org.osgi.framework"
+ org.historyresearchenvironment.sample.server;uses:="org.osgi.framework",
+ org.historyresearchenvironment.sample.server.handlers;uses:="org.eclipse.jetty.util.component,javax.servlet.http,org.eclipse.jetty.server"

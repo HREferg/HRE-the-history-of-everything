@@ -11,7 +11,7 @@ import org.osgi.service.prefs.Preferences;
 /**
  * Factory class to create a Business Layer Interface class.
  * 
- * @version 2018-06-29
+ * @version 2018-07-20
  * @author Michael Erichsen, &copy; History Research Environment Ltd.
  *
  */
@@ -23,7 +23,10 @@ public class BusinessLayerInterfaceFactory {
 	 * @return
 	 */
 	public static BusinessLayerInterface getBusinessLayerInterface() {
+		// FIX ME Gets Diect - should be SERVER
 		final String servertype = preferences.get("CSMODE", "DIRECT");
+
+		LOGGER.info("CSMODE is " + servertype);
 
 		if (servertype.equals("DIRECT")) {
 			return new DirectBusinessLayerInterface();

@@ -7,7 +7,6 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.eclipse.jface.preference.ComboFieldEditor;
 import org.eclipse.jface.preference.DirectoryFieldEditor;
@@ -19,11 +18,12 @@ import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.jface.util.PropertyChangeEvent;
 import org.eclipse.swt.widgets.Composite;
 import org.historyresearchenvironment.dataaccess.HreH2ConnectionPool;
+import org.osgi.service.prefs.Preferences;
 
 /**
  * General client preferences page.
  * 
- * @version 2018-07-14
+ * @version 2018-07-20
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -80,41 +80,34 @@ public class HreClientPreferencesPage extends FieldEditorPreferencePage {
 
 	@Override
 	protected void createFieldEditors() {
-		{
-			comboFieldEditorCsMode = new ComboFieldEditor("CSMODE", "Client/Server Mode", new String[][] {
-					{ "DIRECT (Not using TCP/IP)", "DIRECT" }, { "SERVER (Call using TCP/IP)", "SERVER" } },
-					getFieldEditorParent());
+		comboFieldEditorCsMode = new ComboFieldEditor("CSMODE", "Client/Server Mode", new String[][] {
+				{ "DIRECT (Not using TCP/IP)", "DIRECT" }, { "SERVER (Call using TCP/IP)", "SERVER" } },
+				getFieldEditorParent());
 
-			addField(comboFieldEditorCsMode);
-		}
+		addField(comboFieldEditorCsMode);
 
-		{
-			final Composite composite = getFieldEditorParent();
-			final StringFieldEditor stringFieldEditorUserid = new StringFieldEditor("USERID", "H2 User Id", -1,
-					StringFieldEditor.VALIDATE_ON_KEY_STROKE, composite);
-			stringFieldEditorUserid.getTextControl(composite).setText("sa");
-			addField(stringFieldEditorUserid);
-		}
-		{
-			final StringFieldEditor stringFieldEditorPassword = new StringFieldEditor("PASSWORD", "H2 Password", -1,
-					StringFieldEditor.VALIDATE_ON_KEY_STROKE, getFieldEditorParent());
-			stringFieldEditorPassword.getTextControl(getFieldEditorParent()).setEchoChar('*');
-			addField(stringFieldEditorPassword);
-		}
+		final Composite composite = getFieldEditorParent();
+		final StringFieldEditor stringFieldEditorUserid = new StringFieldEditor("USERID", "H2 User Id", -1,
+				StringFieldEditor.VALIDATE_ON_KEY_STROKE, composite);
+		stringFieldEditorUserid.getTextControl(composite).setText("sa");
+		addField(stringFieldEditorUserid);
+
+		final StringFieldEditor stringFieldEditorPassword = new StringFieldEditor("PASSWORD", "H2 Password", -1,
+				StringFieldEditor.VALIDATE_ON_KEY_STROKE, getFieldEditorParent());
+		stringFieldEditorPassword.getTextControl(getFieldEditorParent()).setEchoChar('*');
+		addField(stringFieldEditorPassword);
 
 		comboFieldEditorH2TraceLevel = new ComboFieldEditor("H2TRACELEVEL", "H2 Trace Level",
 				new String[][] { { "OFF", "OFF" }, { "ERROR", "ERROR" }, { "INFO", "INFO" }, { "DEBUG", "DEBUG" } },
 				getFieldEditorParent());
 		addField(comboFieldEditorH2TraceLevel);
 
-		{
-			comboFieldEditorLogLevel = new ComboFieldEditor("LOGLEVEL", "Application Log Level",
-					new String[][] { { "OFF", "OFF" }, { "SEVERE", "SEVERE" }, { "WARNING", "WARNING" },
-							{ "INFO", "INFO" }, { "CONFIG", "CONFIG" }, { "FINE", "FINE" }, { "FINER", "FINER" },
-							{ "FINEST", "FINEST" }, { "ALL", "ALL" } },
-					getFieldEditorParent());
-			addField(comboFieldEditorLogLevel);
-		}
+		comboFieldEditorLogLevel = new ComboFieldEditor("LOGLEVEL", "Application Log Level",
+				new String[][] { { "OFF", "OFF" }, { "SEVERE", "SEVERE" }, { "WARNING", "WARNING" }, { "INFO", "INFO" },
+						{ "CONFIG", "CONFIG" }, { "FINE", "FINE" }, { "FINER", "FINER" }, { "FINEST", "FINEST" },
+						{ "ALL", "ALL" } },
+				getFieldEditorParent());
+		addField(comboFieldEditorLogLevel);
 
 		logfileDirectoryEditor = new DirectoryFieldEditor("LOGFILEPATH", "Application Log File Directory",
 				getFieldEditorParent());
@@ -146,10 +139,16 @@ public class HreClientPreferencesPage extends FieldEditorPreferencePage {
 	@Override
 	public void propertyChange(PropertyChangeEvent event) {
 		super.propertyChange(event);
-		final IEclipsePreferences iep = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+
+		LOGGER.info(
+				"Changed property: " + event.getSource() + ", " + event.getOldValue() + " to " + event.getNewValue());
+		final Preferences iep = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 
 		if (event.getSource() == comboFieldEditorCsMode) {
 			final String newValue = event.getNewValue().toString();
+			iep.put("CSMODE", newValue);
+
+			LOGGER.info("New Value: " + newValue + ", From preferences: " + iep.get("CSMODE", "?"));
 
 			if ((newValue.equals("DIRECT")) || (newValue.equals("SERVER"))) {
 

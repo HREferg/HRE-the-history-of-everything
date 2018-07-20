@@ -29,10 +29,11 @@
       <import plugin="org.eclipse.e4.core.services"/>
       <import plugin="org.eclipse.ui.workbench"/>
       <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.historyresearchenvironment.sample.server"/>
       <import plugin="org.eclipse.swt"/>
       <import plugin="org.eclipse.osgi"/>
       <import plugin="org.eclipse.equinox.preferences"/>
-      <import plugin="org.historyresearchenvironment.sample.server"/>
+      <import plugin="org.eclipse.jetty.util"/>
    </requires>
 
    <plugin

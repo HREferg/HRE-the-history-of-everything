@@ -7,14 +7,14 @@ import org.historyresearchenvironment.dataaccess.models.SubstnParamValue;
 import org.historyresearchenvironment.dataaccess.providers.AbstractHreProvider;
 
 /**
- * @version 2018-07-15
+ * @version 2018-07-19
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
 public class SampleEditorProvider extends AbstractHreProvider {
-	private String defltValue;
-	private short paramListKey;
-	private short paramSetKey;
+	public String defltValue;
+	public short paramListKey;
+	public short paramSetKey;
 
 	/**
 	 * Constructor
@@ -60,6 +60,8 @@ public class SampleEditorProvider extends AbstractHreProvider {
 
 			defltValue = spn.getDefltValue();
 			paramListKey = spv.getParamListKey();
+
+			LOGGER.info("Read " + paramSetKey + ", " + paramListKey + "," + defltValue + " from database");
 
 		} catch (final Exception e) {
 			e.printStackTrace();
