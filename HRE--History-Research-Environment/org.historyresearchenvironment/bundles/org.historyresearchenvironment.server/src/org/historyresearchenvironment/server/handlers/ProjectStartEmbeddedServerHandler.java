@@ -4,6 +4,7 @@ import java.util.logging.Logger;
 
 import javax.inject.Inject;
 
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.eclipse.e4.core.di.annotations.Execute;
 import org.eclipse.e4.core.services.events.IEventBroker;
@@ -13,19 +14,18 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.ContextHandler;
 import org.eclipse.jetty.server.handler.ContextHandlerCollection;
 import org.historyresearchenvironment.server.HreContextHandlerCollection;
-import org.osgi.service.prefs.Preferences;
 
 /**
  * Start the embedded Jetty server. Creates a ContextHandlerCollection that
  * other features can add contexts and handlers to.
  * 
- * @version 2018-07-18
+ * @version 2018-07-23
  * @author Michael Erichsen, &copy; History Research Environment Ltd.
  *
  */
 public class ProjectStartEmbeddedServerHandler {
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
-	private final Preferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+	private final IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 	@Inject
 	private IEventBroker eventBroker;
 

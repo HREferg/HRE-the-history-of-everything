@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.eclipse.jface.preference.ComboFieldEditor;
 import org.eclipse.jface.preference.DirectoryFieldEditor;
@@ -18,12 +19,11 @@ import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.jface.util.PropertyChangeEvent;
 import org.eclipse.swt.widgets.Composite;
 import org.historyresearchenvironment.dataaccess.HreH2ConnectionPool;
-import org.osgi.service.prefs.Preferences;
 
 /**
  * General client preferences page.
  * 
- * @version 2018-07-20
+ * @version 2018-07-23
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -142,19 +142,19 @@ public class HreClientPreferencesPage extends FieldEditorPreferencePage {
 
 		LOGGER.info(
 				"Changed property: " + event.getSource() + ", " + event.getOldValue() + " to " + event.getNewValue());
-		final Preferences iep = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+		final IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 
 		if (event.getSource() == comboFieldEditorCsMode) {
 			final String newValue = event.getNewValue().toString();
-			iep.put("CSMODE", newValue);
+			// preferences.put("CSMODE", newValue);
 
-			LOGGER.info("New Value: " + newValue + ", From preferences: " + iep.get("CSMODE", "?"));
+			LOGGER.info("New Value: " + newValue + ", From preferences: " + preferences.get("CSMODE", "?"));
 
 			if ((newValue.equals("DIRECT")) || (newValue.equals("SERVER"))) {
 
-				final String dbName = iep.get("DBNAME", "./SAMPLE");
-				final String userId = iep.get("USERID", "sa");
-				final String passWord = iep.get("PASSWORD", "");
+				final String dbName = preferences.get("DBNAME", "./SAMPLE");
+				final String userId = preferences.get("USERID", "sa");
+				final String passWord = preferences.get("PASSWORD", "");
 
 				Connection conn = null;
 				try {

@@ -11,15 +11,15 @@ import java.util.logging.Logger;
 
 import javax.inject.Inject;
 
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.eclipse.e4.core.services.events.IEventBroker;
 import org.osgi.service.prefs.BackingStoreException;
-import org.osgi.service.prefs.Preferences;
 
 /**
  * Singleton class encapsulating a list of project model objects.
  * 
- * @version 2018-06-12
+ * @version 2018-07-23
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -28,7 +28,7 @@ public class ProjectList {
 	private static IEventBroker eventBroker;
 
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
-	private static Preferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+	private static IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 	private static List<ProjectModel> models;
 
 	/**

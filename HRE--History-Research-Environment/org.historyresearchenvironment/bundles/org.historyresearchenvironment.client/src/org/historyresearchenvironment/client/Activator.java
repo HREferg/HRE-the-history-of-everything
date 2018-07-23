@@ -3,26 +3,26 @@ package org.historyresearchenvironment.client;
 import java.io.File;
 import java.util.logging.Logger;
 
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.eclipse.osgi.service.environment.EnvironmentInfo;
 import org.historyresearchenvironment.dataaccess.HreH2ConnectionPool;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
-import org.osgi.service.prefs.Preferences;
 
 /**
  * Eclipse plug-in life cycle control. Sets up the logger. Starts and stops the
  * Help System.
  * 
- * @version 2018-07-15
+ * @version 2018-07-23
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
 public class Activator implements BundleActivator {
 	private static BundleContext context;
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
-	private static Preferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+	private static IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 
 	private static final String HELPCLASSPATH = "plugins\\\\org.eclipse.help.base_4.2.200.v20180611-0500.jar";
 

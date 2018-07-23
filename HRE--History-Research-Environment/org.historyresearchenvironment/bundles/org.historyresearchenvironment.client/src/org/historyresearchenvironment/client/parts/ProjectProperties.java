@@ -31,7 +31,7 @@ import org.historyresearchenvironment.client.models.ProjectModel;
  *
  */
 public class ProjectProperties {
-	// private static Preferences preferences =
+	// private static IEclipsePreferences preferences =
 	// InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 

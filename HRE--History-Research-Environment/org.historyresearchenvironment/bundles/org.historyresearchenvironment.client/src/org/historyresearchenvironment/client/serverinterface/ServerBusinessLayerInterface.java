@@ -5,23 +5,23 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.logging.Logger;
 
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.historyresearchenvironment.dataaccess.JsonAccessor;
 import org.historyresearchenvironment.dataaccess.providers.AbstractHreProvider;
 import org.historyresearchenvironment.server.ServerRequest;
 import org.historyresearchenvironment.server.ServerResponse;
-import org.osgi.service.prefs.Preferences;
 
 /**
  * Flows a request from client to server.
  * 
- * @version 2018-07-18
+ * @version 2018-07-23
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
 public class ServerBusinessLayerInterface implements BusinessLayerInterface {
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
-	private static Preferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+	private static IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 
 	/*
 	 * (non-Javadoc)

@@ -6,19 +6,19 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
-import org.osgi.service.prefs.Preferences;
 
 /**
  * Set up logger using the path from the preferences and the file name format
  * "hre-log.%u.%g.txt".
  * 
- * @version 2018-06-24
+ * @version 2018-07-23
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
 public class HreLogger {
-	private static Preferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+	private static IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 	static private FileHandler handler;
 
 	/**

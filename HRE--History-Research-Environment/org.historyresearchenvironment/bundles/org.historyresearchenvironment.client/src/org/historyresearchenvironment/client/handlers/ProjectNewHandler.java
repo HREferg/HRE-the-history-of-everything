@@ -12,6 +12,7 @@ import java.util.logging.Logger;
 
 import javax.inject.Inject;
 
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.eclipse.e4.core.di.annotations.Execute;
 import org.eclipse.e4.core.services.events.IEventBroker;
@@ -32,12 +33,11 @@ import org.historyresearchenvironment.client.models.ProjectModel;
 import org.historyresearchenvironment.dataaccess.HreH2ConnectionPool;
 import org.historyresearchenvironment.dataaccess.providers.NewDatabaseProvider;
 import org.osgi.service.prefs.BackingStoreException;
-import org.osgi.service.prefs.Preferences;
 
 /**
  * Create a new HRE project database.
  * 
- * @version 2018-06-30
+ * @version 2018-07-23
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -50,7 +50,7 @@ public class ProjectNewHandler {
 
 	@Inject
 	EModelService modelService;
-	private final Preferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+	private final IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 	private NewDatabaseProvider provider;
 
 	/**

@@ -10,6 +10,7 @@ import java.util.logging.Logger;
 
 import javax.inject.Inject;
 
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.eclipse.e4.core.di.annotations.Execute;
 import org.eclipse.e4.core.services.events.IEventBroker;
@@ -28,12 +29,11 @@ import org.historyresearchenvironment.client.models.ProjectList;
 import org.historyresearchenvironment.client.models.ProjectModel;
 import org.historyresearchenvironment.dataaccess.HreH2ConnectionPool;
 import org.osgi.service.prefs.BackingStoreException;
-import org.osgi.service.prefs.Preferences;
 
 /**
  * Open an existing project.
  * 
- * @version 2018-06-15
+ * @version 2018-07-23
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -55,7 +55,7 @@ public class ProjectOpenHandler {
 	 */
 	@Execute
 	public void execute(EPartService partService, MApplication application, EModelService modelService, Shell shell) {
-		final Preferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+		final IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 		Connection conn = null;
 
 		// Open file dialog

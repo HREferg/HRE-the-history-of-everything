@@ -9,6 +9,7 @@ import javax.annotation.PreDestroy;
 import javax.inject.Inject;
 
 import org.eclipse.core.commands.ParameterizedCommand;
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.eclipse.e4.core.commands.ECommandService;
 import org.eclipse.e4.core.commands.EHandlerService;
@@ -29,12 +30,11 @@ import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
 import org.historyresearchenvironment.databaseadmin.dataaccess.models.H2DatabaseModel;
 import org.historyresearchenvironment.databaseadmin.dataaccess.providers.H2DatabaseProvider;
-import org.osgi.service.prefs.Preferences;
 
 /**
  * Create a view part with all tables in the database
  * 
- * @version 2018-07-01
+ * @version 2018-07-23
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -52,7 +52,7 @@ public class H2DatabaseNavigator {
 	// private EModelService modelService;
 	// @Inject
 	// private MApplication application;
-	private final Preferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+	private final IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 	private Table table;
 	private String dbName;
 
@@ -82,8 +82,8 @@ public class H2DatabaseNavigator {
 				final TableItem selectedRow = selectedRows[0];
 				final String tableName = selectedRow.getText(0);
 
-				final ParameterizedCommand command = commandService
-						.createCommand("org.historyresearchenvironment.databaseadmin.client.command.tablenavigatoropen", null);
+				final ParameterizedCommand command = commandService.createCommand(
+						"org.historyresearchenvironment.databaseadmin.client.command.tablenavigatoropen", null);
 				handlerService.executeHandler(command);
 				eventBroker.post(org.historyresearchenvironment.client.HreConstants.TABLENAME_UPDATE_TOPIC, tableName);
 				eventBroker.post("MESSAGE", tableName + " has been opened");

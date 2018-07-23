@@ -4,6 +4,7 @@ import java.util.logging.Logger;
 
 import javax.inject.Inject;
 
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.eclipse.e4.core.commands.ECommandService;
 import org.eclipse.e4.core.commands.EHandlerService;
@@ -18,12 +19,11 @@ import org.historyresearchenvironment.dataaccess.providers.AbstractHreProvider;
 import org.historyresearchenvironment.server.ServerRequest;
 import org.historyresearchenvironment.server.ServerResponse;
 import org.historyresearchenvironment.server.businesslogic.AbstractHreBusinessLogic;
-import org.osgi.service.prefs.Preferences;
 
 /**
  * Abstract class for GUI parts.
  * 
- * @version 2018-07-14
+ * @version 2018-07-23
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -36,7 +36,7 @@ public abstract class AbstractHreGuiPart {
 	@Inject
 	protected IEventBroker eventBroker;
 
-	protected static Preferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+	protected static IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 	protected final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 	protected BusinessLayerInterface bli;
 	protected ServerRequest request;

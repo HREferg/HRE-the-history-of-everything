@@ -4,22 +4,22 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.h2.jdbcx.JdbcConnectionPool;
 import org.osgi.service.prefs.BackingStoreException;
-import org.osgi.service.prefs.Preferences;
 
 /**
  * Singleton class that instantiates a JDBC Connection Pool and returns a
  * connection to it.
  * 
- * @version 2018-06-30
+ * @version 2018-07-23
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
 public class HreH2ConnectionPool {
 	private static JdbcConnectionPool connectionPool = null;
-	private static Preferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+	private static IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 	private static int h2TraceLevel = preferences.getInt("H2TRACELEVEL", 1);
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 

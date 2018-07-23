@@ -10,6 +10,7 @@ import javax.annotation.PreDestroy;
 import javax.inject.Inject;
 
 import org.eclipse.core.commands.ParameterizedCommand;
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.eclipse.e4.core.commands.ECommandService;
 import org.eclipse.e4.core.commands.EHandlerService;
@@ -43,18 +44,17 @@ import org.historyresearchenvironment.client.models.ProjectList;
 import org.historyresearchenvironment.client.models.ProjectModel;
 import org.historyresearchenvironment.dataaccess.HreH2ConnectionPool;
 import org.osgi.service.prefs.BackingStoreException;
-import org.osgi.service.prefs.Preferences;
 
 /**
  * Navigator part to display all tables in an HRE project.
  * 
- * @version 2018-06-22
+ * @version 2018-07-23
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
 @SuppressWarnings("restriction")
 public class ProjectNavigator {
-	private static Preferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+	private static IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 	@Inject
 	private ECommandService commandService;

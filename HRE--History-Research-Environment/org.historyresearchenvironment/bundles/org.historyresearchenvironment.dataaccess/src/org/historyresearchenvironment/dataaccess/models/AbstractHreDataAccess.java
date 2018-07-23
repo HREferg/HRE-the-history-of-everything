@@ -8,21 +8,21 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Logger;
 
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.historyresearchenvironment.dataaccess.HreH2ConnectionPool;
-import org.osgi.service.prefs.Preferences;
 
 /**
  * Abstract superclass for H2 data access models.
  * 
- * @version 2018-06-30
+ * @version 2018-07-23
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
 public abstract class AbstractHreDataAccess implements Serializable {
 	private static final long serialVersionUID = 1L;
 	protected final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
-	protected Preferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+	protected IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 	protected PreparedStatement ps;
 	protected ResultSet rs;
 	protected Connection conn;

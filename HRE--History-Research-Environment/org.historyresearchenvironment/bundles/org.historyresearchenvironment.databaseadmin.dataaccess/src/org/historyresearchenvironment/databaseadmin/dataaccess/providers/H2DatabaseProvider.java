@@ -8,21 +8,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
+import org.eclipse.core.runtime.preferences.IEclipsePreferences;
 import org.eclipse.core.runtime.preferences.InstanceScope;
 import org.eclipse.jface.viewers.IContentProvider;
 import org.historyresearchenvironment.dataaccess.HreH2ConnectionPool;
 import org.historyresearchenvironment.databaseadmin.dataaccess.models.H2DatabaseModel;
-import org.osgi.service.prefs.Preferences;
 
 /**
  * Provides H2 data to the database navigator
  * 
- * @ @version 2018-05-26
+ * @ @version 2018-07-23
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
 public class H2DatabaseProvider implements IContentProvider {
-	private Preferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
+	private IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 	private Connection conn = null;
 

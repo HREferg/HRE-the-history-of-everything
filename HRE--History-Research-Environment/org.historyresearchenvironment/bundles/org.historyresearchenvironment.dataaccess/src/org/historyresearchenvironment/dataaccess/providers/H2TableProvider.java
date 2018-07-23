@@ -27,7 +27,7 @@ public class H2TableProvider implements IContentProvider {
 	// private final static Logger LOGGER =
 	// Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 	private Connection conn = null;
-	// private Preferences preferences =
+	// private IEclipsePreferences preferences =
 	// InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 
 	private final String COUNT = "SELECT COUNT(*) FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'PUBLIC' AND TABLE_NAME = ?";
