@@ -15,7 +15,7 @@ import org.osgi.framework.ServiceReference;
  * Eclipse plug-in life cycle control. Sets up the logger. Starts and stops the
  * Help System.
  * 
- * @version 2018-07-23
+ * @version 2018-07-24
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -46,13 +46,18 @@ public class Activator implements BundleActivator {
 		HreLogger.setup();
 
 		// TODO Remove when New and Open are settled?
-		preferences.putInt("projectcount", preferences.getInt("projectcount", 1));
-		preferences.put("project.0.name", preferences.get("project.0.name", "SAMPLE"));
-		preferences.put("project.0.lastupdated", preferences.get("project.0.lastupdated", "2018-06-24 16:41:36"));
-		preferences.put("project.0.summary", preferences.get("project.0.summary", "This is the default project"));
-		preferences.put("project.0.localserver", preferences.get("project.0.localserver", "LOCAL"));
-		preferences.put("project.0.path", preferences.get("project.0.path", "./SAMPLE"));
-		preferences.flush();
+		// preferences.putInt("projectcount", preferences.getInt("projectcount", 1));
+		// preferences.put("project.0.name", preferences.get("project.0.name",
+		// "SAMPLE"));
+		// preferences.put("project.0.lastupdated",
+		// preferences.get("project.0.lastupdated", "2018-06-24 16:41:36"));
+		// preferences.put("project.0.summary", preferences.get("project.0.summary",
+		// "This is the default project"));
+		// preferences.put("project.0.localserver",
+		// preferences.get("project.0.localserver", "LOCAL"));
+		// preferences.put("project.0.path", preferences.get("project.0.path",
+		// "./SAMPLE"));
+		// preferences.flush();
 
 		LOGGER.info("HRE v0.1 has been started");
 
