@@ -11,9 +11,14 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.e4.core.di.annotations,
  org.eclipse.jetty.server,
  javax.servlet,
- org.eclipse.jetty.http
+ org.eclipse.jetty.http,
+ org.eclipse.jetty.util
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: org.historyresearchenvironment.server
 Bundle-ActivationPolicy: lazy
-Export-Package: org.historyresearchenvironment.server;uses:="org.osgi.framework,org.historyresearchenvironment.server.businesslogic,org.historyresearchenvironment.dataaccess.providers",
+Export-Package: org.historyresearchenvironment.server;
+  uses:="org.osgi.framework,
+   org.historyresearchenvironment.server.businesslogic,
+   org.historyresearchenvironment.dataaccess.providers,
+   org.eclipse.jetty.server.handler",
  org.historyresearchenvironment.server.businesslogic;uses:="org.historyresearchenvironment.server"

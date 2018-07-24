@@ -26,6 +26,7 @@ org.historyresearchenvironment.sample.help
 org.historyresearchenvironment.sample.parts
 org.historyresearchenvironment.sample.providers
 org.historyresearchenvironment.sample.server
+org.historyresearchenvironment.sample.server.handlers
 org.historyresearchenvironment.server
 org.historyresearchenvironment.server.businesslogic
 org.historyresearchenvironment.server.handlers

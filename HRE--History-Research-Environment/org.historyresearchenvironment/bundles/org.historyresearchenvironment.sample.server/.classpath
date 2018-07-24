@@ -3,6 +3,10 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Program Files/HRE/Other jars/jetty-util-9.4.11.v20180605.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/HRE/Other jars/org.eclipse.jetty.util_9.4.8.v20171121.jar">
+		<accessrules>
+			<accessrule kind="accessible" pattern="org/eclipse/jetty/**"/>
+		</accessrules>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.util.component.*;
 
 /**
  * HTTP request handler for Jetty server
@@ -19,6 +20,7 @@ import org.eclipse.jetty.server.Server;
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
+@SuppressWarnings("unused")
 public class RootHttpRequestHandler implements Handler {
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 

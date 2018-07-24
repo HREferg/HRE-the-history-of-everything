@@ -20,7 +20,7 @@ import org.historyresearchenvironment.server.ServerResponse;
 /**
  * HTTP request handler for the embedded Jetty server.
  * 
- * @version 2018-07-19
+ * @version 2018-07-24
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -72,27 +72,27 @@ public class SampleHttpRequestHandler implements Handler {
 			throws IOException, ServletException {
 		LOGGER.info("Base request context path: " + baseRequest.getContextPath());
 
-		String key = target.substring(1);
+		final String key = target.substring(1);
 
 		LOGGER.info("Key: " + key);
 
 		SampleEditorProvider provider = new SampleEditorProvider();
 		provider.setParamSetKey(Short.parseShort(key));
 
-		SampleBusinessLogic businessLogic = new SampleBusinessLogic();
-		ServerRequest serverRequest = new ServerRequest(baseRequest.getMethod(), provider, businessLogic);
-		ServerResponse serverResponse = businessLogic.execute(serverRequest);
+		final SampleBusinessLogic businessLogic = new SampleBusinessLogic();
+		final ServerRequest serverRequest = new ServerRequest(baseRequest.getMethod(), provider, businessLogic);
+		final ServerResponse serverResponse = businessLogic.execute(serverRequest);
 
 		provider = (SampleEditorProvider) serverResponse.getProvider();
 
-		String jsonString = JsonAccessor.writeJson(provider);
+		final String jsonString = JsonAccessor.writeJson(provider);
 
 		LOGGER.info("Returning: " + jsonString);
 
 		response.setContentType("application/json");
 		response.setStatus(HttpServletResponse.SC_OK);
 
-		PrintWriter out = response.getWriter();
+		final PrintWriter out = response.getWriter();
 		out.print(jsonString);
 		baseRequest.setHandled(true);
 	}
