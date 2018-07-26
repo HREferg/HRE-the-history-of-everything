@@ -14,13 +14,14 @@ Export-Package: org.eclipse.wb.swt;uses:="org.eclipse.swt.graphics,org.eclipse.j
    org.eclipse.e4.ui.workbench,
    org.eclipse.e4.ui.workbench.modeling",
  org.historyresearchenvironment.client.listeners;uses:="org.eclipse.swt.events,org.eclipse.swt.widgets",
+ org.historyresearchenvironment.client.models,
  org.historyresearchenvironment.client.parts;
   uses:="org.historyresearchenvironment.server.businesslogic,
    org.historyresearchenvironment.dataaccess.providers,
-   org.osgi.service.prefs,
    org.eclipse.swt.graphics,
    org.eclipse.swt.widgets,
    org.eclipse.e4.core.services.events,
+   org.eclipse.core.runtime.preferences,
    org.historyresearchenvironment.client.serverinterface,
    org.historyresearchenvironment.server,
    org.eclipse.e4.core.commands",
@@ -28,22 +29,20 @@ Export-Package: org.eclipse.wb.swt;uses:="org.eclipse.swt.graphics,org.eclipse.j
   uses:="org.eclipse.jface.util,
    org.eclipse.jface.resource,
    org.eclipse.jface.preference,
-   org.eclipse.swt.widgets",
+   org.eclipse.swt.widgets,
+   org.eclipse.core.runtime.preferences",
  org.historyresearchenvironment.client.serverinterface;uses:="org.historyresearchenvironment.server"
 Require-Bundle: org.eclipse.e4.ui.model.workbench,
- org.eclipse.jface,
  org.eclipse.e4.ui.workbench,
  org.eclipse.e4.core.di,
  org.eclipse.e4.ui.di,
  org.eclipse.e4.core.contexts,
- org.eclipse.core.runtime,
  org.eclipse.e4.core.commands,
  com.opcoach.e4.preferences,
  org.eclipse.e4.core.services,
  org.historyresearchenvironment.dataaccess,
  org.historyresearchenvironment.server,
- org.eclipse.help.ui,
- org.eclipse.ui.forms
+ org.eclipse.help.ui
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Automatic-Module-Name: org.historyresearchenvironment.client

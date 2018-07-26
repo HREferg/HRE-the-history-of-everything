@@ -7,7 +7,7 @@ import org.eclipse.jface.preference.IPreferenceStore;
 import com.opcoach.e4.preferences.ScopedPreferenceStore;
 
 /**
- * @version 2018-07-24
+ * @version 2018-07-26
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -32,7 +32,7 @@ public class DefaultValuesInitializer extends AbstractPreferenceInitializer {
 
 		store.setDefault("CSMODE", "DIRECT");
 		store.setDefault("DBDRIVER", "org.h2.Driver");
-		store.setDefault("DBNAME", ".SAMPLE");
+		store.setDefault("DBNAME", "./SAMPLE");
 		store.setDefault("GUILANGUAGE", "ENGLISH");
 		store.setDefault("H2TRACELEVEL", "INFO");
 		store.setDefault("HELPSYSTEMPORT", "8081");
@@ -50,7 +50,7 @@ public class DefaultValuesInitializer extends AbstractPreferenceInitializer {
 		store.setDefault("project.0.lastupdated", "2018-06-24 16:41:36");
 		store.setDefault("project.0.summary", "This is the Default project");
 		store.setDefault("project.0.localserver", "LOCAL");
-		store.setDefault("project.0.path", ".SAMPLE");
+		store.setDefault("project.0.path", "./SAMPLE");
 
 	}
 }

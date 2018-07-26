@@ -13,7 +13,7 @@ import org.osgi.service.prefs.BackingStoreException;
  * Singleton class that instantiates a JDBC Connection Pool and returns a
  * connection to it.
  * 
- * @version 2018-07-23
+ * @version 2018-07-26
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -67,8 +67,8 @@ public class HreH2ConnectionPool {
 			final String jdbcUrl = "jdbc:h2:" + dbName + ";IFEXISTS=TRUE;TRACE_LEVEL_FILE=" + h2TraceLevel
 					+ ";TRACE_LEVEL_SYSTEM_OUT=" + h2TraceLevel;
 			LOGGER.info("JDBC URL: " + jdbcUrl);
-			// FIXME Get from properties
-			connectionPool = JdbcConnectionPool.create(jdbcUrl, "sa", "");
+			connectionPool = JdbcConnectionPool.create(jdbcUrl, preferences.get("USERID", "sa"),
+					preferences.get("PASSWORD", ""));
 			connectionPool.setMaxConnections(500);
 		}
 

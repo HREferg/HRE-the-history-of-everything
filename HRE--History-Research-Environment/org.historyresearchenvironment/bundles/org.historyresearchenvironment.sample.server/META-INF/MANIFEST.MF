@@ -10,8 +10,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.historyresearchenvironment.server,
  javax.servlet,
  org.eclipse.jetty.server,
- org.eclipse.jetty.http,
- org.eclipse.jetty.util
+ org.eclipse.jetty.util;bundle-version="9.4.8"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: org.historyresearchenvironment.sample.server
 Bundle-ActivationPolicy: lazy

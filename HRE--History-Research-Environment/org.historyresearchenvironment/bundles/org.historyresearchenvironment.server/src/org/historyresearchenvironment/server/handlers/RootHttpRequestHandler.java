@@ -11,16 +11,14 @@ import javax.servlet.http.HttpServletResponse;
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.util.component.*;
 
 /**
  * HTTP request handler for Jetty server
  * 
- * @version 2018-07-19
+ * @version 2018-07-26
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
-@SuppressWarnings("unused")
 public class RootHttpRequestHandler implements Handler {
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
@@ -48,121 +46,145 @@ public class RootHttpRequestHandler implements Handler {
 		baseRequest.setHandled(true);
 	}
 
-	/* (non-Javadoc)
-	 * @see org.eclipse.jetty.util.component.LifeCycle#addLifeCycleListener(org.eclipse.jetty.util.component.LifeCycle.Listener)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.eclipse.jetty.util.component.LifeCycle#addLifeCycleListener(org.eclipse.
+	 * jetty.util.component.LifeCycle.Listener)
 	 */
 	@Override
 	public void addLifeCycleListener(Listener arg0) {
-		// TODO Auto-generated method stub
-		
+
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see org.eclipse.jetty.util.component.LifeCycle#isFailed()
 	 */
 	@Override
 	public boolean isFailed() {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see org.eclipse.jetty.util.component.LifeCycle#isRunning()
 	 */
 	@Override
 	public boolean isRunning() {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see org.eclipse.jetty.util.component.LifeCycle#isStarted()
 	 */
 	@Override
 	public boolean isStarted() {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see org.eclipse.jetty.util.component.LifeCycle#isStarting()
 	 */
 	@Override
 	public boolean isStarting() {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see org.eclipse.jetty.util.component.LifeCycle#isStopped()
 	 */
 	@Override
 	public boolean isStopped() {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see org.eclipse.jetty.util.component.LifeCycle#isStopping()
 	 */
 	@Override
 	public boolean isStopping() {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
-	/* (non-Javadoc)
-	 * @see org.eclipse.jetty.util.component.LifeCycle#removeLifeCycleListener(org.eclipse.jetty.util.component.LifeCycle.Listener)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.eclipse.jetty.util.component.LifeCycle#removeLifeCycleListener(org.
+	 * eclipse.jetty.util.component.LifeCycle.Listener)
 	 */
 	@Override
 	public void removeLifeCycleListener(Listener arg0) {
-		// TODO Auto-generated method stub
-		
+
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see org.eclipse.jetty.util.component.LifeCycle#start()
 	 */
 	@Override
 	public void start() throws Exception {
-		// TODO Auto-generated method stub
-		
+
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see org.eclipse.jetty.util.component.LifeCycle#stop()
 	 */
 	@Override
 	public void stop() throws Exception {
-		// TODO Auto-generated method stub
-		
+
 	}
 
-	/* (non-Javadoc)
-	 * @see org.eclipse.jetty.server.Handler#setServer(org.eclipse.jetty.server.Server)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.eclipse.jetty.server.Handler#setServer(org.eclipse.jetty.server.Server)
 	 */
 	@Override
 	public void setServer(Server server) {
-		// TODO Auto-generated method stub
-		
+
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see org.eclipse.jetty.server.Handler#getServer()
 	 */
 	@Override
 	public Server getServer() {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see org.eclipse.jetty.server.Handler#destroy()
 	 */
 	@Override
 	public void destroy() {
-		// TODO Auto-generated method stub
-		
+
 	}
 
 }

@@ -3,9 +3,9 @@ Bundle-ManifestVersion: 2
 Bundle-Name: HRE Dataaccess
 Bundle-SymbolicName: org.historyresearchenvironment.dataaccess;singleton:=true
 Bundle-Version: 0.1.0.qualifier
-Export-Package: org.historyresearchenvironment.dataaccess,
- org.historyresearchenvironment.dataaccess.models;uses:="org.osgi.service.prefs",
- org.historyresearchenvironment.dataaccess.providers;uses:="org.osgi.service.prefs,org.eclipse.e4.core.services.events,org.eclipse.jface.viewers",
+Export-Package: org.historyresearchenvironment.dataaccess;uses:="org.historyresearchenvironment.dataaccess.providers",
+ org.historyresearchenvironment.dataaccess.models;uses:="org.eclipse.core.runtime.preferences",
+ org.historyresearchenvironment.dataaccess.providers;uses:="org.eclipse.e4.core.services.events,org.eclipse.core.runtime.preferences,org.eclipse.jface.viewers",
  org.json
 Automatic-Module-Name: org.historyresearchenvironment.dataaccess
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8

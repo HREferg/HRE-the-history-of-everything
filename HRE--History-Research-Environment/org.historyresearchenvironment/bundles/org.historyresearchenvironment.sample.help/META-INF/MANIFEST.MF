@@ -5,8 +5,7 @@ Bundle-SymbolicName: org.historyresearchenvironment.sample.help;singleton:=true
 Bundle-Version: 0.1.0.qualifier
 Bundle-Activator: org.historyresearchenvironment.sample.help.Activator
 Bundle-Vendor: History Research Environment Ltd.
-Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.help
+Require-Bundle: org.eclipse.core.runtime
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: org.historyresearchenvironment.sample.help
 Bundle-ActivationPolicy: lazy
