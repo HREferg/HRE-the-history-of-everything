@@ -5,7 +5,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Logger;
 
 import org.eclipse.core.runtime.preferences.IEclipsePreferences;
@@ -15,7 +15,7 @@ import org.historyresearchenvironment.dataaccess.HreH2ConnectionPool;
 /**
  * Abstract superclass for H2 data access models.
  * 
- * @ver
+ * @version 2018-08-02
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -59,7 +59,7 @@ public abstract class AbstractHreDataModel implements Serializable {
 	 * @return
 	 * @throws SQLException
 	 */
-	public abstract <E> ArrayList<E> get() throws SQLException;
+	public abstract <E> List<AbstractHreDataModel> get() throws SQLException;
 
 	/**
 	 * Get a record.

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Program Files/HRE/Other jars/h2-1.4.197.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/HRE/eclipse/plugins/org.eclipse.equinox.preferences_3.7.0.v20170126-2132.jar" sourcepath="C:/Program Files/HRE/eclipse/plugins/org.eclipse.equinox.preferences.source_3.7.0.v20170126-2132.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Program%20Files/HRE/eclipse/plugins/org.eclipse.platform.doc.isv_4.7.75.v20180328-1557.jar!/reference/api"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/preferences/*"/>
+			<accessrule kind="discouraged" pattern="org/eclipse/core/internal/preferences/exchange/*"/>
+			<accessrule kind="accessible" pattern="org/eclipse/core/runtime/preferences/*"/>
+			<accessrule kind="accessible" pattern="org/osgi/service/prefs/*"/>
+			<accessrule ignoreifbetter="true" kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="src" path="/org.historyresearchenvironment.dataaccess"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
