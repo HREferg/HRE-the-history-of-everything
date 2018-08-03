@@ -5,263 +5,222 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
-* The persistent class for the SCHEMA_DEFNS database table.
-*
-* @version 2018-08-02
-* @author H2ModelGenerator, &copy; History Research Environment Ltd., 2018
-*
-*/
+ * The persistent class for the SCHEMA_DEFNS database table.
+ *
+ * @version 2018-08-03
+ * @author H2ModelGenerator, &copy; History Research Environment Ltd., 2018
+ *
+ */
 
 public class SchemaDefns extends AbstractHreDataModel {
-private static final long serialVersionUID = 1L;
-private ArrayList<AbstractHreDataModel> modelList;
-private static final String SELECT = "SELECT " +
-"RECORD_NUM, " +
-"SET_KEY, " +
-"COMMIT_PID, " +
-"SCHEMA_DEFN_PID, " +
-"VERSION_NAME, " +
-"MAIN_PCKG_KEY, " +
-"REMINDER_KEY, " +
-"DISPLAY_ORDER, " +
-"IS_DEFAULT, " +
-"SHOW FROM PUBLIC.SCHEMA_DEFNS WHERE SCHEMA_DEFN_PID = ?";
+	private static final long serialVersionUID = 1L;
+	private static final String SELECT = "SELECT " + "RECORD_NUM, " + "SET_KEY, " + "COMMIT_PID, " + "SCHEMA_DEFN_PID, "
+			+ "VERSION_NAME, " + "MAIN_PCKG_KEY, " + "REMINDER_KEY, " + "DISPLAY_ORDER, " + "IS_DEFAULT, "
+			+ "SHOW FROM PUBLIC.SCHEMA_DEFNS WHERE SCHEMA_DEFN_PID = ?";
+	private static final String SELECTALL = "SELECT " + "RECORD_NUM, " + "SET_KEY, " + "COMMIT_PID, "
+			+ "SCHEMA_DEFN_PID, " + "VERSION_NAME, " + "MAIN_PCKG_KEY, " + "REMINDER_KEY, " + "DISPLAY_ORDER, "
+			+ "IS_DEFAULT, " + "SHOW FROM PUBLIC.SCHEMA_DEFNS";
 
-private static final String SELECTALL = "SELECT " +
-"RECORD_NUM, " +  
-"SET_KEY, " +  
-"COMMIT_PID, " +  
-"SCHEMA_DEFN_PID, " +  
-"VERSION_NAME, " +  
-"MAIN_PCKG_KEY, " +  
-"REMINDER_KEY, " +  
-"DISPLAY_ORDER, " +  
-"IS_DEFAULT, " +  
-"SHOW FROM PUBLIC.SCHEMA_DEFNS";
+	private static final String INSERT = "INSERT INTO PUBLIC.SCHEMA_DEFNS( " + "RECORD_NUM, " + "SET_KEY, "
+			+ "COMMIT_PID, " + "SCHEMA_DEFN_PID, " + "VERSION_NAME, " + "MAIN_PCKG_KEY, " + "REMINDER_KEY, "
+			+ "DISPLAY_ORDER, " + "IS_DEFAULT, " + "SHOW) VALUES (?, " + "?, " + "?, " + "?, " + "?, " + "?, " + "?, "
+			+ "?, " + "?, " + "?)";
 
-private static final String INSERT = "INSERT INTO PUBLIC.SCHEMA_DEFNS( " +
-"RECORD_NUM, " +     
-"SET_KEY, " +     
-"COMMIT_PID, " +     
-"SCHEMA_DEFN_PID, " +     
-"VERSION_NAME, " +     
-"MAIN_PCKG_KEY, " +     
-"REMINDER_KEY, " +     
-"DISPLAY_ORDER, " +     
-"IS_DEFAULT, " +     
-"SHOW) VALUES (?, " +
-"?, " +
-"?, " +
-"?, " +
-"?, " +
-"?, " +
-"?, " +
-"?, " +
-"?, " +
-"?)";
+	private static final String UPDATE = "UPDATE PUBLIC.SCHEMA_DEFNSSET " + "RECORD_NUM = ?, " + "SET_KEY = ?, "
+			+ "COMMIT_PID = ?, " + "VERSION_NAME = ?, " + "MAIN_PCKG_KEY = ?, " + "REMINDER_KEY = ?, "
+			+ "DISPLAY_ORDER = ?, " + "IS_DEFAULT = ?, " + "SHOW = ? WHERE SCHEMA_DEFN_PID = ?";
 
-private static final String UPDATE = "UPDATE PUBLIC.SCHEMA_DEFNSSET " +
-"RECORD_NUM = ?, " + 
-"SET_KEY = ?, " + 
-"COMMIT_PID = ?, " + 
-"VERSION_NAME = ?, " + 
-"MAIN_PCKG_KEY = ?, " + 
-"REMINDER_KEY = ?, " + 
-"DISPLAY_ORDER = ?, " + 
-"IS_DEFAULT = ?, " + 
-"SHOW = ? WHERE SCHEMA_DEFN_PID = ?";
+	private static final String DELETE = "DELETE FROM PUBLIC.SCHEMA_DEFNS WHERE SCHEMA_DEFN_PID = ?";
 
-private static final String DELETE = "DELETE FROM PUBLIC.SCHEMA_DEFNS WHERE SCHEMA_DEFN_PID = ?";
+	private static final String DELETEALL = "DELETE FROM PUBLIC.SCHEMA_DEFNS";
 
-private static final String DELETEALL = "DELETE FROM PUBLIC.SCHEMA_DEFNS";
+	private ArrayList<AbstractHreDataModel> modelList;
 
-private int RecordNum;
-private short SetKey;
-private int CommitPid;
-private int SchemaDefnPid;
-private String VersionName;
-private short MainPckgKey;
-private short ReminderKey;
-private short DisplayOrder;
-private boolean IsDefault;
-private boolean Show;
-private SchemaDefns model;
+	private int RecordNum;
+	private short SetKey;
+	private int CommitPid;
+	private int SchemaDefnPid;
+	private String VersionName;
+	private short MainPckgKey;
+	private short ReminderKey;
+	private short DisplayOrder;
+	private boolean IsDefault;
+	private boolean Show;
+	private SchemaDefns model;
 
-public SchemaDefns() throws SQLException {
-}
+	public SchemaDefns() throws SQLException {
+	}
 
+	public SchemaDefns(int SchemaDefnPid) throws SQLException {
+		super();
+		this.SchemaDefnPid = SchemaDefnPid;
+	}
 
-public SchemaDefns(int SchemaDefnPid) throws SQLException {
-super();
-this.SchemaDefnPid = SchemaDefnPid;
-}
+	@Override
+	public void delete() throws SQLException {
+		ps = conn.prepareStatement(DELETEALL);
+		ps.executeUpdate();
+	}
 
-@Override
-public void delete() throws SQLException {
-ps = conn.prepareStatement(DELETEALL);
-ps.executeUpdate();
-}
+	@Override
+	public void delete(int key) throws SQLException {
+		ps = conn.prepareStatement(DELETE);
+		ps.setInt(1, key);
+		ps.executeUpdate();
+	}
 
-@Override
-public void delete(int key) throws SQLException {
-ps = conn.prepareStatement(DELETE);
-ps.setInt(1, key);
-ps.executeUpdate();
-}
+	@Override
+	public List<AbstractHreDataModel> get() throws SQLException {
+		ps = conn.prepareStatement(SELECTALL);
+		rs = ps.executeQuery();
+		modelList = new ArrayList<AbstractHreDataModel>();
+		while (rs.next()) {
+			model = new SchemaDefns();
+			model.setRecordNum(rs.getInt("RECORD_NUM"));
+			model.setSetKey(rs.getShort("SET_KEY"));
+			model.setCommitPid(rs.getInt("COMMIT_PID"));
+			model.setSchemaDefnPid(rs.getInt("SCHEMA_DEFN_PID"));
+			model.setVersionName(rs.getString("VERSION_NAME"));
+			model.setMainPckgKey(rs.getShort("MAIN_PCKG_KEY"));
+			model.setReminderKey(rs.getShort("REMINDER_KEY"));
+			model.setDisplayOrder(rs.getShort("DISPLAY_ORDER"));
+			model.setIsDefault(rs.getBoolean("IS_DEFAULT"));
+			model.setShow(rs.getBoolean("SHOW"));
+			modelList.add(model);
+		}
+		return modelList;
+	}
 
-@Override
-public List<AbstractHreDataModel> get() throws SQLException {
-ps = conn.prepareStatement(SELECTALL);
-rs = ps.executeQuery();
-modelList = new ArrayList<AbstractHreDataModel>();
-while (rs.next()) {
-model = new SchemaDefns();
-model.setRecordNum(rs.getInt("RECORD_NUM"));
-model.setSetKey(rs.getShort("SET_KEY"));
-model.setCommitPid(rs.getInt("COMMIT_PID"));
-model.setSchemaDefnPid(rs.getInt("SCHEMA_DEFN_PID"));
-model.setVersionName(rs.getString("VERSION_NAME"));
-model.setMainPckgKey(rs.getShort("MAIN_PCKG_KEY"));
-model.setReminderKey(rs.getShort("REMINDER_KEY"));
-model.setDisplayOrder(rs.getShort("DISPLAY_ORDER"));
-model.setIsDefault(rs.getBoolean("IS_DEFAULT"));
-model.setShow(rs.getBoolean("SHOW"));
-modelList.add(model);
-}
-return modelList;
-}
+	@Override
+	public AbstractHreDataModel get(int key) throws SQLException {
+		ps = conn.prepareStatement(SELECT);
+		ps.setInt(1, key);
+		rs = ps.executeQuery();
+		if (rs.next()) {
+			model.setRecordNum(rs.getInt("RECORD_NUM"));
+			model.setSetKey(rs.getShort("SET_KEY"));
+			model.setCommitPid(rs.getInt("COMMIT_PID"));
+			model.setSchemaDefnPid(rs.getInt("SCHEMA_DEFN_PID"));
+			model.setVersionName(rs.getString("VERSION_NAME"));
+			model.setMainPckgKey(rs.getShort("MAIN_PCKG_KEY"));
+			model.setReminderKey(rs.getShort("REMINDER_KEY"));
+			model.setDisplayOrder(rs.getShort("DISPLAY_ORDER"));
+			model.setIsDefault(rs.getBoolean("IS_DEFAULT"));
+			model.setShow(rs.getBoolean("SHOW"));
+		}
+		return this;
+	}
 
-@Override
-public AbstractHreDataModel get(int key) throws SQLException {
-ps = conn.prepareStatement(SELECT);
-ps.setInt(1, (int) key);
-rs = ps.executeQuery();
-if (rs.next()) {
-model.setRecordNum(rs.getInt("RECORD_NUM"));
-model.setSetKey(rs.getShort("SET_KEY"));
-model.setCommitPid(rs.getInt("COMMIT_PID"));
-model.setSchemaDefnPid(rs.getInt("SCHEMA_DEFN_PID"));
-model.setVersionName(rs.getString("VERSION_NAME"));
-model.setMainPckgKey(rs.getShort("MAIN_PCKG_KEY"));
-model.setReminderKey(rs.getShort("REMINDER_KEY"));
-model.setDisplayOrder(rs.getShort("DISPLAY_ORDER"));
-model.setIsDefault(rs.getBoolean("IS_DEFAULT"));
-model.setShow(rs.getBoolean("SHOW"));
-}
-return this;
-}
+	public int getCommitPid() {
+		return this.CommitPid;
+	}
 
-@Override
-public void post(AbstractHreDataModel model) throws SQLException {
-ps = conn.prepareStatement(INSERT);
-((SchemaDefns) model).setRecordNum(rs.getInt("RECORD_NUM"));
-((SchemaDefns) model).setSetKey(rs.getShort("SET_KEY"));
-((SchemaDefns) model).setCommitPid(rs.getInt("COMMIT_PID"));
-((SchemaDefns) model).setSchemaDefnPid(rs.getInt("SCHEMA_DEFN_PID"));
-((SchemaDefns) model).setVersionName(rs.getString("VERSION_NAME"));
-((SchemaDefns) model).setMainPckgKey(rs.getShort("MAIN_PCKG_KEY"));
-((SchemaDefns) model).setReminderKey(rs.getShort("REMINDER_KEY"));
-((SchemaDefns) model).setDisplayOrder(rs.getShort("DISPLAY_ORDER"));
-((SchemaDefns) model).setIsDefault(rs.getBoolean("IS_DEFAULT"));
-((SchemaDefns) model).setShow(rs.getBoolean("SHOW"));
-ps.executeUpdate();
-}
+	public short getDisplayOrder() {
+		return this.DisplayOrder;
+	}
 
-@Override
-public void put(AbstractHreDataModel model) throws SQLException {
-ps = conn.prepareStatement(UPDATE);
-((SchemaDefns) model).setRecordNum(rs.getInt("RECORD_NUM"));
-((SchemaDefns) model).setSetKey(rs.getShort("SET_KEY"));
-((SchemaDefns) model).setCommitPid(rs.getInt("COMMIT_PID"));
-((SchemaDefns) model).setSchemaDefnPid(rs.getInt("SCHEMA_DEFN_PID"));
-((SchemaDefns) model).setVersionName(rs.getString("VERSION_NAME"));
-((SchemaDefns) model).setMainPckgKey(rs.getShort("MAIN_PCKG_KEY"));
-((SchemaDefns) model).setReminderKey(rs.getShort("REMINDER_KEY"));
-((SchemaDefns) model).setDisplayOrder(rs.getShort("DISPLAY_ORDER"));
-((SchemaDefns) model).setIsDefault(rs.getBoolean("IS_DEFAULT"));
-((SchemaDefns) model).setShow(rs.getBoolean("SHOW"));
-ps.executeUpdate();
-}
+	public boolean getIsDefault() {
+		return this.IsDefault;
+	}
 
-public int getRecordNum() {
-return this.RecordNum;
-}
+	public short getMainPckgKey() {
+		return this.MainPckgKey;
+	}
 
-public short getSetKey() {
-return this.SetKey;
-}
+	public int getRecordNum() {
+		return this.RecordNum;
+	}
 
-public int getCommitPid() {
-return this.CommitPid;
-}
+	public short getReminderKey() {
+		return this.ReminderKey;
+	}
 
-public int getSchemaDefnPid() {
-return this.SchemaDefnPid;
-}
+	public int getSchemaDefnPid() {
+		return this.SchemaDefnPid;
+	}
 
-public String getVersionName() {
-return this.VersionName;
-}
+	public short getSetKey() {
+		return this.SetKey;
+	}
 
-public short getMainPckgKey() {
-return this.MainPckgKey;
-}
+	public boolean getShow() {
+		return this.Show;
+	}
 
-public short getReminderKey() {
-return this.ReminderKey;
-}
+	public String getVersionName() {
+		return this.VersionName;
+	}
 
-public short getDisplayOrder() {
-return this.DisplayOrder;
-}
+	@Override
+	public void post(AbstractHreDataModel model) throws SQLException {
+		ps = conn.prepareStatement(INSERT);
+		((SchemaDefns) model).setRecordNum(rs.getInt("RECORD_NUM"));
+		((SchemaDefns) model).setSetKey(rs.getShort("SET_KEY"));
+		((SchemaDefns) model).setCommitPid(rs.getInt("COMMIT_PID"));
+		((SchemaDefns) model).setSchemaDefnPid(rs.getInt("SCHEMA_DEFN_PID"));
+		((SchemaDefns) model).setVersionName(rs.getString("VERSION_NAME"));
+		((SchemaDefns) model).setMainPckgKey(rs.getShort("MAIN_PCKG_KEY"));
+		((SchemaDefns) model).setReminderKey(rs.getShort("REMINDER_KEY"));
+		((SchemaDefns) model).setDisplayOrder(rs.getShort("DISPLAY_ORDER"));
+		((SchemaDefns) model).setIsDefault(rs.getBoolean("IS_DEFAULT"));
+		((SchemaDefns) model).setShow(rs.getBoolean("SHOW"));
+		ps.executeUpdate();
+	}
 
-public boolean getIsDefault() {
-return this.IsDefault;
-}
+	@Override
+	public void put(AbstractHreDataModel model) throws SQLException {
+		ps = conn.prepareStatement(UPDATE);
+		((SchemaDefns) model).setRecordNum(rs.getInt("RECORD_NUM"));
+		((SchemaDefns) model).setSetKey(rs.getShort("SET_KEY"));
+		((SchemaDefns) model).setCommitPid(rs.getInt("COMMIT_PID"));
+		((SchemaDefns) model).setSchemaDefnPid(rs.getInt("SCHEMA_DEFN_PID"));
+		((SchemaDefns) model).setVersionName(rs.getString("VERSION_NAME"));
+		((SchemaDefns) model).setMainPckgKey(rs.getShort("MAIN_PCKG_KEY"));
+		((SchemaDefns) model).setReminderKey(rs.getShort("REMINDER_KEY"));
+		((SchemaDefns) model).setDisplayOrder(rs.getShort("DISPLAY_ORDER"));
+		((SchemaDefns) model).setIsDefault(rs.getBoolean("IS_DEFAULT"));
+		((SchemaDefns) model).setShow(rs.getBoolean("SHOW"));
+		ps.executeUpdate();
+	}
 
-public boolean getShow() {
-return this.Show;
-}
+	public void setCommitPid(int CommitPid) {
+		this.CommitPid = CommitPid;
+	}
 
-public void setRecordNum(int RecordNum) {
-this.RecordNum = RecordNum;
-}
+	public void setDisplayOrder(short DisplayOrder) {
+		this.DisplayOrder = DisplayOrder;
+	}
 
-public void setSetKey(short SetKey) {
-this.SetKey = SetKey;
-}
+	public void setIsDefault(boolean IsDefault) {
+		this.IsDefault = IsDefault;
+	}
 
-public void setCommitPid(int CommitPid) {
-this.CommitPid = CommitPid;
-}
+	public void setMainPckgKey(short MainPckgKey) {
+		this.MainPckgKey = MainPckgKey;
+	}
 
-public void setSchemaDefnPid(int SchemaDefnPid) {
-this.SchemaDefnPid = SchemaDefnPid;
-}
+	public void setRecordNum(int RecordNum) {
+		this.RecordNum = RecordNum;
+	}
 
-public void setVersionName(String VersionName) {
-this.VersionName = VersionName;
-}
+	public void setReminderKey(short ReminderKey) {
+		this.ReminderKey = ReminderKey;
+	}
 
-public void setMainPckgKey(short MainPckgKey) {
-this.MainPckgKey = MainPckgKey;
-}
+	public void setSchemaDefnPid(int SchemaDefnPid) {
+		this.SchemaDefnPid = SchemaDefnPid;
+	}
 
-public void setReminderKey(short ReminderKey) {
-this.ReminderKey = ReminderKey;
-}
+	public void setSetKey(short SetKey) {
+		this.SetKey = SetKey;
+	}
 
-public void setDisplayOrder(short DisplayOrder) {
-this.DisplayOrder = DisplayOrder;
-}
+	public void setShow(boolean Show) {
+		this.Show = Show;
+	}
 
-public void setIsDefault(boolean IsDefault) {
-this.IsDefault = IsDefault;
-}
-
-public void setShow(boolean Show) {
-this.Show = Show;
-}
+	public void setVersionName(String VersionName) {
+		this.VersionName = VersionName;
+	}
 
 }
-

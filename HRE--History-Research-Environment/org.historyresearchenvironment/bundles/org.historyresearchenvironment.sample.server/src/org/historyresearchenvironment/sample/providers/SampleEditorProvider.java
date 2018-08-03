@@ -2,12 +2,12 @@ package org.historyresearchenvironment.sample.providers;
 
 import java.sql.SQLException;
 
-import org.historyresearchenvironment.dataaccess.models.SubstnParamName;
-import org.historyresearchenvironment.dataaccess.models.SubstnParamValue;
+import org.historyresearchenvironment.dataaccess.models.SubstnParamNames;
+import org.historyresearchenvironment.dataaccess.models.SubstnParamValues;
 import org.historyresearchenvironment.dataaccess.providers.AbstractHreProvider;
 
 /**
- * @version 2018-07-19
+ * @version 2018-08-03
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -55,8 +55,8 @@ public class SampleEditorProvider extends AbstractHreProvider {
 	public void readFromDatabase(int paramSetKey) {
 		try {
 			this.paramSetKey = (short) paramSetKey;
-			final SubstnParamName spn = new SubstnParamName(this.paramSetKey);
-			final SubstnParamValue spv = new SubstnParamValue(this.paramSetKey);
+			final SubstnParamNames spn = new SubstnParamNames(this.paramSetKey);
+			final SubstnParamValues spv = new SubstnParamValues(this.paramSetKey);
 
 			defltValue = spn.getDefltValue();
 			paramListKey = spv.getParamListKey();
@@ -77,21 +77,24 @@ public class SampleEditorProvider extends AbstractHreProvider {
 	}
 
 	/**
-	 * @param defltValue the defltValue to set
+	 * @param defltValue
+	 *            the defltValue to set
 	 */
 	public void setDefltValue(String defltValue) {
 		this.defltValue = defltValue;
 	}
 
 	/**
-	 * @param paramListKey the paramListKey to set
+	 * @param paramListKey
+	 *            the paramListKey to set
 	 */
 	public void setParamListKey(short paramListKey) {
 		this.paramListKey = paramListKey;
 	}
 
 	/**
-	 * @param paramSetKey the paramSetKey to set
+	 * @param paramSetKey
+	 *            the paramSetKey to set
 	 */
 	public void setParamSetKey(short paramSetKey) {
 		this.paramSetKey = paramSetKey;

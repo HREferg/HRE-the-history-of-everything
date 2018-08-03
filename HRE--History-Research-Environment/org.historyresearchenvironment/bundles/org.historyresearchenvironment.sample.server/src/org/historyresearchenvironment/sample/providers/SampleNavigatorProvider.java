@@ -6,14 +6,14 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.historyresearchenvironment.dataaccess.models.AbstractHreDataModel;
-import org.historyresearchenvironment.dataaccess.models.SubstnParamName;
-import org.historyresearchenvironment.dataaccess.models.SubstnParamValue;
+import org.historyresearchenvironment.dataaccess.models.SubstnParamNames;
+import org.historyresearchenvironment.dataaccess.models.SubstnParamValues;
 import org.historyresearchenvironment.dataaccess.providers.AbstractHreProvider;
 
 /**
  * Provide H2 data to the sample navigator.
  * 
- * @version 2018-07-15
+ * @version 2018-08-03
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -70,19 +70,19 @@ public class SampleNavigatorProvider extends AbstractHreProvider {
 	 */
 	@Override
 	public void readFromDatabase() {
-		SubstnParamName row;
+		SubstnParamNames row;
 		short paramSetKey;
-		SubstnParamValue spv;
+		SubstnParamValues spv;
 
 		try {
-			SubstnParamName spn = new SubstnParamName();
-			ArrayList<AbstractHreDataModel> dataModelList = spn.get();
+			SubstnParamNames spn = new SubstnParamNames();
+			List<AbstractHreDataModel> dataModelList = spn.get();
 
 			for (Iterator<AbstractHreDataModel> iterator = dataModelList.iterator(); iterator.hasNext();) {
-				row = (SubstnParamName) iterator.next();
+				row = (SubstnParamNames) iterator.next();
 				LOGGER.info("Row: " + row.getParamSetKey() + ", " + row.getDefltValue());
 				paramSetKey = row.getParamSetKey();
-				spv = new SubstnParamValue(paramSetKey);
+				spv = new SubstnParamValues(paramSetKey);
 
 				model = new SampleEditorProvider();
 				model.setParamSetKey(paramSetKey);
@@ -116,7 +116,8 @@ public class SampleNavigatorProvider extends AbstractHreProvider {
 	}
 
 	/**
-	 * @param modelList the modelList to set
+	 * @param modelList
+	 *            the modelList to set
 	 */
 	public void setModelList(List<SampleEditorProvider> modelList) {
 		this.modelList = modelList;

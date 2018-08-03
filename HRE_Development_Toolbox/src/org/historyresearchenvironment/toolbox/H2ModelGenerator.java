@@ -19,15 +19,11 @@ import java.util.List;
 /**
  * Utility to generate a Java model class representing an HRE H2 Table.
  * 
- * @version 2018-08-02
+ * @version 2018-08-03
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
 
-// FIXME blob, cloc, timestamp
-// private timestamp Commenced;
-// private blob BinaryContent;
-// private clob CharContent;
 public class H2ModelGenerator {
 	private static final String COLUMNS = "SELECT COLUMN_NAME, TYPE_NAME FROM INFORMATION_SCHEMA.COLUMNS "
 			+ "WHERE TABLE_SCHEMA = 'PUBLIC' AND TABLE_NAME = ?";
@@ -49,13 +45,13 @@ public class H2ModelGenerator {
 			return "long";
 		}
 		if (string.equals("BLOB")) {
-			return "blob";
+			return "Blob";
 		}
 		if (string.equals("BOOLEAN")) {
 			return "boolean";
 		}
 		if (string.equals("CLOB")) {
-			return "clob";
+			return "Clob";
 		}
 		if (string.equals("DOUBLE")) {
 			return "double";
@@ -67,7 +63,7 @@ public class H2ModelGenerator {
 			return "short";
 		}
 		if (string.equals("TIMESTAMP")) {
-			return "timestamp";
+			return "Timestamp";
 		}
 		if (string.equals("VARBINARY")) {
 			return "byte[]";
@@ -87,7 +83,7 @@ public class H2ModelGenerator {
 		writer.println("public " + toCamelCase(tableName) + "() throws SQLException {");
 		writer.println("}\r\n");
 		writer.println(
-				"\r\npublic " + toCamelCase(tableName) + "(" + primaryKeyType + " " + pk + ") throws SQLException {");
+				"public " + toCamelCase(tableName) + "(" + primaryKeyType + " " + pk + ") throws SQLException {");
 		writer.println("super();");
 		writer.println("this." + pk + " = " + pk + ";");
 		writer.println("}\r\n");
