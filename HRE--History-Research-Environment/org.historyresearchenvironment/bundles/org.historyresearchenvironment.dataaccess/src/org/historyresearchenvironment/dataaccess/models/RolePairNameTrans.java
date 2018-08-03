@@ -48,8 +48,24 @@ public class RolePairNameTrans extends AbstractHreDataModel {
 	private String RoleBToA;
 	private RolePairNameTrans model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public RolePairNameTrans() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param RolePairNameTranPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public RolePairNameTrans(int RolePairNameTranPid) throws SQLException {
 		super();
@@ -111,42 +127,92 @@ public class RolePairNameTrans extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the LangCode field.
+	 *
+	 * @return Contents of the LANG_CODE column
+	 */
 	public String getLangCode() {
 		return this.LangCode;
 	}
 
+	/**
+	 * Get the PluginKey field.
+	 *
+	 * @return Contents of the PLUGIN_KEY column
+	 */
 	public short getPluginKey() {
 		return this.PluginKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the RoleAToB field.
+	 *
+	 * @return Contents of the ROLE_A_TO_B column
+	 */
 	public String getRoleAToB() {
 		return this.RoleAToB;
 	}
 
+	/**
+	 * Get the RoleBToA field.
+	 *
+	 * @return Contents of the ROLE_B_TO_A column
+	 */
 	public String getRoleBToA() {
 		return this.RoleBToA;
 	}
 
+	/**
+	 * Get the RolePairNameTranPid field.
+	 *
+	 * @return Contents of the ROLE_PAIR_NAME_TRAN_PID column
+	 */
 	public int getRolePairNameTranPid() {
 		return this.RolePairNameTranPid;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the TagKey field.
+	 *
+	 * @return Contents of the TAG_KEY column
+	 */
 	public short getTagKey() {
 		return this.TagKey;
 	}
@@ -183,42 +249,102 @@ public class RolePairNameTrans extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the LangCode field
+	 *
+	 * @param LangCode
+	 *            Contents of the LANG_CODE column
+	 */
 	public void setLangCode(String LangCode) {
 		this.LangCode = LangCode;
 	}
 
+	/**
+	 * Set the PluginKey field
+	 *
+	 * @param PluginKey
+	 *            Contents of the PLUGIN_KEY column
+	 */
 	public void setPluginKey(short PluginKey) {
 		this.PluginKey = PluginKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the RoleAToB field
+	 *
+	 * @param RoleAToB
+	 *            Contents of the ROLE_A_TO_B column
+	 */
 	public void setRoleAToB(String RoleAToB) {
 		this.RoleAToB = RoleAToB;
 	}
 
+	/**
+	 * Set the RoleBToA field
+	 *
+	 * @param RoleBToA
+	 *            Contents of the ROLE_B_TO_A column
+	 */
 	public void setRoleBToA(String RoleBToA) {
 		this.RoleBToA = RoleBToA;
 	}
 
+	/**
+	 * Set the RolePairNameTranPid field
+	 *
+	 * @param RolePairNameTranPid
+	 *            Contents of the ROLE_PAIR_NAME_TRAN_PID column
+	 */
 	public void setRolePairNameTranPid(int RolePairNameTranPid) {
 		this.RolePairNameTranPid = RolePairNameTranPid;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the TagKey field
+	 *
+	 * @param TagKey
+	 *            Contents of the TAG_KEY column
+	 */
 	public void setTagKey(short TagKey) {
 		this.TagKey = TagKey;
 	}

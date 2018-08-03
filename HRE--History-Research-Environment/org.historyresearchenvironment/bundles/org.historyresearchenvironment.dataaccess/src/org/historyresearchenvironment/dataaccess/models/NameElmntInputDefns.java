@@ -71,8 +71,24 @@ public class NameElmntInputDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private NameElmntInputDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public NameElmntInputDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param NameElmntInputDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public NameElmntInputDefns(int NameElmntInputDefnPid) throws SQLException {
 		super();
@@ -154,82 +170,182 @@ public class NameElmntInputDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DataTypeKey field.
+	 *
+	 * @return Contents of the DATA_TYPE_KEY column
+	 */
 	public short getDataTypeKey() {
 		return this.DataTypeKey;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the EntitySubTypeKey field.
+	 *
+	 * @return Contents of the ENTITY_SUB_TYPE_KEY column
+	 */
 	public short getEntitySubTypeKey() {
 		return this.EntitySubTypeKey;
 	}
 
+	/**
+	 * Get the EntityTypeKey field.
+	 *
+	 * @return Contents of the ENTITY_TYPE_KEY column
+	 */
 	public short getEntityTypeKey() {
 		return this.EntityTypeKey;
 	}
 
+	/**
+	 * Get the FieldRankOrder field.
+	 *
+	 * @return Contents of the FIELD_RANK_ORDER column
+	 */
 	public short getFieldRankOrder() {
 		return this.FieldRankOrder;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the IsDetailElmnt field.
+	 *
+	 * @return Contents of the IS_DETAIL_ELMNT column
+	 */
 	public boolean getIsDetailElmnt() {
 		return this.IsDetailElmnt;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the LeftFieldElmntKey field.
+	 *
+	 * @return Contents of the LEFT_FIELD_ELMNT_KEY column
+	 */
 	public short getLeftFieldElmntKey() {
 		return this.LeftFieldElmntKey;
 	}
 
+	/**
+	 * Get the NameElmntInputDefnPid field.
+	 *
+	 * @return Contents of the NAME_ELMNT_INPUT_DEFN_PID column
+	 */
 	public int getNameElmntInputDefnPid() {
 		return this.NameElmntInputDefnPid;
 	}
 
+	/**
+	 * Get the NameElmntTypeKey field.
+	 *
+	 * @return Contents of the NAME_ELMNT_TYPE_KEY column
+	 */
 	public short getNameElmntTypeKey() {
 		return this.NameElmntTypeKey;
 	}
 
+	/**
+	 * Get the ParentNameStyleKey field.
+	 *
+	 * @return Contents of the PARENT_NAME_STYLE_KEY column
+	 */
 	public short getParentNameStyleKey() {
 		return this.ParentNameStyleKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the RightFieldElmntKey field.
+	 *
+	 * @return Contents of the RIGHT_FIELD_ELMNT_KEY column
+	 */
 	public short getRightFieldElmntKey() {
 		return this.RightFieldElmntKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the ValidScriptGroupKey field.
+	 *
+	 * @return Contents of the VALID_SCRIPT_GROUP_KEY column
+	 */
 	public short getValidScriptGroupKey() {
 		return this.ValidScriptGroupKey;
 	}
 
+	/**
+	 * Get the ValidScriptKey field.
+	 *
+	 * @return Contents of the VALID_SCRIPT_KEY column
+	 */
 	public short getValidScriptKey() {
 		return this.ValidScriptKey;
 	}
@@ -286,82 +402,202 @@ public class NameElmntInputDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DataTypeKey field
+	 *
+	 * @param DataTypeKey
+	 *            Contents of the DATA_TYPE_KEY column
+	 */
 	public void setDataTypeKey(short DataTypeKey) {
 		this.DataTypeKey = DataTypeKey;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the EntitySubTypeKey field
+	 *
+	 * @param EntitySubTypeKey
+	 *            Contents of the ENTITY_SUB_TYPE_KEY column
+	 */
 	public void setEntitySubTypeKey(short EntitySubTypeKey) {
 		this.EntitySubTypeKey = EntitySubTypeKey;
 	}
 
+	/**
+	 * Set the EntityTypeKey field
+	 *
+	 * @param EntityTypeKey
+	 *            Contents of the ENTITY_TYPE_KEY column
+	 */
 	public void setEntityTypeKey(short EntityTypeKey) {
 		this.EntityTypeKey = EntityTypeKey;
 	}
 
+	/**
+	 * Set the FieldRankOrder field
+	 *
+	 * @param FieldRankOrder
+	 *            Contents of the FIELD_RANK_ORDER column
+	 */
 	public void setFieldRankOrder(short FieldRankOrder) {
 		this.FieldRankOrder = FieldRankOrder;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the IsDetailElmnt field
+	 *
+	 * @param IsDetailElmnt
+	 *            Contents of the IS_DETAIL_ELMNT column
+	 */
 	public void setIsDetailElmnt(boolean IsDetailElmnt) {
 		this.IsDetailElmnt = IsDetailElmnt;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the LeftFieldElmntKey field
+	 *
+	 * @param LeftFieldElmntKey
+	 *            Contents of the LEFT_FIELD_ELMNT_KEY column
+	 */
 	public void setLeftFieldElmntKey(short LeftFieldElmntKey) {
 		this.LeftFieldElmntKey = LeftFieldElmntKey;
 	}
 
+	/**
+	 * Set the NameElmntInputDefnPid field
+	 *
+	 * @param NameElmntInputDefnPid
+	 *            Contents of the NAME_ELMNT_INPUT_DEFN_PID column
+	 */
 	public void setNameElmntInputDefnPid(int NameElmntInputDefnPid) {
 		this.NameElmntInputDefnPid = NameElmntInputDefnPid;
 	}
 
+	/**
+	 * Set the NameElmntTypeKey field
+	 *
+	 * @param NameElmntTypeKey
+	 *            Contents of the NAME_ELMNT_TYPE_KEY column
+	 */
 	public void setNameElmntTypeKey(short NameElmntTypeKey) {
 		this.NameElmntTypeKey = NameElmntTypeKey;
 	}
 
+	/**
+	 * Set the ParentNameStyleKey field
+	 *
+	 * @param ParentNameStyleKey
+	 *            Contents of the PARENT_NAME_STYLE_KEY column
+	 */
 	public void setParentNameStyleKey(short ParentNameStyleKey) {
 		this.ParentNameStyleKey = ParentNameStyleKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the RightFieldElmntKey field
+	 *
+	 * @param RightFieldElmntKey
+	 *            Contents of the RIGHT_FIELD_ELMNT_KEY column
+	 */
 	public void setRightFieldElmntKey(short RightFieldElmntKey) {
 		this.RightFieldElmntKey = RightFieldElmntKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the ValidScriptGroupKey field
+	 *
+	 * @param ValidScriptGroupKey
+	 *            Contents of the VALID_SCRIPT_GROUP_KEY column
+	 */
 	public void setValidScriptGroupKey(short ValidScriptGroupKey) {
 		this.ValidScriptGroupKey = ValidScriptGroupKey;
 	}
 
+	/**
+	 * Set the ValidScriptKey field
+	 *
+	 * @param ValidScriptKey
+	 *            Contents of the VALID_SCRIPT_KEY column
+	 */
 	public void setValidScriptKey(short ValidScriptKey) {
 		this.ValidScriptKey = ValidScriptKey;
 	}

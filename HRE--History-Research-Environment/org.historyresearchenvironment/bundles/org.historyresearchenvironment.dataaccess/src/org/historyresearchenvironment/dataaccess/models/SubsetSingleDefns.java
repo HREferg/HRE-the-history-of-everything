@@ -45,8 +45,24 @@ public class SubsetSingleDefns extends AbstractHreDataModel {
 	private int Count;
 	private SubsetSingleDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public SubsetSingleDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param SubsetSingleDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public SubsetSingleDefns(int SubsetSingleDefnPid) throws SQLException {
 		super();
@@ -104,34 +120,74 @@ public class SubsetSingleDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the Count field.
+	 *
+	 * @return Contents of the COUNT column
+	 */
 	public int getCount() {
 		return this.Count;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReferPid field.
+	 *
+	 * @return Contents of the REFER_PID column
+	 */
 	public int getReferPid() {
 		return this.ReferPid;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the SubsetPid field.
+	 *
+	 * @return Contents of the SUBSET_PID column
+	 */
 	public int getSubsetPid() {
 		return this.SubsetPid;
 	}
 
+	/**
+	 * Get the SubsetSingleDefnPid field.
+	 *
+	 * @return Contents of the SUBSET_SINGLE_DEFN_PID column
+	 */
 	public int getSubsetSingleDefnPid() {
 		return this.SubsetSingleDefnPid;
 	}
 
+	/**
+	 * Get the UseOrder field.
+	 *
+	 * @return Contents of the USE_ORDER column
+	 */
 	public int getUseOrder() {
 		return this.UseOrder;
 	}
@@ -164,34 +220,82 @@ public class SubsetSingleDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the Count field
+	 *
+	 * @param Count
+	 *            Contents of the COUNT column
+	 */
 	public void setCount(int Count) {
 		this.Count = Count;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReferPid field
+	 *
+	 * @param ReferPid
+	 *            Contents of the REFER_PID column
+	 */
 	public void setReferPid(int ReferPid) {
 		this.ReferPid = ReferPid;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the SubsetPid field
+	 *
+	 * @param SubsetPid
+	 *            Contents of the SUBSET_PID column
+	 */
 	public void setSubsetPid(int SubsetPid) {
 		this.SubsetPid = SubsetPid;
 	}
 
+	/**
+	 * Set the SubsetSingleDefnPid field
+	 *
+	 * @param SubsetSingleDefnPid
+	 *            Contents of the SUBSET_SINGLE_DEFN_PID column
+	 */
 	public void setSubsetSingleDefnPid(int SubsetSingleDefnPid) {
 		this.SubsetSingleDefnPid = SubsetSingleDefnPid;
 	}
 
+	/**
+	 * Set the UseOrder field
+	 *
+	 * @param UseOrder
+	 *            Contents of the USE_ORDER column
+	 */
 	public void setUseOrder(int UseOrder) {
 		this.UseOrder = UseOrder;
 	}

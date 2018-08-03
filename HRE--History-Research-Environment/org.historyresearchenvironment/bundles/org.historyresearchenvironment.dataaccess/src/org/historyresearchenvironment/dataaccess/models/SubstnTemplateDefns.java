@@ -53,8 +53,24 @@ public class SubstnTemplateDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private SubstnTemplateDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public SubstnTemplateDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param SubstnTemplateDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public SubstnTemplateDefns(int SubstnTemplateDefnPid) throws SQLException {
 		super();
@@ -120,50 +136,110 @@ public class SubstnTemplateDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the IsTextLayout field.
+	 *
+	 * @return Contents of the IS_TEXT_LAYOUT column
+	 */
 	public boolean getIsTextLayout() {
 		return this.IsTextLayout;
 	}
 
+	/**
+	 * Get the IsTextStyle field.
+	 *
+	 * @return Contents of the IS_TEXT_STYLE column
+	 */
 	public boolean getIsTextStyle() {
 		return this.IsTextStyle;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the ScriptGroupKey field.
+	 *
+	 * @return Contents of the SCRIPT_GROUP_KEY column
+	 */
 	public short getScriptGroupKey() {
 		return this.ScriptGroupKey;
 	}
 
+	/**
+	 * Get the ScriptKey field.
+	 *
+	 * @return Contents of the SCRIPT_KEY column
+	 */
 	public short getScriptKey() {
 		return this.ScriptKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the SubstnTemplateDefnPid field.
+	 *
+	 * @return Contents of the SUBSTN_TEMPLATE_DEFN_PID column
+	 */
 	public int getSubstnTemplateDefnPid() {
 		return this.SubstnTemplateDefnPid;
 	}
@@ -204,50 +280,122 @@ public class SubstnTemplateDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the IsTextLayout field
+	 *
+	 * @param IsTextLayout
+	 *            Contents of the IS_TEXT_LAYOUT column
+	 */
 	public void setIsTextLayout(boolean IsTextLayout) {
 		this.IsTextLayout = IsTextLayout;
 	}
 
+	/**
+	 * Set the IsTextStyle field
+	 *
+	 * @param IsTextStyle
+	 *            Contents of the IS_TEXT_STYLE column
+	 */
 	public void setIsTextStyle(boolean IsTextStyle) {
 		this.IsTextStyle = IsTextStyle;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the ScriptGroupKey field
+	 *
+	 * @param ScriptGroupKey
+	 *            Contents of the SCRIPT_GROUP_KEY column
+	 */
 	public void setScriptGroupKey(short ScriptGroupKey) {
 		this.ScriptGroupKey = ScriptGroupKey;
 	}
 
+	/**
+	 * Set the ScriptKey field
+	 *
+	 * @param ScriptKey
+	 *            Contents of the SCRIPT_KEY column
+	 */
 	public void setScriptKey(short ScriptKey) {
 		this.ScriptKey = ScriptKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the SubstnTemplateDefnPid field
+	 *
+	 * @param SubstnTemplateDefnPid
+	 *            Contents of the SUBSTN_TEMPLATE_DEFN_PID column
+	 */
 	public void setSubstnTemplateDefnPid(int SubstnTemplateDefnPid) {
 		this.SubstnTemplateDefnPid = SubstnTemplateDefnPid;
 	}

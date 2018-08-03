@@ -55,8 +55,24 @@ public class NameTemplateTypeDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private NameTemplateTypeDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public NameTemplateTypeDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param NameTemplateTypeDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public NameTemplateTypeDefns(int NameTemplateTypeDefnPid) throws SQLException {
 		super();
@@ -124,54 +140,119 @@ public class NameTemplateTypeDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the EntitySubTypeKey field.
+	 *
+	 * @return Contents of the ENTITY_SUB_TYPE_KEY column
+	 */
 	public short getEntitySubTypeKey() {
 		return this.EntitySubTypeKey;
 	}
 
+	/**
+	 * Get the EntityTypeKey field.
+	 *
+	 * @return Contents of the ENTITY_TYPE_KEY column
+	 */
 	public short getEntityTypeKey() {
 		return this.EntityTypeKey;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the IsMandatory field.
+	 *
+	 * @return Contents of the IS_MANDATORY column
+	 */
 	public boolean getIsMandatory() {
 		return this.IsMandatory;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the NameTemplateTypeDefnPid field.
+	 *
+	 * @return Contents of the NAME_TEMPLATE_TYPE_DEFN_PID column
+	 */
 	public int getNameTemplateTypeDefnPid() {
 		return this.NameTemplateTypeDefnPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the SetPid field.
+	 *
+	 * @return Contents of the SET_PID column
+	 */
 	public short getSetPid() {
 		return this.SetPid;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the SortingOnly field.
+	 *
+	 * @return Contents of the SORTING_ONLY column
+	 */
 	public boolean getSortingOnly() {
 		return this.SortingOnly;
 	}
@@ -214,54 +295,132 @@ public class NameTemplateTypeDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the EntitySubTypeKey field
+	 *
+	 * @param EntitySubTypeKey
+	 *            Contents of the ENTITY_SUB_TYPE_KEY column
+	 */
 	public void setEntitySubTypeKey(short EntitySubTypeKey) {
 		this.EntitySubTypeKey = EntitySubTypeKey;
 	}
 
+	/**
+	 * Set the EntityTypeKey field
+	 *
+	 * @param EntityTypeKey
+	 *            Contents of the ENTITY_TYPE_KEY column
+	 */
 	public void setEntityTypeKey(short EntityTypeKey) {
 		this.EntityTypeKey = EntityTypeKey;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the IsMandatory field
+	 *
+	 * @param IsMandatory
+	 *            Contents of the IS_MANDATORY column
+	 */
 	public void setIsMandatory(boolean IsMandatory) {
 		this.IsMandatory = IsMandatory;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the NameTemplateTypeDefnPid field
+	 *
+	 * @param NameTemplateTypeDefnPid
+	 *            Contents of the NAME_TEMPLATE_TYPE_DEFN_PID column
+	 */
 	public void setNameTemplateTypeDefnPid(int NameTemplateTypeDefnPid) {
 		this.NameTemplateTypeDefnPid = NameTemplateTypeDefnPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the SetPid field
+	 *
+	 * @param SetPid
+	 *            Contents of the SET_PID column
+	 */
 	public void setSetPid(short SetPid) {
 		this.SetPid = SetPid;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the SortingOnly field
+	 *
+	 * @param SortingOnly
+	 *            Contents of the SORTING_ONLY column
+	 */
 	public void setSortingOnly(boolean SortingOnly) {
 		this.SortingOnly = SortingOnly;
 	}

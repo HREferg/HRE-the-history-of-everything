@@ -45,8 +45,24 @@ public class SubsetPairDefns extends AbstractHreDataModel {
 	private int Refer2Pid;
 	private SubsetPairDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public SubsetPairDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param SubsetPairPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public SubsetPairDefns(int SubsetPairPid) throws SQLException {
 		super();
@@ -104,34 +120,74 @@ public class SubsetPairDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the Refer1Pid field.
+	 *
+	 * @return Contents of the REFER1_PID column
+	 */
 	public int getRefer1Pid() {
 		return this.Refer1Pid;
 	}
 
+	/**
+	 * Get the Refer2Pid field.
+	 *
+	 * @return Contents of the REFER2_PID column
+	 */
 	public int getRefer2Pid() {
 		return this.Refer2Pid;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the SubsetPairPid field.
+	 *
+	 * @return Contents of the SUBSET_PAIR_PID column
+	 */
 	public int getSubsetPairPid() {
 		return this.SubsetPairPid;
 	}
 
+	/**
+	 * Get the SubsetPid field.
+	 *
+	 * @return Contents of the SUBSET_PID column
+	 */
 	public int getSubsetPid() {
 		return this.SubsetPid;
 	}
 
+	/**
+	 * Get the UseOrder field.
+	 *
+	 * @return Contents of the USE_ORDER column
+	 */
 	public int getUseOrder() {
 		return this.UseOrder;
 	}
@@ -164,34 +220,82 @@ public class SubsetPairDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the Refer1Pid field
+	 *
+	 * @param Refer1Pid
+	 *            Contents of the REFER1_PID column
+	 */
 	public void setRefer1Pid(int Refer1Pid) {
 		this.Refer1Pid = Refer1Pid;
 	}
 
+	/**
+	 * Set the Refer2Pid field
+	 *
+	 * @param Refer2Pid
+	 *            Contents of the REFER2_PID column
+	 */
 	public void setRefer2Pid(int Refer2Pid) {
 		this.Refer2Pid = Refer2Pid;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the SubsetPairPid field
+	 *
+	 * @param SubsetPairPid
+	 *            Contents of the SUBSET_PAIR_PID column
+	 */
 	public void setSubsetPairPid(int SubsetPairPid) {
 		this.SubsetPairPid = SubsetPairPid;
 	}
 
+	/**
+	 * Set the SubsetPid field
+	 *
+	 * @param SubsetPid
+	 *            Contents of the SUBSET_PID column
+	 */
 	public void setSubsetPid(int SubsetPid) {
 		this.SubsetPid = SubsetPid;
 	}
 
+	/**
+	 * Set the UseOrder field
+	 *
+	 * @param UseOrder
+	 *            Contents of the USE_ORDER column
+	 */
 	public void setUseOrder(int UseOrder) {
 		this.UseOrder = UseOrder;
 	}

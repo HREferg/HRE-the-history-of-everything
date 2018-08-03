@@ -62,8 +62,24 @@ public class SubstnOtherAliases extends AbstractHreDataModel {
 	private boolean Show;
 	private SubstnOtherAliases model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public SubstnOtherAliases() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param SubstnOtherAliasPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public SubstnOtherAliases(int SubstnOtherAliasPid) throws SQLException {
 		super();
@@ -137,66 +153,146 @@ public class SubstnOtherAliases extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the IsTextLayoutRelated field.
+	 *
+	 * @return Contents of the IS_TEXT_LAYOUT_RELATED column
+	 */
 	public boolean getIsTextLayoutRelated() {
 		return this.IsTextLayoutRelated;
 	}
 
+	/**
+	 * Get the IsTextStyleRelated field.
+	 *
+	 * @return Contents of the IS_TEXT_STYLE_RELATED column
+	 */
 	public boolean getIsTextStyleRelated() {
 		return this.IsTextStyleRelated;
 	}
 
+	/**
+	 * Get the OutputSubTypeKey field.
+	 *
+	 * @return Contents of the OUTPUT_SUB_TYPE_KEY column
+	 */
 	public short getOutputSubTypeKey() {
 		return this.OutputSubTypeKey;
 	}
 
+	/**
+	 * Get the OutputTypeKey field.
+	 *
+	 * @return Contents of the OUTPUT_TYPE_KEY column
+	 */
 	public short getOutputTypeKey() {
 		return this.OutputTypeKey;
 	}
 
+	/**
+	 * Get the ParamListKey field.
+	 *
+	 * @return Contents of the PARAM_LIST_KEY column
+	 */
 	public short getParamListKey() {
 		return this.ParamListKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the RequesterSubTypeKey field.
+	 *
+	 * @return Contents of the REQUESTER_SUB_TYPE_KEY column
+	 */
 	public short getRequesterSubTypeKey() {
 		return this.RequesterSubTypeKey;
 	}
 
+	/**
+	 * Get the RequesterTypeKey field.
+	 *
+	 * @return Contents of the REQUESTER_TYPE_KEY column
+	 */
 	public short getRequesterTypeKey() {
 		return this.RequesterTypeKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the SubstnOtherAliasPid field.
+	 *
+	 * @return Contents of the SUBSTN_OTHER_ALIAS_PID column
+	 */
 	public int getSubstnOtherAliasPid() {
 		return this.SubstnOtherAliasPid;
 	}
 
+	/**
+	 * Get the TopStepKey field.
+	 *
+	 * @return Contents of the TOP_STEP_KEY column
+	 */
 	public short getTopStepKey() {
 		return this.TopStepKey;
 	}
@@ -245,66 +341,162 @@ public class SubstnOtherAliases extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the IsTextLayoutRelated field
+	 *
+	 * @param IsTextLayoutRelated
+	 *            Contents of the IS_TEXT_LAYOUT_RELATED column
+	 */
 	public void setIsTextLayoutRelated(boolean IsTextLayoutRelated) {
 		this.IsTextLayoutRelated = IsTextLayoutRelated;
 	}
 
+	/**
+	 * Set the IsTextStyleRelated field
+	 *
+	 * @param IsTextStyleRelated
+	 *            Contents of the IS_TEXT_STYLE_RELATED column
+	 */
 	public void setIsTextStyleRelated(boolean IsTextStyleRelated) {
 		this.IsTextStyleRelated = IsTextStyleRelated;
 	}
 
+	/**
+	 * Set the OutputSubTypeKey field
+	 *
+	 * @param OutputSubTypeKey
+	 *            Contents of the OUTPUT_SUB_TYPE_KEY column
+	 */
 	public void setOutputSubTypeKey(short OutputSubTypeKey) {
 		this.OutputSubTypeKey = OutputSubTypeKey;
 	}
 
+	/**
+	 * Set the OutputTypeKey field
+	 *
+	 * @param OutputTypeKey
+	 *            Contents of the OUTPUT_TYPE_KEY column
+	 */
 	public void setOutputTypeKey(short OutputTypeKey) {
 		this.OutputTypeKey = OutputTypeKey;
 	}
 
+	/**
+	 * Set the ParamListKey field
+	 *
+	 * @param ParamListKey
+	 *            Contents of the PARAM_LIST_KEY column
+	 */
 	public void setParamListKey(short ParamListKey) {
 		this.ParamListKey = ParamListKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the RequesterSubTypeKey field
+	 *
+	 * @param RequesterSubTypeKey
+	 *            Contents of the REQUESTER_SUB_TYPE_KEY column
+	 */
 	public void setRequesterSubTypeKey(short RequesterSubTypeKey) {
 		this.RequesterSubTypeKey = RequesterSubTypeKey;
 	}
 
+	/**
+	 * Set the RequesterTypeKey field
+	 *
+	 * @param RequesterTypeKey
+	 *            Contents of the REQUESTER_TYPE_KEY column
+	 */
 	public void setRequesterTypeKey(short RequesterTypeKey) {
 		this.RequesterTypeKey = RequesterTypeKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the SubstnOtherAliasPid field
+	 *
+	 * @param SubstnOtherAliasPid
+	 *            Contents of the SUBSTN_OTHER_ALIAS_PID column
+	 */
 	public void setSubstnOtherAliasPid(int SubstnOtherAliasPid) {
 		this.SubstnOtherAliasPid = SubstnOtherAliasPid;
 	}
 
+	/**
+	 * Set the TopStepKey field
+	 *
+	 * @param TopStepKey
+	 *            Contents of the TOP_STEP_KEY column
+	 */
 	public void setTopStepKey(short TopStepKey) {
 		this.TopStepKey = TopStepKey;
 	}

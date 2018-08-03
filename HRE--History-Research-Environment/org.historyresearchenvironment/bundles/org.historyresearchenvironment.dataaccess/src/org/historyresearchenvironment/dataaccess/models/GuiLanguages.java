@@ -48,8 +48,24 @@ public class GuiLanguages extends AbstractHreDataModel {
 	private String DfltLanguage;
 	private GuiLanguages model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public GuiLanguages() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param GuiLanguagePid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public GuiLanguages(int GuiLanguagePid) throws SQLException {
 		super();
@@ -111,42 +127,92 @@ public class GuiLanguages extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the Data1Language field.
+	 *
+	 * @return Contents of the DATA1_LANGUAGE column
+	 */
 	public String getData1Language() {
 		return this.Data1Language;
 	}
 
+	/**
+	 * Get the Data2Language field.
+	 *
+	 * @return Contents of the DATA2_LANGUAGE column
+	 */
 	public String getData2Language() {
 		return this.Data2Language;
 	}
 
+	/**
+	 * Get the DfltLanguage field.
+	 *
+	 * @return Contents of the DFLT_LANGUAGE column
+	 */
 	public String getDfltLanguage() {
 		return this.DfltLanguage;
 	}
 
+	/**
+	 * Get the GuiLanguage field.
+	 *
+	 * @return Contents of the GUI_LANGUAGE column
+	 */
 	public String getGuiLanguage() {
 		return this.GuiLanguage;
 	}
 
+	/**
+	 * Get the GuiLanguagePid field.
+	 *
+	 * @return Contents of the GUI_LANGUAGE_PID column
+	 */
 	public int getGuiLanguagePid() {
 		return this.GuiLanguagePid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the ReportLanguage field.
+	 *
+	 * @return Contents of the REPORT_LANGUAGE column
+	 */
 	public String getReportLanguage() {
 		return this.ReportLanguage;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
@@ -183,42 +249,102 @@ public class GuiLanguages extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the Data1Language field
+	 *
+	 * @param Data1Language
+	 *            Contents of the DATA1_LANGUAGE column
+	 */
 	public void setData1Language(String Data1Language) {
 		this.Data1Language = Data1Language;
 	}
 
+	/**
+	 * Set the Data2Language field
+	 *
+	 * @param Data2Language
+	 *            Contents of the DATA2_LANGUAGE column
+	 */
 	public void setData2Language(String Data2Language) {
 		this.Data2Language = Data2Language;
 	}
 
+	/**
+	 * Set the DfltLanguage field
+	 *
+	 * @param DfltLanguage
+	 *            Contents of the DFLT_LANGUAGE column
+	 */
 	public void setDfltLanguage(String DfltLanguage) {
 		this.DfltLanguage = DfltLanguage;
 	}
 
+	/**
+	 * Set the GuiLanguage field
+	 *
+	 * @param GuiLanguage
+	 *            Contents of the GUI_LANGUAGE column
+	 */
 	public void setGuiLanguage(String GuiLanguage) {
 		this.GuiLanguage = GuiLanguage;
 	}
 
+	/**
+	 * Set the GuiLanguagePid field
+	 *
+	 * @param GuiLanguagePid
+	 *            Contents of the GUI_LANGUAGE_PID column
+	 */
 	public void setGuiLanguagePid(int GuiLanguagePid) {
 		this.GuiLanguagePid = GuiLanguagePid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the ReportLanguage field
+	 *
+	 * @param ReportLanguage
+	 *            Contents of the REPORT_LANGUAGE column
+	 */
 	public void setReportLanguage(String ReportLanguage) {
 		this.ReportLanguage = ReportLanguage;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}

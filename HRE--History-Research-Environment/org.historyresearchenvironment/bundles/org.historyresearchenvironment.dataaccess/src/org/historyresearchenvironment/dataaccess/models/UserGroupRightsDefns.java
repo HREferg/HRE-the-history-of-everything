@@ -55,8 +55,24 @@ public class UserGroupRightsDefns extends AbstractHreDataModel {
 	private short ReminderKey;
 	private UserGroupRightsDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public UserGroupRightsDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param UserGroupRightsDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public UserGroupRightsDefns(int UserGroupRightsDefnPid) throws SQLException {
 		super();
@@ -124,54 +140,119 @@ public class UserGroupRightsDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CanDeleteEditable field.
+	 *
+	 * @return Contents of the CAN_DELETE_EDITABLE column
+	 */
 	public boolean getCanDeleteEditable() {
 		return this.CanDeleteEditable;
 	}
 
+	/**
+	 * Get the CanEditView field.
+	 *
+	 * @return Contents of the CAN_EDIT_VIEW column
+	 */
 	public boolean getCanEditView() {
 		return this.CanEditView;
 	}
 
+	/**
+	 * Get the CanViewAll field.
+	 *
+	 * @return Contents of the CAN_VIEW_ALL column
+	 */
 	public boolean getCanViewAll() {
 		return this.CanViewAll;
 	}
 
+	/**
+	 * Get the CanViewSome field.
+	 *
+	 * @return Contents of the CAN_VIEW_SOME column
+	 */
 	public boolean getCanViewSome() {
 		return this.CanViewSome;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the LimitFlagKey field.
+	 *
+	 * @return Contents of the LIMIT_FLAG_KEY column
+	 */
 	public short getLimitFlagKey() {
 		return this.LimitFlagKey;
 	}
 
+	/**
+	 * Get the LimitFlagValue field.
+	 *
+	 * @return Contents of the LIMIT_FLAG_VALUE column
+	 */
 	public short getLimitFlagValue() {
 		return this.LimitFlagValue;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the TableKey field.
+	 *
+	 * @return Contents of the TABLE_KEY column
+	 */
 	public short getTableKey() {
 		return this.TableKey;
 	}
 
+	/**
+	 * Get the UserGroupKey field.
+	 *
+	 * @return Contents of the USER_GROUP_KEY column
+	 */
 	public short getUserGroupKey() {
 		return this.UserGroupKey;
 	}
 
+	/**
+	 * Get the UserGroupRightsDefnPid field.
+	 *
+	 * @return Contents of the USER_GROUP_RIGHTS_DEFN_PID column
+	 */
 	public int getUserGroupRightsDefnPid() {
 		return this.UserGroupRightsDefnPid;
 	}
@@ -214,54 +295,132 @@ public class UserGroupRightsDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CanDeleteEditable field
+	 *
+	 * @param CanDeleteEditable
+	 *            Contents of the CAN_DELETE_EDITABLE column
+	 */
 	public void setCanDeleteEditable(boolean CanDeleteEditable) {
 		this.CanDeleteEditable = CanDeleteEditable;
 	}
 
+	/**
+	 * Set the CanEditView field
+	 *
+	 * @param CanEditView
+	 *            Contents of the CAN_EDIT_VIEW column
+	 */
 	public void setCanEditView(boolean CanEditView) {
 		this.CanEditView = CanEditView;
 	}
 
+	/**
+	 * Set the CanViewAll field
+	 *
+	 * @param CanViewAll
+	 *            Contents of the CAN_VIEW_ALL column
+	 */
 	public void setCanViewAll(boolean CanViewAll) {
 		this.CanViewAll = CanViewAll;
 	}
 
+	/**
+	 * Set the CanViewSome field
+	 *
+	 * @param CanViewSome
+	 *            Contents of the CAN_VIEW_SOME column
+	 */
 	public void setCanViewSome(boolean CanViewSome) {
 		this.CanViewSome = CanViewSome;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the LimitFlagKey field
+	 *
+	 * @param LimitFlagKey
+	 *            Contents of the LIMIT_FLAG_KEY column
+	 */
 	public void setLimitFlagKey(short LimitFlagKey) {
 		this.LimitFlagKey = LimitFlagKey;
 	}
 
+	/**
+	 * Set the LimitFlagValue field
+	 *
+	 * @param LimitFlagValue
+	 *            Contents of the LIMIT_FLAG_VALUE column
+	 */
 	public void setLimitFlagValue(short LimitFlagValue) {
 		this.LimitFlagValue = LimitFlagValue;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the TableKey field
+	 *
+	 * @param TableKey
+	 *            Contents of the TABLE_KEY column
+	 */
 	public void setTableKey(short TableKey) {
 		this.TableKey = TableKey;
 	}
 
+	/**
+	 * Set the UserGroupKey field
+	 *
+	 * @param UserGroupKey
+	 *            Contents of the USER_GROUP_KEY column
+	 */
 	public void setUserGroupKey(short UserGroupKey) {
 		this.UserGroupKey = UserGroupKey;
 	}
 
+	/**
+	 * Set the UserGroupRightsDefnPid field
+	 *
+	 * @param UserGroupRightsDefnPid
+	 *            Contents of the USER_GROUP_RIGHTS_DEFN_PID column
+	 */
 	public void setUserGroupRightsDefnPid(int UserGroupRightsDefnPid) {
 		this.UserGroupRightsDefnPid = UserGroupRightsDefnPid;
 	}

@@ -47,8 +47,24 @@ public class DigitalNotepads extends AbstractHreDataModel {
 	private String Notepad;
 	private DigitalNotepads model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public DigitalNotepads() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param DigitalNotepadPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public DigitalNotepads(int DigitalNotepadPid) throws SQLException {
 		super();
@@ -108,38 +124,83 @@ public class DigitalNotepads extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DigitalNotepadPid field.
+	 *
+	 * @return Contents of the DIGITAL_NOTEPAD_PID column
+	 */
 	public int getDigitalNotepadPid() {
 		return this.DigitalNotepadPid;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the Notepad field.
+	 *
+	 * @return Contents of the NOTEPAD column
+	 */
 	public String getNotepad() {
 		return this.Notepad;
 	}
 
+	/**
+	 * Get the NotepadDefnPid field.
+	 *
+	 * @return Contents of the NOTEPAD_DEFN_PID column
+	 */
 	public short getNotepadDefnPid() {
 		return this.NotepadDefnPid;
 	}
 
+	/**
+	 * Get the ParentPid field.
+	 *
+	 * @return Contents of the PARENT_PID column
+	 */
 	public int getParentPid() {
 		return this.ParentPid;
 	}
 
+	/**
+	 * Get the ParentSubTypeKey field.
+	 *
+	 * @return Contents of the PARENT_SUB_TYPE_KEY column
+	 */
 	public short getParentSubTypeKey() {
 		return this.ParentSubTypeKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
@@ -174,38 +235,92 @@ public class DigitalNotepads extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DigitalNotepadPid field
+	 *
+	 * @param DigitalNotepadPid
+	 *            Contents of the DIGITAL_NOTEPAD_PID column
+	 */
 	public void setDigitalNotepadPid(int DigitalNotepadPid) {
 		this.DigitalNotepadPid = DigitalNotepadPid;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the Notepad field
+	 *
+	 * @param Notepad
+	 *            Contents of the NOTEPAD column
+	 */
 	public void setNotepad(String Notepad) {
 		this.Notepad = Notepad;
 	}
 
+	/**
+	 * Set the NotepadDefnPid field
+	 *
+	 * @param NotepadDefnPid
+	 *            Contents of the NOTEPAD_DEFN_PID column
+	 */
 	public void setNotepadDefnPid(short NotepadDefnPid) {
 		this.NotepadDefnPid = NotepadDefnPid;
 	}
 
+	/**
+	 * Set the ParentPid field
+	 *
+	 * @param ParentPid
+	 *            Contents of the PARENT_PID column
+	 */
 	public void setParentPid(int ParentPid) {
 		this.ParentPid = ParentPid;
 	}
 
+	/**
+	 * Set the ParentSubTypeKey field
+	 *
+	 * @param ParentSubTypeKey
+	 *            Contents of the PARENT_SUB_TYPE_KEY column
+	 */
 	public void setParentSubTypeKey(short ParentSubTypeKey) {
 		this.ParentSubTypeKey = ParentSubTypeKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}

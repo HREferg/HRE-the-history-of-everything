@@ -45,8 +45,24 @@ public class CommitItems extends AbstractHreDataModel {
 	private int PrevCmtPid;
 	private CommitItems model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public CommitItems() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param CommitItemPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public CommitItems(int CommitItemPid) throws SQLException {
 		super();
@@ -104,34 +120,74 @@ public class CommitItems extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitItemPid field.
+	 *
+	 * @return Contents of the COMMIT_ITEM_PID column
+	 */
 	public int getCommitItemPid() {
 		return this.CommitItemPid;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the ParentCmtPid field.
+	 *
+	 * @return Contents of the PARENT_CMT_PID column
+	 */
 	public int getParentCmtPid() {
 		return this.ParentCmtPid;
 	}
 
+	/**
+	 * Get the PrevCmtPid field.
+	 *
+	 * @return Contents of the PREV_CMT_PID column
+	 */
 	public int getPrevCmtPid() {
 		return this.PrevCmtPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the RecordPid field.
+	 *
+	 * @return Contents of the RECORD_PID column
+	 */
 	public int getRecordPid() {
 		return this.RecordPid;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the TableKey field.
+	 *
+	 * @return Contents of the TABLE_KEY column
+	 */
 	public short getTableKey() {
 		return this.TableKey;
 	}
@@ -164,34 +220,82 @@ public class CommitItems extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitItemPid field
+	 *
+	 * @param CommitItemPid
+	 *            Contents of the COMMIT_ITEM_PID column
+	 */
 	public void setCommitItemPid(int CommitItemPid) {
 		this.CommitItemPid = CommitItemPid;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the ParentCmtPid field
+	 *
+	 * @param ParentCmtPid
+	 *            Contents of the PARENT_CMT_PID column
+	 */
 	public void setParentCmtPid(int ParentCmtPid) {
 		this.ParentCmtPid = ParentCmtPid;
 	}
 
+	/**
+	 * Set the PrevCmtPid field
+	 *
+	 * @param PrevCmtPid
+	 *            Contents of the PREV_CMT_PID column
+	 */
 	public void setPrevCmtPid(int PrevCmtPid) {
 		this.PrevCmtPid = PrevCmtPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the RecordPid field
+	 *
+	 * @param RecordPid
+	 *            Contents of the RECORD_PID column
+	 */
 	public void setRecordPid(int RecordPid) {
 		this.RecordPid = RecordPid;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the TableKey field
+	 *
+	 * @param TableKey
+	 *            Contents of the TABLE_KEY column
+	 */
 	public void setTableKey(short TableKey) {
 		this.TableKey = TableKey;
 	}

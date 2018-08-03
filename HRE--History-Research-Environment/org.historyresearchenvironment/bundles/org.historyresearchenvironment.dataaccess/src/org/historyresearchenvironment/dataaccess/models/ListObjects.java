@@ -64,8 +64,24 @@ public class ListObjects extends AbstractHreDataModel {
 	private String AccentAlias;
 	private ListObjects model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public ListObjects() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param ListObjectPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public ListObjects(int ListObjectPid) throws SQLException {
 		super();
@@ -143,74 +159,164 @@ public class ListObjects extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the AccentAlias field.
+	 *
+	 * @return Contents of the ACCENT_ALIAS column
+	 */
 	public String getAccentAlias() {
 		return this.AccentAlias;
 	}
 
+	/**
+	 * Get the AccentKey field.
+	 *
+	 * @return Contents of the ACCENT_KEY column
+	 */
 	public short getAccentKey() {
 		return this.AccentKey;
 	}
 
+	/**
+	 * Get the CellMinHeight field.
+	 *
+	 * @return Contents of the CELL_MIN_HEIGHT column
+	 */
 	public short getCellMinHeight() {
 		return this.CellMinHeight;
 	}
 
+	/**
+	 * Get the CellMinWidth field.
+	 *
+	 * @return Contents of the CELL_MIN_WIDTH column
+	 */
 	public short getCellMinWidth() {
 		return this.CellMinWidth;
 	}
 
+	/**
+	 * Get the CellNowHeight field.
+	 *
+	 * @return Contents of the CELL_NOW_HEIGHT column
+	 */
 	public short getCellNowHeight() {
 		return this.CellNowHeight;
 	}
 
+	/**
+	 * Get the CellNowWidth field.
+	 *
+	 * @return Contents of the CELL_NOW_WIDTH column
+	 */
 	public short getCellNowWidth() {
 		return this.CellNowWidth;
 	}
 
+	/**
+	 * Get the CellStyleKey field.
+	 *
+	 * @return Contents of the CELL_STYLE_KEY column
+	 */
 	public short getCellStyleKey() {
 		return this.CellStyleKey;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the LabelStyleKey field.
+	 *
+	 * @return Contents of the LABEL_STYLE_KEY column
+	 */
 	public short getLabelStyleKey() {
 		return this.LabelStyleKey;
 	}
 
+	/**
+	 * Get the ListObjectPid field.
+	 *
+	 * @return Contents of the LIST_OBJECT_PID column
+	 */
 	public int getListObjectPid() {
 		return this.ListObjectPid;
 	}
 
+	/**
+	 * Get the MarginLabel field.
+	 *
+	 * @return Contents of the MARGIN_LABEL column
+	 */
 	public String getMarginLabel() {
 		return this.MarginLabel;
 	}
 
+	/**
+	 * Get the ObjectAlias field.
+	 *
+	 * @return Contents of the OBJECT_ALIAS column
+	 */
 	public String getObjectAlias() {
 		return this.ObjectAlias;
 	}
 
+	/**
+	 * Get the ParentObjSetKey field.
+	 *
+	 * @return Contents of the PARENT_OBJ_SET_KEY column
+	 */
 	public short getParentObjSetKey() {
 		return this.ParentObjSetKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the UseAliasLabel field.
+	 *
+	 * @return Contents of the USE_ALIAS_LABEL column
+	 */
 	public boolean getUseAliasLabel() {
 		return this.UseAliasLabel;
 	}
 
+	/**
+	 * Get the UseOrder field.
+	 *
+	 * @return Contents of the USE_ORDER column
+	 */
 	public short getUseOrder() {
 		return this.UseOrder;
 	}
@@ -263,74 +369,182 @@ public class ListObjects extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the AccentAlias field
+	 *
+	 * @param AccentAlias
+	 *            Contents of the ACCENT_ALIAS column
+	 */
 	public void setAccentAlias(String AccentAlias) {
 		this.AccentAlias = AccentAlias;
 	}
 
+	/**
+	 * Set the AccentKey field
+	 *
+	 * @param AccentKey
+	 *            Contents of the ACCENT_KEY column
+	 */
 	public void setAccentKey(short AccentKey) {
 		this.AccentKey = AccentKey;
 	}
 
+	/**
+	 * Set the CellMinHeight field
+	 *
+	 * @param CellMinHeight
+	 *            Contents of the CELL_MIN_HEIGHT column
+	 */
 	public void setCellMinHeight(short CellMinHeight) {
 		this.CellMinHeight = CellMinHeight;
 	}
 
+	/**
+	 * Set the CellMinWidth field
+	 *
+	 * @param CellMinWidth
+	 *            Contents of the CELL_MIN_WIDTH column
+	 */
 	public void setCellMinWidth(short CellMinWidth) {
 		this.CellMinWidth = CellMinWidth;
 	}
 
+	/**
+	 * Set the CellNowHeight field
+	 *
+	 * @param CellNowHeight
+	 *            Contents of the CELL_NOW_HEIGHT column
+	 */
 	public void setCellNowHeight(short CellNowHeight) {
 		this.CellNowHeight = CellNowHeight;
 	}
 
+	/**
+	 * Set the CellNowWidth field
+	 *
+	 * @param CellNowWidth
+	 *            Contents of the CELL_NOW_WIDTH column
+	 */
 	public void setCellNowWidth(short CellNowWidth) {
 		this.CellNowWidth = CellNowWidth;
 	}
 
+	/**
+	 * Set the CellStyleKey field
+	 *
+	 * @param CellStyleKey
+	 *            Contents of the CELL_STYLE_KEY column
+	 */
 	public void setCellStyleKey(short CellStyleKey) {
 		this.CellStyleKey = CellStyleKey;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the LabelStyleKey field
+	 *
+	 * @param LabelStyleKey
+	 *            Contents of the LABEL_STYLE_KEY column
+	 */
 	public void setLabelStyleKey(short LabelStyleKey) {
 		this.LabelStyleKey = LabelStyleKey;
 	}
 
+	/**
+	 * Set the ListObjectPid field
+	 *
+	 * @param ListObjectPid
+	 *            Contents of the LIST_OBJECT_PID column
+	 */
 	public void setListObjectPid(int ListObjectPid) {
 		this.ListObjectPid = ListObjectPid;
 	}
 
+	/**
+	 * Set the MarginLabel field
+	 *
+	 * @param MarginLabel
+	 *            Contents of the MARGIN_LABEL column
+	 */
 	public void setMarginLabel(String MarginLabel) {
 		this.MarginLabel = MarginLabel;
 	}
 
+	/**
+	 * Set the ObjectAlias field
+	 *
+	 * @param ObjectAlias
+	 *            Contents of the OBJECT_ALIAS column
+	 */
 	public void setObjectAlias(String ObjectAlias) {
 		this.ObjectAlias = ObjectAlias;
 	}
 
+	/**
+	 * Set the ParentObjSetKey field
+	 *
+	 * @param ParentObjSetKey
+	 *            Contents of the PARENT_OBJ_SET_KEY column
+	 */
 	public void setParentObjSetKey(short ParentObjSetKey) {
 		this.ParentObjSetKey = ParentObjSetKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the UseAliasLabel field
+	 *
+	 * @param UseAliasLabel
+	 *            Contents of the USE_ALIAS_LABEL column
+	 */
 	public void setUseAliasLabel(boolean UseAliasLabel) {
 		this.UseAliasLabel = UseAliasLabel;
 	}
 
+	/**
+	 * Set the UseOrder field
+	 *
+	 * @param UseOrder
+	 *            Contents of the USE_ORDER column
+	 */
 	public void setUseOrder(short UseOrder) {
 		this.UseOrder = UseOrder;
 	}

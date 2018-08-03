@@ -44,8 +44,24 @@ public class GuiLanguageNames extends AbstractHreDataModel {
 	private String Translation;
 	private GuiLanguageNames model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public GuiLanguageNames() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param GuiLanguageNamePid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public GuiLanguageNames(int GuiLanguageNamePid) throws SQLException {
 		super();
@@ -101,30 +117,65 @@ public class GuiLanguageNames extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the FromLanguage field.
+	 *
+	 * @return Contents of the FROM_LANGUAGE column
+	 */
 	public String getFromLanguage() {
 		return this.FromLanguage;
 	}
 
+	/**
+	 * Get the GuiLanguageNamePid field.
+	 *
+	 * @return Contents of the GUI_LANGUAGE_NAME_PID column
+	 */
 	public int getGuiLanguageNamePid() {
 		return this.GuiLanguageNamePid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the ToLanguage field.
+	 *
+	 * @return Contents of the TO_LANGUAGE column
+	 */
 	public String getToLanguage() {
 		return this.ToLanguage;
 	}
 
+	/**
+	 * Get the Translation field.
+	 *
+	 * @return Contents of the TRANSLATION column
+	 */
 	public String getTranslation() {
 		return this.Translation;
 	}
@@ -155,30 +206,72 @@ public class GuiLanguageNames extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the FromLanguage field
+	 *
+	 * @param FromLanguage
+	 *            Contents of the FROM_LANGUAGE column
+	 */
 	public void setFromLanguage(String FromLanguage) {
 		this.FromLanguage = FromLanguage;
 	}
 
+	/**
+	 * Set the GuiLanguageNamePid field
+	 *
+	 * @param GuiLanguageNamePid
+	 *            Contents of the GUI_LANGUAGE_NAME_PID column
+	 */
 	public void setGuiLanguageNamePid(int GuiLanguageNamePid) {
 		this.GuiLanguageNamePid = GuiLanguageNamePid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the ToLanguage field
+	 *
+	 * @param ToLanguage
+	 *            Contents of the TO_LANGUAGE column
+	 */
 	public void setToLanguage(String ToLanguage) {
 		this.ToLanguage = ToLanguage;
 	}
 
+	/**
+	 * Set the Translation field
+	 *
+	 * @param Translation
+	 *            Contents of the TRANSLATION column
+	 */
 	public void setTranslation(String Translation) {
 		this.Translation = Translation;
 	}

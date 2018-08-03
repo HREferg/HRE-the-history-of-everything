@@ -60,8 +60,24 @@ public class ViewpointConfigs extends AbstractHreDataModel {
 	private boolean Show;
 	private ViewpointConfigs model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public ViewpointConfigs() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param ViewpointConfigPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public ViewpointConfigs(int ViewpointConfigPid) throws SQLException {
 		super();
@@ -135,66 +151,146 @@ public class ViewpointConfigs extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the DisplayTypeKey field.
+	 *
+	 * @return Contents of the DISPLAY_TYPE_KEY column
+	 */
 	public short getDisplayTypeKey() {
 		return this.DisplayTypeKey;
 	}
 
+	/**
+	 * Get the Height field.
+	 *
+	 * @return Contents of the HEIGHT column
+	 */
 	public int getHeight() {
 		return this.Height;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the LastOpened field.
+	 *
+	 * @return Contents of the LAST_OPENED column
+	 */
 	public Timestamp getLastOpened() {
 		return this.LastOpened;
 	}
 
+	/**
+	 * Get the LeftEdge field.
+	 *
+	 * @return Contents of the LEFT_EDGE column
+	 */
 	public int getLeftEdge() {
 		return this.LeftEdge;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the TopEdge field.
+	 *
+	 * @return Contents of the TOP_EDGE column
+	 */
 	public int getTopEdge() {
 		return this.TopEdge;
 	}
 
+	/**
+	 * Get the ViewpointConfigPid field.
+	 *
+	 * @return Contents of the VIEWPOINT_CONFIG_PID column
+	 */
 	public int getViewpointConfigPid() {
 		return this.ViewpointConfigPid;
 	}
 
+	/**
+	 * Get the ViewpointSubTypeKey field.
+	 *
+	 * @return Contents of the VIEWPOINT_SUB_TYPE_KEY column
+	 */
 	public short getViewpointSubTypeKey() {
 		return this.ViewpointSubTypeKey;
 	}
 
+	/**
+	 * Get the ViewpointTypeKey field.
+	 *
+	 * @return Contents of the VIEWPOINT_TYPE_KEY column
+	 */
 	public short getViewpointTypeKey() {
 		return this.ViewpointTypeKey;
 	}
 
+	/**
+	 * Get the Width field.
+	 *
+	 * @return Contents of the WIDTH column
+	 */
 	public int getWidth() {
 		return this.Width;
 	}
@@ -243,66 +339,162 @@ public class ViewpointConfigs extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the DisplayTypeKey field
+	 *
+	 * @param DisplayTypeKey
+	 *            Contents of the DISPLAY_TYPE_KEY column
+	 */
 	public void setDisplayTypeKey(short DisplayTypeKey) {
 		this.DisplayTypeKey = DisplayTypeKey;
 	}
 
+	/**
+	 * Set the Height field
+	 *
+	 * @param Height
+	 *            Contents of the HEIGHT column
+	 */
 	public void setHeight(int Height) {
 		this.Height = Height;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the LastOpened field
+	 *
+	 * @param LastOpened
+	 *            Contents of the LAST_OPENED column
+	 */
 	public void setLastOpened(Timestamp LastOpened) {
 		this.LastOpened = LastOpened;
 	}
 
+	/**
+	 * Set the LeftEdge field
+	 *
+	 * @param LeftEdge
+	 *            Contents of the LEFT_EDGE column
+	 */
 	public void setLeftEdge(int LeftEdge) {
 		this.LeftEdge = LeftEdge;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the TopEdge field
+	 *
+	 * @param TopEdge
+	 *            Contents of the TOP_EDGE column
+	 */
 	public void setTopEdge(int TopEdge) {
 		this.TopEdge = TopEdge;
 	}
 
+	/**
+	 * Set the ViewpointConfigPid field
+	 *
+	 * @param ViewpointConfigPid
+	 *            Contents of the VIEWPOINT_CONFIG_PID column
+	 */
 	public void setViewpointConfigPid(int ViewpointConfigPid) {
 		this.ViewpointConfigPid = ViewpointConfigPid;
 	}
 
+	/**
+	 * Set the ViewpointSubTypeKey field
+	 *
+	 * @param ViewpointSubTypeKey
+	 *            Contents of the VIEWPOINT_SUB_TYPE_KEY column
+	 */
 	public void setViewpointSubTypeKey(short ViewpointSubTypeKey) {
 		this.ViewpointSubTypeKey = ViewpointSubTypeKey;
 	}
 
+	/**
+	 * Set the ViewpointTypeKey field
+	 *
+	 * @param ViewpointTypeKey
+	 *            Contents of the VIEWPOINT_TYPE_KEY column
+	 */
 	public void setViewpointTypeKey(short ViewpointTypeKey) {
 		this.ViewpointTypeKey = ViewpointTypeKey;
 	}
 
+	/**
+	 * Set the Width field
+	 *
+	 * @param Width
+	 *            Contents of the WIDTH column
+	 */
 	public void setWidth(int Width) {
 		this.Width = Width;
 	}

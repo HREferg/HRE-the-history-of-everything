@@ -58,8 +58,24 @@ public class RecordValidDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private RecordValidDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public RecordValidDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param RecordValidDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public RecordValidDefns(int RecordValidDefnPid) throws SQLException {
 		super();
@@ -129,58 +145,128 @@ public class RecordValidDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DeleteScriptGroupKey field.
+	 *
+	 * @return Contents of the DELETE_SCRIPT_GROUP_KEY column
+	 */
 	public short getDeleteScriptGroupKey() {
 		return this.DeleteScriptGroupKey;
 	}
 
+	/**
+	 * Get the DeleteScriptPid field.
+	 *
+	 * @return Contents of the DELETE_SCRIPT_PID column
+	 */
 	public int getDeleteScriptPid() {
 		return this.DeleteScriptPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the ModifyScriptGroupKey field.
+	 *
+	 * @return Contents of the MODIFY_SCRIPT_GROUP_KEY column
+	 */
 	public short getModifyScriptGroupKey() {
 		return this.ModifyScriptGroupKey;
 	}
 
+	/**
+	 * Get the ModifyScriptPid field.
+	 *
+	 * @return Contents of the MODIFY_SCRIPT_PID column
+	 */
 	public int getModifyScriptPid() {
 		return this.ModifyScriptPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the RecordValidDefnPid field.
+	 *
+	 * @return Contents of the RECORD_VALID_DEFN_PID column
+	 */
 	public int getRecordValidDefnPid() {
 		return this.RecordValidDefnPid;
 	}
 
+	/**
+	 * Get the Reminder field.
+	 *
+	 * @return Contents of the REMINDER column
+	 */
 	public short getReminder() {
 		return this.Reminder;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the ViewScriptGroupKey field.
+	 *
+	 * @return Contents of the VIEW_SCRIPT_GROUP_KEY column
+	 */
 	public short getViewScriptGroupKey() {
 		return this.ViewScriptGroupKey;
 	}
 
+	/**
+	 * Get the ViewScriptPid field.
+	 *
+	 * @return Contents of the VIEW_SCRIPT_PID column
+	 */
 	public int getViewScriptPid() {
 		return this.ViewScriptPid;
 	}
@@ -225,58 +311,142 @@ public class RecordValidDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DeleteScriptGroupKey field
+	 *
+	 * @param DeleteScriptGroupKey
+	 *            Contents of the DELETE_SCRIPT_GROUP_KEY column
+	 */
 	public void setDeleteScriptGroupKey(short DeleteScriptGroupKey) {
 		this.DeleteScriptGroupKey = DeleteScriptGroupKey;
 	}
 
+	/**
+	 * Set the DeleteScriptPid field
+	 *
+	 * @param DeleteScriptPid
+	 *            Contents of the DELETE_SCRIPT_PID column
+	 */
 	public void setDeleteScriptPid(int DeleteScriptPid) {
 		this.DeleteScriptPid = DeleteScriptPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the ModifyScriptGroupKey field
+	 *
+	 * @param ModifyScriptGroupKey
+	 *            Contents of the MODIFY_SCRIPT_GROUP_KEY column
+	 */
 	public void setModifyScriptGroupKey(short ModifyScriptGroupKey) {
 		this.ModifyScriptGroupKey = ModifyScriptGroupKey;
 	}
 
+	/**
+	 * Set the ModifyScriptPid field
+	 *
+	 * @param ModifyScriptPid
+	 *            Contents of the MODIFY_SCRIPT_PID column
+	 */
 	public void setModifyScriptPid(int ModifyScriptPid) {
 		this.ModifyScriptPid = ModifyScriptPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the RecordValidDefnPid field
+	 *
+	 * @param RecordValidDefnPid
+	 *            Contents of the RECORD_VALID_DEFN_PID column
+	 */
 	public void setRecordValidDefnPid(int RecordValidDefnPid) {
 		this.RecordValidDefnPid = RecordValidDefnPid;
 	}
 
+	/**
+	 * Set the Reminder field
+	 *
+	 * @param Reminder
+	 *            Contents of the REMINDER column
+	 */
 	public void setReminder(short Reminder) {
 		this.Reminder = Reminder;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the ViewScriptGroupKey field
+	 *
+	 * @param ViewScriptGroupKey
+	 *            Contents of the VIEW_SCRIPT_GROUP_KEY column
+	 */
 	public void setViewScriptGroupKey(short ViewScriptGroupKey) {
 		this.ViewScriptGroupKey = ViewScriptGroupKey;
 	}
 
+	/**
+	 * Set the ViewScriptPid field
+	 *
+	 * @param ViewScriptPid
+	 *            Contents of the VIEW_SCRIPT_PID column
+	 */
 	public void setViewScriptPid(int ViewScriptPid) {
 		this.ViewScriptPid = ViewScriptPid;
 	}

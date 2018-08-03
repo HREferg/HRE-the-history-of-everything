@@ -58,8 +58,24 @@ public class Hintervals extends AbstractHreDataModel {
 	private String Surety;
 	private Hintervals model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public Hintervals() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param HintervalPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public Hintervals(int HintervalPid) throws SQLException {
 		super();
@@ -131,62 +147,137 @@ public class Hintervals extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the Hinterval1 field.
+	 *
+	 * @return Contents of the HINTERVAL1 column
+	 */
 	public long getHinterval1() {
 		return this.Hinterval1;
 	}
 
+	/**
+	 * Get the Hinterval2 field.
+	 *
+	 * @return Contents of the HINTERVAL2 column
+	 */
 	public long getHinterval2() {
 		return this.Hinterval2;
 	}
 
+	/**
+	 * Get the HintervalPid field.
+	 *
+	 * @return Contents of the HINTERVAL_PID column
+	 */
 	public int getHintervalPid() {
 		return this.HintervalPid;
 	}
 
+	/**
+	 * Get the HintervalTypeKey field.
+	 *
+	 * @return Contents of the HINTERVAL_TYPE_KEY column
+	 */
 	public short getHintervalTypeKey() {
 		return this.HintervalTypeKey;
 	}
 
+	/**
+	 * Get the IsHumanCalendar field.
+	 *
+	 * @return Contents of the IS_HUMAN_CALENDAR column
+	 */
 	public boolean getIsHumanCalendar() {
 		return this.IsHumanCalendar;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the LangCode field.
+	 *
+	 * @return Contents of the LANG_CODE column
+	 */
 	public String getLangCode() {
 		return this.LangCode;
 	}
 
+	/**
+	 * Get the NamedMemoPid field.
+	 *
+	 * @return Contents of the NAMED_MEMO_PID column
+	 */
 	public int getNamedMemoPid() {
 		return this.NamedMemoPid;
 	}
 
+	/**
+	 * Get the OriginalText field.
+	 *
+	 * @return Contents of the ORIGINAL_TEXT column
+	 */
 	public String getOriginalText() {
 		return this.OriginalText;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the SortHinterval1 field.
+	 *
+	 * @return Contents of the SORT_HINTERVAL1 column
+	 */
 	public long getSortHinterval1() {
 		return this.SortHinterval1;
 	}
 
+	/**
+	 * Get the SortHinterval2 field.
+	 *
+	 * @return Contents of the SORT_HINTERVAL2 column
+	 */
 	public long getSortHinterval2() {
 		return this.SortHinterval2;
 	}
 
+	/**
+	 * Get the Surety field.
+	 *
+	 * @return Contents of the SURETY column
+	 */
 	public String getSurety() {
 		return this.Surety;
 	}
@@ -233,62 +324,152 @@ public class Hintervals extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the Hinterval1 field
+	 *
+	 * @param Hinterval1
+	 *            Contents of the HINTERVAL1 column
+	 */
 	public void setHinterval1(long Hinterval1) {
 		this.Hinterval1 = Hinterval1;
 	}
 
+	/**
+	 * Set the Hinterval2 field
+	 *
+	 * @param Hinterval2
+	 *            Contents of the HINTERVAL2 column
+	 */
 	public void setHinterval2(long Hinterval2) {
 		this.Hinterval2 = Hinterval2;
 	}
 
+	/**
+	 * Set the HintervalPid field
+	 *
+	 * @param HintervalPid
+	 *            Contents of the HINTERVAL_PID column
+	 */
 	public void setHintervalPid(int HintervalPid) {
 		this.HintervalPid = HintervalPid;
 	}
 
+	/**
+	 * Set the HintervalTypeKey field
+	 *
+	 * @param HintervalTypeKey
+	 *            Contents of the HINTERVAL_TYPE_KEY column
+	 */
 	public void setHintervalTypeKey(short HintervalTypeKey) {
 		this.HintervalTypeKey = HintervalTypeKey;
 	}
 
+	/**
+	 * Set the IsHumanCalendar field
+	 *
+	 * @param IsHumanCalendar
+	 *            Contents of the IS_HUMAN_CALENDAR column
+	 */
 	public void setIsHumanCalendar(boolean IsHumanCalendar) {
 		this.IsHumanCalendar = IsHumanCalendar;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the LangCode field
+	 *
+	 * @param LangCode
+	 *            Contents of the LANG_CODE column
+	 */
 	public void setLangCode(String LangCode) {
 		this.LangCode = LangCode;
 	}
 
+	/**
+	 * Set the NamedMemoPid field
+	 *
+	 * @param NamedMemoPid
+	 *            Contents of the NAMED_MEMO_PID column
+	 */
 	public void setNamedMemoPid(int NamedMemoPid) {
 		this.NamedMemoPid = NamedMemoPid;
 	}
 
+	/**
+	 * Set the OriginalText field
+	 *
+	 * @param OriginalText
+	 *            Contents of the ORIGINAL_TEXT column
+	 */
 	public void setOriginalText(String OriginalText) {
 		this.OriginalText = OriginalText;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the SortHinterval1 field
+	 *
+	 * @param SortHinterval1
+	 *            Contents of the SORT_HINTERVAL1 column
+	 */
 	public void setSortHinterval1(long SortHinterval1) {
 		this.SortHinterval1 = SortHinterval1;
 	}
 
+	/**
+	 * Set the SortHinterval2 field
+	 *
+	 * @param SortHinterval2
+	 *            Contents of the SORT_HINTERVAL2 column
+	 */
 	public void setSortHinterval2(long SortHinterval2) {
 		this.SortHinterval2 = SortHinterval2;
 	}
 
+	/**
+	 * Set the Surety field
+	 *
+	 * @param Surety
+	 *            Contents of the SURETY column
+	 */
 	public void setSurety(String Surety) {
 		this.Surety = Surety;
 	}

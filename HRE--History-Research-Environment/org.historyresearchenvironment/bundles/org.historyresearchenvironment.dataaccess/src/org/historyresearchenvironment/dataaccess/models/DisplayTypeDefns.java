@@ -58,8 +58,24 @@ public class DisplayTypeDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private DisplayTypeDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public DisplayTypeDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param DisplayTypeDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public DisplayTypeDefns(int DisplayTypeDefnPid) throws SQLException {
 		super();
@@ -133,66 +149,146 @@ public class DisplayTypeDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the AutoRotate field.
+	 *
+	 * @return Contents of the AUTO_ROTATE column
+	 */
 	public boolean getAutoRotate() {
 		return this.AutoRotate;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the DisplayTypeDefnPid field.
+	 *
+	 * @return Contents of the DISPLAY_TYPE_DEFN_PID column
+	 */
 	public int getDisplayTypeDefnPid() {
 		return this.DisplayTypeDefnPid;
 	}
 
+	/**
+	 * Get the HasInternet field.
+	 *
+	 * @return Contents of the HAS_INTERNET column
+	 */
 	public boolean getHasInternet() {
 		return this.HasInternet;
 	}
 
+	/**
+	 * Get the HasKeyboard field.
+	 *
+	 * @return Contents of the HAS_KEYBOARD column
+	 */
 	public boolean getHasKeyboard() {
 		return this.HasKeyboard;
 	}
 
+	/**
+	 * Get the HasServer field.
+	 *
+	 * @return Contents of the HAS_SERVER column
+	 */
 	public boolean getHasServer() {
 		return this.HasServer;
 	}
 
+	/**
+	 * Get the Height field.
+	 *
+	 * @return Contents of the HEIGHT column
+	 */
 	public int getHeight() {
 		return this.Height;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the Reminder field.
+	 *
+	 * @return Contents of the REMINDER column
+	 */
 	public short getReminder() {
 		return this.Reminder;
 	}
 
+	/**
+	 * Get the ScreenCount field.
+	 *
+	 * @return Contents of the SCREEN_COUNT column
+	 */
 	public short getScreenCount() {
 		return this.ScreenCount;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the TouchScreen field.
+	 *
+	 * @return Contents of the TOUCH_SCREEN column
+	 */
 	public boolean getTouchScreen() {
 		return this.TouchScreen;
 	}
 
+	/**
+	 * Get the Width field.
+	 *
+	 * @return Contents of the WIDTH column
+	 */
 	public int getWidth() {
 		return this.Width;
 	}
@@ -241,66 +337,162 @@ public class DisplayTypeDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the AutoRotate field
+	 *
+	 * @param AutoRotate
+	 *            Contents of the AUTO_ROTATE column
+	 */
 	public void setAutoRotate(boolean AutoRotate) {
 		this.AutoRotate = AutoRotate;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the DisplayTypeDefnPid field
+	 *
+	 * @param DisplayTypeDefnPid
+	 *            Contents of the DISPLAY_TYPE_DEFN_PID column
+	 */
 	public void setDisplayTypeDefnPid(int DisplayTypeDefnPid) {
 		this.DisplayTypeDefnPid = DisplayTypeDefnPid;
 	}
 
+	/**
+	 * Set the HasInternet field
+	 *
+	 * @param HasInternet
+	 *            Contents of the HAS_INTERNET column
+	 */
 	public void setHasInternet(boolean HasInternet) {
 		this.HasInternet = HasInternet;
 	}
 
+	/**
+	 * Set the HasKeyboard field
+	 *
+	 * @param HasKeyboard
+	 *            Contents of the HAS_KEYBOARD column
+	 */
 	public void setHasKeyboard(boolean HasKeyboard) {
 		this.HasKeyboard = HasKeyboard;
 	}
 
+	/**
+	 * Set the HasServer field
+	 *
+	 * @param HasServer
+	 *            Contents of the HAS_SERVER column
+	 */
 	public void setHasServer(boolean HasServer) {
 		this.HasServer = HasServer;
 	}
 
+	/**
+	 * Set the Height field
+	 *
+	 * @param Height
+	 *            Contents of the HEIGHT column
+	 */
 	public void setHeight(int Height) {
 		this.Height = Height;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the Reminder field
+	 *
+	 * @param Reminder
+	 *            Contents of the REMINDER column
+	 */
 	public void setReminder(short Reminder) {
 		this.Reminder = Reminder;
 	}
 
+	/**
+	 * Set the ScreenCount field
+	 *
+	 * @param ScreenCount
+	 *            Contents of the SCREEN_COUNT column
+	 */
 	public void setScreenCount(short ScreenCount) {
 		this.ScreenCount = ScreenCount;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the TouchScreen field
+	 *
+	 * @param TouchScreen
+	 *            Contents of the TOUCH_SCREEN column
+	 */
 	public void setTouchScreen(boolean TouchScreen) {
 		this.TouchScreen = TouchScreen;
 	}
 
+	/**
+	 * Set the Width field
+	 *
+	 * @param Width
+	 *            Contents of the WIDTH column
+	 */
 	public void setWidth(int Width) {
 		this.Width = Width;
 	}

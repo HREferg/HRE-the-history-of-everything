@@ -54,8 +54,24 @@ public class SentenceTypeDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private SentenceTypeDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public SentenceTypeDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param SentenceTypeDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public SentenceTypeDefns(int SentenceTypeDefnPid) throws SQLException {
 		super();
@@ -121,50 +137,110 @@ public class SentenceTypeDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the RequesterSubTypeKey field.
+	 *
+	 * @return Contents of the REQUESTER_SUB_TYPE_KEY column
+	 */
 	public short getRequesterSubTypeKey() {
 		return this.RequesterSubTypeKey;
 	}
 
+	/**
+	 * Get the RequesterTypeKey field.
+	 *
+	 * @return Contents of the REQUESTER_TYPE_KEY column
+	 */
 	public short getRequesterTypeKey() {
 		return this.RequesterTypeKey;
 	}
 
+	/**
+	 * Get the RequesterTypePid field.
+	 *
+	 * @return Contents of the REQUESTER_TYPE_PID column
+	 */
 	public short getRequesterTypePid() {
 		return this.RequesterTypePid;
 	}
 
+	/**
+	 * Get the SentenceTypeDefnPid field.
+	 *
+	 * @return Contents of the SENTENCE_TYPE_DEFN_PID column
+	 */
 	public int getSentenceTypeDefnPid() {
 		return this.SentenceTypeDefnPid;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
@@ -205,50 +281,122 @@ public class SentenceTypeDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the RequesterSubTypeKey field
+	 *
+	 * @param RequesterSubTypeKey
+	 *            Contents of the REQUESTER_SUB_TYPE_KEY column
+	 */
 	public void setRequesterSubTypeKey(short RequesterSubTypeKey) {
 		this.RequesterSubTypeKey = RequesterSubTypeKey;
 	}
 
+	/**
+	 * Set the RequesterTypeKey field
+	 *
+	 * @param RequesterTypeKey
+	 *            Contents of the REQUESTER_TYPE_KEY column
+	 */
 	public void setRequesterTypeKey(short RequesterTypeKey) {
 		this.RequesterTypeKey = RequesterTypeKey;
 	}
 
+	/**
+	 * Set the RequesterTypePid field
+	 *
+	 * @param RequesterTypePid
+	 *            Contents of the REQUESTER_TYPE_PID column
+	 */
 	public void setRequesterTypePid(short RequesterTypePid) {
 		this.RequesterTypePid = RequesterTypePid;
 	}
 
+	/**
+	 * Set the SentenceTypeDefnPid field
+	 *
+	 * @param SentenceTypeDefnPid
+	 *            Contents of the SENTENCE_TYPE_DEFN_PID column
+	 */
 	public void setSentenceTypeDefnPid(int SentenceTypeDefnPid) {
 		this.SentenceTypeDefnPid = SentenceTypeDefnPid;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}

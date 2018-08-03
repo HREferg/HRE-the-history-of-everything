@@ -64,8 +64,24 @@ public class HdateDateTypeDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private HdateDateTypeDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public HdateDateTypeDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param HdateDateTypeDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public HdateDateTypeDefns(int HdateDateTypeDefnPid) throws SQLException {
 		super();
@@ -141,70 +157,155 @@ public class HdateDateTypeDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CalChngEndDay field.
+	 *
+	 * @return Contents of the CAL_CHNG_END_DAY column
+	 */
 	public short getCalChngEndDay() {
 		return this.CalChngEndDay;
 	}
 
+	/**
+	 * Get the CalChngEndYear field.
+	 *
+	 * @return Contents of the CAL_CHNG_END_YEAR column
+	 */
 	public short getCalChngEndYear() {
 		return this.CalChngEndYear;
 	}
 
+	/**
+	 * Get the CalChngStartDay field.
+	 *
+	 * @return Contents of the CAL_CHNG_START_DAY column
+	 */
 	public short getCalChngStartDay() {
 		return this.CalChngStartDay;
 	}
 
+	/**
+	 * Get the CalChngStartYear field.
+	 *
+	 * @return Contents of the CAL_CHNG_START_YEAR column
+	 */
 	public short getCalChngStartYear() {
 		return this.CalChngStartYear;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DaysLost field.
+	 *
+	 * @return Contents of the DAYS_LOST column
+	 */
 	public short getDaysLost() {
 		return this.DaysLost;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the HdateDateTypeDefnPid field.
+	 *
+	 * @return Contents of the HDATE_DATE_TYPE_DEFN_PID column
+	 */
 	public int getHdateDateTypeDefnPid() {
 		return this.HdateDateTypeDefnPid;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the OriginalCalendarKey field.
+	 *
+	 * @return Contents of the ORIGINAL_CALENDAR_KEY column
+	 */
 	public short getOriginalCalendarKey() {
 		return this.OriginalCalendarKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the UsedOldStyle field.
+	 *
+	 * @return Contents of the USED_OLD_STYLE column
+	 */
 	public boolean getUsedOldStyle() {
 		return this.UsedOldStyle;
 	}
 
+	/**
+	 * Get the WhenWritten field.
+	 *
+	 * @return Contents of the WHEN_WRITTEN column
+	 */
 	public short getWhenWritten() {
 		return this.WhenWritten;
 	}
 
+	/**
+	 * Get the WhereWrittenPid field.
+	 *
+	 * @return Contents of the WHERE_WRITTEN_PID column
+	 */
 	public int getWhereWrittenPid() {
 		return this.WhereWrittenPid;
 	}
@@ -255,70 +356,172 @@ public class HdateDateTypeDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CalChngEndDay field
+	 *
+	 * @param CalChngEndDay
+	 *            Contents of the CAL_CHNG_END_DAY column
+	 */
 	public void setCalChngEndDay(short CalChngEndDay) {
 		this.CalChngEndDay = CalChngEndDay;
 	}
 
+	/**
+	 * Set the CalChngEndYear field
+	 *
+	 * @param CalChngEndYear
+	 *            Contents of the CAL_CHNG_END_YEAR column
+	 */
 	public void setCalChngEndYear(short CalChngEndYear) {
 		this.CalChngEndYear = CalChngEndYear;
 	}
 
+	/**
+	 * Set the CalChngStartDay field
+	 *
+	 * @param CalChngStartDay
+	 *            Contents of the CAL_CHNG_START_DAY column
+	 */
 	public void setCalChngStartDay(short CalChngStartDay) {
 		this.CalChngStartDay = CalChngStartDay;
 	}
 
+	/**
+	 * Set the CalChngStartYear field
+	 *
+	 * @param CalChngStartYear
+	 *            Contents of the CAL_CHNG_START_YEAR column
+	 */
 	public void setCalChngStartYear(short CalChngStartYear) {
 		this.CalChngStartYear = CalChngStartYear;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DaysLost field
+	 *
+	 * @param DaysLost
+	 *            Contents of the DAYS_LOST column
+	 */
 	public void setDaysLost(short DaysLost) {
 		this.DaysLost = DaysLost;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the HdateDateTypeDefnPid field
+	 *
+	 * @param HdateDateTypeDefnPid
+	 *            Contents of the HDATE_DATE_TYPE_DEFN_PID column
+	 */
 	public void setHdateDateTypeDefnPid(int HdateDateTypeDefnPid) {
 		this.HdateDateTypeDefnPid = HdateDateTypeDefnPid;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the OriginalCalendarKey field
+	 *
+	 * @param OriginalCalendarKey
+	 *            Contents of the ORIGINAL_CALENDAR_KEY column
+	 */
 	public void setOriginalCalendarKey(short OriginalCalendarKey) {
 		this.OriginalCalendarKey = OriginalCalendarKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the UsedOldStyle field
+	 *
+	 * @param UsedOldStyle
+	 *            Contents of the USED_OLD_STYLE column
+	 */
 	public void setUsedOldStyle(boolean UsedOldStyle) {
 		this.UsedOldStyle = UsedOldStyle;
 	}
 
+	/**
+	 * Set the WhenWritten field
+	 *
+	 * @param WhenWritten
+	 *            Contents of the WHEN_WRITTEN column
+	 */
 	public void setWhenWritten(short WhenWritten) {
 		this.WhenWritten = WhenWritten;
 	}
 
+	/**
+	 * Set the WhereWrittenPid field
+	 *
+	 * @param WhereWrittenPid
+	 *            Contents of the WHERE_WRITTEN_PID column
+	 */
 	public void setWhereWrittenPid(int WhereWrittenPid) {
 		this.WhereWrittenPid = WhereWrittenPid;
 	}

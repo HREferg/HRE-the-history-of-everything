@@ -48,8 +48,24 @@ public class PhysicalNameParts extends AbstractHreDataModel {
 	private String Trans;
 	private PhysicalNameParts model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public PhysicalNameParts() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param PhysicalNamePartPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public PhysicalNameParts(int PhysicalNamePartPid) throws SQLException {
 		super();
@@ -111,42 +127,92 @@ public class PhysicalNameParts extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the ElementPid field.
+	 *
+	 * @return Contents of the ELEMENT_PID column
+	 */
 	public short getElementPid() {
 		return this.ElementPid;
 	}
 
+	/**
+	 * Get the LangCode field.
+	 *
+	 * @return Contents of the LANG_CODE column
+	 */
 	public String getLangCode() {
 		return this.LangCode;
 	}
 
+	/**
+	 * Get the NextNameEventPid field.
+	 *
+	 * @return Contents of the NEXT_NAME_EVENT_PID column
+	 */
 	public int getNextNameEventPid() {
 		return this.NextNameEventPid;
 	}
 
+	/**
+	 * Get the PhysicalNamePartPid field.
+	 *
+	 * @return Contents of the PHYSICAL_NAME_PART_PID column
+	 */
 	public int getPhysicalNamePartPid() {
 		return this.PhysicalNamePartPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Shared field.
+	 *
+	 * @return Contents of the SHARED column
+	 */
 	public int getShared() {
 		return this.Shared;
 	}
 
+	/**
+	 * Get the ThisNameEventPid field.
+	 *
+	 * @return Contents of the THIS_NAME_EVENT_PID column
+	 */
 	public int getThisNameEventPid() {
 		return this.ThisNameEventPid;
 	}
 
+	/**
+	 * Get the Trans field.
+	 *
+	 * @return Contents of the TRANS column
+	 */
 	public String getTrans() {
 		return this.Trans;
 	}
@@ -183,42 +249,102 @@ public class PhysicalNameParts extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the ElementPid field
+	 *
+	 * @param ElementPid
+	 *            Contents of the ELEMENT_PID column
+	 */
 	public void setElementPid(short ElementPid) {
 		this.ElementPid = ElementPid;
 	}
 
+	/**
+	 * Set the LangCode field
+	 *
+	 * @param LangCode
+	 *            Contents of the LANG_CODE column
+	 */
 	public void setLangCode(String LangCode) {
 		this.LangCode = LangCode;
 	}
 
+	/**
+	 * Set the NextNameEventPid field
+	 *
+	 * @param NextNameEventPid
+	 *            Contents of the NEXT_NAME_EVENT_PID column
+	 */
 	public void setNextNameEventPid(int NextNameEventPid) {
 		this.NextNameEventPid = NextNameEventPid;
 	}
 
+	/**
+	 * Set the PhysicalNamePartPid field
+	 *
+	 * @param PhysicalNamePartPid
+	 *            Contents of the PHYSICAL_NAME_PART_PID column
+	 */
 	public void setPhysicalNamePartPid(int PhysicalNamePartPid) {
 		this.PhysicalNamePartPid = PhysicalNamePartPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Shared field
+	 *
+	 * @param Shared
+	 *            Contents of the SHARED column
+	 */
 	public void setShared(int Shared) {
 		this.Shared = Shared;
 	}
 
+	/**
+	 * Set the ThisNameEventPid field
+	 *
+	 * @param ThisNameEventPid
+	 *            Contents of the THIS_NAME_EVENT_PID column
+	 */
 	public void setThisNameEventPid(int ThisNameEventPid) {
 		this.ThisNameEventPid = ThisNameEventPid;
 	}
 
+	/**
+	 * Set the Trans field
+	 *
+	 * @param Trans
+	 *            Contents of the TRANS column
+	 */
 	public void setTrans(String Trans) {
 		this.Trans = Trans;
 	}

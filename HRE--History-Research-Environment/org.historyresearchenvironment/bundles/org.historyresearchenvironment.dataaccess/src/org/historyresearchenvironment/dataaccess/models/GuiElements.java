@@ -40,8 +40,24 @@ public class GuiElements extends AbstractHreDataModel {
 	private short GuiScreenPid;
 	private GuiElements model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public GuiElements() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param GuiElementPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public GuiElements(int GuiElementPid) throws SQLException {
 		super();
@@ -95,26 +111,56 @@ public class GuiElements extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the GuiElementPid field.
+	 *
+	 * @return Contents of the GUI_ELEMENT_PID column
+	 */
 	public int getGuiElementPid() {
 		return this.GuiElementPid;
 	}
 
+	/**
+	 * Get the GuiScreenPid field.
+	 *
+	 * @return Contents of the GUI_SCREEN_PID column
+	 */
 	public short getGuiScreenPid() {
 		return this.GuiScreenPid;
 	}
 
+	/**
+	 * Get the PluginKey field.
+	 *
+	 * @return Contents of the PLUGIN_KEY column
+	 */
 	public short getPluginKey() {
 		return this.PluginKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
@@ -143,26 +189,62 @@ public class GuiElements extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the GuiElementPid field
+	 *
+	 * @param GuiElementPid
+	 *            Contents of the GUI_ELEMENT_PID column
+	 */
 	public void setGuiElementPid(int GuiElementPid) {
 		this.GuiElementPid = GuiElementPid;
 	}
 
+	/**
+	 * Set the GuiScreenPid field
+	 *
+	 * @param GuiScreenPid
+	 *            Contents of the GUI_SCREEN_PID column
+	 */
 	public void setGuiScreenPid(short GuiScreenPid) {
 		this.GuiScreenPid = GuiScreenPid;
 	}
 
+	/**
+	 * Set the PluginKey field
+	 *
+	 * @param PluginKey
+	 *            Contents of the PLUGIN_KEY column
+	 */
 	public void setPluginKey(short PluginKey) {
 		this.PluginKey = PluginKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}

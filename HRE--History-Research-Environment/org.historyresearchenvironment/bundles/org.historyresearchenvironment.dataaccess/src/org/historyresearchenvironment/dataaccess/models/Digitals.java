@@ -74,8 +74,24 @@ public class Digitals extends AbstractHreDataModel {
 	private byte[] Flags;
 	private Digitals model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public Digitals() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param DigitalPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public Digitals(int DigitalPid) throws SQLException {
 		super();
@@ -163,94 +179,209 @@ public class Digitals extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the BestCreatePid field.
+	 *
+	 * @return Contents of the BEST_CREATE_PID column
+	 */
 	public int getBestCreatePid() {
 		return this.BestCreatePid;
 	}
 
+	/**
+	 * Get the BestDestroyPid field.
+	 *
+	 * @return Contents of the BEST_DESTROY_PID column
+	 */
 	public int getBestDestroyPid() {
 		return this.BestDestroyPid;
 	}
 
+	/**
+	 * Get the BestImagePid field.
+	 *
+	 * @return Contents of the BEST_IMAGE_PID column
+	 */
 	public int getBestImagePid() {
 		return this.BestImagePid;
 	}
 
+	/**
+	 * Get the BestNamePid field.
+	 *
+	 * @return Contents of the BEST_NAME_PID column
+	 */
 	public int getBestNamePid() {
 		return this.BestNamePid;
 	}
 
+	/**
+	 * Get the BinaryContent field.
+	 *
+	 * @return Contents of the BINARY_CONTENT column
+	 */
 	public Blob getBinaryContent() {
 		return this.BinaryContent;
 	}
 
+	/**
+	 * Get the CharContent field.
+	 *
+	 * @return Contents of the CHAR_CONTENT column
+	 */
 	public Clob getCharContent() {
 		return this.CharContent;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DigitalPid field.
+	 *
+	 * @return Contents of the DIGITAL_PID column
+	 */
 	public int getDigitalPid() {
 		return this.DigitalPid;
 	}
 
+	/**
+	 * Get the EditedCopyPid field.
+	 *
+	 * @return Contents of the EDITED_COPY_PID column
+	 */
 	public int getEditedCopyPid() {
 		return this.EditedCopyPid;
 	}
 
+	/**
+	 * Get the EncodingKey field.
+	 *
+	 * @return Contents of the ENCODING_KEY column
+	 */
 	public short getEncodingKey() {
 		return this.EncodingKey;
 	}
 
+	/**
+	 * Get the FilePath field.
+	 *
+	 * @return Contents of the FILE_PATH column
+	 */
 	public String getFilePath() {
 		return this.FilePath;
 	}
 
+	/**
+	 * Get the Flags field.
+	 *
+	 * @return Contents of the FLAGS column
+	 */
 	public byte[] getFlags() {
 		return this.Flags;
 	}
 
+	/**
+	 * Get the ImageHeight field.
+	 *
+	 * @return Contents of the IMAGE_HEIGHT column
+	 */
 	public short getImageHeight() {
 		return this.ImageHeight;
 	}
 
+	/**
+	 * Get the ImageWidth field.
+	 *
+	 * @return Contents of the IMAGE_WIDTH column
+	 */
 	public short getImageWidth() {
 		return this.ImageWidth;
 	}
 
+	/**
+	 * Get the IsBinary field.
+	 *
+	 * @return Contents of the IS_BINARY column
+	 */
 	public boolean getIsBinary() {
 		return this.IsBinary;
 	}
 
+	/**
+	 * Get the IsInternal field.
+	 *
+	 * @return Contents of the IS_INTERNAL column
+	 */
 	public boolean getIsInternal() {
 		return this.IsInternal;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the PathIsFull field.
+	 *
+	 * @return Contents of the PATH_IS_FULL column
+	 */
 	public boolean getPathIsFull() {
 		return this.PathIsFull;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the SubTypeKey field.
+	 *
+	 * @return Contents of the SUB_TYPE_KEY column
+	 */
 	public short getSubTypeKey() {
 		return this.SubTypeKey;
 	}
 
+	/**
+	 * Get the Surety field.
+	 *
+	 * @return Contents of the SURETY column
+	 */
 	public String getSurety() {
 		return this.Surety;
 	}
 
+	/**
+	 * Get the VisibleId field.
+	 *
+	 * @return Contents of the VISIBLE_ID column
+	 */
 	public int getVisibleId() {
 		return this.VisibleId;
 	}
@@ -313,94 +444,232 @@ public class Digitals extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the BestCreatePid field
+	 *
+	 * @param BestCreatePid
+	 *            Contents of the BEST_CREATE_PID column
+	 */
 	public void setBestCreatePid(int BestCreatePid) {
 		this.BestCreatePid = BestCreatePid;
 	}
 
+	/**
+	 * Set the BestDestroyPid field
+	 *
+	 * @param BestDestroyPid
+	 *            Contents of the BEST_DESTROY_PID column
+	 */
 	public void setBestDestroyPid(int BestDestroyPid) {
 		this.BestDestroyPid = BestDestroyPid;
 	}
 
+	/**
+	 * Set the BestImagePid field
+	 *
+	 * @param BestImagePid
+	 *            Contents of the BEST_IMAGE_PID column
+	 */
 	public void setBestImagePid(int BestImagePid) {
 		this.BestImagePid = BestImagePid;
 	}
 
+	/**
+	 * Set the BestNamePid field
+	 *
+	 * @param BestNamePid
+	 *            Contents of the BEST_NAME_PID column
+	 */
 	public void setBestNamePid(int BestNamePid) {
 		this.BestNamePid = BestNamePid;
 	}
 
+	/**
+	 * Set the BinaryContent field
+	 *
+	 * @param BinaryContent
+	 *            Contents of the BINARY_CONTENT column
+	 */
 	public void setBinaryContent(Blob BinaryContent) {
 		this.BinaryContent = BinaryContent;
 	}
 
+	/**
+	 * Set the CharContent field
+	 *
+	 * @param CharContent
+	 *            Contents of the CHAR_CONTENT column
+	 */
 	public void setCharContent(Clob CharContent) {
 		this.CharContent = CharContent;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DigitalPid field
+	 *
+	 * @param DigitalPid
+	 *            Contents of the DIGITAL_PID column
+	 */
 	public void setDigitalPid(int DigitalPid) {
 		this.DigitalPid = DigitalPid;
 	}
 
+	/**
+	 * Set the EditedCopyPid field
+	 *
+	 * @param EditedCopyPid
+	 *            Contents of the EDITED_COPY_PID column
+	 */
 	public void setEditedCopyPid(int EditedCopyPid) {
 		this.EditedCopyPid = EditedCopyPid;
 	}
 
+	/**
+	 * Set the EncodingKey field
+	 *
+	 * @param EncodingKey
+	 *            Contents of the ENCODING_KEY column
+	 */
 	public void setEncodingKey(short EncodingKey) {
 		this.EncodingKey = EncodingKey;
 	}
 
+	/**
+	 * Set the FilePath field
+	 *
+	 * @param FilePath
+	 *            Contents of the FILE_PATH column
+	 */
 	public void setFilePath(String FilePath) {
 		this.FilePath = FilePath;
 	}
 
+	/**
+	 * Set the Flags field
+	 *
+	 * @param Flags
+	 *            Contents of the FLAGS column
+	 */
 	public void setFlags(byte[] Flags) {
 		this.Flags = Flags;
 	}
 
+	/**
+	 * Set the ImageHeight field
+	 *
+	 * @param ImageHeight
+	 *            Contents of the IMAGE_HEIGHT column
+	 */
 	public void setImageHeight(short ImageHeight) {
 		this.ImageHeight = ImageHeight;
 	}
 
+	/**
+	 * Set the ImageWidth field
+	 *
+	 * @param ImageWidth
+	 *            Contents of the IMAGE_WIDTH column
+	 */
 	public void setImageWidth(short ImageWidth) {
 		this.ImageWidth = ImageWidth;
 	}
 
+	/**
+	 * Set the IsBinary field
+	 *
+	 * @param IsBinary
+	 *            Contents of the IS_BINARY column
+	 */
 	public void setIsBinary(boolean IsBinary) {
 		this.IsBinary = IsBinary;
 	}
 
+	/**
+	 * Set the IsInternal field
+	 *
+	 * @param IsInternal
+	 *            Contents of the IS_INTERNAL column
+	 */
 	public void setIsInternal(boolean IsInternal) {
 		this.IsInternal = IsInternal;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the PathIsFull field
+	 *
+	 * @param PathIsFull
+	 *            Contents of the PATH_IS_FULL column
+	 */
 	public void setPathIsFull(boolean PathIsFull) {
 		this.PathIsFull = PathIsFull;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the SubTypeKey field
+	 *
+	 * @param SubTypeKey
+	 *            Contents of the SUB_TYPE_KEY column
+	 */
 	public void setSubTypeKey(short SubTypeKey) {
 		this.SubTypeKey = SubTypeKey;
 	}
 
+	/**
+	 * Set the Surety field
+	 *
+	 * @param Surety
+	 *            Contents of the SURETY column
+	 */
 	public void setSurety(String Surety) {
 		this.Surety = Surety;
 	}
 
+	/**
+	 * Set the VisibleId field
+	 *
+	 * @param VisibleId
+	 *            Contents of the VISIBLE_ID column
+	 */
 	public void setVisibleId(int VisibleId) {
 		this.VisibleId = VisibleId;
 	}

@@ -66,8 +66,24 @@ public class Occasns extends AbstractHreDataModel {
 	private byte[] Flags;
 	private Occasns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public Occasns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param OccasnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public Occasns(int OccasnPid) throws SQLException {
 		super();
@@ -147,78 +163,173 @@ public class Occasns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the BestImagePid field.
+	 *
+	 * @return Contents of the BEST_IMAGE_PID column
+	 */
 	public int getBestImagePid() {
 		return this.BestImagePid;
 	}
 
+	/**
+	 * Get the BestNamePid field.
+	 *
+	 * @return Contents of the BEST_NAME_PID column
+	 */
 	public int getBestNamePid() {
 		return this.BestNamePid;
 	}
 
+	/**
+	 * Get the BioParentSetPid field.
+	 *
+	 * @return Contents of the BIO_PARENT_SET_PID column
+	 */
 	public int getBioParentSetPid() {
 		return this.BioParentSetPid;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the Flags field.
+	 *
+	 * @return Contents of the FLAGS column
+	 */
 	public byte[] getFlags() {
 		return this.Flags;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the LocalSentceSetPid field.
+	 *
+	 * @return Contents of the LOCAL_SENTCE_SET_PID column
+	 */
 	public int getLocalSentceSetPid() {
 		return this.LocalSentceSetPid;
 	}
 
+	/**
+	 * Get the MemoSetPid field.
+	 *
+	 * @return Contents of the MEMO_SET_PID column
+	 */
 	public int getMemoSetPid() {
 		return this.MemoSetPid;
 	}
 
+	/**
+	 * Get the OccasnPid field.
+	 *
+	 * @return Contents of the OCCASN_PID column
+	 */
 	public int getOccasnPid() {
 		return this.OccasnPid;
 	}
 
+	/**
+	 * Get the ParentPid field.
+	 *
+	 * @return Contents of the PARENT_PID column
+	 */
 	public int getParentPid() {
 		return this.ParentPid;
 	}
 
+	/**
+	 * Get the ParentSubTypeKey field.
+	 *
+	 * @return Contents of the PARENT_SUB_TYPE_KEY column
+	 */
 	public short getParentSubTypeKey() {
 		return this.ParentSubTypeKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SentceStyleKey field.
+	 *
+	 * @return Contents of the SENTCE_STYLE_KEY column
+	 */
 	public short getSentceStyleKey() {
 		return this.SentceStyleKey;
 	}
 
+	/**
+	 * Get the SentceTypeKey field.
+	 *
+	 * @return Contents of the SENTCE_TYPE_KEY column
+	 */
 	public short getSentceTypeKey() {
 		return this.SentceTypeKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Surety field.
+	 *
+	 * @return Contents of the SURETY column
+	 */
 	public String getSurety() {
 		return this.Surety;
 	}
 
+	/**
+	 * Get the TagTypeKey field.
+	 *
+	 * @return Contents of the TAG_TYPE_KEY column
+	 */
 	public short getTagTypeKey() {
 		return this.TagTypeKey;
 	}
 
+	/**
+	 * Get the ThemeKey field.
+	 *
+	 * @return Contents of the THEME_KEY column
+	 */
 	public short getThemeKey() {
 		return this.ThemeKey;
 	}
 
+	/**
+	 * Get the ThemeVisibleId field.
+	 *
+	 * @return Contents of the THEME_VISIBLE_ID column
+	 */
 	public int getThemeVisibleId() {
 		return this.ThemeVisibleId;
 	}
@@ -273,78 +384,192 @@ public class Occasns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the BestImagePid field
+	 *
+	 * @param BestImagePid
+	 *            Contents of the BEST_IMAGE_PID column
+	 */
 	public void setBestImagePid(int BestImagePid) {
 		this.BestImagePid = BestImagePid;
 	}
 
+	/**
+	 * Set the BestNamePid field
+	 *
+	 * @param BestNamePid
+	 *            Contents of the BEST_NAME_PID column
+	 */
 	public void setBestNamePid(int BestNamePid) {
 		this.BestNamePid = BestNamePid;
 	}
 
+	/**
+	 * Set the BioParentSetPid field
+	 *
+	 * @param BioParentSetPid
+	 *            Contents of the BIO_PARENT_SET_PID column
+	 */
 	public void setBioParentSetPid(int BioParentSetPid) {
 		this.BioParentSetPid = BioParentSetPid;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the Flags field
+	 *
+	 * @param Flags
+	 *            Contents of the FLAGS column
+	 */
 	public void setFlags(byte[] Flags) {
 		this.Flags = Flags;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the LocalSentceSetPid field
+	 *
+	 * @param LocalSentceSetPid
+	 *            Contents of the LOCAL_SENTCE_SET_PID column
+	 */
 	public void setLocalSentceSetPid(int LocalSentceSetPid) {
 		this.LocalSentceSetPid = LocalSentceSetPid;
 	}
 
+	/**
+	 * Set the MemoSetPid field
+	 *
+	 * @param MemoSetPid
+	 *            Contents of the MEMO_SET_PID column
+	 */
 	public void setMemoSetPid(int MemoSetPid) {
 		this.MemoSetPid = MemoSetPid;
 	}
 
+	/**
+	 * Set the OccasnPid field
+	 *
+	 * @param OccasnPid
+	 *            Contents of the OCCASN_PID column
+	 */
 	public void setOccasnPid(int OccasnPid) {
 		this.OccasnPid = OccasnPid;
 	}
 
+	/**
+	 * Set the ParentPid field
+	 *
+	 * @param ParentPid
+	 *            Contents of the PARENT_PID column
+	 */
 	public void setParentPid(int ParentPid) {
 		this.ParentPid = ParentPid;
 	}
 
+	/**
+	 * Set the ParentSubTypeKey field
+	 *
+	 * @param ParentSubTypeKey
+	 *            Contents of the PARENT_SUB_TYPE_KEY column
+	 */
 	public void setParentSubTypeKey(short ParentSubTypeKey) {
 		this.ParentSubTypeKey = ParentSubTypeKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SentceStyleKey field
+	 *
+	 * @param SentceStyleKey
+	 *            Contents of the SENTCE_STYLE_KEY column
+	 */
 	public void setSentceStyleKey(short SentceStyleKey) {
 		this.SentceStyleKey = SentceStyleKey;
 	}
 
+	/**
+	 * Set the SentceTypeKey field
+	 *
+	 * @param SentceTypeKey
+	 *            Contents of the SENTCE_TYPE_KEY column
+	 */
 	public void setSentceTypeKey(short SentceTypeKey) {
 		this.SentceTypeKey = SentceTypeKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Surety field
+	 *
+	 * @param Surety
+	 *            Contents of the SURETY column
+	 */
 	public void setSurety(String Surety) {
 		this.Surety = Surety;
 	}
 
+	/**
+	 * Set the TagTypeKey field
+	 *
+	 * @param TagTypeKey
+	 *            Contents of the TAG_TYPE_KEY column
+	 */
 	public void setTagTypeKey(short TagTypeKey) {
 		this.TagTypeKey = TagTypeKey;
 	}
 
+	/**
+	 * Set the ThemeKey field
+	 *
+	 * @param ThemeKey
+	 *            Contents of the THEME_KEY column
+	 */
 	public void setThemeKey(short ThemeKey) {
 		this.ThemeKey = ThemeKey;
 	}
 
+	/**
+	 * Set the ThemeVisibleId field
+	 *
+	 * @param ThemeVisibleId
+	 *            Contents of the THEME_VISIBLE_ID column
+	 */
 	public void setThemeVisibleId(int ThemeVisibleId) {
 		this.ThemeVisibleId = ThemeVisibleId;
 	}

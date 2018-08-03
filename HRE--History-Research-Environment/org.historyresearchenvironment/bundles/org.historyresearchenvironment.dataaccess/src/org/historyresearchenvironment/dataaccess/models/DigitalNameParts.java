@@ -46,8 +46,24 @@ public class DigitalNameParts extends AbstractHreDataModel {
 	private String Trans;
 	private DigitalNameParts model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public DigitalNameParts() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param DigitalNamePartPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public DigitalNameParts(int DigitalNamePartPid) throws SQLException {
 		super();
@@ -107,38 +123,83 @@ public class DigitalNameParts extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DigitalNamePartPid field.
+	 *
+	 * @return Contents of the DIGITAL_NAME_PART_PID column
+	 */
 	public int getDigitalNamePartPid() {
 		return this.DigitalNamePartPid;
 	}
 
+	/**
+	 * Get the ElementTypeKey field.
+	 *
+	 * @return Contents of the ELEMENT_TYPE_KEY column
+	 */
 	public short getElementTypeKey() {
 		return this.ElementTypeKey;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the LangCode field.
+	 *
+	 * @return Contents of the LANG_CODE column
+	 */
 	public String getLangCode() {
 		return this.LangCode;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Shared field.
+	 *
+	 * @return Contents of the SHARED column
+	 */
 	public int getShared() {
 		return this.Shared;
 	}
 
+	/**
+	 * Get the Trans field.
+	 *
+	 * @return Contents of the TRANS column
+	 */
 	public String getTrans() {
 		return this.Trans;
 	}
@@ -173,38 +234,92 @@ public class DigitalNameParts extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DigitalNamePartPid field
+	 *
+	 * @param DigitalNamePartPid
+	 *            Contents of the DIGITAL_NAME_PART_PID column
+	 */
 	public void setDigitalNamePartPid(int DigitalNamePartPid) {
 		this.DigitalNamePartPid = DigitalNamePartPid;
 	}
 
+	/**
+	 * Set the ElementTypeKey field
+	 *
+	 * @param ElementTypeKey
+	 *            Contents of the ELEMENT_TYPE_KEY column
+	 */
 	public void setElementTypeKey(short ElementTypeKey) {
 		this.ElementTypeKey = ElementTypeKey;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the LangCode field
+	 *
+	 * @param LangCode
+	 *            Contents of the LANG_CODE column
+	 */
 	public void setLangCode(String LangCode) {
 		this.LangCode = LangCode;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Shared field
+	 *
+	 * @param Shared
+	 *            Contents of the SHARED column
+	 */
 	public void setShared(int Shared) {
 		this.Shared = Shared;
 	}
 
+	/**
+	 * Set the Trans field
+	 *
+	 * @param Trans
+	 *            Contents of the TRANS column
+	 */
 	public void setTrans(String Trans) {
 		this.Trans = Trans;
 	}

@@ -58,8 +58,24 @@ public class SubsetBioNetworkDefns extends AbstractHreDataModel {
 	private int CommonParentSetPid;
 	private SubsetBioNetworkDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public SubsetBioNetworkDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param SubsetBioNetworkDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public SubsetBioNetworkDefns(int SubsetBioNetworkDefnPid) throws SQLException {
 		super();
@@ -129,58 +145,128 @@ public class SubsetBioNetworkDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the BioPid field.
+	 *
+	 * @return Contents of the BIO_PID column
+	 */
 	public int getBioPid() {
 		return this.BioPid;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the CommonParentSetPid field.
+	 *
+	 * @return Contents of the COMMON_PARENT_SET_PID column
+	 */
 	public int getCommonParentSetPid() {
 		return this.CommonParentSetPid;
 	}
 
+	/**
+	 * Get the IsAncestralLink field.
+	 *
+	 * @return Contents of the IS_ANCESTRAL_LINK column
+	 */
 	public boolean getIsAncestralLink() {
 		return this.IsAncestralLink;
 	}
 
+	/**
+	 * Get the IsViaFemaleAncestor field.
+	 *
+	 * @return Contents of the IS_VIA_FEMALE_ANCESTOR column
+	 */
 	public boolean getIsViaFemaleAncestor() {
 		return this.IsViaFemaleAncestor;
 	}
 
+	/**
+	 * Get the KinCode field.
+	 *
+	 * @return Contents of the KIN_CODE column
+	 */
 	public short getKinCode() {
 		return this.KinCode;
 	}
 
+	/**
+	 * Get the MinGeneration field.
+	 *
+	 * @return Contents of the MIN_GENERATION column
+	 */
 	public short getMinGeneration() {
 		return this.MinGeneration;
 	}
 
+	/**
+	 * Get the ParentSetPid field.
+	 *
+	 * @return Contents of the PARENT_SET_PID column
+	 */
 	public int getParentSetPid() {
 		return this.ParentSetPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the SubsetBioNetworkDefnPid field.
+	 *
+	 * @return Contents of the SUBSET_BIO_NETWORK_DEFN_PID column
+	 */
 	public int getSubsetBioNetworkDefnPid() {
 		return this.SubsetBioNetworkDefnPid;
 	}
 
+	/**
+	 * Get the SubsetPid field.
+	 *
+	 * @return Contents of the SUBSET_PID column
+	 */
 	public int getSubsetPid() {
 		return this.SubsetPid;
 	}
 
+	/**
+	 * Get the ThisGeneration field.
+	 *
+	 * @return Contents of the THIS_GENERATION column
+	 */
 	public short getThisGeneration() {
 		return this.ThisGeneration;
 	}
 
+	/**
+	 * Get the UseOrder field.
+	 *
+	 * @return Contents of the USE_ORDER column
+	 */
 	public int getUseOrder() {
 		return this.UseOrder;
 	}
@@ -225,58 +311,142 @@ public class SubsetBioNetworkDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the BioPid field
+	 *
+	 * @param BioPid
+	 *            Contents of the BIO_PID column
+	 */
 	public void setBioPid(int BioPid) {
 		this.BioPid = BioPid;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the CommonParentSetPid field
+	 *
+	 * @param CommonParentSetPid
+	 *            Contents of the COMMON_PARENT_SET_PID column
+	 */
 	public void setCommonParentSetPid(int CommonParentSetPid) {
 		this.CommonParentSetPid = CommonParentSetPid;
 	}
 
+	/**
+	 * Set the IsAncestralLink field
+	 *
+	 * @param IsAncestralLink
+	 *            Contents of the IS_ANCESTRAL_LINK column
+	 */
 	public void setIsAncestralLink(boolean IsAncestralLink) {
 		this.IsAncestralLink = IsAncestralLink;
 	}
 
+	/**
+	 * Set the IsViaFemaleAncestor field
+	 *
+	 * @param IsViaFemaleAncestor
+	 *            Contents of the IS_VIA_FEMALE_ANCESTOR column
+	 */
 	public void setIsViaFemaleAncestor(boolean IsViaFemaleAncestor) {
 		this.IsViaFemaleAncestor = IsViaFemaleAncestor;
 	}
 
+	/**
+	 * Set the KinCode field
+	 *
+	 * @param KinCode
+	 *            Contents of the KIN_CODE column
+	 */
 	public void setKinCode(short KinCode) {
 		this.KinCode = KinCode;
 	}
 
+	/**
+	 * Set the MinGeneration field
+	 *
+	 * @param MinGeneration
+	 *            Contents of the MIN_GENERATION column
+	 */
 	public void setMinGeneration(short MinGeneration) {
 		this.MinGeneration = MinGeneration;
 	}
 
+	/**
+	 * Set the ParentSetPid field
+	 *
+	 * @param ParentSetPid
+	 *            Contents of the PARENT_SET_PID column
+	 */
 	public void setParentSetPid(int ParentSetPid) {
 		this.ParentSetPid = ParentSetPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the SubsetBioNetworkDefnPid field
+	 *
+	 * @param SubsetBioNetworkDefnPid
+	 *            Contents of the SUBSET_BIO_NETWORK_DEFN_PID column
+	 */
 	public void setSubsetBioNetworkDefnPid(int SubsetBioNetworkDefnPid) {
 		this.SubsetBioNetworkDefnPid = SubsetBioNetworkDefnPid;
 	}
 
+	/**
+	 * Set the SubsetPid field
+	 *
+	 * @param SubsetPid
+	 *            Contents of the SUBSET_PID column
+	 */
 	public void setSubsetPid(int SubsetPid) {
 		this.SubsetPid = SubsetPid;
 	}
 
+	/**
+	 * Set the ThisGeneration field
+	 *
+	 * @param ThisGeneration
+	 *            Contents of the THIS_GENERATION column
+	 */
 	public void setThisGeneration(short ThisGeneration) {
 		this.ThisGeneration = ThisGeneration;
 	}
 
+	/**
+	 * Set the UseOrder field
+	 *
+	 * @param UseOrder
+	 *            Contents of the USE_ORDER column
+	 */
 	public void setUseOrder(int UseOrder) {
 		this.UseOrder = UseOrder;
 	}

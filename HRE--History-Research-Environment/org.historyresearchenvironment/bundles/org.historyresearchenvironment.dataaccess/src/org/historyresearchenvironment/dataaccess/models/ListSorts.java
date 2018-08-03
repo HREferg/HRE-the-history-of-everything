@@ -48,8 +48,24 @@ public class ListSorts extends AbstractHreDataModel {
 	private boolean EmptySortHigh;
 	private ListSorts model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public ListSorts() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param ListSortPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public ListSorts(int ListSortPid) throws SQLException {
 		super();
@@ -111,42 +127,92 @@ public class ListSorts extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the EmptySortHigh field.
+	 *
+	 * @return Contents of the EMPTY_SORT_HIGH column
+	 */
 	public boolean getEmptySortHigh() {
 		return this.EmptySortHigh;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the ListSortPid field.
+	 *
+	 * @return Contents of the LIST_SORT_PID column
+	 */
 	public int getListSortPid() {
 		return this.ListSortPid;
 	}
 
+	/**
+	 * Get the ParentSortSetKey field.
+	 *
+	 * @return Contents of the PARENT_SORT_SET_KEY column
+	 */
 	public short getParentSortSetKey() {
 		return this.ParentSortSetKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the SortAlias field.
+	 *
+	 * @return Contents of the SORT_ALIAS column
+	 */
 	public String getSortAlias() {
 		return this.SortAlias;
 	}
 
+	/**
+	 * Get the SortHighLast field.
+	 *
+	 * @return Contents of the SORT_HIGH_LAST column
+	 */
 	public boolean getSortHighLast() {
 		return this.SortHighLast;
 	}
 
+	/**
+	 * Get the UseOrder field.
+	 *
+	 * @return Contents of the USE_ORDER column
+	 */
 	public short getUseOrder() {
 		return this.UseOrder;
 	}
@@ -183,42 +249,102 @@ public class ListSorts extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the EmptySortHigh field
+	 *
+	 * @param EmptySortHigh
+	 *            Contents of the EMPTY_SORT_HIGH column
+	 */
 	public void setEmptySortHigh(boolean EmptySortHigh) {
 		this.EmptySortHigh = EmptySortHigh;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the ListSortPid field
+	 *
+	 * @param ListSortPid
+	 *            Contents of the LIST_SORT_PID column
+	 */
 	public void setListSortPid(int ListSortPid) {
 		this.ListSortPid = ListSortPid;
 	}
 
+	/**
+	 * Set the ParentSortSetKey field
+	 *
+	 * @param ParentSortSetKey
+	 *            Contents of the PARENT_SORT_SET_KEY column
+	 */
 	public void setParentSortSetKey(short ParentSortSetKey) {
 		this.ParentSortSetKey = ParentSortSetKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the SortAlias field
+	 *
+	 * @param SortAlias
+	 *            Contents of the SORT_ALIAS column
+	 */
 	public void setSortAlias(String SortAlias) {
 		this.SortAlias = SortAlias;
 	}
 
+	/**
+	 * Set the SortHighLast field
+	 *
+	 * @param SortHighLast
+	 *            Contents of the SORT_HIGH_LAST column
+	 */
 	public void setSortHighLast(boolean SortHighLast) {
 		this.SortHighLast = SortHighLast;
 	}
 
+	/**
+	 * Set the UseOrder field
+	 *
+	 * @param UseOrder
+	 *            Contents of the USE_ORDER column
+	 */
 	public void setUseOrder(short UseOrder) {
 		this.UseOrder = UseOrder;
 	}

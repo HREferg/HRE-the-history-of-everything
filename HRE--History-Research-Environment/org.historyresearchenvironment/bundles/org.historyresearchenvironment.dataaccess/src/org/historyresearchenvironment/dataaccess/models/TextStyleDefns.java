@@ -70,8 +70,24 @@ public class TextStyleDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private TextStyleDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public TextStyleDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param TextStyleDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public TextStyleDefns(int TextStyleDefnPid) throws SQLException {
 		super();
@@ -155,86 +171,191 @@ public class TextStyleDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the FontColor field.
+	 *
+	 * @return Contents of the FONT_COLOR column
+	 */
 	public short getFontColor() {
 		return this.FontColor;
 	}
 
+	/**
+	 * Get the FontIsBold field.
+	 *
+	 * @return Contents of the FONT_IS_BOLD column
+	 */
 	public boolean getFontIsBold() {
 		return this.FontIsBold;
 	}
 
+	/**
+	 * Get the FontIsItalic field.
+	 *
+	 * @return Contents of the FONT_IS_ITALIC column
+	 */
 	public boolean getFontIsItalic() {
 		return this.FontIsItalic;
 	}
 
+	/**
+	 * Get the FontName field.
+	 *
+	 * @return Contents of the FONT_NAME column
+	 */
 	public String getFontName() {
 		return this.FontName;
 	}
 
+	/**
+	 * Get the FontSize field.
+	 *
+	 * @return Contents of the FONT_SIZE column
+	 */
 	public short getFontSize() {
 		return this.FontSize;
 	}
 
+	/**
+	 * Get the FontUnderlined field.
+	 *
+	 * @return Contents of the FONT_UNDERLINED column
+	 */
 	public boolean getFontUnderlined() {
 		return this.FontUnderlined;
 	}
 
+	/**
+	 * Get the HighlightColor field.
+	 *
+	 * @return Contents of the HIGHLIGHT_COLOR column
+	 */
 	public short getHighlightColor() {
 		return this.HighlightColor;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the IsUserDefn field.
+	 *
+	 * @return Contents of the IS_USER_DEFN column
+	 */
 	public boolean getIsUserDefn() {
 		return this.IsUserDefn;
 	}
 
+	/**
+	 * Get the Marker1LinkKey field.
+	 *
+	 * @return Contents of the MARKER1_LINK_KEY column
+	 */
 	public short getMarker1LinkKey() {
 		return this.Marker1LinkKey;
 	}
 
+	/**
+	 * Get the Marker2LinkKey field.
+	 *
+	 * @return Contents of the MARKER2_LINK_KEY column
+	 */
 	public short getMarker2LinkKey() {
 		return this.Marker2LinkKey;
 	}
 
+	/**
+	 * Get the Marker3LinkKey field.
+	 *
+	 * @return Contents of the MARKER3_LINK_KEY column
+	 */
 	public short getMarker3LinkKey() {
 		return this.Marker3LinkKey;
 	}
 
+	/**
+	 * Get the Marker4LinkKey field.
+	 *
+	 * @return Contents of the MARKER4_LINK_KEY column
+	 */
 	public short getMarker4LinkKey() {
 		return this.Marker4LinkKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the TextLinkKey field.
+	 *
+	 * @return Contents of the TEXT_LINK_KEY column
+	 */
 	public short getTextLinkKey() {
 		return this.TextLinkKey;
 	}
 
+	/**
+	 * Get the TextStyleDefnPid field.
+	 *
+	 * @return Contents of the TEXT_STYLE_DEFN_PID column
+	 */
 	public int getTextStyleDefnPid() {
 		return this.TextStyleDefnPid;
 	}
@@ -293,86 +414,212 @@ public class TextStyleDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the FontColor field
+	 *
+	 * @param FontColor
+	 *            Contents of the FONT_COLOR column
+	 */
 	public void setFontColor(short FontColor) {
 		this.FontColor = FontColor;
 	}
 
+	/**
+	 * Set the FontIsBold field
+	 *
+	 * @param FontIsBold
+	 *            Contents of the FONT_IS_BOLD column
+	 */
 	public void setFontIsBold(boolean FontIsBold) {
 		this.FontIsBold = FontIsBold;
 	}
 
+	/**
+	 * Set the FontIsItalic field
+	 *
+	 * @param FontIsItalic
+	 *            Contents of the FONT_IS_ITALIC column
+	 */
 	public void setFontIsItalic(boolean FontIsItalic) {
 		this.FontIsItalic = FontIsItalic;
 	}
 
+	/**
+	 * Set the FontName field
+	 *
+	 * @param FontName
+	 *            Contents of the FONT_NAME column
+	 */
 	public void setFontName(String FontName) {
 		this.FontName = FontName;
 	}
 
+	/**
+	 * Set the FontSize field
+	 *
+	 * @param FontSize
+	 *            Contents of the FONT_SIZE column
+	 */
 	public void setFontSize(short FontSize) {
 		this.FontSize = FontSize;
 	}
 
+	/**
+	 * Set the FontUnderlined field
+	 *
+	 * @param FontUnderlined
+	 *            Contents of the FONT_UNDERLINED column
+	 */
 	public void setFontUnderlined(boolean FontUnderlined) {
 		this.FontUnderlined = FontUnderlined;
 	}
 
+	/**
+	 * Set the HighlightColor field
+	 *
+	 * @param HighlightColor
+	 *            Contents of the HIGHLIGHT_COLOR column
+	 */
 	public void setHighlightColor(short HighlightColor) {
 		this.HighlightColor = HighlightColor;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the IsUserDefn field
+	 *
+	 * @param IsUserDefn
+	 *            Contents of the IS_USER_DEFN column
+	 */
 	public void setIsUserDefn(boolean IsUserDefn) {
 		this.IsUserDefn = IsUserDefn;
 	}
 
+	/**
+	 * Set the Marker1LinkKey field
+	 *
+	 * @param Marker1LinkKey
+	 *            Contents of the MARKER1_LINK_KEY column
+	 */
 	public void setMarker1LinkKey(short Marker1LinkKey) {
 		this.Marker1LinkKey = Marker1LinkKey;
 	}
 
+	/**
+	 * Set the Marker2LinkKey field
+	 *
+	 * @param Marker2LinkKey
+	 *            Contents of the MARKER2_LINK_KEY column
+	 */
 	public void setMarker2LinkKey(short Marker2LinkKey) {
 		this.Marker2LinkKey = Marker2LinkKey;
 	}
 
+	/**
+	 * Set the Marker3LinkKey field
+	 *
+	 * @param Marker3LinkKey
+	 *            Contents of the MARKER3_LINK_KEY column
+	 */
 	public void setMarker3LinkKey(short Marker3LinkKey) {
 		this.Marker3LinkKey = Marker3LinkKey;
 	}
 
+	/**
+	 * Set the Marker4LinkKey field
+	 *
+	 * @param Marker4LinkKey
+	 *            Contents of the MARKER4_LINK_KEY column
+	 */
 	public void setMarker4LinkKey(short Marker4LinkKey) {
 		this.Marker4LinkKey = Marker4LinkKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the TextLinkKey field
+	 *
+	 * @param TextLinkKey
+	 *            Contents of the TEXT_LINK_KEY column
+	 */
 	public void setTextLinkKey(short TextLinkKey) {
 		this.TextLinkKey = TextLinkKey;
 	}
 
+	/**
+	 * Set the TextStyleDefnPid field
+	 *
+	 * @param TextStyleDefnPid
+	 *            Contents of the TEXT_STYLE_DEFN_PID column
+	 */
 	public void setTextStyleDefnPid(int TextStyleDefnPid) {
 		this.TextStyleDefnPid = TextStyleDefnPid;
 	}

@@ -15,7 +15,7 @@ import org.historyresearchenvironment.dataaccess.HreH2ConnectionPool;
 /**
  * Abstract superclass for H2 data access models.
  * 
- * @version 2018-08-02
+ * @version 2018-08-03
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -31,6 +31,7 @@ public abstract class AbstractHreDataModel implements Serializable {
 	 * Constructor
 	 *
 	 * @throws SQLException
+	 *             If database access has failed
 	 */
 	public AbstractHreDataModel() throws SQLException {
 		conn = HreH2ConnectionPool.getConnection();
@@ -40,6 +41,7 @@ public abstract class AbstractHreDataModel implements Serializable {
 	 * Delete all records in the table.
 	 * 
 	 * @throws SQLException
+	 *             If database access has failed
 	 */
 	public abstract void delete() throws SQLException;
 
@@ -47,17 +49,18 @@ public abstract class AbstractHreDataModel implements Serializable {
 	 * Delete a record.
 	 * 
 	 * @param key
+	 *            The Primary key
 	 * @throws SQLException
+	 *             If database access has failed
 	 */
 	public abstract void delete(int key) throws SQLException;
 
 	/**
-	 * Get all records.
+	 * Get all records from the table.
 	 * 
-	 * @param <E>
-	 * 
-	 * @return
+	 * @return A list of model objects.
 	 * @throws SQLException
+	 *             If database access has failed
 	 */
 	public abstract <E> List<AbstractHreDataModel> get() throws SQLException;
 
@@ -65,8 +68,10 @@ public abstract class AbstractHreDataModel implements Serializable {
 	 * Get a record.
 	 * 
 	 * @param key
-	 * @return
+	 *            The Primary key
+	 * @return A model object
 	 * @throws SQLException
+	 *             If database access has failed
 	 */
 	public abstract AbstractHreDataModel get(int key) throws SQLException;
 
@@ -74,7 +79,9 @@ public abstract class AbstractHreDataModel implements Serializable {
 	 * Update a record.
 	 * 
 	 * @param model
+	 *            A model object
 	 * @throws SQLException
+	 *             If database access has failed
 	 */
 	public abstract void post(AbstractHreDataModel model) throws SQLException;
 
@@ -82,7 +89,9 @@ public abstract class AbstractHreDataModel implements Serializable {
 	 * Insert a record.
 	 * 
 	 * @param model
+	 *            A model object
 	 * @throws SQLException
+	 *             If database access has failed
 	 */
 	public abstract void put(AbstractHreDataModel model) throws SQLException;
 

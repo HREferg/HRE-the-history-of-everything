@@ -50,8 +50,24 @@ public class UserMessages extends AbstractHreDataModel {
 	private boolean Replied;
 	private UserMessages model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public UserMessages() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param UserMessagePid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public UserMessages(int UserMessagePid) throws SQLException {
 		super();
@@ -115,46 +131,101 @@ public class UserMessages extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the FromUserPid field.
+	 *
+	 * @return Contents of the FROM_USER_PID column
+	 */
 	public int getFromUserPid() {
 		return this.FromUserPid;
 	}
 
+	/**
+	 * Get the IsAckd field.
+	 *
+	 * @return Contents of the IS_ACKD column
+	 */
 	public boolean getIsAckd() {
 		return this.IsAckd;
 	}
 
+	/**
+	 * Get the IsRead field.
+	 *
+	 * @return Contents of the IS_READ column
+	 */
 	public boolean getIsRead() {
 		return this.IsRead;
 	}
 
+	/**
+	 * Get the Message field.
+	 *
+	 * @return Contents of the MESSAGE column
+	 */
 	public String getMessage() {
 		return this.Message;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the Replied field.
+	 *
+	 * @return Contents of the REPLIED column
+	 */
 	public boolean getReplied() {
 		return this.Replied;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the TimeSent field.
+	 *
+	 * @return Contents of the TIME_SENT column
+	 */
 	public Timestamp getTimeSent() {
 		return this.TimeSent;
 	}
 
+	/**
+	 * Get the ToUserPid field.
+	 *
+	 * @return Contents of the TO_USER_PID column
+	 */
 	public int getToUserPid() {
 		return this.ToUserPid;
 	}
 
+	/**
+	 * Get the UserMessagePid field.
+	 *
+	 * @return Contents of the USER_MESSAGE_PID column
+	 */
 	public int getUserMessagePid() {
 		return this.UserMessagePid;
 	}
@@ -193,46 +264,112 @@ public class UserMessages extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the FromUserPid field
+	 *
+	 * @param FromUserPid
+	 *            Contents of the FROM_USER_PID column
+	 */
 	public void setFromUserPid(int FromUserPid) {
 		this.FromUserPid = FromUserPid;
 	}
 
+	/**
+	 * Set the IsAckd field
+	 *
+	 * @param IsAckd
+	 *            Contents of the IS_ACKD column
+	 */
 	public void setIsAckd(boolean IsAckd) {
 		this.IsAckd = IsAckd;
 	}
 
+	/**
+	 * Set the IsRead field
+	 *
+	 * @param IsRead
+	 *            Contents of the IS_READ column
+	 */
 	public void setIsRead(boolean IsRead) {
 		this.IsRead = IsRead;
 	}
 
+	/**
+	 * Set the Message field
+	 *
+	 * @param Message
+	 *            Contents of the MESSAGE column
+	 */
 	public void setMessage(String Message) {
 		this.Message = Message;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the Replied field
+	 *
+	 * @param Replied
+	 *            Contents of the REPLIED column
+	 */
 	public void setReplied(boolean Replied) {
 		this.Replied = Replied;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the TimeSent field
+	 *
+	 * @param TimeSent
+	 *            Contents of the TIME_SENT column
+	 */
 	public void setTimeSent(Timestamp TimeSent) {
 		this.TimeSent = TimeSent;
 	}
 
+	/**
+	 * Set the ToUserPid field
+	 *
+	 * @param ToUserPid
+	 *            Contents of the TO_USER_PID column
+	 */
 	public void setToUserPid(int ToUserPid) {
 		this.ToUserPid = ToUserPid;
 	}
 
+	/**
+	 * Set the UserMessagePid field
+	 *
+	 * @param UserMessagePid
+	 *            Contents of the USER_MESSAGE_PID column
+	 */
 	public void setUserMessagePid(int UserMessagePid) {
 		this.UserMessagePid = UserMessagePid;
 	}

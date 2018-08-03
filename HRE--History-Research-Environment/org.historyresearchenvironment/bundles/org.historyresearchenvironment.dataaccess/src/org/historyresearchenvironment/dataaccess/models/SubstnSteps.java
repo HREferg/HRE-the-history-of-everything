@@ -70,8 +70,24 @@ public class SubstnSteps extends AbstractHreDataModel {
 	private short ParamListKey;
 	private SubstnSteps model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public SubstnSteps() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param SubstnStepPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public SubstnSteps(int SubstnStepPid) throws SQLException {
 		super();
@@ -153,82 +169,182 @@ public class SubstnSteps extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the ErrorStepPid field.
+	 *
+	 * @return Contents of the ERROR_STEP_PID column
+	 */
 	public int getErrorStepPid() {
 		return this.ErrorStepPid;
 	}
 
+	/**
+	 * Get the FalseStartStepPid field.
+	 *
+	 * @return Contents of the FALSE_START_STEP_PID column
+	 */
 	public int getFalseStartStepPid() {
 		return this.FalseStartStepPid;
 	}
 
+	/**
+	 * Get the IsFilterStepType field.
+	 *
+	 * @return Contents of the IS_FILTER_STEP_TYPE column
+	 */
 	public boolean getIsFilterStepType() {
 		return this.IsFilterStepType;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the IsTemplateStepType field.
+	 *
+	 * @return Contents of the IS_TEMPLATE_STEP_TYPE column
+	 */
 	public boolean getIsTemplateStepType() {
 		return this.IsTemplateStepType;
 	}
 
+	/**
+	 * Get the NextStepPid field.
+	 *
+	 * @return Contents of the NEXT_STEP_PID column
+	 */
 	public int getNextStepPid() {
 		return this.NextStepPid;
 	}
 
+	/**
+	 * Get the NormalStartStepPid field.
+	 *
+	 * @return Contents of the NORMAL_START_STEP_PID column
+	 */
 	public int getNormalStartStepPid() {
 		return this.NormalStartStepPid;
 	}
 
+	/**
+	 * Get the OwnerPid field.
+	 *
+	 * @return Contents of the OWNER_PID column
+	 */
 	public int getOwnerPid() {
 		return this.OwnerPid;
 	}
 
+	/**
+	 * Get the OwnerSubTypeKey field.
+	 *
+	 * @return Contents of the OWNER_SUB_TYPE_KEY column
+	 */
 	public int getOwnerSubTypeKey() {
 		return this.OwnerSubTypeKey;
 	}
 
+	/**
+	 * Get the OwnerTypeKey field.
+	 *
+	 * @return Contents of the OWNER_TYPE_KEY column
+	 */
 	public short getOwnerTypeKey() {
 		return this.OwnerTypeKey;
 	}
 
+	/**
+	 * Get the ParamListKey field.
+	 *
+	 * @return Contents of the PARAM_LIST_KEY column
+	 */
 	public short getParamListKey() {
 		return this.ParamListKey;
 	}
 
+	/**
+	 * Get the ParentIsDataAlias field.
+	 *
+	 * @return Contents of the PARENT_IS_DATA_ALIAS column
+	 */
 	public boolean getParentIsDataAlias() {
 		return this.ParentIsDataAlias;
 	}
 
+	/**
+	 * Get the ParentStepPid field.
+	 *
+	 * @return Contents of the PARENT_STEP_PID column
+	 */
 	public int getParentStepPid() {
 		return this.ParentStepPid;
 	}
 
+	/**
+	 * Get the PlainText field.
+	 *
+	 * @return Contents of the PLAIN_TEXT column
+	 */
 	public String getPlainText() {
 		return this.PlainText;
 	}
 
+	/**
+	 * Get the PriorStepPid field.
+	 *
+	 * @return Contents of the PRIOR_STEP_PID column
+	 */
 	public int getPriorStepPid() {
 		return this.PriorStepPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the StepTypeKey field.
+	 *
+	 * @return Contents of the STEP_TYPE_KEY column
+	 */
 	public short getStepTypeKey() {
 		return this.StepTypeKey;
 	}
 
+	/**
+	 * Get the SubstnStepPid field.
+	 *
+	 * @return Contents of the SUBSTN_STEP_PID column
+	 */
 	public int getSubstnStepPid() {
 		return this.SubstnStepPid;
 	}
@@ -285,82 +401,202 @@ public class SubstnSteps extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the ErrorStepPid field
+	 *
+	 * @param ErrorStepPid
+	 *            Contents of the ERROR_STEP_PID column
+	 */
 	public void setErrorStepPid(int ErrorStepPid) {
 		this.ErrorStepPid = ErrorStepPid;
 	}
 
+	/**
+	 * Set the FalseStartStepPid field
+	 *
+	 * @param FalseStartStepPid
+	 *            Contents of the FALSE_START_STEP_PID column
+	 */
 	public void setFalseStartStepPid(int FalseStartStepPid) {
 		this.FalseStartStepPid = FalseStartStepPid;
 	}
 
+	/**
+	 * Set the IsFilterStepType field
+	 *
+	 * @param IsFilterStepType
+	 *            Contents of the IS_FILTER_STEP_TYPE column
+	 */
 	public void setIsFilterStepType(boolean IsFilterStepType) {
 		this.IsFilterStepType = IsFilterStepType;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the IsTemplateStepType field
+	 *
+	 * @param IsTemplateStepType
+	 *            Contents of the IS_TEMPLATE_STEP_TYPE column
+	 */
 	public void setIsTemplateStepType(boolean IsTemplateStepType) {
 		this.IsTemplateStepType = IsTemplateStepType;
 	}
 
+	/**
+	 * Set the NextStepPid field
+	 *
+	 * @param NextStepPid
+	 *            Contents of the NEXT_STEP_PID column
+	 */
 	public void setNextStepPid(int NextStepPid) {
 		this.NextStepPid = NextStepPid;
 	}
 
+	/**
+	 * Set the NormalStartStepPid field
+	 *
+	 * @param NormalStartStepPid
+	 *            Contents of the NORMAL_START_STEP_PID column
+	 */
 	public void setNormalStartStepPid(int NormalStartStepPid) {
 		this.NormalStartStepPid = NormalStartStepPid;
 	}
 
+	/**
+	 * Set the OwnerPid field
+	 *
+	 * @param OwnerPid
+	 *            Contents of the OWNER_PID column
+	 */
 	public void setOwnerPid(int OwnerPid) {
 		this.OwnerPid = OwnerPid;
 	}
 
+	/**
+	 * Set the OwnerSubTypeKey field
+	 *
+	 * @param OwnerSubTypeKey
+	 *            Contents of the OWNER_SUB_TYPE_KEY column
+	 */
 	public void setOwnerSubTypeKey(int OwnerSubTypeKey) {
 		this.OwnerSubTypeKey = OwnerSubTypeKey;
 	}
 
+	/**
+	 * Set the OwnerTypeKey field
+	 *
+	 * @param OwnerTypeKey
+	 *            Contents of the OWNER_TYPE_KEY column
+	 */
 	public void setOwnerTypeKey(short OwnerTypeKey) {
 		this.OwnerTypeKey = OwnerTypeKey;
 	}
 
+	/**
+	 * Set the ParamListKey field
+	 *
+	 * @param ParamListKey
+	 *            Contents of the PARAM_LIST_KEY column
+	 */
 	public void setParamListKey(short ParamListKey) {
 		this.ParamListKey = ParamListKey;
 	}
 
+	/**
+	 * Set the ParentIsDataAlias field
+	 *
+	 * @param ParentIsDataAlias
+	 *            Contents of the PARENT_IS_DATA_ALIAS column
+	 */
 	public void setParentIsDataAlias(boolean ParentIsDataAlias) {
 		this.ParentIsDataAlias = ParentIsDataAlias;
 	}
 
+	/**
+	 * Set the ParentStepPid field
+	 *
+	 * @param ParentStepPid
+	 *            Contents of the PARENT_STEP_PID column
+	 */
 	public void setParentStepPid(int ParentStepPid) {
 		this.ParentStepPid = ParentStepPid;
 	}
 
+	/**
+	 * Set the PlainText field
+	 *
+	 * @param PlainText
+	 *            Contents of the PLAIN_TEXT column
+	 */
 	public void setPlainText(String PlainText) {
 		this.PlainText = PlainText;
 	}
 
+	/**
+	 * Set the PriorStepPid field
+	 *
+	 * @param PriorStepPid
+	 *            Contents of the PRIOR_STEP_PID column
+	 */
 	public void setPriorStepPid(int PriorStepPid) {
 		this.PriorStepPid = PriorStepPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the StepTypeKey field
+	 *
+	 * @param StepTypeKey
+	 *            Contents of the STEP_TYPE_KEY column
+	 */
 	public void setStepTypeKey(short StepTypeKey) {
 		this.StepTypeKey = StepTypeKey;
 	}
 
+	/**
+	 * Set the SubstnStepPid field
+	 *
+	 * @param SubstnStepPid
+	 *            Contents of the SUBSTN_STEP_PID column
+	 */
 	public void setSubstnStepPid(int SubstnStepPid) {
 		this.SubstnStepPid = SubstnStepPid;
 	}

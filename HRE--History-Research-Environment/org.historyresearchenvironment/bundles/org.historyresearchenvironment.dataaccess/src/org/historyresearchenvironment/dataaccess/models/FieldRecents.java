@@ -78,8 +78,24 @@ public class FieldRecents extends AbstractHreDataModel {
 	private int Fixed05Pid;
 	private FieldRecents model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public FieldRecents() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param FieldRecentPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public FieldRecents(int FieldRecentPid) throws SQLException {
 		super();
@@ -173,106 +189,236 @@ public class FieldRecents extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the FieldPid field.
+	 *
+	 * @return Contents of the FIELD_PID column
+	 */
 	public short getFieldPid() {
 		return this.FieldPid;
 	}
 
+	/**
+	 * Get the FieldRecentPid field.
+	 *
+	 * @return Contents of the FIELD_RECENT_PID column
+	 */
 	public int getFieldRecentPid() {
 		return this.FieldRecentPid;
 	}
 
+	/**
+	 * Get the Fixed01Pid field.
+	 *
+	 * @return Contents of the FIXED01_PID column
+	 */
 	public int getFixed01Pid() {
 		return this.Fixed01Pid;
 	}
 
+	/**
+	 * Get the Fixed02Pid field.
+	 *
+	 * @return Contents of the FIXED02_PID column
+	 */
 	public int getFixed02Pid() {
 		return this.Fixed02Pid;
 	}
 
+	/**
+	 * Get the Fixed03Pid field.
+	 *
+	 * @return Contents of the FIXED03_PID column
+	 */
 	public int getFixed03Pid() {
 		return this.Fixed03Pid;
 	}
 
+	/**
+	 * Get the Fixed04Pid field.
+	 *
+	 * @return Contents of the FIXED04_PID column
+	 */
 	public int getFixed04Pid() {
 		return this.Fixed04Pid;
 	}
 
+	/**
+	 * Get the Fixed05Pid field.
+	 *
+	 * @return Contents of the FIXED05_PID column
+	 */
 	public int getFixed05Pid() {
 		return this.Fixed05Pid;
 	}
 
+	/**
+	 * Get the Recent01Pid field.
+	 *
+	 * @return Contents of the RECENT01_PID column
+	 */
 	public int getRecent01Pid() {
 		return this.Recent01Pid;
 	}
 
+	/**
+	 * Get the Recent02Pid field.
+	 *
+	 * @return Contents of the RECENT02_PID column
+	 */
 	public int getRecent02Pid() {
 		return this.Recent02Pid;
 	}
 
+	/**
+	 * Get the Recent03Pid field.
+	 *
+	 * @return Contents of the RECENT03_PID column
+	 */
 	public int getRecent03Pid() {
 		return this.Recent03Pid;
 	}
 
+	/**
+	 * Get the Recent04Pid field.
+	 *
+	 * @return Contents of the RECENT04_PID column
+	 */
 	public int getRecent04Pid() {
 		return this.Recent04Pid;
 	}
 
+	/**
+	 * Get the Recent05Pid field.
+	 *
+	 * @return Contents of the RECENT05_PID column
+	 */
 	public int getRecent05Pid() {
 		return this.Recent05Pid;
 	}
 
+	/**
+	 * Get the Recent06Pid field.
+	 *
+	 * @return Contents of the RECENT06_PID column
+	 */
 	public int getRecent06Pid() {
 		return this.Recent06Pid;
 	}
 
+	/**
+	 * Get the Recent07Pid field.
+	 *
+	 * @return Contents of the RECENT07_PID column
+	 */
 	public int getRecent07Pid() {
 		return this.Recent07Pid;
 	}
 
+	/**
+	 * Get the Recent08Pid field.
+	 *
+	 * @return Contents of the RECENT08_PID column
+	 */
 	public int getRecent08Pid() {
 		return this.Recent08Pid;
 	}
 
+	/**
+	 * Get the Recent09Pid field.
+	 *
+	 * @return Contents of the RECENT09_PID column
+	 */
 	public int getRecent09Pid() {
 		return this.Recent09Pid;
 	}
 
+	/**
+	 * Get the Recent10Pid field.
+	 *
+	 * @return Contents of the RECENT10_PID column
+	 */
 	public int getRecent10Pid() {
 		return this.Recent10Pid;
 	}
 
+	/**
+	 * Get the Recent11Pid field.
+	 *
+	 * @return Contents of the RECENT11_PID column
+	 */
 	public int getRecent11Pid() {
 		return this.Recent11Pid;
 	}
 
+	/**
+	 * Get the Recent12Pid field.
+	 *
+	 * @return Contents of the RECENT12_PID column
+	 */
 	public int getRecent12Pid() {
 		return this.Recent12Pid;
 	}
 
+	/**
+	 * Get the Recent13Pid field.
+	 *
+	 * @return Contents of the RECENT13_PID column
+	 */
 	public int getRecent13Pid() {
 		return this.Recent13Pid;
 	}
 
+	/**
+	 * Get the Recent14Pid field.
+	 *
+	 * @return Contents of the RECENT14_PID column
+	 */
 	public int getRecent14Pid() {
 		return this.Recent14Pid;
 	}
 
+	/**
+	 * Get the Recent15Pid field.
+	 *
+	 * @return Contents of the RECENT15_PID column
+	 */
 	public int getRecent15Pid() {
 		return this.Recent15Pid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the TableKey field.
+	 *
+	 * @return Contents of the TABLE_KEY column
+	 */
 	public short getTableKey() {
 		return this.TableKey;
 	}
@@ -341,106 +487,262 @@ public class FieldRecents extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the FieldPid field
+	 *
+	 * @param FieldPid
+	 *            Contents of the FIELD_PID column
+	 */
 	public void setFieldPid(short FieldPid) {
 		this.FieldPid = FieldPid;
 	}
 
+	/**
+	 * Set the FieldRecentPid field
+	 *
+	 * @param FieldRecentPid
+	 *            Contents of the FIELD_RECENT_PID column
+	 */
 	public void setFieldRecentPid(int FieldRecentPid) {
 		this.FieldRecentPid = FieldRecentPid;
 	}
 
+	/**
+	 * Set the Fixed01Pid field
+	 *
+	 * @param Fixed01Pid
+	 *            Contents of the FIXED01_PID column
+	 */
 	public void setFixed01Pid(int Fixed01Pid) {
 		this.Fixed01Pid = Fixed01Pid;
 	}
 
+	/**
+	 * Set the Fixed02Pid field
+	 *
+	 * @param Fixed02Pid
+	 *            Contents of the FIXED02_PID column
+	 */
 	public void setFixed02Pid(int Fixed02Pid) {
 		this.Fixed02Pid = Fixed02Pid;
 	}
 
+	/**
+	 * Set the Fixed03Pid field
+	 *
+	 * @param Fixed03Pid
+	 *            Contents of the FIXED03_PID column
+	 */
 	public void setFixed03Pid(int Fixed03Pid) {
 		this.Fixed03Pid = Fixed03Pid;
 	}
 
+	/**
+	 * Set the Fixed04Pid field
+	 *
+	 * @param Fixed04Pid
+	 *            Contents of the FIXED04_PID column
+	 */
 	public void setFixed04Pid(int Fixed04Pid) {
 		this.Fixed04Pid = Fixed04Pid;
 	}
 
+	/**
+	 * Set the Fixed05Pid field
+	 *
+	 * @param Fixed05Pid
+	 *            Contents of the FIXED05_PID column
+	 */
 	public void setFixed05Pid(int Fixed05Pid) {
 		this.Fixed05Pid = Fixed05Pid;
 	}
 
+	/**
+	 * Set the Recent01Pid field
+	 *
+	 * @param Recent01Pid
+	 *            Contents of the RECENT01_PID column
+	 */
 	public void setRecent01Pid(int Recent01Pid) {
 		this.Recent01Pid = Recent01Pid;
 	}
 
+	/**
+	 * Set the Recent02Pid field
+	 *
+	 * @param Recent02Pid
+	 *            Contents of the RECENT02_PID column
+	 */
 	public void setRecent02Pid(int Recent02Pid) {
 		this.Recent02Pid = Recent02Pid;
 	}
 
+	/**
+	 * Set the Recent03Pid field
+	 *
+	 * @param Recent03Pid
+	 *            Contents of the RECENT03_PID column
+	 */
 	public void setRecent03Pid(int Recent03Pid) {
 		this.Recent03Pid = Recent03Pid;
 	}
 
+	/**
+	 * Set the Recent04Pid field
+	 *
+	 * @param Recent04Pid
+	 *            Contents of the RECENT04_PID column
+	 */
 	public void setRecent04Pid(int Recent04Pid) {
 		this.Recent04Pid = Recent04Pid;
 	}
 
+	/**
+	 * Set the Recent05Pid field
+	 *
+	 * @param Recent05Pid
+	 *            Contents of the RECENT05_PID column
+	 */
 	public void setRecent05Pid(int Recent05Pid) {
 		this.Recent05Pid = Recent05Pid;
 	}
 
+	/**
+	 * Set the Recent06Pid field
+	 *
+	 * @param Recent06Pid
+	 *            Contents of the RECENT06_PID column
+	 */
 	public void setRecent06Pid(int Recent06Pid) {
 		this.Recent06Pid = Recent06Pid;
 	}
 
+	/**
+	 * Set the Recent07Pid field
+	 *
+	 * @param Recent07Pid
+	 *            Contents of the RECENT07_PID column
+	 */
 	public void setRecent07Pid(int Recent07Pid) {
 		this.Recent07Pid = Recent07Pid;
 	}
 
+	/**
+	 * Set the Recent08Pid field
+	 *
+	 * @param Recent08Pid
+	 *            Contents of the RECENT08_PID column
+	 */
 	public void setRecent08Pid(int Recent08Pid) {
 		this.Recent08Pid = Recent08Pid;
 	}
 
+	/**
+	 * Set the Recent09Pid field
+	 *
+	 * @param Recent09Pid
+	 *            Contents of the RECENT09_PID column
+	 */
 	public void setRecent09Pid(int Recent09Pid) {
 		this.Recent09Pid = Recent09Pid;
 	}
 
+	/**
+	 * Set the Recent10Pid field
+	 *
+	 * @param Recent10Pid
+	 *            Contents of the RECENT10_PID column
+	 */
 	public void setRecent10Pid(int Recent10Pid) {
 		this.Recent10Pid = Recent10Pid;
 	}
 
+	/**
+	 * Set the Recent11Pid field
+	 *
+	 * @param Recent11Pid
+	 *            Contents of the RECENT11_PID column
+	 */
 	public void setRecent11Pid(int Recent11Pid) {
 		this.Recent11Pid = Recent11Pid;
 	}
 
+	/**
+	 * Set the Recent12Pid field
+	 *
+	 * @param Recent12Pid
+	 *            Contents of the RECENT12_PID column
+	 */
 	public void setRecent12Pid(int Recent12Pid) {
 		this.Recent12Pid = Recent12Pid;
 	}
 
+	/**
+	 * Set the Recent13Pid field
+	 *
+	 * @param Recent13Pid
+	 *            Contents of the RECENT13_PID column
+	 */
 	public void setRecent13Pid(int Recent13Pid) {
 		this.Recent13Pid = Recent13Pid;
 	}
 
+	/**
+	 * Set the Recent14Pid field
+	 *
+	 * @param Recent14Pid
+	 *            Contents of the RECENT14_PID column
+	 */
 	public void setRecent14Pid(int Recent14Pid) {
 		this.Recent14Pid = Recent14Pid;
 	}
 
+	/**
+	 * Set the Recent15Pid field
+	 *
+	 * @param Recent15Pid
+	 *            Contents of the RECENT15_PID column
+	 */
 	public void setRecent15Pid(int Recent15Pid) {
 		this.Recent15Pid = Recent15Pid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the TableKey field
+	 *
+	 * @param TableKey
+	 *            Contents of the TABLE_KEY column
+	 */
 	public void setTableKey(short TableKey) {
 		this.TableKey = TableKey;
 	}

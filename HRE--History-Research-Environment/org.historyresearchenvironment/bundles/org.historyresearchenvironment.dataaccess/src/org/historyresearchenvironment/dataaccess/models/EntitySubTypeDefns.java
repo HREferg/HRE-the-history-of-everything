@@ -58,8 +58,24 @@ public class EntitySubTypeDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private EntitySubTypeDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public EntitySubTypeDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param EntitySubTypePid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public EntitySubTypeDefns(int EntitySubTypePid) throws SQLException {
 		super();
@@ -129,58 +145,128 @@ public class EntitySubTypeDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the BaseEntitySubTypeKey field.
+	 *
+	 * @return Contents of the BASE_ENTITY_SUB_TYPE_KEY column
+	 */
 	public short getBaseEntitySubTypeKey() {
 		return this.BaseEntitySubTypeKey;
 	}
 
+	/**
+	 * Get the BaseEntityTypeKey field.
+	 *
+	 * @return Contents of the BASE_ENTITY_TYPE_KEY column
+	 */
 	public short getBaseEntityTypeKey() {
 		return this.BaseEntityTypeKey;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the EntitySubTypePid field.
+	 *
+	 * @return Contents of the ENTITY_SUB_TYPE_PID column
+	 */
 	public int getEntitySubTypePid() {
 		return this.EntitySubTypePid;
 	}
 
+	/**
+	 * Get the GroupOfSubTypeKey field.
+	 *
+	 * @return Contents of the GROUP_OF_SUB_TYPE_KEY column
+	 */
 	public short getGroupOfSubTypeKey() {
 		return this.GroupOfSubTypeKey;
 	}
 
+	/**
+	 * Get the GroupOfTypeKey field.
+	 *
+	 * @return Contents of the GROUP_OF_TYPE_KEY column
+	 */
 	public short getGroupOfTypeKey() {
 		return this.GroupOfTypeKey;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the ParentSubTypeKey field.
+	 *
+	 * @return Contents of the PARENT_SUB_TYPE_KEY column
+	 */
 	public short getParentSubTypeKey() {
 		return this.ParentSubTypeKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
@@ -225,58 +311,142 @@ public class EntitySubTypeDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the BaseEntitySubTypeKey field
+	 *
+	 * @param BaseEntitySubTypeKey
+	 *            Contents of the BASE_ENTITY_SUB_TYPE_KEY column
+	 */
 	public void setBaseEntitySubTypeKey(short BaseEntitySubTypeKey) {
 		this.BaseEntitySubTypeKey = BaseEntitySubTypeKey;
 	}
 
+	/**
+	 * Set the BaseEntityTypeKey field
+	 *
+	 * @param BaseEntityTypeKey
+	 *            Contents of the BASE_ENTITY_TYPE_KEY column
+	 */
 	public void setBaseEntityTypeKey(short BaseEntityTypeKey) {
 		this.BaseEntityTypeKey = BaseEntityTypeKey;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the EntitySubTypePid field
+	 *
+	 * @param EntitySubTypePid
+	 *            Contents of the ENTITY_SUB_TYPE_PID column
+	 */
 	public void setEntitySubTypePid(int EntitySubTypePid) {
 		this.EntitySubTypePid = EntitySubTypePid;
 	}
 
+	/**
+	 * Set the GroupOfSubTypeKey field
+	 *
+	 * @param GroupOfSubTypeKey
+	 *            Contents of the GROUP_OF_SUB_TYPE_KEY column
+	 */
 	public void setGroupOfSubTypeKey(short GroupOfSubTypeKey) {
 		this.GroupOfSubTypeKey = GroupOfSubTypeKey;
 	}
 
+	/**
+	 * Set the GroupOfTypeKey field
+	 *
+	 * @param GroupOfTypeKey
+	 *            Contents of the GROUP_OF_TYPE_KEY column
+	 */
 	public void setGroupOfTypeKey(short GroupOfTypeKey) {
 		this.GroupOfTypeKey = GroupOfTypeKey;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the ParentSubTypeKey field
+	 *
+	 * @param ParentSubTypeKey
+	 *            Contents of the PARENT_SUB_TYPE_KEY column
+	 */
 	public void setParentSubTypeKey(short ParentSubTypeKey) {
 		this.ParentSubTypeKey = ParentSubTypeKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}

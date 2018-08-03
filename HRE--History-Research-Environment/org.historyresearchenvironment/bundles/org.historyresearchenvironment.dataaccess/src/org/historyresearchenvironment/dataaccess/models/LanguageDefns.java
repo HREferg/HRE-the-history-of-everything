@@ -52,8 +52,24 @@ public class LanguageDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private LanguageDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public LanguageDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param LanguageDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public LanguageDefns(int LanguageDefnPid) throws SQLException {
 		super();
@@ -119,50 +135,110 @@ public class LanguageDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the IsDataLang field.
+	 *
+	 * @return Contents of the IS_DATA_LANG column
+	 */
 	public boolean getIsDataLang() {
 		return this.IsDataLang;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the IsGuiLang field.
+	 *
+	 * @return Contents of the IS_GUI_LANG column
+	 */
 	public boolean getIsGuiLang() {
 		return this.IsGuiLang;
 	}
 
+	/**
+	 * Get the LanguageCode field.
+	 *
+	 * @return Contents of the LANGUAGE_CODE column
+	 */
 	public String getLanguageCode() {
 		return this.LanguageCode;
 	}
 
+	/**
+	 * Get the LanguageDefnPid field.
+	 *
+	 * @return Contents of the LANGUAGE_DEFN_PID column
+	 */
 	public int getLanguageDefnPid() {
 		return this.LanguageDefnPid;
 	}
 
+	/**
+	 * Get the LanguageName field.
+	 *
+	 * @return Contents of the LANGUAGE_NAME column
+	 */
 	public String getLanguageName() {
 		return this.LanguageName;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
@@ -203,50 +279,122 @@ public class LanguageDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the IsDataLang field
+	 *
+	 * @param IsDataLang
+	 *            Contents of the IS_DATA_LANG column
+	 */
 	public void setIsDataLang(boolean IsDataLang) {
 		this.IsDataLang = IsDataLang;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the IsGuiLang field
+	 *
+	 * @param IsGuiLang
+	 *            Contents of the IS_GUI_LANG column
+	 */
 	public void setIsGuiLang(boolean IsGuiLang) {
 		this.IsGuiLang = IsGuiLang;
 	}
 
+	/**
+	 * Set the LanguageCode field
+	 *
+	 * @param LanguageCode
+	 *            Contents of the LANGUAGE_CODE column
+	 */
 	public void setLanguageCode(String LanguageCode) {
 		this.LanguageCode = LanguageCode;
 	}
 
+	/**
+	 * Set the LanguageDefnPid field
+	 *
+	 * @param LanguageDefnPid
+	 *            Contents of the LANGUAGE_DEFN_PID column
+	 */
 	public void setLanguageDefnPid(int LanguageDefnPid) {
 		this.LanguageDefnPid = LanguageDefnPid;
 	}
 
+	/**
+	 * Set the LanguageName field
+	 *
+	 * @param LanguageName
+	 *            Contents of the LANGUAGE_NAME column
+	 */
 	public void setLanguageName(String LanguageName) {
 		this.LanguageName = LanguageName;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}

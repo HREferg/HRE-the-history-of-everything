@@ -47,8 +47,24 @@ public class OccasnNotepads extends AbstractHreDataModel {
 	private String Notepad;
 	private OccasnNotepads model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public OccasnNotepads() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param OccasnNotepadPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public OccasnNotepads(int OccasnNotepadPid) throws SQLException {
 		super();
@@ -108,38 +124,83 @@ public class OccasnNotepads extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the Notepad field.
+	 *
+	 * @return Contents of the NOTEPAD column
+	 */
 	public String getNotepad() {
 		return this.Notepad;
 	}
 
+	/**
+	 * Get the NotepadDefnPid field.
+	 *
+	 * @return Contents of the NOTEPAD_DEFN_PID column
+	 */
 	public short getNotepadDefnPid() {
 		return this.NotepadDefnPid;
 	}
 
+	/**
+	 * Get the OccasnNotepadPid field.
+	 *
+	 * @return Contents of the OCCASN_NOTEPAD_PID column
+	 */
 	public int getOccasnNotepadPid() {
 		return this.OccasnNotepadPid;
 	}
 
+	/**
+	 * Get the ParentPid field.
+	 *
+	 * @return Contents of the PARENT_PID column
+	 */
 	public int getParentPid() {
 		return this.ParentPid;
 	}
 
+	/**
+	 * Get the ParentSubTypeKey field.
+	 *
+	 * @return Contents of the PARENT_SUB_TYPE_KEY column
+	 */
 	public short getParentSubTypeKey() {
 		return this.ParentSubTypeKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKeyd field.
+	 *
+	 * @return Contents of the SET_KEYD column
+	 */
 	public short getSetKeyd() {
 		return this.SetKeyd;
 	}
@@ -174,38 +235,92 @@ public class OccasnNotepads extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the Notepad field
+	 *
+	 * @param Notepad
+	 *            Contents of the NOTEPAD column
+	 */
 	public void setNotepad(String Notepad) {
 		this.Notepad = Notepad;
 	}
 
+	/**
+	 * Set the NotepadDefnPid field
+	 *
+	 * @param NotepadDefnPid
+	 *            Contents of the NOTEPAD_DEFN_PID column
+	 */
 	public void setNotepadDefnPid(short NotepadDefnPid) {
 		this.NotepadDefnPid = NotepadDefnPid;
 	}
 
+	/**
+	 * Set the OccasnNotepadPid field
+	 *
+	 * @param OccasnNotepadPid
+	 *            Contents of the OCCASN_NOTEPAD_PID column
+	 */
 	public void setOccasnNotepadPid(int OccasnNotepadPid) {
 		this.OccasnNotepadPid = OccasnNotepadPid;
 	}
 
+	/**
+	 * Set the ParentPid field
+	 *
+	 * @param ParentPid
+	 *            Contents of the PARENT_PID column
+	 */
 	public void setParentPid(int ParentPid) {
 		this.ParentPid = ParentPid;
 	}
 
+	/**
+	 * Set the ParentSubTypeKey field
+	 *
+	 * @param ParentSubTypeKey
+	 *            Contents of the PARENT_SUB_TYPE_KEY column
+	 */
 	public void setParentSubTypeKey(short ParentSubTypeKey) {
 		this.ParentSubTypeKey = ParentSubTypeKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKeyd field
+	 *
+	 * @param SetKeyd
+	 *            Contents of the SET_KEYD column
+	 */
 	public void setSetKeyd(short SetKeyd) {
 		this.SetKeyd = SetKeyd;
 	}

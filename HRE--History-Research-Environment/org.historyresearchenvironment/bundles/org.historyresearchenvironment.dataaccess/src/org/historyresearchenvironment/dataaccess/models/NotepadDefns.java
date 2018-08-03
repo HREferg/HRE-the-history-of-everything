@@ -57,8 +57,24 @@ public class NotepadDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private NotepadDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public NotepadDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param NotepadDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public NotepadDefns(int NotepadDefnPid) throws SQLException {
 		super();
@@ -130,62 +146,137 @@ public class NotepadDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the FieldTypeKey field.
+	 *
+	 * @return Contents of the FIELD_TYPE_KEY column
+	 */
 	public short getFieldTypeKey() {
 		return this.FieldTypeKey;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the Length field.
+	 *
+	 * @return Contents of the LENGTH column
+	 */
 	public short getLength() {
 		return this.Length;
 	}
 
+	/**
+	 * Get the NotepadDefnPid field.
+	 *
+	 * @return Contents of the NOTEPAD_DEFN_PID column
+	 */
 	public int getNotepadDefnPid() {
 		return this.NotepadDefnPid;
 	}
 
+	/**
+	 * Get the NotepadStorageKey field.
+	 *
+	 * @return Contents of the NOTEPAD_STORAGE_KEY column
+	 */
 	public short getNotepadStorageKey() {
 		return this.NotepadStorageKey;
 	}
 
+	/**
+	 * Get the ParentSubTypeKey field.
+	 *
+	 * @return Contents of the PARENT_SUB_TYPE_KEY column
+	 */
 	public short getParentSubTypeKey() {
 		return this.ParentSubTypeKey;
 	}
 
+	/**
+	 * Get the ParentTypeKey field.
+	 *
+	 * @return Contents of the PARENT_TYPE_KEY column
+	 */
 	public short getParentTypeKey() {
 		return this.ParentTypeKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the UnitsKey field.
+	 *
+	 * @return Contents of the UNITS_KEY column
+	 */
 	public short getUnitsKey() {
 		return this.UnitsKey;
 	}
@@ -232,62 +323,152 @@ public class NotepadDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the FieldTypeKey field
+	 *
+	 * @param FieldTypeKey
+	 *            Contents of the FIELD_TYPE_KEY column
+	 */
 	public void setFieldTypeKey(short FieldTypeKey) {
 		this.FieldTypeKey = FieldTypeKey;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the Length field
+	 *
+	 * @param Length
+	 *            Contents of the LENGTH column
+	 */
 	public void setLength(short Length) {
 		this.Length = Length;
 	}
 
+	/**
+	 * Set the NotepadDefnPid field
+	 *
+	 * @param NotepadDefnPid
+	 *            Contents of the NOTEPAD_DEFN_PID column
+	 */
 	public void setNotepadDefnPid(int NotepadDefnPid) {
 		this.NotepadDefnPid = NotepadDefnPid;
 	}
 
+	/**
+	 * Set the NotepadStorageKey field
+	 *
+	 * @param NotepadStorageKey
+	 *            Contents of the NOTEPAD_STORAGE_KEY column
+	 */
 	public void setNotepadStorageKey(short NotepadStorageKey) {
 		this.NotepadStorageKey = NotepadStorageKey;
 	}
 
+	/**
+	 * Set the ParentSubTypeKey field
+	 *
+	 * @param ParentSubTypeKey
+	 *            Contents of the PARENT_SUB_TYPE_KEY column
+	 */
 	public void setParentSubTypeKey(short ParentSubTypeKey) {
 		this.ParentSubTypeKey = ParentSubTypeKey;
 	}
 
+	/**
+	 * Set the ParentTypeKey field
+	 *
+	 * @param ParentTypeKey
+	 *            Contents of the PARENT_TYPE_KEY column
+	 */
 	public void setParentTypeKey(short ParentTypeKey) {
 		this.ParentTypeKey = ParentTypeKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the UnitsKey field
+	 *
+	 * @param UnitsKey
+	 *            Contents of the UNITS_KEY column
+	 */
 	public void setUnitsKey(short UnitsKey) {
 		this.UnitsKey = UnitsKey;
 	}

@@ -76,8 +76,24 @@ public class Bios extends AbstractHreDataModel {
 	private byte[] Flags;
 	private Bios model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public Bios() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param BioPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public Bios(int BioPid) throws SQLException {
 		super();
@@ -165,94 +181,209 @@ public class Bios extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the BestBioFemaleParentPid field.
+	 *
+	 * @return Contents of the BEST_BIO_FEMALE_PARENT_PID column
+	 */
 	public int getBestBioFemaleParentPid() {
 		return this.BestBioFemaleParentPid;
 	}
 
+	/**
+	 * Get the BestBioMaleParentPid field.
+	 *
+	 * @return Contents of the BEST_BIO_MALE_PARENT_PID column
+	 */
 	public int getBestBioMaleParentPid() {
 		return this.BestBioMaleParentPid;
 	}
 
+	/**
+	 * Get the BestBirthPid field.
+	 *
+	 * @return Contents of the BEST_BIRTH_PID column
+	 */
 	public int getBestBirthPid() {
 		return this.BestBirthPid;
 	}
 
+	/**
+	 * Get the BestDeathPid field.
+	 *
+	 * @return Contents of the BEST_DEATH_PID column
+	 */
 	public int getBestDeathPid() {
 		return this.BestDeathPid;
 	}
 
+	/**
+	 * Get the BestImagePid field.
+	 *
+	 * @return Contents of the BEST_IMAGE_PID column
+	 */
 	public int getBestImagePid() {
 		return this.BestImagePid;
 	}
 
+	/**
+	 * Get the BestNamePid field.
+	 *
+	 * @return Contents of the BEST_NAME_PID column
+	 */
 	public int getBestNamePid() {
 		return this.BestNamePid;
 	}
 
+	/**
+	 * Get the BestNonBioParent1Pid field.
+	 *
+	 * @return Contents of the BEST_NON_BIO_PARENT1_PID column
+	 */
 	public int getBestNonBioParent1Pid() {
 		return this.BestNonBioParent1Pid;
 	}
 
+	/**
+	 * Get the BestNonBioParent2Pid field.
+	 *
+	 * @return Contents of the BEST_NON_BIO_PARENT2_PID column
+	 */
 	public int getBestNonBioParent2Pid() {
 		return this.BestNonBioParent2Pid;
 	}
 
+	/**
+	 * Get the BioPid field.
+	 *
+	 * @return Contents of the BIO_PID column
+	 */
 	public int getBioPid() {
 		return this.BioPid;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the EggProviderIssueOrder field.
+	 *
+	 * @return Contents of the EGG_PROVIDER_ISSUE_ORDER column
+	 */
 	public short getEggProviderIssueOrder() {
 		return this.EggProviderIssueOrder;
 	}
 
+	/**
+	 * Get the Flags field.
+	 *
+	 * @return Contents of the FLAGS column
+	 */
 	public byte[] getFlags() {
 		return this.Flags;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the LivingKey field.
+	 *
+	 * @return Contents of the LIVING_KEY column
+	 */
 	public short getLivingKey() {
 		return this.LivingKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the SexKey field.
+	 *
+	 * @return Contents of the SEX_KEY column
+	 */
 	public short getSexKey() {
 		return this.SexKey;
 	}
 
+	/**
+	 * Get the SpermProviderIssueOrder field.
+	 *
+	 * @return Contents of the SPERM_PROVIDER_ISSUE_ORDER column
+	 */
 	public short getSpermProviderIssueOrder() {
 		return this.SpermProviderIssueOrder;
 	}
 
+	/**
+	 * Get the SubTypeKey field.
+	 *
+	 * @return Contents of the SUB_TYPE_KEY column
+	 */
 	public short getSubTypeKey() {
 		return this.SubTypeKey;
 	}
 
+	/**
+	 * Get the Surety field.
+	 *
+	 * @return Contents of the SURETY column
+	 */
 	public String getSurety() {
 		return this.Surety;
 	}
 
+	/**
+	 * Get the UseBioFemaleParent field.
+	 *
+	 * @return Contents of the USE_BIO_FEMALE_PARENT column
+	 */
 	public boolean getUseBioFemaleParent() {
 		return this.UseBioFemaleParent;
 	}
 
+	/**
+	 * Get the UseBioMaleParent field.
+	 *
+	 * @return Contents of the USE_BIO_MALE_PARENT column
+	 */
 	public boolean getUseBioMaleParent() {
 		return this.UseBioMaleParent;
 	}
 
+	/**
+	 * Get the VisibleId field.
+	 *
+	 * @return Contents of the VISIBLE_ID column
+	 */
 	public int getVisibleId() {
 		return this.VisibleId;
 	}
@@ -315,94 +446,232 @@ public class Bios extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the BestBioFemaleParentPid field
+	 *
+	 * @param BestBioFemaleParentPid
+	 *            Contents of the BEST_BIO_FEMALE_PARENT_PID column
+	 */
 	public void setBestBioFemaleParentPid(int BestBioFemaleParentPid) {
 		this.BestBioFemaleParentPid = BestBioFemaleParentPid;
 	}
 
+	/**
+	 * Set the BestBioMaleParentPid field
+	 *
+	 * @param BestBioMaleParentPid
+	 *            Contents of the BEST_BIO_MALE_PARENT_PID column
+	 */
 	public void setBestBioMaleParentPid(int BestBioMaleParentPid) {
 		this.BestBioMaleParentPid = BestBioMaleParentPid;
 	}
 
+	/**
+	 * Set the BestBirthPid field
+	 *
+	 * @param BestBirthPid
+	 *            Contents of the BEST_BIRTH_PID column
+	 */
 	public void setBestBirthPid(int BestBirthPid) {
 		this.BestBirthPid = BestBirthPid;
 	}
 
+	/**
+	 * Set the BestDeathPid field
+	 *
+	 * @param BestDeathPid
+	 *            Contents of the BEST_DEATH_PID column
+	 */
 	public void setBestDeathPid(int BestDeathPid) {
 		this.BestDeathPid = BestDeathPid;
 	}
 
+	/**
+	 * Set the BestImagePid field
+	 *
+	 * @param BestImagePid
+	 *            Contents of the BEST_IMAGE_PID column
+	 */
 	public void setBestImagePid(int BestImagePid) {
 		this.BestImagePid = BestImagePid;
 	}
 
+	/**
+	 * Set the BestNamePid field
+	 *
+	 * @param BestNamePid
+	 *            Contents of the BEST_NAME_PID column
+	 */
 	public void setBestNamePid(int BestNamePid) {
 		this.BestNamePid = BestNamePid;
 	}
 
+	/**
+	 * Set the BestNonBioParent1Pid field
+	 *
+	 * @param BestNonBioParent1Pid
+	 *            Contents of the BEST_NON_BIO_PARENT1_PID column
+	 */
 	public void setBestNonBioParent1Pid(int BestNonBioParent1Pid) {
 		this.BestNonBioParent1Pid = BestNonBioParent1Pid;
 	}
 
+	/**
+	 * Set the BestNonBioParent2Pid field
+	 *
+	 * @param BestNonBioParent2Pid
+	 *            Contents of the BEST_NON_BIO_PARENT2_PID column
+	 */
 	public void setBestNonBioParent2Pid(int BestNonBioParent2Pid) {
 		this.BestNonBioParent2Pid = BestNonBioParent2Pid;
 	}
 
+	/**
+	 * Set the BioPid field
+	 *
+	 * @param BioPid
+	 *            Contents of the BIO_PID column
+	 */
 	public void setBioPid(int BioPid) {
 		this.BioPid = BioPid;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the EggProviderIssueOrder field
+	 *
+	 * @param EggProviderIssueOrder
+	 *            Contents of the EGG_PROVIDER_ISSUE_ORDER column
+	 */
 	public void setEggProviderIssueOrder(short EggProviderIssueOrder) {
 		this.EggProviderIssueOrder = EggProviderIssueOrder;
 	}
 
+	/**
+	 * Set the Flags field
+	 *
+	 * @param Flags
+	 *            Contents of the FLAGS column
+	 */
 	public void setFlags(byte[] Flags) {
 		this.Flags = Flags;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the LivingKey field
+	 *
+	 * @param LivingKey
+	 *            Contents of the LIVING_KEY column
+	 */
 	public void setLivingKey(short LivingKey) {
 		this.LivingKey = LivingKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the SexKey field
+	 *
+	 * @param SexKey
+	 *            Contents of the SEX_KEY column
+	 */
 	public void setSexKey(short SexKey) {
 		this.SexKey = SexKey;
 	}
 
+	/**
+	 * Set the SpermProviderIssueOrder field
+	 *
+	 * @param SpermProviderIssueOrder
+	 *            Contents of the SPERM_PROVIDER_ISSUE_ORDER column
+	 */
 	public void setSpermProviderIssueOrder(short SpermProviderIssueOrder) {
 		this.SpermProviderIssueOrder = SpermProviderIssueOrder;
 	}
 
+	/**
+	 * Set the SubTypeKey field
+	 *
+	 * @param SubTypeKey
+	 *            Contents of the SUB_TYPE_KEY column
+	 */
 	public void setSubTypeKey(short SubTypeKey) {
 		this.SubTypeKey = SubTypeKey;
 	}
 
+	/**
+	 * Set the Surety field
+	 *
+	 * @param Surety
+	 *            Contents of the SURETY column
+	 */
 	public void setSurety(String Surety) {
 		this.Surety = Surety;
 	}
 
+	/**
+	 * Set the UseBioFemaleParent field
+	 *
+	 * @param UseBioFemaleParent
+	 *            Contents of the USE_BIO_FEMALE_PARENT column
+	 */
 	public void setUseBioFemaleParent(boolean UseBioFemaleParent) {
 		this.UseBioFemaleParent = UseBioFemaleParent;
 	}
 
+	/**
+	 * Set the UseBioMaleParent field
+	 *
+	 * @param UseBioMaleParent
+	 *            Contents of the USE_BIO_MALE_PARENT column
+	 */
 	public void setUseBioMaleParent(boolean UseBioMaleParent) {
 		this.UseBioMaleParent = UseBioMaleParent;
 	}
 
+	/**
+	 * Set the VisibleId field
+	 *
+	 * @param VisibleId
+	 *            Contents of the VISIBLE_ID column
+	 */
 	public void setVisibleId(int VisibleId) {
 		this.VisibleId = VisibleId;
 	}

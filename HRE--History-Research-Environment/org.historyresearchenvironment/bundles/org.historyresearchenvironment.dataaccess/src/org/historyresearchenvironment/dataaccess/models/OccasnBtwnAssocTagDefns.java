@@ -88,8 +88,24 @@ public class OccasnBtwnAssocTagDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private OccasnBtwnAssocTagDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public OccasnBtwnAssocTagDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param OccasnBtwnAssocTagDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public OccasnBtwnAssocTagDefns(int OccasnBtwnAssocTagDefnPid) throws SQLException {
 		super();
@@ -185,110 +201,245 @@ public class OccasnBtwnAssocTagDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the AssocASubTypeKey field.
+	 *
+	 * @return Contents of the ASSOC_A_SUB_TYPE_KEY column
+	 */
 	public short getAssocASubTypeKey() {
 		return this.AssocASubTypeKey;
 	}
 
+	/**
+	 * Get the AssocATypeKey field.
+	 *
+	 * @return Contents of the ASSOC_A_TYPE_KEY column
+	 */
 	public short getAssocATypeKey() {
 		return this.AssocATypeKey;
 	}
 
+	/**
+	 * Get the AssocBSubTypeKey field.
+	 *
+	 * @return Contents of the ASSOC_B_SUB_TYPE_KEY column
+	 */
 	public short getAssocBSubTypeKey() {
 		return this.AssocBSubTypeKey;
 	}
 
+	/**
+	 * Get the AssocBTypeKey field.
+	 *
+	 * @return Contents of the ASSOC_B_TYPE_KEY column
+	 */
 	public short getAssocBTypeKey() {
 		return this.AssocBTypeKey;
 	}
 
+	/**
+	 * Get the ASubjSentceSetKey field.
+	 *
+	 * @return Contents of the A_SUBJ_SENTCE_SET_KEY column
+	 */
 	public int getASubjSentceSetKey() {
 		return this.ASubjSentceSetKey;
 	}
 
+	/**
+	 * Get the BSubjSentceSetKey field.
+	 *
+	 * @return Contents of the B_SUBJ_SENTCE_SET_KEY column
+	 */
 	public int getBSubjSentceSetKey() {
 		return this.BSubjSentceSetKey;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DeleteDataScriptGroupKey field.
+	 *
+	 * @return Contents of the DELETE_DATA_SCRIPT_GROUP_KEY column
+	 */
 	public short getDeleteDataScriptGroupKey() {
 		return this.DeleteDataScriptGroupKey;
 	}
 
+	/**
+	 * Get the DeleteDataScriptPid field.
+	 *
+	 * @return Contents of the DELETE_DATA_SCRIPT_PID column
+	 */
 	public int getDeleteDataScriptPid() {
 		return this.DeleteDataScriptPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the GedcomTag field.
+	 *
+	 * @return Contents of the GEDCOM_TAG column
+	 */
 	public String getGedcomTag() {
 		return this.GedcomTag;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the ModifyDataScriptGroupKey field.
+	 *
+	 * @return Contents of the MODIFY_DATA_SCRIPT_GROUP_KEY column
+	 */
 	public short getModifyDataScriptGroupKey() {
 		return this.ModifyDataScriptGroupKey;
 	}
 
+	/**
+	 * Get the ModifyDataScriptPid field.
+	 *
+	 * @return Contents of the MODIFY_DATA_SCRIPT_PID column
+	 */
 	public int getModifyDataScriptPid() {
 		return this.ModifyDataScriptPid;
 	}
 
+	/**
+	 * Get the OccasnBtwnAssocTagDefnPid field.
+	 *
+	 * @return Contents of the OCCASN_BTWN_ASSOC_TAG_DEFN_PID column
+	 */
 	public int getOccasnBtwnAssocTagDefnPid() {
 		return this.OccasnBtwnAssocTagDefnPid;
 	}
 
+	/**
+	 * Get the OccasnSubTypeKey field.
+	 *
+	 * @return Contents of the OCCASN_SUB_TYPE_KEY column
+	 */
 	public short getOccasnSubTypeKey() {
 		return this.OccasnSubTypeKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the RolePairKey field.
+	 *
+	 * @return Contents of the ROLE_PAIR_KEY column
+	 */
 	public short getRolePairKey() {
 		return this.RolePairKey;
 	}
 
+	/**
+	 * Get the SentceStyleTypeKey field.
+	 *
+	 * @return Contents of the SENTCE_STYLE_TYPE_KEY column
+	 */
 	public short getSentceStyleTypeKey() {
 		return this.SentceStyleTypeKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the TagGroupKey field.
+	 *
+	 * @return Contents of the TAG_GROUP_KEY column
+	 */
 	public short getTagGroupKey() {
 		return this.TagGroupKey;
 	}
 
+	/**
+	 * Get the ThemeKey field.
+	 *
+	 * @return Contents of the THEME_KEY column
+	 */
 	public short getThemeKey() {
 		return this.ThemeKey;
 	}
 
+	/**
+	 * Get the ViewDataScriptGroupKey field.
+	 *
+	 * @return Contents of the VIEW_DATA_SCRIPT_GROUP_KEY column
+	 */
 	public short getViewDataScriptGroupKey() {
 		return this.ViewDataScriptGroupKey;
 	}
 
+	/**
+	 * Get the ViewDataScriptPid field.
+	 *
+	 * @return Contents of the VIEW_DATA_SCRIPT_PID column
+	 */
 	public int getViewDataScriptPid() {
 		return this.ViewDataScriptPid;
 	}
@@ -359,110 +510,272 @@ public class OccasnBtwnAssocTagDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the AssocASubTypeKey field
+	 *
+	 * @param AssocASubTypeKey
+	 *            Contents of the ASSOC_A_SUB_TYPE_KEY column
+	 */
 	public void setAssocASubTypeKey(short AssocASubTypeKey) {
 		this.AssocASubTypeKey = AssocASubTypeKey;
 	}
 
+	/**
+	 * Set the AssocATypeKey field
+	 *
+	 * @param AssocATypeKey
+	 *            Contents of the ASSOC_A_TYPE_KEY column
+	 */
 	public void setAssocATypeKey(short AssocATypeKey) {
 		this.AssocATypeKey = AssocATypeKey;
 	}
 
+	/**
+	 * Set the AssocBSubTypeKey field
+	 *
+	 * @param AssocBSubTypeKey
+	 *            Contents of the ASSOC_B_SUB_TYPE_KEY column
+	 */
 	public void setAssocBSubTypeKey(short AssocBSubTypeKey) {
 		this.AssocBSubTypeKey = AssocBSubTypeKey;
 	}
 
+	/**
+	 * Set the AssocBTypeKey field
+	 *
+	 * @param AssocBTypeKey
+	 *            Contents of the ASSOC_B_TYPE_KEY column
+	 */
 	public void setAssocBTypeKey(short AssocBTypeKey) {
 		this.AssocBTypeKey = AssocBTypeKey;
 	}
 
+	/**
+	 * Set the ASubjSentceSetKey field
+	 *
+	 * @param ASubjSentceSetKey
+	 *            Contents of the A_SUBJ_SENTCE_SET_KEY column
+	 */
 	public void setASubjSentceSetKey(int ASubjSentceSetKey) {
 		this.ASubjSentceSetKey = ASubjSentceSetKey;
 	}
 
+	/**
+	 * Set the BSubjSentceSetKey field
+	 *
+	 * @param BSubjSentceSetKey
+	 *            Contents of the B_SUBJ_SENTCE_SET_KEY column
+	 */
 	public void setBSubjSentceSetKey(int BSubjSentceSetKey) {
 		this.BSubjSentceSetKey = BSubjSentceSetKey;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DeleteDataScriptGroupKey field
+	 *
+	 * @param DeleteDataScriptGroupKey
+	 *            Contents of the DELETE_DATA_SCRIPT_GROUP_KEY column
+	 */
 	public void setDeleteDataScriptGroupKey(short DeleteDataScriptGroupKey) {
 		this.DeleteDataScriptGroupKey = DeleteDataScriptGroupKey;
 	}
 
+	/**
+	 * Set the DeleteDataScriptPid field
+	 *
+	 * @param DeleteDataScriptPid
+	 *            Contents of the DELETE_DATA_SCRIPT_PID column
+	 */
 	public void setDeleteDataScriptPid(int DeleteDataScriptPid) {
 		this.DeleteDataScriptPid = DeleteDataScriptPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the GedcomTag field
+	 *
+	 * @param GedcomTag
+	 *            Contents of the GEDCOM_TAG column
+	 */
 	public void setGedcomTag(String GedcomTag) {
 		this.GedcomTag = GedcomTag;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the ModifyDataScriptGroupKey field
+	 *
+	 * @param ModifyDataScriptGroupKey
+	 *            Contents of the MODIFY_DATA_SCRIPT_GROUP_KEY column
+	 */
 	public void setModifyDataScriptGroupKey(short ModifyDataScriptGroupKey) {
 		this.ModifyDataScriptGroupKey = ModifyDataScriptGroupKey;
 	}
 
+	/**
+	 * Set the ModifyDataScriptPid field
+	 *
+	 * @param ModifyDataScriptPid
+	 *            Contents of the MODIFY_DATA_SCRIPT_PID column
+	 */
 	public void setModifyDataScriptPid(int ModifyDataScriptPid) {
 		this.ModifyDataScriptPid = ModifyDataScriptPid;
 	}
 
+	/**
+	 * Set the OccasnBtwnAssocTagDefnPid field
+	 *
+	 * @param OccasnBtwnAssocTagDefnPid
+	 *            Contents of the OCCASN_BTWN_ASSOC_TAG_DEFN_PID column
+	 */
 	public void setOccasnBtwnAssocTagDefnPid(int OccasnBtwnAssocTagDefnPid) {
 		this.OccasnBtwnAssocTagDefnPid = OccasnBtwnAssocTagDefnPid;
 	}
 
+	/**
+	 * Set the OccasnSubTypeKey field
+	 *
+	 * @param OccasnSubTypeKey
+	 *            Contents of the OCCASN_SUB_TYPE_KEY column
+	 */
 	public void setOccasnSubTypeKey(short OccasnSubTypeKey) {
 		this.OccasnSubTypeKey = OccasnSubTypeKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the RolePairKey field
+	 *
+	 * @param RolePairKey
+	 *            Contents of the ROLE_PAIR_KEY column
+	 */
 	public void setRolePairKey(short RolePairKey) {
 		this.RolePairKey = RolePairKey;
 	}
 
+	/**
+	 * Set the SentceStyleTypeKey field
+	 *
+	 * @param SentceStyleTypeKey
+	 *            Contents of the SENTCE_STYLE_TYPE_KEY column
+	 */
 	public void setSentceStyleTypeKey(short SentceStyleTypeKey) {
 		this.SentceStyleTypeKey = SentceStyleTypeKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the TagGroupKey field
+	 *
+	 * @param TagGroupKey
+	 *            Contents of the TAG_GROUP_KEY column
+	 */
 	public void setTagGroupKey(short TagGroupKey) {
 		this.TagGroupKey = TagGroupKey;
 	}
 
+	/**
+	 * Set the ThemeKey field
+	 *
+	 * @param ThemeKey
+	 *            Contents of the THEME_KEY column
+	 */
 	public void setThemeKey(short ThemeKey) {
 		this.ThemeKey = ThemeKey;
 	}
 
+	/**
+	 * Set the ViewDataScriptGroupKey field
+	 *
+	 * @param ViewDataScriptGroupKey
+	 *            Contents of the VIEW_DATA_SCRIPT_GROUP_KEY column
+	 */
 	public void setViewDataScriptGroupKey(short ViewDataScriptGroupKey) {
 		this.ViewDataScriptGroupKey = ViewDataScriptGroupKey;
 	}
 
+	/**
+	 * Set the ViewDataScriptPid field
+	 *
+	 * @param ViewDataScriptPid
+	 *            Contents of the VIEW_DATA_SCRIPT_PID column
+	 */
 	public void setViewDataScriptPid(int ViewDataScriptPid) {
 		this.ViewDataScriptPid = ViewDataScriptPid;
 	}

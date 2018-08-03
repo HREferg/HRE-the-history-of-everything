@@ -54,8 +54,24 @@ public class SubstnFilterDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private SubstnFilterDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public SubstnFilterDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param SubstnFilterDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public SubstnFilterDefns(int SubstnFilterDefnPid) throws SQLException {
 		super();
@@ -123,54 +139,119 @@ public class SubstnFilterDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the IsAction field.
+	 *
+	 * @return Contents of the IS_ACTION column
+	 */
 	public boolean getIsAction() {
 		return this.IsAction;
 	}
 
+	/**
+	 * Get the IsJoin field.
+	 *
+	 * @return Contents of the IS_JOIN column
+	 */
 	public boolean getIsJoin() {
 		return this.IsJoin;
 	}
 
+	/**
+	 * Get the IsSort field.
+	 *
+	 * @return Contents of the IS_SORT column
+	 */
 	public boolean getIsSort() {
 		return this.IsSort;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the ScriptGroupKey field.
+	 *
+	 * @return Contents of the SCRIPT_GROUP_KEY column
+	 */
 	public short getScriptGroupKey() {
 		return this.ScriptGroupKey;
 	}
 
+	/**
+	 * Get the ScriptKey field.
+	 *
+	 * @return Contents of the SCRIPT_KEY column
+	 */
 	public short getScriptKey() {
 		return this.ScriptKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the SubstnFilterDefnPid field.
+	 *
+	 * @return Contents of the SUBSTN_FILTER_DEFN_PID column
+	 */
 	public int getSubstnFilterDefnPid() {
 		return this.SubstnFilterDefnPid;
 	}
@@ -213,54 +294,132 @@ public class SubstnFilterDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the IsAction field
+	 *
+	 * @param IsAction
+	 *            Contents of the IS_ACTION column
+	 */
 	public void setIsAction(boolean IsAction) {
 		this.IsAction = IsAction;
 	}
 
+	/**
+	 * Set the IsJoin field
+	 *
+	 * @param IsJoin
+	 *            Contents of the IS_JOIN column
+	 */
 	public void setIsJoin(boolean IsJoin) {
 		this.IsJoin = IsJoin;
 	}
 
+	/**
+	 * Set the IsSort field
+	 *
+	 * @param IsSort
+	 *            Contents of the IS_SORT column
+	 */
 	public void setIsSort(boolean IsSort) {
 		this.IsSort = IsSort;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the ScriptGroupKey field
+	 *
+	 * @param ScriptGroupKey
+	 *            Contents of the SCRIPT_GROUP_KEY column
+	 */
 	public void setScriptGroupKey(short ScriptGroupKey) {
 		this.ScriptGroupKey = ScriptGroupKey;
 	}
 
+	/**
+	 * Set the ScriptKey field
+	 *
+	 * @param ScriptKey
+	 *            Contents of the SCRIPT_KEY column
+	 */
 	public void setScriptKey(short ScriptKey) {
 		this.ScriptKey = ScriptKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the SubstnFilterDefnPid field
+	 *
+	 * @param SubstnFilterDefnPid
+	 *            Contents of the SUBSTN_FILTER_DEFN_PID column
+	 */
 	public void setSubstnFilterDefnPid(int SubstnFilterDefnPid) {
 		this.SubstnFilterDefnPid = SubstnFilterDefnPid;
 	}

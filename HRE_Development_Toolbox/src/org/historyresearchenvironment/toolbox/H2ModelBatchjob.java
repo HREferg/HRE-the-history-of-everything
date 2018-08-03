@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Reads the H2 catalog and calls H2ModelGenerator for each table.
+ * 
+ * @see H2ModelGenerator
  * @version 2018-08-02
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *

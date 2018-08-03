@@ -41,8 +41,24 @@ public class ScriptTrans extends AbstractHreDataModel {
 	private String Script;
 	private ScriptTrans model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public ScriptTrans() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param ScriptTranPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public ScriptTrans(int ScriptTranPid) throws SQLException {
 		super();
@@ -98,30 +114,65 @@ public class ScriptTrans extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the LangCode field.
+	 *
+	 * @return Contents of the LANG_CODE column
+	 */
 	public String getLangCode() {
 		return this.LangCode;
 	}
 
+	/**
+	 * Get the ParentPid field.
+	 *
+	 * @return Contents of the PARENT_PID column
+	 */
 	public int getParentPid() {
 		return this.ParentPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the Script field.
+	 *
+	 * @return Contents of the SCRIPT column
+	 */
 	public String getScript() {
 		return this.Script;
 	}
 
+	/**
+	 * Get the ScriptTranPid field.
+	 *
+	 * @return Contents of the SCRIPT_TRAN_PID column
+	 */
 	public int getScriptTranPid() {
 		return this.ScriptTranPid;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
@@ -152,30 +203,72 @@ public class ScriptTrans extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the LangCode field
+	 *
+	 * @param LangCode
+	 *            Contents of the LANG_CODE column
+	 */
 	public void setLangCode(String LangCode) {
 		this.LangCode = LangCode;
 	}
 
+	/**
+	 * Set the ParentPid field
+	 *
+	 * @param ParentPid
+	 *            Contents of the PARENT_PID column
+	 */
 	public void setParentPid(int ParentPid) {
 		this.ParentPid = ParentPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the Script field
+	 *
+	 * @param Script
+	 *            Contents of the SCRIPT column
+	 */
 	public void setScript(String Script) {
 		this.Script = Script;
 	}
 
+	/**
+	 * Set the ScriptTranPid field
+	 *
+	 * @param ScriptTranPid
+	 *            Contents of the SCRIPT_TRAN_PID column
+	 */
 	public void setScriptTranPid(int ScriptTranPid) {
 		this.ScriptTranPid = ScriptTranPid;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}

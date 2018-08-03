@@ -86,8 +86,24 @@ public class EntityNameTagDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private EntityNameTagDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public EntityNameTagDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param EntityNameTagDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public EntityNameTagDefns(int EntityNameTagDefnPid) throws SQLException {
 		super();
@@ -181,106 +197,236 @@ public class EntityNameTagDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DeleteDataScriptGroupKey field.
+	 *
+	 * @return Contents of the DELETE_DATA_SCRIPT_GROUP_KEY column
+	 */
 	public short getDeleteDataScriptGroupKey() {
 		return this.DeleteDataScriptGroupKey;
 	}
 
+	/**
+	 * Get the DeleteDataScriptPid field.
+	 *
+	 * @return Contents of the DELETE_DATA_SCRIPT_PID column
+	 */
 	public int getDeleteDataScriptPid() {
 		return this.DeleteDataScriptPid;
 	}
 
+	/**
+	 * Get the DfltSentceSetKey field.
+	 *
+	 * @return Contents of the DFLT_SENTCE_SET_KEY column
+	 */
 	public short getDfltSentceSetKey() {
 		return this.DfltSentceSetKey;
 	}
 
+	/**
+	 * Get the DfltTagGroupKey field.
+	 *
+	 * @return Contents of the DFLT_TAG_GROUP_KEY column
+	 */
 	public short getDfltTagGroupKey() {
 		return this.DfltTagGroupKey;
 	}
 
+	/**
+	 * Get the DfltThemeKey field.
+	 *
+	 * @return Contents of the DFLT_THEME_KEY column
+	 */
 	public short getDfltThemeKey() {
 		return this.DfltThemeKey;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the EntityNameTagDefnPid field.
+	 *
+	 * @return Contents of the ENTITY_NAME_TAG_DEFN_PID column
+	 */
 	public int getEntityNameTagDefnPid() {
 		return this.EntityNameTagDefnPid;
 	}
 
+	/**
+	 * Get the EntitySubTypeKey field.
+	 *
+	 * @return Contents of the ENTITY_SUB_TYPE_KEY column
+	 */
 	public short getEntitySubTypeKey() {
 		return this.EntitySubTypeKey;
 	}
 
+	/**
+	 * Get the EntityTypeKey field.
+	 *
+	 * @return Contents of the ENTITY_TYPE_KEY column
+	 */
 	public short getEntityTypeKey() {
 		return this.EntityTypeKey;
 	}
 
+	/**
+	 * Get the GlobalSentceSetKey field.
+	 *
+	 * @return Contents of the GLOBAL_SENTCE_SET_KEY column
+	 */
 	public short getGlobalSentceSetKey() {
 		return this.GlobalSentceSetKey;
 	}
 
+	/**
+	 * Get the HasMultiPart field.
+	 *
+	 * @return Contents of the HAS_MULTI_PART column
+	 */
 	public boolean getHasMultiPart() {
 		return this.HasMultiPart;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the MemoSetTypeKey field.
+	 *
+	 * @return Contents of the MEMO_SET_TYPE_KEY column
+	 */
 	public short getMemoSetTypeKey() {
 		return this.MemoSetTypeKey;
 	}
 
+	/**
+	 * Get the ModifyDataScriptGroupKey field.
+	 *
+	 * @return Contents of the MODIFY_DATA_SCRIPT_GROUP_KEY column
+	 */
 	public short getModifyDataScriptGroupKey() {
 		return this.ModifyDataScriptGroupKey;
 	}
 
+	/**
+	 * Get the ModifyDataScriptPid field.
+	 *
+	 * @return Contents of the MODIFY_DATA_SCRIPT_PID column
+	 */
 	public int getModifyDataScriptPid() {
 		return this.ModifyDataScriptPid;
 	}
 
+	/**
+	 * Get the PluginPid field.
+	 *
+	 * @return Contents of the PLUGIN_PID column
+	 */
 	public short getPluginPid() {
 		return this.PluginPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the SentceSetTypeKey field.
+	 *
+	 * @return Contents of the SENTCE_SET_TYPE_KEY column
+	 */
 	public short getSentceSetTypeKey() {
 		return this.SentceSetTypeKey;
 	}
 
+	/**
+	 * Get the SentceStyleTypeKey field.
+	 *
+	 * @return Contents of the SENTCE_STYLE_TYPE_KEY column
+	 */
 	public short getSentceStyleTypeKey() {
 		return this.SentceStyleTypeKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the ViewDataScriptGroupKey field.
+	 *
+	 * @return Contents of the VIEW_DATA_SCRIPT_GROUP_KEY column
+	 */
 	public short getViewDataScriptGroupKey() {
 		return this.ViewDataScriptGroupKey;
 	}
 
+	/**
+	 * Get the ViewDataScriptPid field.
+	 *
+	 * @return Contents of the VIEW_DATA_SCRIPT_PID column
+	 */
 	public int getViewDataScriptPid() {
 		return this.ViewDataScriptPid;
 	}
@@ -349,106 +495,262 @@ public class EntityNameTagDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DeleteDataScriptGroupKey field
+	 *
+	 * @param DeleteDataScriptGroupKey
+	 *            Contents of the DELETE_DATA_SCRIPT_GROUP_KEY column
+	 */
 	public void setDeleteDataScriptGroupKey(short DeleteDataScriptGroupKey) {
 		this.DeleteDataScriptGroupKey = DeleteDataScriptGroupKey;
 	}
 
+	/**
+	 * Set the DeleteDataScriptPid field
+	 *
+	 * @param DeleteDataScriptPid
+	 *            Contents of the DELETE_DATA_SCRIPT_PID column
+	 */
 	public void setDeleteDataScriptPid(int DeleteDataScriptPid) {
 		this.DeleteDataScriptPid = DeleteDataScriptPid;
 	}
 
+	/**
+	 * Set the DfltSentceSetKey field
+	 *
+	 * @param DfltSentceSetKey
+	 *            Contents of the DFLT_SENTCE_SET_KEY column
+	 */
 	public void setDfltSentceSetKey(short DfltSentceSetKey) {
 		this.DfltSentceSetKey = DfltSentceSetKey;
 	}
 
+	/**
+	 * Set the DfltTagGroupKey field
+	 *
+	 * @param DfltTagGroupKey
+	 *            Contents of the DFLT_TAG_GROUP_KEY column
+	 */
 	public void setDfltTagGroupKey(short DfltTagGroupKey) {
 		this.DfltTagGroupKey = DfltTagGroupKey;
 	}
 
+	/**
+	 * Set the DfltThemeKey field
+	 *
+	 * @param DfltThemeKey
+	 *            Contents of the DFLT_THEME_KEY column
+	 */
 	public void setDfltThemeKey(short DfltThemeKey) {
 		this.DfltThemeKey = DfltThemeKey;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the EntityNameTagDefnPid field
+	 *
+	 * @param EntityNameTagDefnPid
+	 *            Contents of the ENTITY_NAME_TAG_DEFN_PID column
+	 */
 	public void setEntityNameTagDefnPid(int EntityNameTagDefnPid) {
 		this.EntityNameTagDefnPid = EntityNameTagDefnPid;
 	}
 
+	/**
+	 * Set the EntitySubTypeKey field
+	 *
+	 * @param EntitySubTypeKey
+	 *            Contents of the ENTITY_SUB_TYPE_KEY column
+	 */
 	public void setEntitySubTypeKey(short EntitySubTypeKey) {
 		this.EntitySubTypeKey = EntitySubTypeKey;
 	}
 
+	/**
+	 * Set the EntityTypeKey field
+	 *
+	 * @param EntityTypeKey
+	 *            Contents of the ENTITY_TYPE_KEY column
+	 */
 	public void setEntityTypeKey(short EntityTypeKey) {
 		this.EntityTypeKey = EntityTypeKey;
 	}
 
+	/**
+	 * Set the GlobalSentceSetKey field
+	 *
+	 * @param GlobalSentceSetKey
+	 *            Contents of the GLOBAL_SENTCE_SET_KEY column
+	 */
 	public void setGlobalSentceSetKey(short GlobalSentceSetKey) {
 		this.GlobalSentceSetKey = GlobalSentceSetKey;
 	}
 
+	/**
+	 * Set the HasMultiPart field
+	 *
+	 * @param HasMultiPart
+	 *            Contents of the HAS_MULTI_PART column
+	 */
 	public void setHasMultiPart(boolean HasMultiPart) {
 		this.HasMultiPart = HasMultiPart;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the MemoSetTypeKey field
+	 *
+	 * @param MemoSetTypeKey
+	 *            Contents of the MEMO_SET_TYPE_KEY column
+	 */
 	public void setMemoSetTypeKey(short MemoSetTypeKey) {
 		this.MemoSetTypeKey = MemoSetTypeKey;
 	}
 
+	/**
+	 * Set the ModifyDataScriptGroupKey field
+	 *
+	 * @param ModifyDataScriptGroupKey
+	 *            Contents of the MODIFY_DATA_SCRIPT_GROUP_KEY column
+	 */
 	public void setModifyDataScriptGroupKey(short ModifyDataScriptGroupKey) {
 		this.ModifyDataScriptGroupKey = ModifyDataScriptGroupKey;
 	}
 
+	/**
+	 * Set the ModifyDataScriptPid field
+	 *
+	 * @param ModifyDataScriptPid
+	 *            Contents of the MODIFY_DATA_SCRIPT_PID column
+	 */
 	public void setModifyDataScriptPid(int ModifyDataScriptPid) {
 		this.ModifyDataScriptPid = ModifyDataScriptPid;
 	}
 
+	/**
+	 * Set the PluginPid field
+	 *
+	 * @param PluginPid
+	 *            Contents of the PLUGIN_PID column
+	 */
 	public void setPluginPid(short PluginPid) {
 		this.PluginPid = PluginPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the SentceSetTypeKey field
+	 *
+	 * @param SentceSetTypeKey
+	 *            Contents of the SENTCE_SET_TYPE_KEY column
+	 */
 	public void setSentceSetTypeKey(short SentceSetTypeKey) {
 		this.SentceSetTypeKey = SentceSetTypeKey;
 	}
 
+	/**
+	 * Set the SentceStyleTypeKey field
+	 *
+	 * @param SentceStyleTypeKey
+	 *            Contents of the SENTCE_STYLE_TYPE_KEY column
+	 */
 	public void setSentceStyleTypeKey(short SentceStyleTypeKey) {
 		this.SentceStyleTypeKey = SentceStyleTypeKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the ViewDataScriptGroupKey field
+	 *
+	 * @param ViewDataScriptGroupKey
+	 *            Contents of the VIEW_DATA_SCRIPT_GROUP_KEY column
+	 */
 	public void setViewDataScriptGroupKey(short ViewDataScriptGroupKey) {
 		this.ViewDataScriptGroupKey = ViewDataScriptGroupKey;
 	}
 
+	/**
+	 * Set the ViewDataScriptPid field
+	 *
+	 * @param ViewDataScriptPid
+	 *            Contents of the VIEW_DATA_SCRIPT_PID column
+	 */
 	public void setViewDataScriptPid(int ViewDataScriptPid) {
 		this.ViewDataScriptPid = ViewDataScriptPid;
 	}

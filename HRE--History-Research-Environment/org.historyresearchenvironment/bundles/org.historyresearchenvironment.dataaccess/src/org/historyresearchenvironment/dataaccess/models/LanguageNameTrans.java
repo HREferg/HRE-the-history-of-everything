@@ -44,8 +44,24 @@ public class LanguageNameTrans extends AbstractHreDataModel {
 	private String Translation;
 	private LanguageNameTrans model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public LanguageNameTrans() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param LanguageNameTranPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public LanguageNameTrans(int LanguageNameTranPid) throws SQLException {
 		super();
@@ -101,30 +117,65 @@ public class LanguageNameTrans extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the FromLanguage field.
+	 *
+	 * @return Contents of the FROM_LANGUAGE column
+	 */
 	public String getFromLanguage() {
 		return this.FromLanguage;
 	}
 
+	/**
+	 * Get the LanguageNameTranPid field.
+	 *
+	 * @return Contents of the LANGUAGE_NAME_TRAN_PID column
+	 */
 	public int getLanguageNameTranPid() {
 		return this.LanguageNameTranPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the ToLanguage field.
+	 *
+	 * @return Contents of the TO_LANGUAGE column
+	 */
 	public String getToLanguage() {
 		return this.ToLanguage;
 	}
 
+	/**
+	 * Get the Translation field.
+	 *
+	 * @return Contents of the TRANSLATION column
+	 */
 	public String getTranslation() {
 		return this.Translation;
 	}
@@ -155,30 +206,72 @@ public class LanguageNameTrans extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the FromLanguage field
+	 *
+	 * @param FromLanguage
+	 *            Contents of the FROM_LANGUAGE column
+	 */
 	public void setFromLanguage(String FromLanguage) {
 		this.FromLanguage = FromLanguage;
 	}
 
+	/**
+	 * Set the LanguageNameTranPid field
+	 *
+	 * @param LanguageNameTranPid
+	 *            Contents of the LANGUAGE_NAME_TRAN_PID column
+	 */
 	public void setLanguageNameTranPid(int LanguageNameTranPid) {
 		this.LanguageNameTranPid = LanguageNameTranPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the ToLanguage field
+	 *
+	 * @param ToLanguage
+	 *            Contents of the TO_LANGUAGE column
+	 */
 	public void setToLanguage(String ToLanguage) {
 		this.ToLanguage = ToLanguage;
 	}
 
+	/**
+	 * Set the Translation field
+	 *
+	 * @param Translation
+	 *            Contents of the TRANSLATION column
+	 */
 	public void setTranslation(String Translation) {
 		this.Translation = Translation;
 	}

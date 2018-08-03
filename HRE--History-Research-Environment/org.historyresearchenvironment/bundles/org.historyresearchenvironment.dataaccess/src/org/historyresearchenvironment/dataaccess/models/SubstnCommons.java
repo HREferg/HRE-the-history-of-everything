@@ -56,8 +56,24 @@ public class SubstnCommons extends AbstractHreDataModel {
 	private boolean Show;
 	private SubstnCommons model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public SubstnCommons() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param SubstnCommonPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public SubstnCommons(int SubstnCommonPid) throws SQLException {
 		super();
@@ -127,58 +143,128 @@ public class SubstnCommons extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DefltParamsKey field.
+	 *
+	 * @return Contents of the DEFLT_PARAMS_KEY column
+	 */
 	public short getDefltParamsKey() {
 		return this.DefltParamsKey;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the ParamsSetKey field.
+	 *
+	 * @return Contents of the PARAMS_SET_KEY column
+	 */
 	public short getParamsSetKey() {
 		return this.ParamsSetKey;
 	}
 
+	/**
+	 * Get the ParentStepPid field.
+	 *
+	 * @return Contents of the PARENT_STEP_PID column
+	 */
 	public int getParentStepPid() {
 		return this.ParentStepPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ScriptGroupKey field.
+	 *
+	 * @return Contents of the SCRIPT_GROUP_KEY column
+	 */
 	public short getScriptGroupKey() {
 		return this.ScriptGroupKey;
 	}
 
+	/**
+	 * Get the ScriptKey field.
+	 *
+	 * @return Contents of the SCRIPT_KEY column
+	 */
 	public short getScriptKey() {
 		return this.ScriptKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the SubstnCommonPid field.
+	 *
+	 * @return Contents of the SUBSTN_COMMON_PID column
+	 */
 	public int getSubstnCommonPid() {
 		return this.SubstnCommonPid;
 	}
 
+	/**
+	 * Get the SubstnTypeKey field.
+	 *
+	 * @return Contents of the SUBSTN_TYPE_KEY column
+	 */
 	public short getSubstnTypeKey() {
 		return this.SubstnTypeKey;
 	}
 
+	/**
+	 * Get the ThisParamsKey field.
+	 *
+	 * @return Contents of the THIS_PARAMS_KEY column
+	 */
 	public short getThisParamsKey() {
 		return this.ThisParamsKey;
 	}
@@ -223,58 +309,142 @@ public class SubstnCommons extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DefltParamsKey field
+	 *
+	 * @param DefltParamsKey
+	 *            Contents of the DEFLT_PARAMS_KEY column
+	 */
 	public void setDefltParamsKey(short DefltParamsKey) {
 		this.DefltParamsKey = DefltParamsKey;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the ParamsSetKey field
+	 *
+	 * @param ParamsSetKey
+	 *            Contents of the PARAMS_SET_KEY column
+	 */
 	public void setParamsSetKey(short ParamsSetKey) {
 		this.ParamsSetKey = ParamsSetKey;
 	}
 
+	/**
+	 * Set the ParentStepPid field
+	 *
+	 * @param ParentStepPid
+	 *            Contents of the PARENT_STEP_PID column
+	 */
 	public void setParentStepPid(int ParentStepPid) {
 		this.ParentStepPid = ParentStepPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ScriptGroupKey field
+	 *
+	 * @param ScriptGroupKey
+	 *            Contents of the SCRIPT_GROUP_KEY column
+	 */
 	public void setScriptGroupKey(short ScriptGroupKey) {
 		this.ScriptGroupKey = ScriptGroupKey;
 	}
 
+	/**
+	 * Set the ScriptKey field
+	 *
+	 * @param ScriptKey
+	 *            Contents of the SCRIPT_KEY column
+	 */
 	public void setScriptKey(short ScriptKey) {
 		this.ScriptKey = ScriptKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the SubstnCommonPid field
+	 *
+	 * @param SubstnCommonPid
+	 *            Contents of the SUBSTN_COMMON_PID column
+	 */
 	public void setSubstnCommonPid(int SubstnCommonPid) {
 		this.SubstnCommonPid = SubstnCommonPid;
 	}
 
+	/**
+	 * Set the SubstnTypeKey field
+	 *
+	 * @param SubstnTypeKey
+	 *            Contents of the SUBSTN_TYPE_KEY column
+	 */
 	public void setSubstnTypeKey(short SubstnTypeKey) {
 		this.SubstnTypeKey = SubstnTypeKey;
 	}
 
+	/**
+	 * Set the ThisParamsKey field
+	 *
+	 * @param ThisParamsKey
+	 *            Contents of the THIS_PARAMS_KEY column
+	 */
 	public void setThisParamsKey(short ThisParamsKey) {
 		this.ThisParamsKey = ThisParamsKey;
 	}

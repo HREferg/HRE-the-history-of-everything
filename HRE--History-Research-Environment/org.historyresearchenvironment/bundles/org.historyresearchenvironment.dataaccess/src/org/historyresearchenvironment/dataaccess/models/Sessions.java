@@ -46,8 +46,24 @@ public class Sessions extends AbstractHreDataModel {
 	private int CommitNum;
 	private Sessions model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public Sessions() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param SessionPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public Sessions(int SessionPid) throws SQLException {
 		super();
@@ -107,38 +123,83 @@ public class Sessions extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitNum field.
+	 *
+	 * @return Contents of the COMMIT_NUM column
+	 */
 	public int getCommitNum() {
 		return this.CommitNum;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the ProjectPid field.
+	 *
+	 * @return Contents of the PROJECT_PID column
+	 */
 	public int getProjectPid() {
 		return this.ProjectPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SessionPid field.
+	 *
+	 * @return Contents of the SESSION_PID column
+	 */
 	public int getSessionPid() {
 		return this.SessionPid;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the TimeClosed field.
+	 *
+	 * @return Contents of the TIME_CLOSED column
+	 */
 	public Timestamp getTimeClosed() {
 		return this.TimeClosed;
 	}
 
+	/**
+	 * Get the TimeOpened field.
+	 *
+	 * @return Contents of the TIME_OPENED column
+	 */
 	public Timestamp getTimeOpened() {
 		return this.TimeOpened;
 	}
 
+	/**
+	 * Get the UserPid field.
+	 *
+	 * @return Contents of the USER_PID column
+	 */
 	public int getUserPid() {
 		return this.UserPid;
 	}
@@ -173,38 +234,92 @@ public class Sessions extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitNum field
+	 *
+	 * @param CommitNum
+	 *            Contents of the COMMIT_NUM column
+	 */
 	public void setCommitNum(int CommitNum) {
 		this.CommitNum = CommitNum;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the ProjectPid field
+	 *
+	 * @param ProjectPid
+	 *            Contents of the PROJECT_PID column
+	 */
 	public void setProjectPid(int ProjectPid) {
 		this.ProjectPid = ProjectPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SessionPid field
+	 *
+	 * @param SessionPid
+	 *            Contents of the SESSION_PID column
+	 */
 	public void setSessionPid(int SessionPid) {
 		this.SessionPid = SessionPid;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the TimeClosed field
+	 *
+	 * @param TimeClosed
+	 *            Contents of the TIME_CLOSED column
+	 */
 	public void setTimeClosed(Timestamp TimeClosed) {
 		this.TimeClosed = TimeClosed;
 	}
 
+	/**
+	 * Set the TimeOpened field
+	 *
+	 * @param TimeOpened
+	 *            Contents of the TIME_OPENED column
+	 */
 	public void setTimeOpened(Timestamp TimeOpened) {
 		this.TimeOpened = TimeOpened;
 	}
 
+	/**
+	 * Set the UserPid field
+	 *
+	 * @param UserPid
+	 *            Contents of the USER_PID column
+	 */
 	public void setUserPid(int UserPid) {
 		this.UserPid = UserPid;
 	}

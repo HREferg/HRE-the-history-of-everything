@@ -55,8 +55,24 @@ public class FlagStateDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private FlagStateDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public FlagStateDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param FlagStateDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public FlagStateDefns(int FlagStateDefnPid) throws SQLException {
 		super();
@@ -124,54 +140,119 @@ public class FlagStateDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the FlagStateDefnPid field.
+	 *
+	 * @return Contents of the FLAG_STATE_DEFN_PID column
+	 */
 	public int getFlagStateDefnPid() {
 		return this.FlagStateDefnPid;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the ParentFlagSlot field.
+	 *
+	 * @return Contents of the PARENT_FLAG_SLOT column
+	 */
 	public short getParentFlagSlot() {
 		return this.ParentFlagSlot;
 	}
 
+	/**
+	 * Get the ParentSubTypeKey field.
+	 *
+	 * @return Contents of the PARENT_SUB_TYPE_KEY column
+	 */
 	public short getParentSubTypeKey() {
 		return this.ParentSubTypeKey;
 	}
 
+	/**
+	 * Get the ParentTypeKey field.
+	 *
+	 * @return Contents of the PARENT_TYPE_KEY column
+	 */
 	public short getParentTypeKey() {
 		return this.ParentTypeKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the StateValue field.
+	 *
+	 * @return Contents of the STATE_VALUE column
+	 */
 	public short getStateValue() {
 		return this.StateValue;
 	}
@@ -214,54 +295,132 @@ public class FlagStateDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the FlagStateDefnPid field
+	 *
+	 * @param FlagStateDefnPid
+	 *            Contents of the FLAG_STATE_DEFN_PID column
+	 */
 	public void setFlagStateDefnPid(int FlagStateDefnPid) {
 		this.FlagStateDefnPid = FlagStateDefnPid;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the ParentFlagSlot field
+	 *
+	 * @param ParentFlagSlot
+	 *            Contents of the PARENT_FLAG_SLOT column
+	 */
 	public void setParentFlagSlot(short ParentFlagSlot) {
 		this.ParentFlagSlot = ParentFlagSlot;
 	}
 
+	/**
+	 * Set the ParentSubTypeKey field
+	 *
+	 * @param ParentSubTypeKey
+	 *            Contents of the PARENT_SUB_TYPE_KEY column
+	 */
 	public void setParentSubTypeKey(short ParentSubTypeKey) {
 		this.ParentSubTypeKey = ParentSubTypeKey;
 	}
 
+	/**
+	 * Set the ParentTypeKey field
+	 *
+	 * @param ParentTypeKey
+	 *            Contents of the PARENT_TYPE_KEY column
+	 */
 	public void setParentTypeKey(short ParentTypeKey) {
 		this.ParentTypeKey = ParentTypeKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the StateValue field
+	 *
+	 * @param StateValue
+	 *            Contents of the STATE_VALUE column
+	 */
 	public void setStateValue(short StateValue) {
 		this.StateValue = StateValue;
 	}

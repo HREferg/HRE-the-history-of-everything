@@ -51,8 +51,24 @@ public class TableDefns extends AbstractHreDataModel {
 	private boolean HasNotepads;
 	private TableDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public TableDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param TableDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public TableDefns(int TableDefnPid) throws SQLException {
 		super();
@@ -118,50 +134,110 @@ public class TableDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the HasFlags field.
+	 *
+	 * @return Contents of the HAS_FLAGS column
+	 */
 	public boolean getHasFlags() {
 		return this.HasFlags;
 	}
 
+	/**
+	 * Get the HasNotepads field.
+	 *
+	 * @return Contents of the HAS_NOTEPADS column
+	 */
 	public boolean getHasNotepads() {
 		return this.HasNotepads;
 	}
 
+	/**
+	 * Get the LastRecordPid field.
+	 *
+	 * @return Contents of the LAST_RECORD_PID column
+	 */
 	public int getLastRecordPid() {
 		return this.LastRecordPid;
 	}
 
+	/**
+	 * Get the PluginKey field.
+	 *
+	 * @return Contents of the PLUGIN_KEY column
+	 */
 	public short getPluginKey() {
 		return this.PluginKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the RecordValidKey field.
+	 *
+	 * @return Contents of the RECORD_VALID_KEY column
+	 */
 	public short getRecordValidKey() {
 		return this.RecordValidKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the SqlName field.
+	 *
+	 * @return Contents of the SQL_NAME column
+	 */
 	public String getSqlName() {
 		return this.SqlName;
 	}
 
+	/**
+	 * Get the StorageTypeKey field.
+	 *
+	 * @return Contents of the STORAGE_TYPE_KEY column
+	 */
 	public short getStorageTypeKey() {
 		return this.StorageTypeKey;
 	}
 
+	/**
+	 * Get the TableDefnPid field.
+	 *
+	 * @return Contents of the TABLE_DEFN_PID column
+	 */
 	public int getTableDefnPid() {
 		return this.TableDefnPid;
 	}
 
+	/**
+	 * Get the VersionName field.
+	 *
+	 * @return Contents of the VERSION_NAME column
+	 */
 	public String getVersionName() {
 		return this.VersionName;
 	}
@@ -202,50 +278,122 @@ public class TableDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the HasFlags field
+	 *
+	 * @param HasFlags
+	 *            Contents of the HAS_FLAGS column
+	 */
 	public void setHasFlags(boolean HasFlags) {
 		this.HasFlags = HasFlags;
 	}
 
+	/**
+	 * Set the HasNotepads field
+	 *
+	 * @param HasNotepads
+	 *            Contents of the HAS_NOTEPADS column
+	 */
 	public void setHasNotepads(boolean HasNotepads) {
 		this.HasNotepads = HasNotepads;
 	}
 
+	/**
+	 * Set the LastRecordPid field
+	 *
+	 * @param LastRecordPid
+	 *            Contents of the LAST_RECORD_PID column
+	 */
 	public void setLastRecordPid(int LastRecordPid) {
 		this.LastRecordPid = LastRecordPid;
 	}
 
+	/**
+	 * Set the PluginKey field
+	 *
+	 * @param PluginKey
+	 *            Contents of the PLUGIN_KEY column
+	 */
 	public void setPluginKey(short PluginKey) {
 		this.PluginKey = PluginKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the RecordValidKey field
+	 *
+	 * @param RecordValidKey
+	 *            Contents of the RECORD_VALID_KEY column
+	 */
 	public void setRecordValidKey(short RecordValidKey) {
 		this.RecordValidKey = RecordValidKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the SqlName field
+	 *
+	 * @param SqlName
+	 *            Contents of the SQL_NAME column
+	 */
 	public void setSqlName(String SqlName) {
 		this.SqlName = SqlName;
 	}
 
+	/**
+	 * Set the StorageTypeKey field
+	 *
+	 * @param StorageTypeKey
+	 *            Contents of the STORAGE_TYPE_KEY column
+	 */
 	public void setStorageTypeKey(short StorageTypeKey) {
 		this.StorageTypeKey = StorageTypeKey;
 	}
 
+	/**
+	 * Set the TableDefnPid field
+	 *
+	 * @param TableDefnPid
+	 *            Contents of the TABLE_DEFN_PID column
+	 */
 	public void setTableDefnPid(int TableDefnPid) {
 		this.TableDefnPid = TableDefnPid;
 	}
 
+	/**
+	 * Set the VersionName field
+	 *
+	 * @param VersionName
+	 *            Contents of the VERSION_NAME column
+	 */
 	public void setVersionName(String VersionName) {
 		this.VersionName = VersionName;
 	}

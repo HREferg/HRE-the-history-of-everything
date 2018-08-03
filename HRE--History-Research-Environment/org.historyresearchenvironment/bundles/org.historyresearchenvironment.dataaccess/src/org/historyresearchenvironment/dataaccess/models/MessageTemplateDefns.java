@@ -50,8 +50,24 @@ public class MessageTemplateDefns extends AbstractHreDataModel {
 	private boolean IsError;
 	private MessageTemplateDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public MessageTemplateDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param MessageTemplateDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public MessageTemplateDefns(int MessageTemplateDefnPid) throws SQLException {
 		super();
@@ -113,42 +129,92 @@ public class MessageTemplateDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the IsError field.
+	 *
+	 * @return Contents of the IS_ERROR column
+	 */
 	public boolean getIsError() {
 		return this.IsError;
 	}
 
+	/**
+	 * Get the MessageTemplateDefnPid field.
+	 *
+	 * @return Contents of the MESSAGE_TEMPLATE_DEFN_PID column
+	 */
 	public int getMessageTemplateDefnPid() {
 		return this.MessageTemplateDefnPid;
 	}
 
+	/**
+	 * Get the PluginKey field.
+	 *
+	 * @return Contents of the PLUGIN_KEY column
+	 */
 	public short getPluginKey() {
 		return this.PluginKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the RequesterPid field.
+	 *
+	 * @return Contents of the REQUESTER_PID column
+	 */
 	public int getRequesterPid() {
 		return this.RequesterPid;
 	}
 
+	/**
+	 * Get the RequesterSubTypeKey field.
+	 *
+	 * @return Contents of the REQUESTER_SUB_TYPE_KEY column
+	 */
 	public short getRequesterSubTypeKey() {
 		return this.RequesterSubTypeKey;
 	}
 
+	/**
+	 * Get the RequesterTypeKey field.
+	 *
+	 * @return Contents of the REQUESTER_TYPE_KEY column
+	 */
 	public short getRequesterTypeKey() {
 		return this.RequesterTypeKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the SiteKey field.
+	 *
+	 * @return Contents of the SITE_KEY column
+	 */
 	public short getSiteKey() {
 		return this.SiteKey;
 	}
@@ -185,42 +251,102 @@ public class MessageTemplateDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the IsError field
+	 *
+	 * @param IsError
+	 *            Contents of the IS_ERROR column
+	 */
 	public void setIsError(boolean IsError) {
 		this.IsError = IsError;
 	}
 
+	/**
+	 * Set the MessageTemplateDefnPid field
+	 *
+	 * @param MessageTemplateDefnPid
+	 *            Contents of the MESSAGE_TEMPLATE_DEFN_PID column
+	 */
 	public void setMessageTemplateDefnPid(int MessageTemplateDefnPid) {
 		this.MessageTemplateDefnPid = MessageTemplateDefnPid;
 	}
 
+	/**
+	 * Set the PluginKey field
+	 *
+	 * @param PluginKey
+	 *            Contents of the PLUGIN_KEY column
+	 */
 	public void setPluginKey(short PluginKey) {
 		this.PluginKey = PluginKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the RequesterPid field
+	 *
+	 * @param RequesterPid
+	 *            Contents of the REQUESTER_PID column
+	 */
 	public void setRequesterPid(int RequesterPid) {
 		this.RequesterPid = RequesterPid;
 	}
 
+	/**
+	 * Set the RequesterSubTypeKey field
+	 *
+	 * @param RequesterSubTypeKey
+	 *            Contents of the REQUESTER_SUB_TYPE_KEY column
+	 */
 	public void setRequesterSubTypeKey(short RequesterSubTypeKey) {
 		this.RequesterSubTypeKey = RequesterSubTypeKey;
 	}
 
+	/**
+	 * Set the RequesterTypeKey field
+	 *
+	 * @param RequesterTypeKey
+	 *            Contents of the REQUESTER_TYPE_KEY column
+	 */
 	public void setRequesterTypeKey(short RequesterTypeKey) {
 		this.RequesterTypeKey = RequesterTypeKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the SiteKey field
+	 *
+	 * @param SiteKey
+	 *            Contents of the SITE_KEY column
+	 */
 	public void setSiteKey(short SiteKey) {
 		this.SiteKey = SiteKey;
 	}

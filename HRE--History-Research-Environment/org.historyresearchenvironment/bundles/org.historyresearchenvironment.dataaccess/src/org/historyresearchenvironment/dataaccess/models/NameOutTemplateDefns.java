@@ -54,8 +54,24 @@ public class NameOutTemplateDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private NameOutTemplateDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public NameOutTemplateDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param NameOutTemplateDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public NameOutTemplateDefns(int NameOutTemplateDefnPid) throws SQLException {
 		super();
@@ -121,50 +137,110 @@ public class NameOutTemplateDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the NameOutTemplateDefnPid field.
+	 *
+	 * @return Contents of the NAME_OUT_TEMPLATE_DEFN_PID column
+	 */
 	public int getNameOutTemplateDefnPid() {
 		return this.NameOutTemplateDefnPid;
 	}
 
+	/**
+	 * Get the ParentNameStyleTypeKey field.
+	 *
+	 * @return Contents of the PARENT_NAME_STYLE_TYPE_KEY column
+	 */
 	public short getParentNameStyleTypeKey() {
 		return this.ParentNameStyleTypeKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the SortingOnly field.
+	 *
+	 * @return Contents of the SORTING_ONLY column
+	 */
 	public boolean getSortingOnly() {
 		return this.SortingOnly;
 	}
 
+	/**
+	 * Get the TemplateTypeKey field.
+	 *
+	 * @return Contents of the TEMPLATE_TYPE_KEY column
+	 */
 	public short getTemplateTypeKey() {
 		return this.TemplateTypeKey;
 	}
@@ -205,50 +281,122 @@ public class NameOutTemplateDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the NameOutTemplateDefnPid field
+	 *
+	 * @param NameOutTemplateDefnPid
+	 *            Contents of the NAME_OUT_TEMPLATE_DEFN_PID column
+	 */
 	public void setNameOutTemplateDefnPid(int NameOutTemplateDefnPid) {
 		this.NameOutTemplateDefnPid = NameOutTemplateDefnPid;
 	}
 
+	/**
+	 * Set the ParentNameStyleTypeKey field
+	 *
+	 * @param ParentNameStyleTypeKey
+	 *            Contents of the PARENT_NAME_STYLE_TYPE_KEY column
+	 */
 	public void setParentNameStyleTypeKey(short ParentNameStyleTypeKey) {
 		this.ParentNameStyleTypeKey = ParentNameStyleTypeKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the SortingOnly field
+	 *
+	 * @param SortingOnly
+	 *            Contents of the SORTING_ONLY column
+	 */
 	public void setSortingOnly(boolean SortingOnly) {
 		this.SortingOnly = SortingOnly;
 	}
 
+	/**
+	 * Set the TemplateTypeKey field
+	 *
+	 * @param TemplateTypeKey
+	 *            Contents of the TEMPLATE_TYPE_KEY column
+	 */
 	public void setTemplateTypeKey(short TemplateTypeKey) {
 		this.TemplateTypeKey = TemplateTypeKey;
 	}

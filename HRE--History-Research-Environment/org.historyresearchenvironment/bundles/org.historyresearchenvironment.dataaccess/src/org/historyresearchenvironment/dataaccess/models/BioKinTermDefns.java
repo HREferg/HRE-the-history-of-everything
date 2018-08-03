@@ -58,8 +58,24 @@ public class BioKinTermDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private BioKinTermDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public BioKinTermDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param BioKinTermDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public BioKinTermDefns(int BioKinTermDefnPid) throws SQLException {
 		super();
@@ -129,58 +145,128 @@ public class BioKinTermDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the AncestorKinCode field.
+	 *
+	 * @return Contents of the ANCESTOR_KIN_CODE column
+	 */
 	public String getAncestorKinCode() {
 		return this.AncestorKinCode;
 	}
 
+	/**
+	 * Get the BioKinTermDefnPid field.
+	 *
+	 * @return Contents of the BIO_KIN_TERM_DEFN_PID column
+	 */
 	public int getBioKinTermDefnPid() {
 		return this.BioKinTermDefnPid;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the CurrentIsFemale field.
+	 *
+	 * @return Contents of the CURRENT_IS_FEMALE column
+	 */
 	public boolean getCurrentIsFemale() {
 		return this.CurrentIsFemale;
 	}
 
+	/**
+	 * Get the DescendantKinCode field.
+	 *
+	 * @return Contents of the DESCENDANT_KIN_CODE column
+	 */
 	public String getDescendantKinCode() {
 		return this.DescendantKinCode;
 	}
 
+	/**
+	 * Get the FocusIsFemale field.
+	 *
+	 * @return Contents of the FOCUS_IS_FEMALE column
+	 */
 	public boolean getFocusIsFemale() {
 		return this.FocusIsFemale;
 	}
 
+	/**
+	 * Get the KinEthnicityKey field.
+	 *
+	 * @return Contents of the KIN_ETHNICITY_KEY column
+	 */
 	public short getKinEthnicityKey() {
 		return this.KinEthnicityKey;
 	}
 
+	/**
+	 * Get the KinTermTransKey field.
+	 *
+	 * @return Contents of the KIN_TERM_TRANS_KEY column
+	 */
 	public short getKinTermTransKey() {
 		return this.KinTermTransKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the RemovedGeneration field.
+	 *
+	 * @return Contents of the REMOVED_GENERATION column
+	 */
 	public short getRemovedGeneration() {
 		return this.RemovedGeneration;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the ThisGeneration field.
+	 *
+	 * @return Contents of the THIS_GENERATION column
+	 */
 	public short getThisGeneration() {
 		return this.ThisGeneration;
 	}
@@ -225,58 +311,142 @@ public class BioKinTermDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the AncestorKinCode field
+	 *
+	 * @param AncestorKinCode
+	 *            Contents of the ANCESTOR_KIN_CODE column
+	 */
 	public void setAncestorKinCode(String AncestorKinCode) {
 		this.AncestorKinCode = AncestorKinCode;
 	}
 
+	/**
+	 * Set the BioKinTermDefnPid field
+	 *
+	 * @param BioKinTermDefnPid
+	 *            Contents of the BIO_KIN_TERM_DEFN_PID column
+	 */
 	public void setBioKinTermDefnPid(int BioKinTermDefnPid) {
 		this.BioKinTermDefnPid = BioKinTermDefnPid;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the CurrentIsFemale field
+	 *
+	 * @param CurrentIsFemale
+	 *            Contents of the CURRENT_IS_FEMALE column
+	 */
 	public void setCurrentIsFemale(boolean CurrentIsFemale) {
 		this.CurrentIsFemale = CurrentIsFemale;
 	}
 
+	/**
+	 * Set the DescendantKinCode field
+	 *
+	 * @param DescendantKinCode
+	 *            Contents of the DESCENDANT_KIN_CODE column
+	 */
 	public void setDescendantKinCode(String DescendantKinCode) {
 		this.DescendantKinCode = DescendantKinCode;
 	}
 
+	/**
+	 * Set the FocusIsFemale field
+	 *
+	 * @param FocusIsFemale
+	 *            Contents of the FOCUS_IS_FEMALE column
+	 */
 	public void setFocusIsFemale(boolean FocusIsFemale) {
 		this.FocusIsFemale = FocusIsFemale;
 	}
 
+	/**
+	 * Set the KinEthnicityKey field
+	 *
+	 * @param KinEthnicityKey
+	 *            Contents of the KIN_ETHNICITY_KEY column
+	 */
 	public void setKinEthnicityKey(short KinEthnicityKey) {
 		this.KinEthnicityKey = KinEthnicityKey;
 	}
 
+	/**
+	 * Set the KinTermTransKey field
+	 *
+	 * @param KinTermTransKey
+	 *            Contents of the KIN_TERM_TRANS_KEY column
+	 */
 	public void setKinTermTransKey(short KinTermTransKey) {
 		this.KinTermTransKey = KinTermTransKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the RemovedGeneration field
+	 *
+	 * @param RemovedGeneration
+	 *            Contents of the REMOVED_GENERATION column
+	 */
 	public void setRemovedGeneration(short RemovedGeneration) {
 		this.RemovedGeneration = RemovedGeneration;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the ThisGeneration field
+	 *
+	 * @param ThisGeneration
+	 *            Contents of the THIS_GENERATION column
+	 */
 	public void setThisGeneration(short ThisGeneration) {
 		this.ThisGeneration = ThisGeneration;
 	}

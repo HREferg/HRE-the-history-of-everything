@@ -71,8 +71,24 @@ public class ContainNames extends AbstractHreDataModel {
 	private int MemoSetPid;
 	private ContainNames model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public ContainNames() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param ContainNamePid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public ContainNames(int ContainNamePid) throws SQLException {
 		super();
@@ -156,86 +172,191 @@ public class ContainNames extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the ContainNamePid field.
+	 *
+	 * @return Contents of the CONTAIN_NAME_PID column
+	 */
 	public int getContainNamePid() {
 		return this.ContainNamePid;
 	}
 
+	/**
+	 * Get the ElementsEntered field.
+	 *
+	 * @return Contents of the ELEMENTS_ENTERED column
+	 */
 	public byte[] getElementsEntered() {
 		return this.ElementsEntered;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the MemoSetPid field.
+	 *
+	 * @return Contents of the MEMO_SET_PID column
+	 */
 	public int getMemoSetPid() {
 		return this.MemoSetPid;
 	}
 
+	/**
+	 * Get the NameStyleKey field.
+	 *
+	 * @return Contents of the NAME_STYLE_KEY column
+	 */
 	public short getNameStyleKey() {
 		return this.NameStyleKey;
 	}
 
+	/**
+	 * Get the NameTagKey field.
+	 *
+	 * @return Contents of the NAME_TAG_KEY column
+	 */
 	public short getNameTagKey() {
 		return this.NameTagKey;
 	}
 
+	/**
+	 * Get the NextHdateInferred field.
+	 *
+	 * @return Contents of the NEXT_HDATE_INFERRED column
+	 */
 	public boolean getNextHdateInferred() {
 		return this.NextHdateInferred;
 	}
 
+	/**
+	 * Get the NextHdatePid field.
+	 *
+	 * @return Contents of the NEXT_HDATE_PID column
+	 */
 	public int getNextHdatePid() {
 		return this.NextHdatePid;
 	}
 
+	/**
+	 * Get the NextNameEventPid field.
+	 *
+	 * @return Contents of the NEXT_NAME_EVENT_PID column
+	 */
 	public int getNextNameEventPid() {
 		return this.NextNameEventPid;
 	}
 
+	/**
+	 * Get the ParentPid field.
+	 *
+	 * @return Contents of the PARENT_PID column
+	 */
 	public int getParentPid() {
 		return this.ParentPid;
 	}
 
+	/**
+	 * Get the ParentSubTypeKey field.
+	 *
+	 * @return Contents of the PARENT_SUB_TYPE_KEY column
+	 */
 	public short getParentSubTypeKey() {
 		return this.ParentSubTypeKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SentceSetPid field.
+	 *
+	 * @return Contents of the SENTCE_SET_PID column
+	 */
 	public int getSentceSetPid() {
 		return this.SentceSetPid;
 	}
 
+	/**
+	 * Get the SentceStyleKey field.
+	 *
+	 * @return Contents of the SENTCE_STYLE_KEY column
+	 */
 	public short getSentceStyleKey() {
 		return this.SentceStyleKey;
 	}
 
+	/**
+	 * Get the SentceTypeKey field.
+	 *
+	 * @return Contents of the SENTCE_TYPE_KEY column
+	 */
 	public short getSentceTypeKey() {
 		return this.SentceTypeKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the ThemeKey field.
+	 *
+	 * @return Contents of the THEME_KEY column
+	 */
 	public short getThemeKey() {
 		return this.ThemeKey;
 	}
 
+	/**
+	 * Get the ThisHdateInferred field.
+	 *
+	 * @return Contents of the THIS_HDATE_INFERRED column
+	 */
 	public boolean getThisHdateInferred() {
 		return this.ThisHdateInferred;
 	}
 
+	/**
+	 * Get the ThisHdatePid field.
+	 *
+	 * @return Contents of the THIS_HDATE_PID column
+	 */
 	public int getThisHdatePid() {
 		return this.ThisHdatePid;
 	}
 
+	/**
+	 * Get the ThisNameEventPid field.
+	 *
+	 * @return Contents of the THIS_NAME_EVENT_PID column
+	 */
 	public int getThisNameEventPid() {
 		return this.ThisNameEventPid;
 	}
@@ -294,86 +415,212 @@ public class ContainNames extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the ContainNamePid field
+	 *
+	 * @param ContainNamePid
+	 *            Contents of the CONTAIN_NAME_PID column
+	 */
 	public void setContainNamePid(int ContainNamePid) {
 		this.ContainNamePid = ContainNamePid;
 	}
 
+	/**
+	 * Set the ElementsEntered field
+	 *
+	 * @param ElementsEntered
+	 *            Contents of the ELEMENTS_ENTERED column
+	 */
 	public void setElementsEntered(byte[] ElementsEntered) {
 		this.ElementsEntered = ElementsEntered;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the MemoSetPid field
+	 *
+	 * @param MemoSetPid
+	 *            Contents of the MEMO_SET_PID column
+	 */
 	public void setMemoSetPid(int MemoSetPid) {
 		this.MemoSetPid = MemoSetPid;
 	}
 
+	/**
+	 * Set the NameStyleKey field
+	 *
+	 * @param NameStyleKey
+	 *            Contents of the NAME_STYLE_KEY column
+	 */
 	public void setNameStyleKey(short NameStyleKey) {
 		this.NameStyleKey = NameStyleKey;
 	}
 
+	/**
+	 * Set the NameTagKey field
+	 *
+	 * @param NameTagKey
+	 *            Contents of the NAME_TAG_KEY column
+	 */
 	public void setNameTagKey(short NameTagKey) {
 		this.NameTagKey = NameTagKey;
 	}
 
+	/**
+	 * Set the NextHdateInferred field
+	 *
+	 * @param NextHdateInferred
+	 *            Contents of the NEXT_HDATE_INFERRED column
+	 */
 	public void setNextHdateInferred(boolean NextHdateInferred) {
 		this.NextHdateInferred = NextHdateInferred;
 	}
 
+	/**
+	 * Set the NextHdatePid field
+	 *
+	 * @param NextHdatePid
+	 *            Contents of the NEXT_HDATE_PID column
+	 */
 	public void setNextHdatePid(int NextHdatePid) {
 		this.NextHdatePid = NextHdatePid;
 	}
 
+	/**
+	 * Set the NextNameEventPid field
+	 *
+	 * @param NextNameEventPid
+	 *            Contents of the NEXT_NAME_EVENT_PID column
+	 */
 	public void setNextNameEventPid(int NextNameEventPid) {
 		this.NextNameEventPid = NextNameEventPid;
 	}
 
+	/**
+	 * Set the ParentPid field
+	 *
+	 * @param ParentPid
+	 *            Contents of the PARENT_PID column
+	 */
 	public void setParentPid(int ParentPid) {
 		this.ParentPid = ParentPid;
 	}
 
+	/**
+	 * Set the ParentSubTypeKey field
+	 *
+	 * @param ParentSubTypeKey
+	 *            Contents of the PARENT_SUB_TYPE_KEY column
+	 */
 	public void setParentSubTypeKey(short ParentSubTypeKey) {
 		this.ParentSubTypeKey = ParentSubTypeKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SentceSetPid field
+	 *
+	 * @param SentceSetPid
+	 *            Contents of the SENTCE_SET_PID column
+	 */
 	public void setSentceSetPid(int SentceSetPid) {
 		this.SentceSetPid = SentceSetPid;
 	}
 
+	/**
+	 * Set the SentceStyleKey field
+	 *
+	 * @param SentceStyleKey
+	 *            Contents of the SENTCE_STYLE_KEY column
+	 */
 	public void setSentceStyleKey(short SentceStyleKey) {
 		this.SentceStyleKey = SentceStyleKey;
 	}
 
+	/**
+	 * Set the SentceTypeKey field
+	 *
+	 * @param SentceTypeKey
+	 *            Contents of the SENTCE_TYPE_KEY column
+	 */
 	public void setSentceTypeKey(short SentceTypeKey) {
 		this.SentceTypeKey = SentceTypeKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the ThemeKey field
+	 *
+	 * @param ThemeKey
+	 *            Contents of the THEME_KEY column
+	 */
 	public void setThemeKey(short ThemeKey) {
 		this.ThemeKey = ThemeKey;
 	}
 
+	/**
+	 * Set the ThisHdateInferred field
+	 *
+	 * @param ThisHdateInferred
+	 *            Contents of the THIS_HDATE_INFERRED column
+	 */
 	public void setThisHdateInferred(boolean ThisHdateInferred) {
 		this.ThisHdateInferred = ThisHdateInferred;
 	}
 
+	/**
+	 * Set the ThisHdatePid field
+	 *
+	 * @param ThisHdatePid
+	 *            Contents of the THIS_HDATE_PID column
+	 */
 	public void setThisHdatePid(int ThisHdatePid) {
 		this.ThisHdatePid = ThisHdatePid;
 	}
 
+	/**
+	 * Set the ThisNameEventPid field
+	 *
+	 * @param ThisNameEventPid
+	 *            Contents of the THIS_NAME_EVENT_PID column
+	 */
 	public void setThisNameEventPid(int ThisNameEventPid) {
 		this.ThisNameEventPid = ThisNameEventPid;
 	}

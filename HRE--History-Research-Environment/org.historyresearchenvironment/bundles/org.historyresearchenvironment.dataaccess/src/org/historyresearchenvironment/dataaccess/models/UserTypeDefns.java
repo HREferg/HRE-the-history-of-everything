@@ -52,8 +52,24 @@ public class UserTypeDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private UserTypeDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public UserTypeDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param UserTypeDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public UserTypeDefns(int UserTypeDefnPid) throws SQLException {
 		super();
@@ -119,50 +135,110 @@ public class UserTypeDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the IsColorblind field.
+	 *
+	 * @return Contents of the IS_COLORBLIND column
+	 */
 	public boolean getIsColorblind() {
 		return this.IsColorblind;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the IsUserDefn field.
+	 *
+	 * @return Contents of the IS_USER_DEFN column
+	 */
 	public boolean getIsUserDefn() {
 		return this.IsUserDefn;
 	}
 
+	/**
+	 * Get the MinMouseUse field.
+	 *
+	 * @return Contents of the MIN_MOUSE_USE column
+	 */
 	public boolean getMinMouseUse() {
 		return this.MinMouseUse;
 	}
 
+	/**
+	 * Get the PoorEyesight field.
+	 *
+	 * @return Contents of the POOR_EYESIGHT column
+	 */
 	public boolean getPoorEyesight() {
 		return this.PoorEyesight;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the UserTypeDefnPid field.
+	 *
+	 * @return Contents of the USER_TYPE_DEFN_PID column
+	 */
 	public int getUserTypeDefnPid() {
 		return this.UserTypeDefnPid;
 	}
@@ -203,50 +279,122 @@ public class UserTypeDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the IsColorblind field
+	 *
+	 * @param IsColorblind
+	 *            Contents of the IS_COLORBLIND column
+	 */
 	public void setIsColorblind(boolean IsColorblind) {
 		this.IsColorblind = IsColorblind;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the IsUserDefn field
+	 *
+	 * @param IsUserDefn
+	 *            Contents of the IS_USER_DEFN column
+	 */
 	public void setIsUserDefn(boolean IsUserDefn) {
 		this.IsUserDefn = IsUserDefn;
 	}
 
+	/**
+	 * Set the MinMouseUse field
+	 *
+	 * @param MinMouseUse
+	 *            Contents of the MIN_MOUSE_USE column
+	 */
 	public void setMinMouseUse(boolean MinMouseUse) {
 		this.MinMouseUse = MinMouseUse;
 	}
 
+	/**
+	 * Set the PoorEyesight field
+	 *
+	 * @param PoorEyesight
+	 *            Contents of the POOR_EYESIGHT column
+	 */
 	public void setPoorEyesight(boolean PoorEyesight) {
 		this.PoorEyesight = PoorEyesight;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the UserTypeDefnPid field
+	 *
+	 * @param UserTypeDefnPid
+	 *            Contents of the USER_TYPE_DEFN_PID column
+	 */
 	public void setUserTypeDefnPid(int UserTypeDefnPid) {
 		this.UserTypeDefnPid = UserTypeDefnPid;
 	}

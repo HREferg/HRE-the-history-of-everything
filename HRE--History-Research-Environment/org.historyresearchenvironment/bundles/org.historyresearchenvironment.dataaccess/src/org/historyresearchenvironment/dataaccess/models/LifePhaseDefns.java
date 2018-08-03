@@ -51,8 +51,24 @@ public class LifePhaseDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private LifePhaseDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public LifePhaseDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param LifePhaseDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public LifePhaseDefns(int LifePhaseDefnPid) throws SQLException {
 		super();
@@ -116,46 +132,101 @@ public class LifePhaseDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the EntitySubTypeKey field.
+	 *
+	 * @return Contents of the ENTITY_SUB_TYPE_KEY column
+	 */
 	public short getEntitySubTypeKey() {
 		return this.EntitySubTypeKey;
 	}
 
+	/**
+	 * Get the EntityTypeKey field.
+	 *
+	 * @return Contents of the ENTITY_TYPE_KEY column
+	 */
 	public short getEntityTypeKey() {
 		return this.EntityTypeKey;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the LifePhaseDefnPid field.
+	 *
+	 * @return Contents of the LIFE_PHASE_DEFN_PID column
+	 */
 	public int getLifePhaseDefnPid() {
 		return this.LifePhaseDefnPid;
 	}
 
+	/**
+	 * Get the PluginKey field.
+	 *
+	 * @return Contents of the PLUGIN_KEY column
+	 */
 	public short getPluginKey() {
 		return this.PluginKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
@@ -194,46 +265,112 @@ public class LifePhaseDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the EntitySubTypeKey field
+	 *
+	 * @param EntitySubTypeKey
+	 *            Contents of the ENTITY_SUB_TYPE_KEY column
+	 */
 	public void setEntitySubTypeKey(short EntitySubTypeKey) {
 		this.EntitySubTypeKey = EntitySubTypeKey;
 	}
 
+	/**
+	 * Set the EntityTypeKey field
+	 *
+	 * @param EntityTypeKey
+	 *            Contents of the ENTITY_TYPE_KEY column
+	 */
 	public void setEntityTypeKey(short EntityTypeKey) {
 		this.EntityTypeKey = EntityTypeKey;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the LifePhaseDefnPid field
+	 *
+	 * @param LifePhaseDefnPid
+	 *            Contents of the LIFE_PHASE_DEFN_PID column
+	 */
 	public void setLifePhaseDefnPid(int LifePhaseDefnPid) {
 		this.LifePhaseDefnPid = LifePhaseDefnPid;
 	}
 
+	/**
+	 * Set the PluginKey field
+	 *
+	 * @param PluginKey
+	 *            Contents of the PLUGIN_KEY column
+	 */
 	public void setPluginKey(short PluginKey) {
 		this.PluginKey = PluginKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}

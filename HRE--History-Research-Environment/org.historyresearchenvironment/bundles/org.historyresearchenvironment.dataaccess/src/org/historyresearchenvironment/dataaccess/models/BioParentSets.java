@@ -60,8 +60,24 @@ public class BioParentSets extends AbstractHreDataModel {
 	private int SocialParent2Pid;
 	private BioParentSets model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public BioParentSets() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param BioParentSetPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public BioParentSets(int BioParentSetPid) throws SQLException {
 		super();
@@ -133,62 +149,137 @@ public class BioParentSets extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the BioParentSetPid field.
+	 *
+	 * @return Contents of the BIO_PARENT_SET_PID column
+	 */
 	public int getBioParentSetPid() {
 		return this.BioParentSetPid;
 	}
 
+	/**
+	 * Get the BioSubTypeKey field.
+	 *
+	 * @return Contents of the BIO_SUB_TYPE_KEY column
+	 */
 	public short getBioSubTypeKey() {
 		return this.BioSubTypeKey;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the EggProviderPid field.
+	 *
+	 * @return Contents of the EGG_PROVIDER_PID column
+	 */
 	public int getEggProviderPid() {
 		return this.EggProviderPid;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the MitoProviderPid field.
+	 *
+	 * @return Contents of the MITO_PROVIDER_PID column
+	 */
 	public int getMitoProviderPid() {
 		return this.MitoProviderPid;
 	}
 
+	/**
+	 * Get the OccasnPid field.
+	 *
+	 * @return Contents of the OCCASN_PID column
+	 */
 	public int getOccasnPid() {
 		return this.OccasnPid;
 	}
 
+	/**
+	 * Get the OccasnSubTypeKey field.
+	 *
+	 * @return Contents of the OCCASN_SUB_TYPE_KEY column
+	 */
 	public short getOccasnSubTypeKey() {
 		return this.OccasnSubTypeKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the SocialParent1Pid field.
+	 *
+	 * @return Contents of the SOCIAL_PARENT1_PID column
+	 */
 	public int getSocialParent1Pid() {
 		return this.SocialParent1Pid;
 	}
 
+	/**
+	 * Get the SocialParent2Pid field.
+	 *
+	 * @return Contents of the SOCIAL_PARENT2_PID column
+	 */
 	public int getSocialParent2Pid() {
 		return this.SocialParent2Pid;
 	}
 
+	/**
+	 * Get the SpermProviderPid field.
+	 *
+	 * @return Contents of the SPERM_PROVIDER_PID column
+	 */
 	public int getSpermProviderPid() {
 		return this.SpermProviderPid;
 	}
 
+	/**
+	 * Get the UterusProviderPid field.
+	 *
+	 * @return Contents of the UTERUS_PROVIDER_PID column
+	 */
 	public int getUterusProviderPid() {
 		return this.UterusProviderPid;
 	}
 
+	/**
+	 * Get the VisibleId field.
+	 *
+	 * @return Contents of the VISIBLE_ID column
+	 */
 	public int getVisibleId() {
 		return this.VisibleId;
 	}
@@ -235,62 +326,152 @@ public class BioParentSets extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the BioParentSetPid field
+	 *
+	 * @param BioParentSetPid
+	 *            Contents of the BIO_PARENT_SET_PID column
+	 */
 	public void setBioParentSetPid(int BioParentSetPid) {
 		this.BioParentSetPid = BioParentSetPid;
 	}
 
+	/**
+	 * Set the BioSubTypeKey field
+	 *
+	 * @param BioSubTypeKey
+	 *            Contents of the BIO_SUB_TYPE_KEY column
+	 */
 	public void setBioSubTypeKey(short BioSubTypeKey) {
 		this.BioSubTypeKey = BioSubTypeKey;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the EggProviderPid field
+	 *
+	 * @param EggProviderPid
+	 *            Contents of the EGG_PROVIDER_PID column
+	 */
 	public void setEggProviderPid(int EggProviderPid) {
 		this.EggProviderPid = EggProviderPid;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the MitoProviderPid field
+	 *
+	 * @param MitoProviderPid
+	 *            Contents of the MITO_PROVIDER_PID column
+	 */
 	public void setMitoProviderPid(int MitoProviderPid) {
 		this.MitoProviderPid = MitoProviderPid;
 	}
 
+	/**
+	 * Set the OccasnPid field
+	 *
+	 * @param OccasnPid
+	 *            Contents of the OCCASN_PID column
+	 */
 	public void setOccasnPid(int OccasnPid) {
 		this.OccasnPid = OccasnPid;
 	}
 
+	/**
+	 * Set the OccasnSubTypeKey field
+	 *
+	 * @param OccasnSubTypeKey
+	 *            Contents of the OCCASN_SUB_TYPE_KEY column
+	 */
 	public void setOccasnSubTypeKey(short OccasnSubTypeKey) {
 		this.OccasnSubTypeKey = OccasnSubTypeKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the SocialParent1Pid field
+	 *
+	 * @param SocialParent1Pid
+	 *            Contents of the SOCIAL_PARENT1_PID column
+	 */
 	public void setSocialParent1Pid(int SocialParent1Pid) {
 		this.SocialParent1Pid = SocialParent1Pid;
 	}
 
+	/**
+	 * Set the SocialParent2Pid field
+	 *
+	 * @param SocialParent2Pid
+	 *            Contents of the SOCIAL_PARENT2_PID column
+	 */
 	public void setSocialParent2Pid(int SocialParent2Pid) {
 		this.SocialParent2Pid = SocialParent2Pid;
 	}
 
+	/**
+	 * Set the SpermProviderPid field
+	 *
+	 * @param SpermProviderPid
+	 *            Contents of the SPERM_PROVIDER_PID column
+	 */
 	public void setSpermProviderPid(int SpermProviderPid) {
 		this.SpermProviderPid = SpermProviderPid;
 	}
 
+	/**
+	 * Set the UterusProviderPid field
+	 *
+	 * @param UterusProviderPid
+	 *            Contents of the UTERUS_PROVIDER_PID column
+	 */
 	public void setUterusProviderPid(int UterusProviderPid) {
 		this.UterusProviderPid = UterusProviderPid;
 	}
 
+	/**
+	 * Set the VisibleId field
+	 *
+	 * @param VisibleId
+	 *            Contents of the VISIBLE_ID column
+	 */
 	public void setVisibleId(int VisibleId) {
 		this.VisibleId = VisibleId;
 	}

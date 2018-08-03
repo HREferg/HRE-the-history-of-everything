@@ -64,8 +64,24 @@ public class OccasnAssocs extends AbstractHreDataModel {
 	private boolean Show;
 	private OccasnAssocs model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public OccasnAssocs() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param OccasnAssocPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public OccasnAssocs(int OccasnAssocPid) throws SQLException {
 		super();
@@ -143,74 +159,164 @@ public class OccasnAssocs extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the AssocNameUsedPid field.
+	 *
+	 * @return Contents of the ASSOC_NAME_USED_PID column
+	 */
 	public int getAssocNameUsedPid() {
 		return this.AssocNameUsedPid;
 	}
 
+	/**
+	 * Get the AssocSubTypeKey field.
+	 *
+	 * @return Contents of the ASSOC_SUB_TYPE_KEY column
+	 */
 	public short getAssocSubTypeKey() {
 		return this.AssocSubTypeKey;
 	}
 
+	/**
+	 * Get the AssocTypeKey field.
+	 *
+	 * @return Contents of the ASSOC_TYPE_KEY column
+	 */
 	public short getAssocTypeKey() {
 		return this.AssocTypeKey;
 	}
 
+	/**
+	 * Get the AssocTypePid field.
+	 *
+	 * @return Contents of the ASSOC_TYPE_PID column
+	 */
 	public int getAssocTypePid() {
 		return this.AssocTypePid;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the LocalSentceSetPid field.
+	 *
+	 * @return Contents of the LOCAL_SENTCE_SET_PID column
+	 */
 	public int getLocalSentceSetPid() {
 		return this.LocalSentceSetPid;
 	}
 
+	/**
+	 * Get the MemoSetPid field.
+	 *
+	 * @return Contents of the MEMO_SET_PID column
+	 */
 	public int getMemoSetPid() {
 		return this.MemoSetPid;
 	}
 
+	/**
+	 * Get the OccasnAssocPid field.
+	 *
+	 * @return Contents of the OCCASN_ASSOC_PID column
+	 */
 	public int getOccasnAssocPid() {
 		return this.OccasnAssocPid;
 	}
 
+	/**
+	 * Get the OccasnAssocTagKey field.
+	 *
+	 * @return Contents of the OCCASN_ASSOC_TAG_KEY column
+	 */
 	public short getOccasnAssocTagKey() {
 		return this.OccasnAssocTagKey;
 	}
 
+	/**
+	 * Get the OccasnPid field.
+	 *
+	 * @return Contents of the OCCASN_PID column
+	 */
 	public int getOccasnPid() {
 		return this.OccasnPid;
 	}
 
+	/**
+	 * Get the OccasnSubTypeKey field.
+	 *
+	 * @return Contents of the OCCASN_SUB_TYPE_KEY column
+	 */
 	public short getOccasnSubTypeKey() {
 		return this.OccasnSubTypeKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SentceStyleKey field.
+	 *
+	 * @return Contents of the SENTCE_STYLE_KEY column
+	 */
 	public short getSentceStyleKey() {
 		return this.SentceStyleKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the ThemeKey field.
+	 *
+	 * @return Contents of the THEME_KEY column
+	 */
 	public int getThemeKey() {
 		return this.ThemeKey;
 	}
@@ -263,74 +369,182 @@ public class OccasnAssocs extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the AssocNameUsedPid field
+	 *
+	 * @param AssocNameUsedPid
+	 *            Contents of the ASSOC_NAME_USED_PID column
+	 */
 	public void setAssocNameUsedPid(int AssocNameUsedPid) {
 		this.AssocNameUsedPid = AssocNameUsedPid;
 	}
 
+	/**
+	 * Set the AssocSubTypeKey field
+	 *
+	 * @param AssocSubTypeKey
+	 *            Contents of the ASSOC_SUB_TYPE_KEY column
+	 */
 	public void setAssocSubTypeKey(short AssocSubTypeKey) {
 		this.AssocSubTypeKey = AssocSubTypeKey;
 	}
 
+	/**
+	 * Set the AssocTypeKey field
+	 *
+	 * @param AssocTypeKey
+	 *            Contents of the ASSOC_TYPE_KEY column
+	 */
 	public void setAssocTypeKey(short AssocTypeKey) {
 		this.AssocTypeKey = AssocTypeKey;
 	}
 
+	/**
+	 * Set the AssocTypePid field
+	 *
+	 * @param AssocTypePid
+	 *            Contents of the ASSOC_TYPE_PID column
+	 */
 	public void setAssocTypePid(int AssocTypePid) {
 		this.AssocTypePid = AssocTypePid;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the LocalSentceSetPid field
+	 *
+	 * @param LocalSentceSetPid
+	 *            Contents of the LOCAL_SENTCE_SET_PID column
+	 */
 	public void setLocalSentceSetPid(int LocalSentceSetPid) {
 		this.LocalSentceSetPid = LocalSentceSetPid;
 	}
 
+	/**
+	 * Set the MemoSetPid field
+	 *
+	 * @param MemoSetPid
+	 *            Contents of the MEMO_SET_PID column
+	 */
 	public void setMemoSetPid(int MemoSetPid) {
 		this.MemoSetPid = MemoSetPid;
 	}
 
+	/**
+	 * Set the OccasnAssocPid field
+	 *
+	 * @param OccasnAssocPid
+	 *            Contents of the OCCASN_ASSOC_PID column
+	 */
 	public void setOccasnAssocPid(int OccasnAssocPid) {
 		this.OccasnAssocPid = OccasnAssocPid;
 	}
 
+	/**
+	 * Set the OccasnAssocTagKey field
+	 *
+	 * @param OccasnAssocTagKey
+	 *            Contents of the OCCASN_ASSOC_TAG_KEY column
+	 */
 	public void setOccasnAssocTagKey(short OccasnAssocTagKey) {
 		this.OccasnAssocTagKey = OccasnAssocTagKey;
 	}
 
+	/**
+	 * Set the OccasnPid field
+	 *
+	 * @param OccasnPid
+	 *            Contents of the OCCASN_PID column
+	 */
 	public void setOccasnPid(int OccasnPid) {
 		this.OccasnPid = OccasnPid;
 	}
 
+	/**
+	 * Set the OccasnSubTypeKey field
+	 *
+	 * @param OccasnSubTypeKey
+	 *            Contents of the OCCASN_SUB_TYPE_KEY column
+	 */
 	public void setOccasnSubTypeKey(short OccasnSubTypeKey) {
 		this.OccasnSubTypeKey = OccasnSubTypeKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SentceStyleKey field
+	 *
+	 * @param SentceStyleKey
+	 *            Contents of the SENTCE_STYLE_KEY column
+	 */
 	public void setSentceStyleKey(short SentceStyleKey) {
 		this.SentceStyleKey = SentceStyleKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the ThemeKey field
+	 *
+	 * @param ThemeKey
+	 *            Contents of the THEME_KEY column
+	 */
 	public void setThemeKey(int ThemeKey) {
 		this.ThemeKey = ThemeKey;
 	}

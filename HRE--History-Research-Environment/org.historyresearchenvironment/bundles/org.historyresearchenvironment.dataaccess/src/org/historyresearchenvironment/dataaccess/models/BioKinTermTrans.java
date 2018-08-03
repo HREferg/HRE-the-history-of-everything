@@ -45,8 +45,24 @@ public class BioKinTermTrans extends AbstractHreDataModel {
 	private String KinTerm;
 	private BioKinTermTrans model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public BioKinTermTrans() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param BioKinTermTranPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public BioKinTermTrans(int BioKinTermTranPid) throws SQLException {
 		super();
@@ -104,34 +120,74 @@ public class BioKinTermTrans extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the BioKinTermTranPid field.
+	 *
+	 * @return Contents of the BIO_KIN_TERM_TRAN_PID column
+	 */
 	public int getBioKinTermTranPid() {
 		return this.BioKinTermTranPid;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the KinEthnicityKey field.
+	 *
+	 * @return Contents of the KIN_ETHNICITY_KEY column
+	 */
 	public short getKinEthnicityKey() {
 		return this.KinEthnicityKey;
 	}
 
+	/**
+	 * Get the KinTerm field.
+	 *
+	 * @return Contents of the KIN_TERM column
+	 */
 	public String getKinTerm() {
 		return this.KinTerm;
 	}
 
+	/**
+	 * Get the KinTermHasSubstn field.
+	 *
+	 * @return Contents of the KIN_TERM_HAS_SUBSTN column
+	 */
 	public boolean getKinTermHasSubstn() {
 		return this.KinTermHasSubstn;
 	}
 
+	/**
+	 * Get the LangCode field.
+	 *
+	 * @return Contents of the LANG_CODE column
+	 */
 	public String getLangCode() {
 		return this.LangCode;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
@@ -164,34 +220,82 @@ public class BioKinTermTrans extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the BioKinTermTranPid field
+	 *
+	 * @param BioKinTermTranPid
+	 *            Contents of the BIO_KIN_TERM_TRAN_PID column
+	 */
 	public void setBioKinTermTranPid(int BioKinTermTranPid) {
 		this.BioKinTermTranPid = BioKinTermTranPid;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the KinEthnicityKey field
+	 *
+	 * @param KinEthnicityKey
+	 *            Contents of the KIN_ETHNICITY_KEY column
+	 */
 	public void setKinEthnicityKey(short KinEthnicityKey) {
 		this.KinEthnicityKey = KinEthnicityKey;
 	}
 
+	/**
+	 * Set the KinTerm field
+	 *
+	 * @param KinTerm
+	 *            Contents of the KIN_TERM column
+	 */
 	public void setKinTerm(String KinTerm) {
 		this.KinTerm = KinTerm;
 	}
 
+	/**
+	 * Set the KinTermHasSubstn field
+	 *
+	 * @param KinTermHasSubstn
+	 *            Contents of the KIN_TERM_HAS_SUBSTN column
+	 */
 	public void setKinTermHasSubstn(boolean KinTermHasSubstn) {
 		this.KinTermHasSubstn = KinTermHasSubstn;
 	}
 
+	/**
+	 * Set the LangCode field
+	 *
+	 * @param LangCode
+	 *            Contents of the LANG_CODE column
+	 */
 	public void setLangCode(String LangCode) {
 		this.LangCode = LangCode;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}

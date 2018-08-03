@@ -56,8 +56,24 @@ public class SubstnTemplates extends AbstractHreDataModel {
 	private boolean Show;
 	private SubstnTemplates model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public SubstnTemplates() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param SubstnTemplatePid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public SubstnTemplates(int SubstnTemplatePid) throws SQLException {
 		super();
@@ -127,58 +143,128 @@ public class SubstnTemplates extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DefltParamsKey field.
+	 *
+	 * @return Contents of the DEFLT_PARAMS_KEY column
+	 */
 	public short getDefltParamsKey() {
 		return this.DefltParamsKey;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the LayoutStyleClassKey field.
+	 *
+	 * @return Contents of the LAYOUT_STYLE_CLASS_KEY column
+	 */
 	public short getLayoutStyleClassKey() {
 		return this.LayoutStyleClassKey;
 	}
 
+	/**
+	 * Get the ParamsSetKey field.
+	 *
+	 * @return Contents of the PARAMS_SET_KEY column
+	 */
 	public short getParamsSetKey() {
 		return this.ParamsSetKey;
 	}
 
+	/**
+	 * Get the ParentStepPid field.
+	 *
+	 * @return Contents of the PARENT_STEP_PID column
+	 */
 	public int getParentStepPid() {
 		return this.ParentStepPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ScriptGroupKey field.
+	 *
+	 * @return Contents of the SCRIPT_GROUP_KEY column
+	 */
 	public short getScriptGroupKey() {
 		return this.ScriptGroupKey;
 	}
 
+	/**
+	 * Get the ScriptKey field.
+	 *
+	 * @return Contents of the SCRIPT_KEY column
+	 */
 	public short getScriptKey() {
 		return this.ScriptKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the SubstnTemplatePid field.
+	 *
+	 * @return Contents of the SUBSTN_TEMPLATE_PID column
+	 */
 	public int getSubstnTemplatePid() {
 		return this.SubstnTemplatePid;
 	}
 
+	/**
+	 * Get the ThisParamsKey field.
+	 *
+	 * @return Contents of the THIS_PARAMS_KEY column
+	 */
 	public short getThisParamsKey() {
 		return this.ThisParamsKey;
 	}
@@ -223,58 +309,142 @@ public class SubstnTemplates extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DefltParamsKey field
+	 *
+	 * @param DefltParamsKey
+	 *            Contents of the DEFLT_PARAMS_KEY column
+	 */
 	public void setDefltParamsKey(short DefltParamsKey) {
 		this.DefltParamsKey = DefltParamsKey;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the LayoutStyleClassKey field
+	 *
+	 * @param LayoutStyleClassKey
+	 *            Contents of the LAYOUT_STYLE_CLASS_KEY column
+	 */
 	public void setLayoutStyleClassKey(short LayoutStyleClassKey) {
 		this.LayoutStyleClassKey = LayoutStyleClassKey;
 	}
 
+	/**
+	 * Set the ParamsSetKey field
+	 *
+	 * @param ParamsSetKey
+	 *            Contents of the PARAMS_SET_KEY column
+	 */
 	public void setParamsSetKey(short ParamsSetKey) {
 		this.ParamsSetKey = ParamsSetKey;
 	}
 
+	/**
+	 * Set the ParentStepPid field
+	 *
+	 * @param ParentStepPid
+	 *            Contents of the PARENT_STEP_PID column
+	 */
 	public void setParentStepPid(int ParentStepPid) {
 		this.ParentStepPid = ParentStepPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ScriptGroupKey field
+	 *
+	 * @param ScriptGroupKey
+	 *            Contents of the SCRIPT_GROUP_KEY column
+	 */
 	public void setScriptGroupKey(short ScriptGroupKey) {
 		this.ScriptGroupKey = ScriptGroupKey;
 	}
 
+	/**
+	 * Set the ScriptKey field
+	 *
+	 * @param ScriptKey
+	 *            Contents of the SCRIPT_KEY column
+	 */
 	public void setScriptKey(short ScriptKey) {
 		this.ScriptKey = ScriptKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the SubstnTemplatePid field
+	 *
+	 * @param SubstnTemplatePid
+	 *            Contents of the SUBSTN_TEMPLATE_PID column
+	 */
 	public void setSubstnTemplatePid(int SubstnTemplatePid) {
 		this.SubstnTemplatePid = SubstnTemplatePid;
 	}
 
+	/**
+	 * Set the ThisParamsKey field
+	 *
+	 * @param ThisParamsKey
+	 *            Contents of the THIS_PARAMS_KEY column
+	 */
 	public void setThisParamsKey(short ThisParamsKey) {
 		this.ThisParamsKey = ThisParamsKey;
 	}

@@ -59,8 +59,24 @@ public class SubstnParamValues extends AbstractHreDataModel {
 	private boolean Show;
 	private SubstnParamValues model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public SubstnParamValues() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param SubstnParamValuePid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public SubstnParamValues(int SubstnParamValuePid) throws SQLException {
 		super();
@@ -132,62 +148,137 @@ public class SubstnParamValues extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the AliasKey field.
+	 *
+	 * @return Contents of the ALIAS_KEY column
+	 */
 	public short getAliasKey() {
 		return this.AliasKey;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DefltParamStepPid field.
+	 *
+	 * @return Contents of the DEFLT_PARAM_STEP_PID column
+	 */
 	public int getDefltParamStepPid() {
 		return this.DefltParamStepPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the ParamListKey field.
+	 *
+	 * @return Contents of the PARAM_LIST_KEY column
+	 */
 	public short getParamListKey() {
 		return this.ParamListKey;
 	}
 
+	/**
+	 * Get the ParamNameKey field.
+	 *
+	 * @return Contents of the PARAM_NAME_KEY column
+	 */
 	public short getParamNameKey() {
 		return this.ParamNameKey;
 	}
 
+	/**
+	 * Get the ParamSetKey field.
+	 *
+	 * @return Contents of the PARAM_SET_KEY column
+	 */
 	public short getParamSetKey() {
 		return this.ParamSetKey;
 	}
 
+	/**
+	 * Get the ParentStepPid field.
+	 *
+	 * @return Contents of the PARENT_STEP_PID column
+	 */
 	public int getParentStepPid() {
 		return this.ParentStepPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the SubstnParamValuePid field.
+	 *
+	 * @return Contents of the SUBSTN_PARAM_VALUE_PID column
+	 */
 	public int getSubstnParamValuePid() {
 		return this.SubstnParamValuePid;
 	}
 
+	/**
+	 * Get the ValueIsDataAlias field.
+	 *
+	 * @return Contents of the VALUE_IS_DATA_ALIAS column
+	 */
 	public boolean getValueIsDataAlias() {
 		return this.ValueIsDataAlias;
 	}
 
+	/**
+	 * Get the ValueIsOtherAlias field.
+	 *
+	 * @return Contents of the VALUE_IS_OTHER_ALIAS column
+	 */
 	public boolean getValueIsOtherAlias() {
 		return this.ValueIsOtherAlias;
 	}
@@ -234,62 +325,152 @@ public class SubstnParamValues extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the AliasKey field
+	 *
+	 * @param AliasKey
+	 *            Contents of the ALIAS_KEY column
+	 */
 	public void setAliasKey(short AliasKey) {
 		this.AliasKey = AliasKey;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DefltParamStepPid field
+	 *
+	 * @param DefltParamStepPid
+	 *            Contents of the DEFLT_PARAM_STEP_PID column
+	 */
 	public void setDefltParamStepPid(int DefltParamStepPid) {
 		this.DefltParamStepPid = DefltParamStepPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the ParamListKey field
+	 *
+	 * @param ParamListKey
+	 *            Contents of the PARAM_LIST_KEY column
+	 */
 	public void setParamListKey(short ParamListKey) {
 		this.ParamListKey = ParamListKey;
 	}
 
+	/**
+	 * Set the ParamNameKey field
+	 *
+	 * @param ParamNameKey
+	 *            Contents of the PARAM_NAME_KEY column
+	 */
 	public void setParamNameKey(short ParamNameKey) {
 		this.ParamNameKey = ParamNameKey;
 	}
 
+	/**
+	 * Set the ParamSetKey field
+	 *
+	 * @param ParamSetKey
+	 *            Contents of the PARAM_SET_KEY column
+	 */
 	public void setParamSetKey(short ParamSetKey) {
 		this.ParamSetKey = ParamSetKey;
 	}
 
+	/**
+	 * Set the ParentStepPid field
+	 *
+	 * @param ParentStepPid
+	 *            Contents of the PARENT_STEP_PID column
+	 */
 	public void setParentStepPid(int ParentStepPid) {
 		this.ParentStepPid = ParentStepPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the SubstnParamValuePid field
+	 *
+	 * @param SubstnParamValuePid
+	 *            Contents of the SUBSTN_PARAM_VALUE_PID column
+	 */
 	public void setSubstnParamValuePid(int SubstnParamValuePid) {
 		this.SubstnParamValuePid = SubstnParamValuePid;
 	}
 
+	/**
+	 * Set the ValueIsDataAlias field
+	 *
+	 * @param ValueIsDataAlias
+	 *            Contents of the VALUE_IS_DATA_ALIAS column
+	 */
 	public void setValueIsDataAlias(boolean ValueIsDataAlias) {
 		this.ValueIsDataAlias = ValueIsDataAlias;
 	}
 
+	/**
+	 * Set the ValueIsOtherAlias field
+	 *
+	 * @param ValueIsOtherAlias
+	 *            Contents of the VALUE_IS_OTHER_ALIAS column
+	 */
 	public void setValueIsOtherAlias(boolean ValueIsOtherAlias) {
 		this.ValueIsOtherAlias = ValueIsOtherAlias;
 	}

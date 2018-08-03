@@ -75,8 +75,24 @@ public class OccasnAssocTagDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private OccasnAssocTagDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public OccasnAssocTagDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param OccasnAssocTagDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public OccasnAssocTagDefns(int OccasnAssocTagDefnPid) throws SQLException {
 		super();
@@ -164,94 +180,209 @@ public class OccasnAssocTagDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the AssocSubTypeKey field.
+	 *
+	 * @return Contents of the ASSOC_SUB_TYPE_KEY column
+	 */
 	public short getAssocSubTypeKey() {
 		return this.AssocSubTypeKey;
 	}
 
+	/**
+	 * Get the AssocTypeKey field.
+	 *
+	 * @return Contents of the ASSOC_TYPE_KEY column
+	 */
 	public short getAssocTypeKey() {
 		return this.AssocTypeKey;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the GedcomTag field.
+	 *
+	 * @return Contents of the GEDCOM_TAG column
+	 */
 	public String getGedcomTag() {
 		return this.GedcomTag;
 	}
 
+	/**
+	 * Get the GroupKey field.
+	 *
+	 * @return Contents of the GROUP_KEY column
+	 */
 	public short getGroupKey() {
 		return this.GroupKey;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the IsRequiredRole field.
+	 *
+	 * @return Contents of the IS_REQUIRED_ROLE column
+	 */
 	public boolean getIsRequiredRole() {
 		return this.IsRequiredRole;
 	}
 
+	/**
+	 * Get the IsUserDefn field.
+	 *
+	 * @return Contents of the IS_USER_DEFN column
+	 */
 	public boolean getIsUserDefn() {
 		return this.IsUserDefn;
 	}
 
+	/**
+	 * Get the MaxInRole field.
+	 *
+	 * @return Contents of the MAX_IN_ROLE column
+	 */
 	public short getMaxInRole() {
 		return this.MaxInRole;
 	}
 
+	/**
+	 * Get the MinInRole field.
+	 *
+	 * @return Contents of the MIN_IN_ROLE column
+	 */
 	public short getMinInRole() {
 		return this.MinInRole;
 	}
 
+	/**
+	 * Get the OccasnAssocTagDefnPid field.
+	 *
+	 * @return Contents of the OCCASN_ASSOC_TAG_DEFN_PID column
+	 */
 	public int getOccasnAssocTagDefnPid() {
 		return this.OccasnAssocTagDefnPid;
 	}
 
+	/**
+	 * Get the OccasnSubTypeKey field.
+	 *
+	 * @return Contents of the OCCASN_SUB_TYPE_KEY column
+	 */
 	public short getOccasnSubTypeKey() {
 		return this.OccasnSubTypeKey;
 	}
 
+	/**
+	 * Get the OccasnTagTypeKey field.
+	 *
+	 * @return Contents of the OCCASN_TAG_TYPE_KEY column
+	 */
 	public short getOccasnTagTypeKey() {
 		return this.OccasnTagTypeKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the RoleNameKey field.
+	 *
+	 * @return Contents of the ROLE_NAME_KEY column
+	 */
 	public short getRoleNameKey() {
 		return this.RoleNameKey;
 	}
 
+	/**
+	 * Get the SentceSetPid field.
+	 *
+	 * @return Contents of the SENTCE_SET_PID column
+	 */
 	public int getSentceSetPid() {
 		return this.SentceSetPid;
 	}
 
+	/**
+	 * Get the SentceStyleTypeKey field.
+	 *
+	 * @return Contents of the SENTCE_STYLE_TYPE_KEY column
+	 */
 	public short getSentceStyleTypeKey() {
 		return this.SentceStyleTypeKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
 
+	/**
+	 * Get the TagRuleKey field.
+	 *
+	 * @return Contents of the TAG_RULE_KEY column
+	 */
 	public short getTagRuleKey() {
 		return this.TagRuleKey;
 	}
 
+	/**
+	 * Get the ThemeKey field.
+	 *
+	 * @return Contents of the THEME_KEY column
+	 */
 	public short getThemeKey() {
 		return this.ThemeKey;
 	}
@@ -314,94 +445,232 @@ public class OccasnAssocTagDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the AssocSubTypeKey field
+	 *
+	 * @param AssocSubTypeKey
+	 *            Contents of the ASSOC_SUB_TYPE_KEY column
+	 */
 	public void setAssocSubTypeKey(short AssocSubTypeKey) {
 		this.AssocSubTypeKey = AssocSubTypeKey;
 	}
 
+	/**
+	 * Set the AssocTypeKey field
+	 *
+	 * @param AssocTypeKey
+	 *            Contents of the ASSOC_TYPE_KEY column
+	 */
 	public void setAssocTypeKey(short AssocTypeKey) {
 		this.AssocTypeKey = AssocTypeKey;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the GedcomTag field
+	 *
+	 * @param GedcomTag
+	 *            Contents of the GEDCOM_TAG column
+	 */
 	public void setGedcomTag(String GedcomTag) {
 		this.GedcomTag = GedcomTag;
 	}
 
+	/**
+	 * Set the GroupKey field
+	 *
+	 * @param GroupKey
+	 *            Contents of the GROUP_KEY column
+	 */
 	public void setGroupKey(short GroupKey) {
 		this.GroupKey = GroupKey;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the IsRequiredRole field
+	 *
+	 * @param IsRequiredRole
+	 *            Contents of the IS_REQUIRED_ROLE column
+	 */
 	public void setIsRequiredRole(boolean IsRequiredRole) {
 		this.IsRequiredRole = IsRequiredRole;
 	}
 
+	/**
+	 * Set the IsUserDefn field
+	 *
+	 * @param IsUserDefn
+	 *            Contents of the IS_USER_DEFN column
+	 */
 	public void setIsUserDefn(boolean IsUserDefn) {
 		this.IsUserDefn = IsUserDefn;
 	}
 
+	/**
+	 * Set the MaxInRole field
+	 *
+	 * @param MaxInRole
+	 *            Contents of the MAX_IN_ROLE column
+	 */
 	public void setMaxInRole(short MaxInRole) {
 		this.MaxInRole = MaxInRole;
 	}
 
+	/**
+	 * Set the MinInRole field
+	 *
+	 * @param MinInRole
+	 *            Contents of the MIN_IN_ROLE column
+	 */
 	public void setMinInRole(short MinInRole) {
 		this.MinInRole = MinInRole;
 	}
 
+	/**
+	 * Set the OccasnAssocTagDefnPid field
+	 *
+	 * @param OccasnAssocTagDefnPid
+	 *            Contents of the OCCASN_ASSOC_TAG_DEFN_PID column
+	 */
 	public void setOccasnAssocTagDefnPid(int OccasnAssocTagDefnPid) {
 		this.OccasnAssocTagDefnPid = OccasnAssocTagDefnPid;
 	}
 
+	/**
+	 * Set the OccasnSubTypeKey field
+	 *
+	 * @param OccasnSubTypeKey
+	 *            Contents of the OCCASN_SUB_TYPE_KEY column
+	 */
 	public void setOccasnSubTypeKey(short OccasnSubTypeKey) {
 		this.OccasnSubTypeKey = OccasnSubTypeKey;
 	}
 
+	/**
+	 * Set the OccasnTagTypeKey field
+	 *
+	 * @param OccasnTagTypeKey
+	 *            Contents of the OCCASN_TAG_TYPE_KEY column
+	 */
 	public void setOccasnTagTypeKey(short OccasnTagTypeKey) {
 		this.OccasnTagTypeKey = OccasnTagTypeKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the RoleNameKey field
+	 *
+	 * @param RoleNameKey
+	 *            Contents of the ROLE_NAME_KEY column
+	 */
 	public void setRoleNameKey(short RoleNameKey) {
 		this.RoleNameKey = RoleNameKey;
 	}
 
+	/**
+	 * Set the SentceSetPid field
+	 *
+	 * @param SentceSetPid
+	 *            Contents of the SENTCE_SET_PID column
+	 */
 	public void setSentceSetPid(int SentceSetPid) {
 		this.SentceSetPid = SentceSetPid;
 	}
 
+	/**
+	 * Set the SentceStyleTypeKey field
+	 *
+	 * @param SentceStyleTypeKey
+	 *            Contents of the SENTCE_STYLE_TYPE_KEY column
+	 */
 	public void setSentceStyleTypeKey(short SentceStyleTypeKey) {
 		this.SentceStyleTypeKey = SentceStyleTypeKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}
 
+	/**
+	 * Set the TagRuleKey field
+	 *
+	 * @param TagRuleKey
+	 *            Contents of the TAG_RULE_KEY column
+	 */
 	public void setTagRuleKey(short TagRuleKey) {
 		this.TagRuleKey = TagRuleKey;
 	}
 
+	/**
+	 * Set the ThemeKey field
+	 *
+	 * @param ThemeKey
+	 *            Contents of the THEME_KEY column
+	 */
 	public void setThemeKey(short ThemeKey) {
 		this.ThemeKey = ThemeKey;
 	}

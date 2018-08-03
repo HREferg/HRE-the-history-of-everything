@@ -24,6 +24,7 @@ import java.util.List;
  *
  */
 
+// TODO Add Javadoc tags to setters and getters
 public class H2ModelGenerator {
 	private static final String COLUMNS = "SELECT COLUMN_NAME, TYPE_NAME FROM INFORMATION_SCHEMA.COLUMNS "
 			+ "WHERE TABLE_SCHEMA = 'PUBLIC' AND TABLE_NAME = ?";
@@ -79,9 +80,23 @@ public class H2ModelGenerator {
 	 * @throws IOException
 	 */
 	private static void createConstructors() throws IOException {
+		writer.println("/**");
+		writer.println("* No-arg Constructor");
+		writer.println("*");
+		writer.println("* @throws SQLException If database access has failed");
+		writer.println("*/\r\n");
+
 		final String pk = toCamelCase(primaryKey);
 		writer.println("public " + toCamelCase(tableName) + "() throws SQLException {");
 		writer.println("}\r\n");
+
+		writer.println("/**");
+		writer.println("* Constructor");
+		writer.println("*");
+		writer.println("* @param " + toCamelCase(primaryKey) + " Primary key");
+		writer.println("* @throws SQLException If database access has failed");
+		writer.println("*/\r\n");
+
 		writer.println(
 				"public " + toCamelCase(tableName) + "(" + primaryKeyType + " " + pk + ") throws SQLException {");
 		writer.println("super();");
@@ -195,6 +210,13 @@ public class H2ModelGenerator {
 
 		for (int i = 0; i < fields.size(); i++) {
 			field = toCamelCase(fields.get(i));
+
+			writer.println("/**");
+			writer.println("* Get the " + field + " field.");
+			writer.println("*");
+			writer.println("* @return Contents of the " + fields.get(i) + " column");
+			writer.println("*/");
+
 			type = types.get(i);
 			writer.println("public " + type + " get" + field + "() {");
 			writer.println("return this." + field + ";");
@@ -239,6 +261,13 @@ public class H2ModelGenerator {
 
 		for (int i = 0; i < fields.size(); i++) {
 			field = toCamelCase(fields.get(i));
+
+			writer.println("/**");
+			writer.println("* Set the " + field + " field");
+			writer.println("*");
+			writer.println("* @param " + field + " Contents of the " + fields.get(i) + " column");
+			writer.println("*/");
+
 			type = types.get(i);
 			writer.println("public void set" + field + "(" + type + " " + field + ") {");
 			writer.println("this." + field + " = " + field + ";");

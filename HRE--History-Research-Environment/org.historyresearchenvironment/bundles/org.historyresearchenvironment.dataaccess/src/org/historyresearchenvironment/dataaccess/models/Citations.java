@@ -51,8 +51,24 @@ public class Citations extends AbstractHreDataModel {
 	private String Flags;
 	private Citations model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public Citations() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param CitationPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public Citations(int CitationPid) throws SQLException {
 		super();
@@ -118,50 +134,110 @@ public class Citations extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CitationPid field.
+	 *
+	 * @return Contents of the CITATION_PID column
+	 */
 	public int getCitationPid() {
 		return this.CitationPid;
 	}
 
+	/**
+	 * Get the CitingPid field.
+	 *
+	 * @return Contents of the CITING_PID column
+	 */
 	public int getCitingPid() {
 		return this.CitingPid;
 	}
 
+	/**
+	 * Get the CitnTypeKey field.
+	 *
+	 * @return Contents of the CITN_TYPE_KEY column
+	 */
 	public short getCitnTypeKey() {
 		return this.CitnTypeKey;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the Flags field.
+	 *
+	 * @return Contents of the FLAGS column
+	 */
 	public String getFlags() {
 		return this.Flags;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the MemoSetPid field.
+	 *
+	 * @return Contents of the MEMO_SET_PID column
+	 */
 	public int getMemoSetPid() {
 		return this.MemoSetPid;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the SourcePid field.
+	 *
+	 * @return Contents of the SOURCE_PID column
+	 */
 	public int getSourcePid() {
 		return this.SourcePid;
 	}
 
+	/**
+	 * Get the SourceSubTypeKey field.
+	 *
+	 * @return Contents of the SOURCE_SUB_TYPE_KEY column
+	 */
 	public short getSourceSubTypeKey() {
 		return this.SourceSubTypeKey;
 	}
 
+	/**
+	 * Get the Surety field.
+	 *
+	 * @return Contents of the SURETY column
+	 */
 	public String getSurety() {
 		return this.Surety;
 	}
@@ -202,50 +278,122 @@ public class Citations extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CitationPid field
+	 *
+	 * @param CitationPid
+	 *            Contents of the CITATION_PID column
+	 */
 	public void setCitationPid(int CitationPid) {
 		this.CitationPid = CitationPid;
 	}
 
+	/**
+	 * Set the CitingPid field
+	 *
+	 * @param CitingPid
+	 *            Contents of the CITING_PID column
+	 */
 	public void setCitingPid(int CitingPid) {
 		this.CitingPid = CitingPid;
 	}
 
+	/**
+	 * Set the CitnTypeKey field
+	 *
+	 * @param CitnTypeKey
+	 *            Contents of the CITN_TYPE_KEY column
+	 */
 	public void setCitnTypeKey(short CitnTypeKey) {
 		this.CitnTypeKey = CitnTypeKey;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the Flags field
+	 *
+	 * @param Flags
+	 *            Contents of the FLAGS column
+	 */
 	public void setFlags(String Flags) {
 		this.Flags = Flags;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the MemoSetPid field
+	 *
+	 * @param MemoSetPid
+	 *            Contents of the MEMO_SET_PID column
+	 */
 	public void setMemoSetPid(int MemoSetPid) {
 		this.MemoSetPid = MemoSetPid;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the SourcePid field
+	 *
+	 * @param SourcePid
+	 *            Contents of the SOURCE_PID column
+	 */
 	public void setSourcePid(int SourcePid) {
 		this.SourcePid = SourcePid;
 	}
 
+	/**
+	 * Set the SourceSubTypeKey field
+	 *
+	 * @param SourceSubTypeKey
+	 *            Contents of the SOURCE_SUB_TYPE_KEY column
+	 */
 	public void setSourceSubTypeKey(short SourceSubTypeKey) {
 		this.SourceSubTypeKey = SourceSubTypeKey;
 	}
 
+	/**
+	 * Set the Surety field
+	 *
+	 * @param Surety
+	 *            Contents of the SURETY column
+	 */
 	public void setSurety(String Surety) {
 		this.Surety = Surety;
 	}

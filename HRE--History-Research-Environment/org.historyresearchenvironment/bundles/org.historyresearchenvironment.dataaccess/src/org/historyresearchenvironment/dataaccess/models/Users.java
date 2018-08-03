@@ -47,8 +47,24 @@ public class Users extends AbstractHreDataModel {
 	private int UserGroupPid;
 	private Users model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public Users() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param UserPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public Users(int UserPid) throws SQLException {
 		super();
@@ -110,42 +126,92 @@ public class Users extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the Email field.
+	 *
+	 * @return Contents of the EMAIL column
+	 */
 	public String getEmail() {
 		return this.Email;
 	}
 
+	/**
+	 * Get the LogonName field.
+	 *
+	 * @return Contents of the LOGON_NAME column
+	 */
 	public String getLogonName() {
 		return this.LogonName;
 	}
 
+	/**
+	 * Get the Password field.
+	 *
+	 * @return Contents of the PASSWORD column
+	 */
 	public String getPassword() {
 		return this.Password;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the UserGroupPid field.
+	 *
+	 * @return Contents of the USER_GROUP_PID column
+	 */
 	public int getUserGroupPid() {
 		return this.UserGroupPid;
 	}
 
+	/**
+	 * Get the UserName field.
+	 *
+	 * @return Contents of the USER_NAME column
+	 */
 	public String getUserName() {
 		return this.UserName;
 	}
 
+	/**
+	 * Get the UserPid field.
+	 *
+	 * @return Contents of the USER_PID column
+	 */
 	public int getUserPid() {
 		return this.UserPid;
 	}
 
+	/**
+	 * Get the UserTypePid field.
+	 *
+	 * @return Contents of the USER_TYPE_PID column
+	 */
 	public int getUserTypePid() {
 		return this.UserTypePid;
 	}
@@ -182,42 +248,102 @@ public class Users extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the Email field
+	 *
+	 * @param Email
+	 *            Contents of the EMAIL column
+	 */
 	public void setEmail(String Email) {
 		this.Email = Email;
 	}
 
+	/**
+	 * Set the LogonName field
+	 *
+	 * @param LogonName
+	 *            Contents of the LOGON_NAME column
+	 */
 	public void setLogonName(String LogonName) {
 		this.LogonName = LogonName;
 	}
 
+	/**
+	 * Set the Password field
+	 *
+	 * @param Password
+	 *            Contents of the PASSWORD column
+	 */
 	public void setPassword(String Password) {
 		this.Password = Password;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the UserGroupPid field
+	 *
+	 * @param UserGroupPid
+	 *            Contents of the USER_GROUP_PID column
+	 */
 	public void setUserGroupPid(int UserGroupPid) {
 		this.UserGroupPid = UserGroupPid;
 	}
 
+	/**
+	 * Set the UserName field
+	 *
+	 * @param UserName
+	 *            Contents of the USER_NAME column
+	 */
 	public void setUserName(String UserName) {
 		this.UserName = UserName;
 	}
 
+	/**
+	 * Set the UserPid field
+	 *
+	 * @param UserPid
+	 *            Contents of the USER_PID column
+	 */
 	public void setUserPid(int UserPid) {
 		this.UserPid = UserPid;
 	}
 
+	/**
+	 * Set the UserTypePid field
+	 *
+	 * @param UserTypePid
+	 *            Contents of the USER_TYPE_PID column
+	 */
 	public void setUserTypePid(int UserTypePid) {
 		this.UserTypePid = UserTypePid;
 	}

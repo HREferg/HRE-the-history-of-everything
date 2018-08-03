@@ -50,8 +50,24 @@ public class MemoDefns extends AbstractHreDataModel {
 	private short PublishTypeKey;
 	private MemoDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public MemoDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param MemoDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public MemoDefns(int MemoDefnPid) throws SQLException {
 		super();
@@ -115,46 +131,101 @@ public class MemoDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the MemoDefnPid field.
+	 *
+	 * @return Contents of the MEMO_DEFN_PID column
+	 */
 	public int getMemoDefnPid() {
 		return this.MemoDefnPid;
 	}
 
+	/**
+	 * Get the MemoSetKey field.
+	 *
+	 * @return Contents of the MEMO_SET_KEY column
+	 */
 	public short getMemoSetKey() {
 		return this.MemoSetKey;
 	}
 
+	/**
+	 * Get the PluginKey field.
+	 *
+	 * @return Contents of the PLUGIN_KEY column
+	 */
 	public short getPluginKey() {
 		return this.PluginKey;
 	}
 
+	/**
+	 * Get the PublishTypeKey field.
+	 *
+	 * @return Contents of the PUBLISH_TYPE_KEY column
+	 */
 	public short getPublishTypeKey() {
 		return this.PublishTypeKey;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the RequesterPid field.
+	 *
+	 * @return Contents of the REQUESTER_PID column
+	 */
 	public int getRequesterPid() {
 		return this.RequesterPid;
 	}
 
+	/**
+	 * Get the RequesterSubTypeKey field.
+	 *
+	 * @return Contents of the REQUESTER_SUB_TYPE_KEY column
+	 */
 	public short getRequesterSubTypeKey() {
 		return this.RequesterSubTypeKey;
 	}
 
+	/**
+	 * Get the RequesterTypeKey field.
+	 *
+	 * @return Contents of the REQUESTER_TYPE_KEY column
+	 */
 	public short getRequesterTypeKey() {
 		return this.RequesterTypeKey;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
@@ -193,46 +264,112 @@ public class MemoDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the MemoDefnPid field
+	 *
+	 * @param MemoDefnPid
+	 *            Contents of the MEMO_DEFN_PID column
+	 */
 	public void setMemoDefnPid(int MemoDefnPid) {
 		this.MemoDefnPid = MemoDefnPid;
 	}
 
+	/**
+	 * Set the MemoSetKey field
+	 *
+	 * @param MemoSetKey
+	 *            Contents of the MEMO_SET_KEY column
+	 */
 	public void setMemoSetKey(short MemoSetKey) {
 		this.MemoSetKey = MemoSetKey;
 	}
 
+	/**
+	 * Set the PluginKey field
+	 *
+	 * @param PluginKey
+	 *            Contents of the PLUGIN_KEY column
+	 */
 	public void setPluginKey(short PluginKey) {
 		this.PluginKey = PluginKey;
 	}
 
+	/**
+	 * Set the PublishTypeKey field
+	 *
+	 * @param PublishTypeKey
+	 *            Contents of the PUBLISH_TYPE_KEY column
+	 */
 	public void setPublishTypeKey(short PublishTypeKey) {
 		this.PublishTypeKey = PublishTypeKey;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the RequesterPid field
+	 *
+	 * @param RequesterPid
+	 *            Contents of the REQUESTER_PID column
+	 */
 	public void setRequesterPid(int RequesterPid) {
 		this.RequesterPid = RequesterPid;
 	}
 
+	/**
+	 * Set the RequesterSubTypeKey field
+	 *
+	 * @param RequesterSubTypeKey
+	 *            Contents of the REQUESTER_SUB_TYPE_KEY column
+	 */
 	public void setRequesterSubTypeKey(short RequesterSubTypeKey) {
 		this.RequesterSubTypeKey = RequesterSubTypeKey;
 	}
 
+	/**
+	 * Set the RequesterTypeKey field
+	 *
+	 * @param RequesterTypeKey
+	 *            Contents of the REQUESTER_TYPE_KEY column
+	 */
 	public void setRequesterTypeKey(short RequesterTypeKey) {
 		this.RequesterTypeKey = RequesterTypeKey;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}

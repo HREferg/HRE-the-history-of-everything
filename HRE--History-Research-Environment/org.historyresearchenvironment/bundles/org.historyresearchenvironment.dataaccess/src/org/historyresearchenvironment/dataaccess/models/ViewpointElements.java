@@ -48,8 +48,24 @@ public class ViewpointElements extends AbstractHreDataModel {
 	private boolean ShowOnOpen;
 	private ViewpointElements model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public ViewpointElements() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param ViewpointElementPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public ViewpointElements(int ViewpointElementPid) throws SQLException {
 		super();
@@ -111,42 +127,92 @@ public class ViewpointElements extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the AutoUpdate field.
+	 *
+	 * @return Contents of the AUTO_UPDATE column
+	 */
 	public boolean getAutoUpdate() {
 		return this.AutoUpdate;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the IsMaster field.
+	 *
+	 * @return Contents of the IS_MASTER column
+	 */
 	public boolean getIsMaster() {
 		return this.IsMaster;
 	}
 
+	/**
+	 * Get the IsSecondCopy field.
+	 *
+	 * @return Contents of the IS_SECOND_COPY column
+	 */
 	public boolean getIsSecondCopy() {
 		return this.IsSecondCopy;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ScreenConfigPid field.
+	 *
+	 * @return Contents of the SCREEN_CONFIG_PID column
+	 */
 	public short getScreenConfigPid() {
 		return this.ScreenConfigPid;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the ShowOnOpen field.
+	 *
+	 * @return Contents of the SHOW_ON_OPEN column
+	 */
 	public boolean getShowOnOpen() {
 		return this.ShowOnOpen;
 	}
 
+	/**
+	 * Get the ViewpointElementPid field.
+	 *
+	 * @return Contents of the VIEWPOINT_ELEMENT_PID column
+	 */
 	public int getViewpointElementPid() {
 		return this.ViewpointElementPid;
 	}
 
+	/**
+	 * Get the ViewpointPid field.
+	 *
+	 * @return Contents of the VIEWPOINT_PID column
+	 */
 	public int getViewpointPid() {
 		return this.ViewpointPid;
 	}
@@ -183,42 +249,102 @@ public class ViewpointElements extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the AutoUpdate field
+	 *
+	 * @param AutoUpdate
+	 *            Contents of the AUTO_UPDATE column
+	 */
 	public void setAutoUpdate(boolean AutoUpdate) {
 		this.AutoUpdate = AutoUpdate;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the IsMaster field
+	 *
+	 * @param IsMaster
+	 *            Contents of the IS_MASTER column
+	 */
 	public void setIsMaster(boolean IsMaster) {
 		this.IsMaster = IsMaster;
 	}
 
+	/**
+	 * Set the IsSecondCopy field
+	 *
+	 * @param IsSecondCopy
+	 *            Contents of the IS_SECOND_COPY column
+	 */
 	public void setIsSecondCopy(boolean IsSecondCopy) {
 		this.IsSecondCopy = IsSecondCopy;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ScreenConfigPid field
+	 *
+	 * @param ScreenConfigPid
+	 *            Contents of the SCREEN_CONFIG_PID column
+	 */
 	public void setScreenConfigPid(short ScreenConfigPid) {
 		this.ScreenConfigPid = ScreenConfigPid;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the ShowOnOpen field
+	 *
+	 * @param ShowOnOpen
+	 *            Contents of the SHOW_ON_OPEN column
+	 */
 	public void setShowOnOpen(boolean ShowOnOpen) {
 		this.ShowOnOpen = ShowOnOpen;
 	}
 
+	/**
+	 * Set the ViewpointElementPid field
+	 *
+	 * @param ViewpointElementPid
+	 *            Contents of the VIEWPOINT_ELEMENT_PID column
+	 */
 	public void setViewpointElementPid(int ViewpointElementPid) {
 		this.ViewpointElementPid = ViewpointElementPid;
 	}
 
+	/**
+	 * Set the ViewpointPid field
+	 *
+	 * @param ViewpointPid
+	 *            Contents of the VIEWPOINT_PID column
+	 */
 	public void setViewpointPid(int ViewpointPid) {
 		this.ViewpointPid = ViewpointPid;
 	}

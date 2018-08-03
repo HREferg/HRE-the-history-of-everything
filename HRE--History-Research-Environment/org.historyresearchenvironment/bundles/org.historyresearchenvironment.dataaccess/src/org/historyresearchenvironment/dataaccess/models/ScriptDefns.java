@@ -52,8 +52,24 @@ public class ScriptDefns extends AbstractHreDataModel {
 	private boolean Show;
 	private ScriptDefns model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public ScriptDefns() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param ScriptDefnPid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public ScriptDefns(int ScriptDefnPid) throws SQLException {
 		super();
@@ -119,50 +135,110 @@ public class ScriptDefns extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the ActionTypeKey field.
+	 *
+	 * @return Contents of the ACTION_TYPE_KEY column
+	 */
 	public short getActionTypeKey() {
 		return this.ActionTypeKey;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the DisplayOrder field.
+	 *
+	 * @return Contents of the DISPLAY_ORDER column
+	 */
 	public short getDisplayOrder() {
 		return this.DisplayOrder;
 	}
 
+	/**
+	 * Get the InputFocusTypeKey field.
+	 *
+	 * @return Contents of the INPUT_FOCUS_TYPE_KEY column
+	 */
 	public short getInputFocusTypeKey() {
 		return this.InputFocusTypeKey;
 	}
 
+	/**
+	 * Get the InputSubTypeKey field.
+	 *
+	 * @return Contents of the INPUT_SUB_TYPE_KEY column
+	 */
 	public short getInputSubTypeKey() {
 		return this.InputSubTypeKey;
 	}
 
+	/**
+	 * Get the IsDefault field.
+	 *
+	 * @return Contents of the IS_DEFAULT column
+	 */
 	public boolean getIsDefault() {
 		return this.IsDefault;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the ReminderKey field.
+	 *
+	 * @return Contents of the REMINDER_KEY column
+	 */
 	public short getReminderKey() {
 		return this.ReminderKey;
 	}
 
+	/**
+	 * Get the ScriptDefnPid field.
+	 *
+	 * @return Contents of the SCRIPT_DEFN_PID column
+	 */
 	public int getScriptDefnPid() {
 		return this.ScriptDefnPid;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the Show field.
+	 *
+	 * @return Contents of the SHOW column
+	 */
 	public boolean getShow() {
 		return this.Show;
 	}
@@ -203,50 +279,122 @@ public class ScriptDefns extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the ActionTypeKey field
+	 *
+	 * @param ActionTypeKey
+	 *            Contents of the ACTION_TYPE_KEY column
+	 */
 	public void setActionTypeKey(short ActionTypeKey) {
 		this.ActionTypeKey = ActionTypeKey;
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the DisplayOrder field
+	 *
+	 * @param DisplayOrder
+	 *            Contents of the DISPLAY_ORDER column
+	 */
 	public void setDisplayOrder(short DisplayOrder) {
 		this.DisplayOrder = DisplayOrder;
 	}
 
+	/**
+	 * Set the InputFocusTypeKey field
+	 *
+	 * @param InputFocusTypeKey
+	 *            Contents of the INPUT_FOCUS_TYPE_KEY column
+	 */
 	public void setInputFocusTypeKey(short InputFocusTypeKey) {
 		this.InputFocusTypeKey = InputFocusTypeKey;
 	}
 
+	/**
+	 * Set the InputSubTypeKey field
+	 *
+	 * @param InputSubTypeKey
+	 *            Contents of the INPUT_SUB_TYPE_KEY column
+	 */
 	public void setInputSubTypeKey(short InputSubTypeKey) {
 		this.InputSubTypeKey = InputSubTypeKey;
 	}
 
+	/**
+	 * Set the IsDefault field
+	 *
+	 * @param IsDefault
+	 *            Contents of the IS_DEFAULT column
+	 */
 	public void setIsDefault(boolean IsDefault) {
 		this.IsDefault = IsDefault;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the ReminderKey field
+	 *
+	 * @param ReminderKey
+	 *            Contents of the REMINDER_KEY column
+	 */
 	public void setReminderKey(short ReminderKey) {
 		this.ReminderKey = ReminderKey;
 	}
 
+	/**
+	 * Set the ScriptDefnPid field
+	 *
+	 * @param ScriptDefnPid
+	 *            Contents of the SCRIPT_DEFN_PID column
+	 */
 	public void setScriptDefnPid(int ScriptDefnPid) {
 		this.ScriptDefnPid = ScriptDefnPid;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the Show field
+	 *
+	 * @param Show
+	 *            Contents of the SHOW column
+	 */
 	public void setShow(boolean Show) {
 		this.Show = Show;
 	}

@@ -56,8 +56,24 @@ public class Hdates extends AbstractHreDataModel {
 	private String Surety;
 	private Hdates model;
 
+	/**
+	 * No-arg Constructor
+	 *
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
+
 	public Hdates() throws SQLException {
 	}
+
+	/**
+	 * Constructor
+	 *
+	 * @param HdatePid
+	 *            Primary key
+	 * @throws SQLException
+	 *             If database access has failed
+	 */
 
 	public Hdates(int HdatePid) throws SQLException {
 		super();
@@ -129,62 +145,137 @@ public class Hdates extends AbstractHreDataModel {
 		return this;
 	}
 
+	/**
+	 * Get the CommitPid field.
+	 *
+	 * @return Contents of the COMMIT_PID column
+	 */
 	public int getCommitPid() {
 		return this.CommitPid;
 	}
 
+	/**
+	 * Get the Hdate1 field.
+	 *
+	 * @return Contents of the HDATE1 column
+	 */
 	public long getHdate1() {
 		return this.Hdate1;
 	}
 
+	/**
+	 * Get the Hdate2 field.
+	 *
+	 * @return Contents of the HDATE2 column
+	 */
 	public long getHdate2() {
 		return this.Hdate2;
 	}
 
+	/**
+	 * Get the HdatePid field.
+	 *
+	 * @return Contents of the HDATE_PID column
+	 */
 	public int getHdatePid() {
 		return this.HdatePid;
 	}
 
+	/**
+	 * Get the HdateTypeKey field.
+	 *
+	 * @return Contents of the HDATE_TYPE_KEY column
+	 */
 	public short getHdateTypeKey() {
 		return this.HdateTypeKey;
 	}
 
+	/**
+	 * Get the IsHumanCalendar field.
+	 *
+	 * @return Contents of the IS_HUMAN_CALENDAR column
+	 */
 	public boolean getIsHumanCalendar() {
 		return this.IsHumanCalendar;
 	}
 
+	/**
+	 * Get the IsSystem field.
+	 *
+	 * @return Contents of the IS_SYSTEM column
+	 */
 	public boolean getIsSystem() {
 		return this.IsSystem;
 	}
 
+	/**
+	 * Get the LangCode field.
+	 *
+	 * @return Contents of the LANG_CODE column
+	 */
 	public String getLangCode() {
 		return this.LangCode;
 	}
 
+	/**
+	 * Get the NamedMemoPid field.
+	 *
+	 * @return Contents of the NAMED_MEMO_PID column
+	 */
 	public int getNamedMemoPid() {
 		return this.NamedMemoPid;
 	}
 
+	/**
+	 * Get the OriginalText field.
+	 *
+	 * @return Contents of the ORIGINAL_TEXT column
+	 */
 	public String getOriginalText() {
 		return this.OriginalText;
 	}
 
+	/**
+	 * Get the RecordNum field.
+	 *
+	 * @return Contents of the RECORD_NUM column
+	 */
 	public int getRecordNum() {
 		return this.RecordNum;
 	}
 
+	/**
+	 * Get the SetKey field.
+	 *
+	 * @return Contents of the SET_KEY column
+	 */
 	public short getSetKey() {
 		return this.SetKey;
 	}
 
+	/**
+	 * Get the SortHdate1 field.
+	 *
+	 * @return Contents of the SORT_HDATE1 column
+	 */
 	public long getSortHdate1() {
 		return this.SortHdate1;
 	}
 
+	/**
+	 * Get the SortHdate2 field.
+	 *
+	 * @return Contents of the SORT_HDATE2 column
+	 */
 	public long getSortHdate2() {
 		return this.SortHdate2;
 	}
 
+	/**
+	 * Get the Surety field.
+	 *
+	 * @return Contents of the SURETY column
+	 */
 	public String getSurety() {
 		return this.Surety;
 	}
@@ -231,62 +322,152 @@ public class Hdates extends AbstractHreDataModel {
 		ps.executeUpdate();
 	}
 
+	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
 	public void setCommitPid(int CommitPid) {
 		this.CommitPid = CommitPid;
 	}
 
+	/**
+	 * Set the Hdate1 field
+	 *
+	 * @param Hdate1
+	 *            Contents of the HDATE1 column
+	 */
 	public void setHdate1(long Hdate1) {
 		this.Hdate1 = Hdate1;
 	}
 
+	/**
+	 * Set the Hdate2 field
+	 *
+	 * @param Hdate2
+	 *            Contents of the HDATE2 column
+	 */
 	public void setHdate2(long Hdate2) {
 		this.Hdate2 = Hdate2;
 	}
 
+	/**
+	 * Set the HdatePid field
+	 *
+	 * @param HdatePid
+	 *            Contents of the HDATE_PID column
+	 */
 	public void setHdatePid(int HdatePid) {
 		this.HdatePid = HdatePid;
 	}
 
+	/**
+	 * Set the HdateTypeKey field
+	 *
+	 * @param HdateTypeKey
+	 *            Contents of the HDATE_TYPE_KEY column
+	 */
 	public void setHdateTypeKey(short HdateTypeKey) {
 		this.HdateTypeKey = HdateTypeKey;
 	}
 
+	/**
+	 * Set the IsHumanCalendar field
+	 *
+	 * @param IsHumanCalendar
+	 *            Contents of the IS_HUMAN_CALENDAR column
+	 */
 	public void setIsHumanCalendar(boolean IsHumanCalendar) {
 		this.IsHumanCalendar = IsHumanCalendar;
 	}
 
+	/**
+	 * Set the IsSystem field
+	 *
+	 * @param IsSystem
+	 *            Contents of the IS_SYSTEM column
+	 */
 	public void setIsSystem(boolean IsSystem) {
 		this.IsSystem = IsSystem;
 	}
 
+	/**
+	 * Set the LangCode field
+	 *
+	 * @param LangCode
+	 *            Contents of the LANG_CODE column
+	 */
 	public void setLangCode(String LangCode) {
 		this.LangCode = LangCode;
 	}
 
+	/**
+	 * Set the NamedMemoPid field
+	 *
+	 * @param NamedMemoPid
+	 *            Contents of the NAMED_MEMO_PID column
+	 */
 	public void setNamedMemoPid(int NamedMemoPid) {
 		this.NamedMemoPid = NamedMemoPid;
 	}
 
+	/**
+	 * Set the OriginalText field
+	 *
+	 * @param OriginalText
+	 *            Contents of the ORIGINAL_TEXT column
+	 */
 	public void setOriginalText(String OriginalText) {
 		this.OriginalText = OriginalText;
 	}
 
+	/**
+	 * Set the RecordNum field
+	 *
+	 * @param RecordNum
+	 *            Contents of the RECORD_NUM column
+	 */
 	public void setRecordNum(int RecordNum) {
 		this.RecordNum = RecordNum;
 	}
 
+	/**
+	 * Set the SetKey field
+	 *
+	 * @param SetKey
+	 *            Contents of the SET_KEY column
+	 */
 	public void setSetKey(short SetKey) {
 		this.SetKey = SetKey;
 	}
 
+	/**
+	 * Set the SortHdate1 field
+	 *
+	 * @param SortHdate1
+	 *            Contents of the SORT_HDATE1 column
+	 */
 	public void setSortHdate1(long SortHdate1) {
 		this.SortHdate1 = SortHdate1;
 	}
 
+	/**
+	 * Set the SortHdate2 field
+	 *
+	 * @param SortHdate2
+	 *            Contents of the SORT_HDATE2 column
+	 */
 	public void setSortHdate2(long SortHdate2) {
 		this.SortHdate2 = SortHdate2;
 	}
 
+	/**
+	 * Set the Surety field
+	 *
+	 * @param Surety
+	 *            Contents of the SURETY column
+	 */
 	public void setSurety(String Surety) {
 		this.Surety = Surety;
 	}
