@@ -99,12 +99,10 @@ public class H2DatabaseNavigator {
 		tblclmnTableName.setWidth(405);
 		tblclmnTableName.setText("Table Name");
 
-		// Not valid before H2 v1.4
-		// final TableViewerColumn tableViewerColumn_1 = new
-		// TableViewerColumn(tableViewer, SWT.NONE);
-		// final TableColumn tblclmnRowCount = tableViewerColumn_1.getColumn();
-		// tblclmnRowCount.setWidth(70);
-		// tblclmnRowCount.setText("Row Count");
+		final TableViewerColumn tableViewerColumn_1 = new TableViewerColumn(tableViewer, SWT.NONE);
+		final TableColumn tblclmnRowCount = tableViewerColumn_1.getColumn();
+		tblclmnRowCount.setWidth(70);
+		tblclmnRowCount.setText("Row Count");
 
 		updateGui();
 	}

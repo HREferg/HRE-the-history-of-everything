@@ -17,7 +17,7 @@ import org.historyresearchenvironment.databaseadmin.dataaccess.models.H2Database
 /**
  * Provides H2 data to the database navigator
  * 
- * @ @version 2018-07-23
+ * @ @version 2018-08-04
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -26,11 +26,10 @@ public class H2DatabaseProvider implements IContentProvider {
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 	private Connection conn = null;
 
-	private static final String SELECT = "SELECT TABLE_NAME, 0 FROM INFORMATION_SCHEMA.TABLES "
+	private static final String SELECT13 = "SELECT TABLE_NAME, 0 FROM INFORMATION_SCHEMA.TABLES "
 			+ "WHERE TABLE_TYPE = 'TABLE' ORDER BY TABLE_NAME";
-	// private static final String SELECT = "SELECT TABLE_NAME, ROW_COUNT_ESTIMATE
-	// FROM INFORMATION_SCHEMA.TABLES "
-	// + "WHERE TABLE_TYPE = 'TABLE' ORDER BY TABLE_NAME";
+	private static final String SELECT = "SELECT TABLE_NAME, ROW_COUNT_ESTIMATE FROM INFORMATION_SCHEMA.TABLES "
+			+ "WHERE TABLE_TYPE = 'TABLE' ORDER BY TABLE_NAME";
 	private final List<H2DatabaseModel> modelList = new ArrayList<H2DatabaseModel>();
 	private H2DatabaseModel model;
 
@@ -48,7 +47,15 @@ public class H2DatabaseProvider implements IContentProvider {
 		LOGGER.info("Database name: " + dbName);
 
 		conn = HreH2ConnectionPool.getConnection(dbName);
-		final PreparedStatement ps = conn.prepareStatement(SELECT);
+		PreparedStatement ps;
+		String h2Version = preferences.get("H2VERSION", "1.3.168");
+		LOGGER.info("Retrieved H2 version from preferences: " + h2Version.substring(0, 3));
+
+		if (h2Version.substring(0, 3).equals("1.3")) {
+			ps = conn.prepareStatement(SELECT13);
+		} else {
+			ps = conn.prepareStatement(SELECT);
+		}
 
 		final ResultSet rs = ps.executeQuery();
 

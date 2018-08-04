@@ -1,6 +1,8 @@
 package org.historyresearchenvironment.dataaccess;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
@@ -13,7 +15,7 @@ import org.osgi.service.prefs.BackingStoreException;
  * Singleton class that instantiates a JDBC Connection Pool and returns a
  * connection to it.
  * 
- * @version 2018-07-26
+ * @version 2018-08-04
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -22,6 +24,7 @@ public class HreH2ConnectionPool {
 	private static IEclipsePreferences preferences = InstanceScope.INSTANCE.getNode("org.historyresearchenvironment");
 	private static int h2TraceLevel = preferences.getInt("H2TRACELEVEL", 1);
 	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+	private final static String GETH2VERSION = "SELECT H2VERSION() FROM DUAL";
 
 	/**
 	 * Dispose connection pool and recreate to create a new data base.
@@ -70,6 +73,24 @@ public class HreH2ConnectionPool {
 			connectionPool = JdbcConnectionPool.create(jdbcUrl, preferences.get("USERID", "sa"),
 					preferences.get("PASSWORD", ""));
 			connectionPool.setMaxConnections(500);
+			String h2Version = "1.3.168";
+
+			try {
+				Connection conn = connectionPool.getConnection();
+				PreparedStatement ps = conn.prepareStatement(GETH2VERSION);
+				ResultSet rs = ps.executeQuery();
+
+				if (rs.next()) {
+					h2Version = rs.getString(1);
+					preferences.put("H2VERSION", h2Version);
+
+					LOGGER.info("H2 Version is " + h2Version);
+				}
+			} catch (SQLException e) {
+				preferences.put("H2VERSION", h2Version);
+
+				LOGGER.info("H2 Version defaults to " + h2Version);
+			}
 		}
 
 		LOGGER.info("Reusing connection pool");
