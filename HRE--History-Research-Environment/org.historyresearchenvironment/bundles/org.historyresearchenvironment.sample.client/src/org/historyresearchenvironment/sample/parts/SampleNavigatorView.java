@@ -132,6 +132,8 @@ public class SampleNavigatorView extends AbstractHreGuiPart {
 
 		eventBroker.post(org.historyresearchenvironment.sample.client.Constants.PARAMETER_SET_KEY_UPDATE_TOPIC,
 				paramSetKey);
+		eventBroker.post(org.historyresearchenvironment.sample.client.Constants.PARAMETER_SET_KEY_UPDATE_TOPIC,
+				paramSetKey);
 		LOGGER.info("Navigator posted key " + paramSetKey);
 
 		eventBroker.post("MESSAGE", "Sample editor has been opened");

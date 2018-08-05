@@ -8,16 +8,18 @@ import java.util.List;
 /**
  * The persistent class for the COMMIT_LOGS database table.
  *
- * @version 2018-08-03
+ * @version 2018-08-05
  * @author H2ModelGenerator, &copy; History Research Environment Ltd., 2018
  *
  */
 
 public class CommitLogs extends AbstractHreDataModel {
 	private static final long serialVersionUID = 1L;
+	private ArrayList<AbstractHreDataModel> modelList;
 	private static final String SELECT = "SELECT " + "RECORD_NUM, " + "SET_KEY, " + "COMMIT_PID, " + "COMMIT_LOG_PID, "
 			+ "COMMENCED, " + "COMPLETED, " + "USER_PID, " + "CLIENT_PID, "
 			+ "NUM_TABLES FROM PUBLIC.COMMIT_LOGS WHERE COMMIT_LOG_PID = ?";
+
 	private static final String SELECTALL = "SELECT " + "RECORD_NUM, " + "SET_KEY, " + "COMMIT_PID, "
 			+ "COMMIT_LOG_PID, " + "COMMENCED, " + "COMPLETED, " + "USER_PID, " + "CLIENT_PID, "
 			+ "NUM_TABLES FROM PUBLIC.COMMIT_LOGS";
@@ -33,8 +35,6 @@ public class CommitLogs extends AbstractHreDataModel {
 	private static final String DELETE = "DELETE FROM PUBLIC.COMMIT_LOGS WHERE COMMIT_LOG_PID = ?";
 
 	private static final String DELETEALL = "DELETE FROM PUBLIC.COMMIT_LOGS";
-
-	private ArrayList<AbstractHreDataModel> modelList;
 
 	private int RecordNum;
 	private short SetKey;
@@ -55,20 +55,6 @@ public class CommitLogs extends AbstractHreDataModel {
 	 */
 
 	public CommitLogs() throws SQLException {
-	}
-
-	/**
-	 * Constructor
-	 *
-	 * @param CommitLogPid
-	 *            Primary key
-	 * @throws SQLException
-	 *             If database access has failed
-	 */
-
-	public CommitLogs(int CommitLogPid) throws SQLException {
-		super();
-		this.CommitLogPid = CommitLogPid;
 	}
 
 	@Override
@@ -106,9 +92,10 @@ public class CommitLogs extends AbstractHreDataModel {
 	}
 
 	@Override
-	public AbstractHreDataModel get(int key) throws SQLException {
+	public CommitLogs get(int key) throws SQLException {
+		model = new CommitLogs();
 		ps = conn.prepareStatement(SELECT);
-		ps.setInt(1, key);
+		ps.setInt(1, (int) key);
 		rs = ps.executeQuery();
 		if (rs.next()) {
 			model.setRecordNum(rs.getInt("RECORD_NUM"));
@@ -121,88 +108,7 @@ public class CommitLogs extends AbstractHreDataModel {
 			model.setClientPid(rs.getInt("CLIENT_PID"));
 			model.setNumTables(rs.getShort("NUM_TABLES"));
 		}
-		return this;
-	}
-
-	/**
-	 * Get the ClientPid field.
-	 *
-	 * @return Contents of the CLIENT_PID column
-	 */
-	public int getClientPid() {
-		return this.ClientPid;
-	}
-
-	/**
-	 * Get the Commenced field.
-	 *
-	 * @return Contents of the COMMENCED column
-	 */
-	public Timestamp getCommenced() {
-		return this.Commenced;
-	}
-
-	/**
-	 * Get the CommitLogPid field.
-	 *
-	 * @return Contents of the COMMIT_LOG_PID column
-	 */
-	public int getCommitLogPid() {
-		return this.CommitLogPid;
-	}
-
-	/**
-	 * Get the CommitPid field.
-	 *
-	 * @return Contents of the COMMIT_PID column
-	 */
-	public int getCommitPid() {
-		return this.CommitPid;
-	}
-
-	/**
-	 * Get the Completed field.
-	 *
-	 * @return Contents of the COMPLETED column
-	 */
-	public Timestamp getCompleted() {
-		return this.Completed;
-	}
-
-	/**
-	 * Get the NumTables field.
-	 *
-	 * @return Contents of the NUM_TABLES column
-	 */
-	public short getNumTables() {
-		return this.NumTables;
-	}
-
-	/**
-	 * Get the RecordNum field.
-	 *
-	 * @return Contents of the RECORD_NUM column
-	 */
-	public int getRecordNum() {
-		return this.RecordNum;
-	}
-
-	/**
-	 * Get the SetKey field.
-	 *
-	 * @return Contents of the SET_KEY column
-	 */
-	public short getSetKey() {
-		return this.SetKey;
-	}
-
-	/**
-	 * Get the UserPid field.
-	 *
-	 * @return Contents of the USER_PID column
-	 */
-	public int getUserPid() {
-		return this.UserPid;
+		return model;
 	}
 
 	@Override
@@ -236,63 +142,84 @@ public class CommitLogs extends AbstractHreDataModel {
 	}
 
 	/**
-	 * Set the ClientPid field
+	 * Get the RecordNum field.
 	 *
-	 * @param ClientPid
-	 *            Contents of the CLIENT_PID column
+	 * @return Contents of the RECORD_NUM column
 	 */
-	public void setClientPid(int ClientPid) {
-		this.ClientPid = ClientPid;
+	public int getRecordNum() {
+		return this.RecordNum;
 	}
 
 	/**
-	 * Set the Commenced field
+	 * Get the SetKey field.
 	 *
-	 * @param Commenced
-	 *            Contents of the COMMENCED column
+	 * @return Contents of the SET_KEY column
 	 */
-	public void setCommenced(Timestamp Commenced) {
-		this.Commenced = Commenced;
+	public short getSetKey() {
+		return this.SetKey;
 	}
 
 	/**
-	 * Set the CommitLogPid field
+	 * Get the CommitPid field.
 	 *
-	 * @param CommitLogPid
-	 *            Contents of the COMMIT_LOG_PID column
+	 * @return Contents of the COMMIT_PID column
 	 */
-	public void setCommitLogPid(int CommitLogPid) {
-		this.CommitLogPid = CommitLogPid;
+	public int getCommitPid() {
+		return this.CommitPid;
 	}
 
 	/**
-	 * Set the CommitPid field
+	 * Get the CommitLogPid field.
 	 *
-	 * @param CommitPid
-	 *            Contents of the COMMIT_PID column
+	 * @return Contents of the COMMIT_LOG_PID column
 	 */
-	public void setCommitPid(int CommitPid) {
-		this.CommitPid = CommitPid;
+	public int getCommitLogPid() {
+		return this.CommitLogPid;
 	}
 
 	/**
-	 * Set the Completed field
+	 * Get the Commenced field.
 	 *
-	 * @param Completed
-	 *            Contents of the COMPLETED column
+	 * @return Contents of the COMMENCED column
 	 */
-	public void setCompleted(Timestamp Completed) {
-		this.Completed = Completed;
+	public Timestamp getCommenced() {
+		return this.Commenced;
 	}
 
 	/**
-	 * Set the NumTables field
+	 * Get the Completed field.
 	 *
-	 * @param NumTables
-	 *            Contents of the NUM_TABLES column
+	 * @return Contents of the COMPLETED column
 	 */
-	public void setNumTables(short NumTables) {
-		this.NumTables = NumTables;
+	public Timestamp getCompleted() {
+		return this.Completed;
+	}
+
+	/**
+	 * Get the UserPid field.
+	 *
+	 * @return Contents of the USER_PID column
+	 */
+	public int getUserPid() {
+		return this.UserPid;
+	}
+
+	/**
+	 * Get the ClientPid field.
+	 *
+	 * @return Contents of the CLIENT_PID column
+	 */
+	public int getClientPid() {
+		return this.ClientPid;
+	}
+
+	/**
+	 * Get the NumTables field.
+	 *
+	 * @return Contents of the NUM_TABLES column
+	 */
+	public short getNumTables() {
+		return this.NumTables;
 	}
 
 	/**
@@ -316,6 +243,46 @@ public class CommitLogs extends AbstractHreDataModel {
 	}
 
 	/**
+	 * Set the CommitPid field
+	 *
+	 * @param CommitPid
+	 *            Contents of the COMMIT_PID column
+	 */
+	public void setCommitPid(int CommitPid) {
+		this.CommitPid = CommitPid;
+	}
+
+	/**
+	 * Set the CommitLogPid field
+	 *
+	 * @param CommitLogPid
+	 *            Contents of the COMMIT_LOG_PID column
+	 */
+	public void setCommitLogPid(int CommitLogPid) {
+		this.CommitLogPid = CommitLogPid;
+	}
+
+	/**
+	 * Set the Commenced field
+	 *
+	 * @param Commenced
+	 *            Contents of the COMMENCED column
+	 */
+	public void setCommenced(Timestamp Commenced) {
+		this.Commenced = Commenced;
+	}
+
+	/**
+	 * Set the Completed field
+	 *
+	 * @param Completed
+	 *            Contents of the COMPLETED column
+	 */
+	public void setCompleted(Timestamp Completed) {
+		this.Completed = Completed;
+	}
+
+	/**
 	 * Set the UserPid field
 	 *
 	 * @param UserPid
@@ -323,6 +290,26 @@ public class CommitLogs extends AbstractHreDataModel {
 	 */
 	public void setUserPid(int UserPid) {
 		this.UserPid = UserPid;
+	}
+
+	/**
+	 * Set the ClientPid field
+	 *
+	 * @param ClientPid
+	 *            Contents of the CLIENT_PID column
+	 */
+	public void setClientPid(int ClientPid) {
+		this.ClientPid = ClientPid;
+	}
+
+	/**
+	 * Set the NumTables field
+	 *
+	 * @param NumTables
+	 *            Contents of the NUM_TABLES column
+	 */
+	public void setNumTables(short NumTables) {
+		this.NumTables = NumTables;
 	}
 
 }

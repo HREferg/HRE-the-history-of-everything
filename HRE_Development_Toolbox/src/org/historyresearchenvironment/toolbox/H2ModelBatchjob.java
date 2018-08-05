@@ -44,7 +44,7 @@ public class H2ModelBatchjob {
 			String name;
 			while (rs.next()) {
 				name = rs.getString(1);
-				System.out.println("Found table " + name);
+				// System.out.println("Found table " + name);
 				tableNames.add(name);
 			}
 

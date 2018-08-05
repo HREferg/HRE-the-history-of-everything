@@ -21,7 +21,7 @@ import org.historyresearchenvironment.sample.providers.SampleEditorProvider;
 /**
  * View part for the sample.
  * 
- * @version 2018-07-13
+ * @version 2018-08-05
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */

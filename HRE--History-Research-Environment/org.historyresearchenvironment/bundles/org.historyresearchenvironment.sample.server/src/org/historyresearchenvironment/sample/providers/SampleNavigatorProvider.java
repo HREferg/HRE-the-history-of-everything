@@ -13,7 +13,7 @@ import org.historyresearchenvironment.dataaccess.providers.AbstractHreProvider;
 /**
  * Provide H2 data to the sample navigator.
  * 
- * @version 2018-08-03
+ * @version 2018-08-05
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
@@ -82,7 +82,7 @@ public class SampleNavigatorProvider extends AbstractHreProvider {
 				row = (SubstnParamNames) iterator.next();
 				LOGGER.info("Row: " + row.getParamSetKey() + ", " + row.getDefltValue());
 				paramSetKey = row.getParamSetKey();
-				spv = new SubstnParamValues(paramSetKey);
+				spv = new SubstnParamValues().get(paramSetKey);
 
 				model = new SampleEditorProvider();
 				model.setParamSetKey(paramSetKey);

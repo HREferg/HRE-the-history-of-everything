@@ -6,7 +6,7 @@
     project="org.historyresearchenvironment.sample.client" 
     file="/org.historyresearchenvironment.sample.client/src/org/historyresearchenvironment/sample/parts/SampleEditorView.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="200" x="1248" y="544"/>    
+    <position height="135" width="200" x="1246" y="544"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="false" private="false" static="true"/>      
@@ -28,7 +28,7 @@
     project="org.historyresearchenvironment.sample.server" 
     file="/org.historyresearchenvironment.sample.server/src/org/historyresearchenvironment/sample/businesslogic/SampleBusinessLogic.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="235" x="976" y="917"/>    
+    <position height="99" width="235" x="974" y="917"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="false" private="false" static="true"/>      
@@ -39,7 +39,7 @@
     project="org.historyresearchenvironment.server" 
     file="/org.historyresearchenvironment.server/src/org/historyresearchenvironment/server/ServerRequest.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="369" x="506" y="1066"/>    
+    <position height="207" width="369" x="805" y="1066"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="false" private="false" static="true"/>      
@@ -50,7 +50,7 @@
     project="org.historyresearchenvironment.server" 
     file="/org.historyresearchenvironment.server/src/org/historyresearchenvironment/server/ServerResponse.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="259" x="915" y="1066"/>    
+    <position height="207" width="259" x="506" y="1066"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="false" private="false" static="true"/>      
@@ -97,7 +97,7 @@
     project="org.historyresearchenvironment.client" 
     file="/org.historyresearchenvironment.client/src/org/historyresearchenvironment/client/serverinterface/BusinessLayerInterface.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="281" x="592" y="917"/>    
+    <position height="81" width="281" x="590" y="917"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="false" private="false" static="true"/>      
@@ -152,7 +152,7 @@
     project="org.historyresearchenvironment.server" 
     file="/org.historyresearchenvironment.server/src/org/historyresearchenvironment/server/businesslogic/AbstractHreBusinessLogic.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="232" x="955" y="544"/>    
+    <position height="99" width="232" x="953" y="544"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="false" private="false" static="true"/>      
@@ -181,292 +181,292 @@
       <operations public="true" package="true" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <association id="17">    
-    <bendpoint x="1457" y="917"/>    
-    <bendpoint x="1457" y="1066"/>    
-    <bendpoint x="1457" y="1313"/>    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="18" name="provider">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="19" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="20">    
-    <bendpoint x="433" y="917"/>    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="21">    
-    <bendpoint x="561" y="917"/>    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <dependency id="22">    
-    <bendpoint x="945" y="917"/>    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <generalization id="23">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="12"/>  
-  </generalization>  
-  <realization id="24">    
-    <bendpoint x="819" y="544"/>    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="9"/>  
-  </realization>  
-  <dependency id="25">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <generalization id="26">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="14"/>  
-  </generalization>  
-  <dependency id="27">    
+  <dependency id="17">    
     <end type="SOURCE" refId="13"/>    
     <end type="TARGET" refId="6"/>  
   </dependency>  
-  <dependency id="28">    
-    <end type="SOURCE" refId="9"/>    
+  <dependency id="18">    
+    <bendpoint x="92" y="1066"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="19">    
+    <bendpoint x="496" y="917"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="20">    
+    <bendpoint x="517" y="917"/>    
+    <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="5"/>  
   </dependency>  
-  <dependency id="29">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="15"/>  
+  <generalization id="21">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="12"/>  
+  </generalization>  
+  <dependency id="22">    
+    <bendpoint x="1204" y="1066"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="12"/>  
   </dependency>  
-  <dependency id="30">    
+  <dependency id="23">    
+    <bendpoint x="922" y="544"/>    
+    <bendpoint x="922" y="917"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="24">    
+    <bendpoint x="559" y="917"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="25">    
     <bendpoint x="779" y="405"/>    
     <bendpoint x="798" y="544"/>    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="9"/>  
   </dependency>  
-  <dependency id="31">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="4"/>  
+  <dependency id="26">    
+    <bendpoint x="1476" y="266"/>    
+    <bendpoint x="1476" y="405"/>    
+    <bendpoint x="1476" y="544"/>    
+    <bendpoint x="1476" y="917"/>    
+    <bendpoint x="1434" y="1066"/>    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="12"/>  
   </dependency>  
-  <dependency id="32">    
+  <dependency id="27">    
     <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="11"/>  
   </dependency>  
-  <dependency id="33">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="34">    
-    <bendpoint x="92" y="1066"/>    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="12"/>  
-  </dependency>  
-  <dependency id="35">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="14"/>  
-  </dependency>  
-  <dependency id="36">    
-    <bendpoint x="777" y="544"/>    
-    <bendpoint x="540" y="917"/>    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <association id="37">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="38" name="provider">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="39" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="40">    
-    <bendpoint x="1238" y="405"/>    
-    <bendpoint x="1238" y="266"/>    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <dependency id="41">    
-    <bendpoint x="31" y="917"/>    
-    <bendpoint x="31" y="1066"/>    
-    <bendpoint x="31" y="1313"/>    
+  <dependency id="28">    
+    <bendpoint x="433" y="917"/>    
     <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="2"/>  
+    <end type="TARGET" refId="5"/>  
   </dependency>  
-  <association id="42">    
-    <bendpoint x="1217" y="266"/>    
-    <bendpoint x="1217" y="405"/>    
-    <bendpoint x="1217" y="544"/>    
-    <bendpoint x="1241" y="917"/>    
+  <association id="29">    
+    <bendpoint x="435" y="266"/>    
+    <bendpoint x="435" y="405"/>    
+    <bendpoint x="435" y="544"/>    
+    <bendpoint x="454" y="917"/>    
     <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="43" name="response">        
+      <attribute id="30" name="response">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="44" minimum="0" maximum="1">        
+      <multiplicity id="31" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="45">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <association id="46">    
+  <association id="32">    
+    <bendpoint x="943" y="917"/>    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="47" name="provider">        
+      <attribute id="33" name="businessLogic">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="48" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="49">    
-    <bendpoint x="1225" y="1066"/>    
-    <bendpoint x="1225" y="1313"/>    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <association id="50">    
-    <bendpoint x="435" y="266"/>    
-    <bendpoint x="435" y="405"/>    
-    <bendpoint x="435" y="544"/>    
-    <bendpoint x="454" y="917"/>    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="51" name="request">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="52" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="53">    
-    <bendpoint x="1142" y="266"/>    
-    <bendpoint x="1142" y="405"/>    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="14"/>  
-  </dependency>  
-  <dependency id="54">    
-    <bendpoint x="517" y="917"/>    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="55">    
-    <bendpoint x="924" y="544"/>    
-    <bendpoint x="924" y="917"/>    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <dependency id="56">    
-    <bendpoint x="496" y="917"/>    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="5"/>  
-  </dependency>  
-  <association id="57">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="58" name="businessLogic">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="59" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <dependency id="60">    
-    <bendpoint x="627" y="405"/>    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="8"/>  
-  </dependency>  
-  <realization id="61">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="9"/>  
-  </realization>  
-  <dependency id="62">    
-    <bendpoint x="52" y="917"/>    
-    <bendpoint x="52" y="1066"/>    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="12"/>  
-  </dependency>  
-  <dependency id="63">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="11"/>  
-  </dependency>  
-  <dependency id="64">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="3"/>  
-  </dependency>  
-  <association id="65">    
-    <bendpoint x="903" y="917"/>    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="66" name="businessLogic">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="67" minimum="0" maximum="1">        
+      <multiplicity id="34" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="14" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="68">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="69" name="accessor">        
+  <dependency id="35">    
+    <bendpoint x="475" y="917"/>    
+    <bendpoint x="475" y="1066"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="36">    
+    <bendpoint x="901" y="917"/>    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="37">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <dependency id="38">    
+    <bendpoint x="777" y="544"/>    
+    <bendpoint x="538" y="917"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="39">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="40" name="provider">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="70" minimum="0" maximum="1">        
+      <multiplicity id="41" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="42">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <association id="43">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="44" name="accessor">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="45" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="11" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <dependency id="71">    
-    <bendpoint x="1478" y="266"/>    
-    <bendpoint x="1478" y="405"/>    
-    <bendpoint x="1478" y="544"/>    
-    <bendpoint x="1478" y="917"/>    
-    <bendpoint x="1436" y="1066"/>    
-    <end type="SOURCE" refId="13"/>    
+  <realization id="46">    
+    <bendpoint x="819" y="544"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <dependency id="47">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <dependency id="48">    
+    <bendpoint x="52" y="917"/>    
+    <bendpoint x="52" y="1066"/>    
+    <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="12"/>  
   </dependency>  
-  <dependency id="72">    
-    <bendpoint x="1204" y="1066"/>    
+  <dependency id="49">    
     <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="12"/>  
+    <end type="TARGET" refId="4"/>  
   </dependency>  
-  <dependency id="73">    
-    <bendpoint x="475" y="917"/>    
-    <bendpoint x="475" y="1066"/>    
+  <dependency id="50">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="51">    
+    <bendpoint x="1225" y="1066"/>    
+    <bendpoint x="1225" y="1313"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <association id="52">    
+    <bendpoint x="1455" y="917"/>    
+    <bendpoint x="1455" y="1066"/>    
+    <bendpoint x="1455" y="1313"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="53" name="provider">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="54" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="55">    
     <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="12"/>  
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <association id="56">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="57" name="provider">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="58" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="59">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="5"/>  
   </dependency>  
-  <association id="74">    
+  <dependency id="60">    
+    <bendpoint x="1142" y="266"/>    
+    <bendpoint x="1142" y="405"/>    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <association id="61">    
+    <bendpoint x="1215" y="266"/>    
+    <bendpoint x="1215" y="405"/>    
+    <bendpoint x="1215" y="544"/>    
+    <bendpoint x="1239" y="917"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="62" name="request">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="63" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="64">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="65">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <generalization id="66">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="14"/>  
+  </generalization>  
+  <dependency id="67">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="68">    
     <bendpoint x="1121" y="266"/>    
     <bendpoint x="1121" y="405"/>    
-    <bendpoint x="903" y="544"/>    
+    <bendpoint x="901" y="544"/>    
     <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="75" name="bli">        
+      <attribute id="69" name="bli">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="70" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="71">    
+    <bendpoint x="1236" y="405"/>    
+    <bendpoint x="1236" y="266"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <dependency id="72">    
+    <bendpoint x="31" y="917"/>    
+    <bendpoint x="31" y="1066"/>    
+    <bendpoint x="31" y="1313"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="73">    
+    <bendpoint x="627" y="405"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <association id="74">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="75" name="businessLogic">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="76" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

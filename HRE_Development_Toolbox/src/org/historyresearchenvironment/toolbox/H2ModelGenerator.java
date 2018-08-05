@@ -19,12 +19,11 @@ import java.util.List;
 /**
  * Utility to generate a Java model class representing an HRE H2 Table.
  * 
- * @version 2018-08-03
+ * @version 2018-08-05
  * @author Michael Erichsen, &copy; History Research Environment Ltd., 2018
  *
  */
 
-// TODO Add Javadoc tags to setters and getters
 public class H2ModelGenerator {
 	private static final String COLUMNS = "SELECT COLUMN_NAME, TYPE_NAME FROM INFORMATION_SCHEMA.COLUMNS "
 			+ "WHERE TABLE_SCHEMA = 'PUBLIC' AND TABLE_NAME = ?";
@@ -86,22 +85,23 @@ public class H2ModelGenerator {
 		writer.println("* @throws SQLException If database access has failed");
 		writer.println("*/\r\n");
 
-		final String pk = toCamelCase(primaryKey);
+		// final String pk = toCamelCase(primaryKey);
 		writer.println("public " + toCamelCase(tableName) + "() throws SQLException {");
 		writer.println("}\r\n");
 
-		writer.println("/**");
-		writer.println("* Constructor");
-		writer.println("*");
-		writer.println("* @param " + toCamelCase(primaryKey) + " Primary key");
-		writer.println("* @throws SQLException If database access has failed");
-		writer.println("*/\r\n");
-
-		writer.println(
-				"public " + toCamelCase(tableName) + "(" + primaryKeyType + " " + pk + ") throws SQLException {");
-		writer.println("super();");
-		writer.println("this." + pk + " = " + pk + ";");
-		writer.println("}\r\n");
+		// writer.println("/**");
+		// writer.println("* Constructor");
+		// writer.println("*");
+		// writer.println("* @param " + toCamelCase(primaryKey) + " Primary key");
+		// writer.println("* @throws SQLException If database access has failed");
+		// writer.println("*/\r\n");
+		//
+		// writer.println(
+		// "public " + toCamelCase(tableName) + "(" + primaryKeyType + " " + pk + ")
+		// throws SQLException {");
+		// writer.println("super();");
+		// writer.println("this." + pk + " = " + pk + ";");
+		// writer.println("}\r\n");
 	}
 
 	/**
@@ -147,7 +147,8 @@ public class H2ModelGenerator {
 
 		// get(key)
 		writer.println("@Override");
-		writer.println("public AbstractHreDataModel get(" + primaryKeyType + " key) throws SQLException {");
+		writer.println("public " + toCamelCase(tableName) + " get(" + primaryKeyType + " key) throws SQLException {");
+		writer.println("model = new " + toCamelCase(tableName) + "();");
 		writer.println("ps = conn.prepareStatement(SELECT);");
 		writer.println("ps.set" + toCamelCase(primaryKeyType) + "(1, (" + primaryKeyType + ") key);");
 		writer.println("rs = ps.executeQuery();");
@@ -159,7 +160,7 @@ public class H2ModelGenerator {
 		}
 
 		writer.println("}");
-		writer.println("return this;");
+		writer.println("return model;");
 		writer.println("}\r\n");
 
 		// post()
@@ -335,7 +336,7 @@ public class H2ModelGenerator {
 	 * 
 	 */
 	private static void createSql() throws IOException {
-		System.out.println("Creating SQL statements");
+		// System.out.println("Creating SQL statements");
 
 		// SELECT
 		writer.println("private static final String SELECT = \"SELECT \" +");
@@ -401,11 +402,11 @@ public class H2ModelGenerator {
 		types = new ArrayList<String>();
 		final File outputFile = new File(outputDirectory + "/" + toCamelCase(tableName) + ".java");
 
-		final boolean rc = outputFile.delete();
+		// final boolean rc = outputFile.delete();
 
-		if (rc) {
-			System.out.println("File " + outputFile.getName() + " has been deleted");
-		}
+		// if (rc) {
+		// System.out.println("File " + outputFile.getName() + " has been deleted");
+		// }
 
 		try {
 			writer = new PrintWriter(new BufferedWriter(new FileWriter(outputFile)));
@@ -433,7 +434,7 @@ public class H2ModelGenerator {
 				type = convertType(rs.getString(2));
 				types.add(type);
 
-				System.out.println("Column " + field + ", type " + type);
+				// System.out.println("Column " + field + ", type " + type);
 
 				if (field.equals(primaryKey)) {
 					primaryKeyType = type;
@@ -454,7 +455,7 @@ public class H2ModelGenerator {
 			conn.close();
 			fields = null;
 			types = null;
-			System.out.println("File " + outputFile.getName() + " has been generated");
+			// System.out.println("File " + outputFile.getName() + " has been generated");
 		} catch (
 
 		final SQLException | IOException e) {

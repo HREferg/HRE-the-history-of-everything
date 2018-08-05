@@ -55,8 +55,8 @@ public class SampleEditorProvider extends AbstractHreProvider {
 	public void readFromDatabase(int paramSetKey) {
 		try {
 			this.paramSetKey = (short) paramSetKey;
-			final SubstnParamNames spn = new SubstnParamNames(this.paramSetKey);
-			final SubstnParamValues spv = new SubstnParamValues(this.paramSetKey);
+			final SubstnParamNames spn = new SubstnParamNames().get(paramSetKey);
+			final SubstnParamValues spv = new SubstnParamValues().get(paramSetKey);
 
 			defltValue = spn.getDefltValue();
 			paramListKey = spv.getParamListKey();
