@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Prototypes
+Bundle-SymbolicName: org.historyresearchenvironment.prototypes;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.historyresearchenvironment.dataaccess,
+ org.historyresearchenvironment.client,
+ org.eclipse.e4.ui.di,
+ org.eclipse.e4.core.di.annotations
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: org.historyresearchenvironment.prototypes
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: History Research Environment Ltd.

@@ -41,7 +41,7 @@
 
 <p>You need to have a Java Runtime Environment or a Java Development Kit installed on your system.</p>
 
-<p>You can run HRE.bat on Windows or HRE.sh on Linux and Mac. They will execute the "eclipse" executable, which runs HRE.</p>
+<p>You can run HRE.bat on Windows or HRE.sh on Linux and Mac. They will execute the &quot;eclipse&quot; executable, which runs HRE.</p>
 
 <p>If the GUI is blank then either the executable is corrupted or some underlying configuration files has gone bad. In the last case it sometimes seems to help to delete the directory and to unzip the zip file again.</p>
 
@@ -241,6 +241,10 @@ java.nio.file.NoSuchFileException: c:\temp\hre-log.0.0.txt.lck</p>
 			<td>16. 07. 2018</td>
 			<td>Build 0.1.0.201807160730 closes issue <a href="https://github.com/History-Research-Environment/HRE--History-Research-Environment/issues/25">25</a>.</td>
 		</tr>
+		<tr>
+			<td>05. 08. 2018</td>
+			<td>Build 0.1.0.201808051426 now uses specialized tools to generate H2 model classes. HRE.bat and HRE.sh added to start HRE.</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -255,5 +259,15 @@ java.nio.file.NoSuchFileException: c:\temp\hre-log.0.0.txt.lck</p>
 <p><a href="http://www.myerichsen.net/HRE/HRE-win32.win32.x86.zip">Windows 32 bit v0.1 Client</a></p>
 
 <p><a href="http://www.myerichsen.net/HRE/HRE-win32.win32.x86_64.zip">Windows 64 bit v0.1 Client</a></p>
+
+<h1>Other jars for the Github Development Package</h1>
+
+<p><a href="http://www.myerichsen.net/HRE/org.h2_1.3.168.v201212121212.jar">H2 1.3.168</a>, the embedded database. Version used by Maven builds</p>
+
+<p><a href="http://www.myerichsen.net/HRE/h2-1.4.197.jar">H2 1.4.197</a>, the embedded database, newer version</p>
+
+<p><a href="http://www.myerichsen.net/HRE/com.opcoach.e4.preferences_1.0.0.201709042218.jar">OP Coach E4 Preferences 1.0.0</a>, used for preferences in Eclipse E4 style</p>
+
+<p><a href="http://www.myerichsen.net/HRE/org.eclipse.jetty.util_9.4.8.v20171121.jar">Eclipse Jetty Util 9.4.8</a>, used for Client/Server mode and the Help System</p>
 </body>
 </html>
