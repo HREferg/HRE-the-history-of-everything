@@ -28,12 +28,11 @@
       <import plugin="org.eclipse.e4.core.commands"/>
       <import plugin="org.eclipse.e4.core.services"/>
       <import plugin="org.historyresearchenvironment.server"/>
-      <import plugin="javax.annotation"/>
-      <import plugin="org.historyresearchenvironment.dataaccess" version="0.1.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.jetty.server"/>
+      <import plugin="org.historyresearchenvironment.dataaccess" version="0.1.0" match="greaterOrEqual"/>
+      <import plugin="javax.annotation"/>
       <import plugin="javax.servlet"/>
       <import plugin="org.eclipse.jetty.util"/>
-      <import plugin="org.eclipse.help"/>
    </requires>
 
    <plugin

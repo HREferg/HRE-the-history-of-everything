@@ -26,6 +26,7 @@
 		<module>org.historyresearchenvironment.databaseadmin.dataaccess</module>
 		<module>org.historyresearchenvironment.databaseadmin.help</module>
 		<module>org.historyresearchenvironment.databaseadmin.server</module>
+		<module>org.historyresearchenvironment.prototypes</module>
 
 	</modules>
 	<version>0.1.0-SNAPSHOT</version>

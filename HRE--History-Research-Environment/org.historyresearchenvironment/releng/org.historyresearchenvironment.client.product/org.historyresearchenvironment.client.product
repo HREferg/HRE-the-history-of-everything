@@ -101,11 +101,12 @@
 
    <features>
       <feature id="org.historyresearchenvironment.client.feature" version="0.1.0.qualifier"/>
+      <feature id="org.historyresearchenvironment.sample.feature" version="0.1.0.qualifier"/>
+      <feature id="org.historyresearchenvironment.databaseadmin.feature" version="0.1.0.qualifier"/>
+      <feature id="org.historyresearchenvironment.prototypes.feature" version="0.1.0.qualifier"/>
       <feature id="org.eclipse.e4.rcp"/>
       <feature id="org.eclipse.emf.ecore"/>
       <feature id="org.eclipse.emf.common"/>
-      <feature id="org.historyresearchenvironment.sample.feature" version="0.1.0.qualifier"/>
-      <feature id="org.historyresearchenvironment.databaseadmin.feature" version="0.1.0.qualifier"/>
       <feature id="org.eclipse.help"/>
    </features>
 

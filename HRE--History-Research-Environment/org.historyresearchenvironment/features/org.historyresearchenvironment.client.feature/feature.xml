@@ -19,24 +19,24 @@
 
    <requires>
       <import plugin="org.eclipse.e4.ui.model.workbench"/>
-      <import plugin="org.eclipse.jface"/>
       <import plugin="org.eclipse.e4.ui.workbench"/>
       <import plugin="org.eclipse.e4.core.di"/>
       <import plugin="org.eclipse.e4.ui.di"/>
       <import plugin="org.eclipse.e4.core.contexts"/>
-      <import plugin="org.eclipse.core.runtime"/>
       <import plugin="org.eclipse.e4.core.commands"/>
       <import plugin="org.eclipse.e4.core.services"/>
       <import plugin="org.eclipse.help.ui"/>
-      <import plugin="org.eclipse.ui.forms"/>
+      <import plugin="org.eclipse.core.runtime"/>
       <import plugin="org.eclipse.e4.ui.services"/>
+      <import plugin="org.eclipse.jface"/>
       <import plugin="javax.inject"/>
       <import plugin="org.eclipse.swt"/>
       <import plugin="org.eclipse.e4.core.di.annotations"/>
       <import plugin="org.eclipse.jetty.server"/>
+      <import plugin="javax.servlet"/>
       <import plugin="org.eclipse.equinox.preferences"/>
       <import plugin="org.h2"/>
-      <import plugin="javax.servlet"/>
+      <import plugin="org.eclipse.jetty.util"/>
    </requires>
 
    <plugin

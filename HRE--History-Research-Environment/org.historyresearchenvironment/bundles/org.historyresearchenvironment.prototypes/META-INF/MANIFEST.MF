@@ -2,14 +2,23 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Prototypes
 Bundle-SymbolicName: org.historyresearchenvironment.prototypes;singleton:=true
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 0.1.0.qualifier
+Bundle-Vendor: History Research Environment Ltd.
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.historyresearchenvironment.dataaccess,
  org.historyresearchenvironment.client,
  org.eclipse.e4.ui.di,
- org.eclipse.e4.core.di.annotations
+ org.eclipse.e4.core.di.annotations,
+ org.eclipse.e4.ui.model.workbench;bundle-version="2.0.1.v20170713-1800",
+ org.eclipse.e4.ui.workbench,
+ org.historyresearchenvironment.server;bundle-version="0.1.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: org.historyresearchenvironment.prototypes
-Bundle-ActivationPolicy: lazy
-Bundle-Vendor: History Research Environment Ltd.
+Import-Package: javax.annotation;version="1.0.0";resolution:=optional,
+  javax.inject;version="1.0.0"
+Export-Package: org.historyresearchenvironment.prototypes,
+ org.historyresearchenvironment.prototypes.businesslogic;uses:="org.historyresearchenvironment.server.businesslogic,org.historyresearchenvironment.server",
+ org.historyresearchenvironment.prototypes.handlers;uses:="org.eclipse.e4.ui.model.application,org.eclipse.e4.ui.workbench.modeling",
+ org.historyresearchenvironment.prototypes.parts;uses:="org.eclipse.swt.widgets,org.historyresearchenvironment.client.parts",
+ org.historyresearchenvironment.prototypes.providers;uses:="org.historyresearchenvironment.dataaccess.providers"

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_6Jgb0JsDEeirqIkW4AzVdg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Bf2-UJsEEeirqIkW4AzVdg" featurename="commands" parentElementId="org.historyresearchenvironment.client.application">
+    <elements xsi:type="commands:Command" xmi:id="_H9nE4JsEEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.command.perspectiveperson" commandName="PerspectivePerson"/>
+    <elements xsi:type="commands:Command" xmi:id="_MvEBsJsEEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.command.personnavigatoropen" commandName="Person Navigator Open"/>
+    <elements xsi:type="commands:Command" xmi:id="_P8iDQJsEEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.command.personeditoropen" commandName="Person Editor Open"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_UeVagJsEEeirqIkW4AzVdg" featurename="handlers" parentElementId="org.historyresearchenvironment.client.application">
+    <elements xsi:type="commands:Handler" xmi:id="_Y7pTUJsEEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.handler.0" contributionURI="bundleclass://org.historyresearchenvironment.prototypes/org.historyresearchenvironment.prototypes.handlers.PersonPerspectiveHandler" command="_H9nE4JsEEeirqIkW4AzVdg"/>
+    <elements xsi:type="commands:Handler" xmi:id="_cmud8JsEEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.handler.1" contributionURI="bundleclass://org.historyresearchenvironment.prototypes/org.historyresearchenvironment.prototypes.handlers.PersonNavigatorHandler" command="_MvEBsJsEEeirqIkW4AzVdg"/>
+    <elements xsi:type="commands:Handler" xmi:id="_eSElcJsEEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.handler.2" contributionURI="bundleclass://org.historyresearchenvironment.prototypes/org.historyresearchenvironment.prototypes.handlers.PersonEditorHandler" command="_P8iDQJsEEeirqIkW4AzVdg"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_iPSo8JsEEeirqIkW4AzVdg" featurename="children" parentElementId="org.historyresearchenvironment.client.menu.perspectives">
+    <elements xsi:type="menu:HandledMenuItem" xmi:id="_mMXigJsEEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.handledmenuitem.personperspective" label="Person Perspective" tooltip="Person Perspective" command="_H9nE4JsEEeirqIkW4AzVdg"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_tUYHAJsEEeirqIkW4AzVdg" featurename="children" parentElementId="org.historyresearchenvironment.client.perspectivestack.0">
+    <elements xsi:type="advanced:Perspective" xmi:id="_vxcmYJsEEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.perspective.personperspective" label="Person Perspective" tooltip="Person Perspective">
+      <children xsi:type="basic:PartSashContainer" xmi:id="_P4D-sJsfEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.partsashcontainer.0" containerData="10000" horizontal="true">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_RzgXsJsfEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.partsashcontainer.1" containerData="4000">
+          <children xsi:type="basic:PartStack" xmi:id="_UaMtIJsfEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.partstack.0">
+            <children xsi:type="basic:Part" xmi:id="_Ve5rYJsfEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.part.personnavigator" contributionURI="bundleclass://org.historyresearchenvironment.prototypes/org.historyresearchenvironment.prototypes.parts.PersonNavigatorView" label="Person Navigator" tooltip="Person Navigator" closeable="true"/>
+          </children>
+        </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_SUF8QJsfEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.partsashcontainer.2" containerData="6000">
+          <children xsi:type="basic:PartStack" xmi:id="_cW4P0JsfEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.partstack.1" containerData="8000">
+            <children xsi:type="basic:Part" xmi:id="_eO1P8JsfEeirqIkW4AzVdg" elementId="org.historyresearchenvironment.prototypes.part.personeditor" contributionURI="bundleclass://org.historyresearchenvironment.prototypes/org.historyresearchenvironment.prototypes.parts.PersonEditorView" label="Person Editor" tooltip="Person Editor" closeable="true"/>
+          </children>
+        </children>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

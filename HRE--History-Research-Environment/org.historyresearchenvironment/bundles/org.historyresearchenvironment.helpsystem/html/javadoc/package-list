@@ -1,3 +1,5 @@
+com.opcoach.e4.preferences
+com.opcoach.e4.preferences.handlers
 org.eclipse.wb.swt
 org.historyresearchenvironment.client
 org.historyresearchenvironment.client.dialogs
@@ -18,6 +20,11 @@ org.historyresearchenvironment.databaseadmin.handlers
 org.historyresearchenvironment.databaseadmin.help
 org.historyresearchenvironment.databaseadmin.parts
 org.historyresearchenvironment.databaseadmin.server
+org.historyresearchenvironment.prototypes
+org.historyresearchenvironment.prototypes.businesslogic
+org.historyresearchenvironment.prototypes.handlers
+org.historyresearchenvironment.prototypes.parts
+org.historyresearchenvironment.prototypes.providers
 org.historyresearchenvironment.sample.businesslogic
 org.historyresearchenvironment.sample.client
 org.historyresearchenvironment.sample.dataaccess

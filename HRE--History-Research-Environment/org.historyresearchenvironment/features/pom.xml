@@ -19,6 +19,7 @@
 		<module>org.historyresearchenvironment.client.feature</module>
 		<module>org.historyresearchenvironment.sample.feature</module>
 		<module>org.historyresearchenvironment.databaseadmin.feature</module>
+		<module>org.historyresearchenvironment.prototypes.feature</module>
 	</modules>
 </project>
 
