@@ -1,0 +1,108 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Transform a Word Document</title>
+<meta content="DocBook XSL Stylesheets V1.79.1" name="generator">
+<link rel="home" href="index.html" title="">
+<link rel="up" href="index.html" title="">
+<link rel="prev" href="ar01s02.html" title="Create a project">
+<link rel="next" href="ar01s04.html" title="GitHub">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084"
+	alink="#0000FF">
+	<div class="sect1">
+		<div class="titlepage">
+			<div>
+				<div>
+					<h2 class="title" style="clear: both">
+						<a name="N1003D"></a>Transform a Word Document
+					</h2>
+				</div>
+			</div>
+		</div>
+		<div class="sect2">
+			<div class="titlepage">
+				<div>
+					<div>
+						<h3 class="title">
+							<a name="N10040"></a>Edit Microsoft Office Word Document
+						</h3>
+					</div>
+				</div>
+			</div>
+			<p>Edit a document and define 1-4 header levels</p>
+			<p>Save it as Open Document Text (odt)</p>
+		</div>
+		<div class="sect2">
+			<div class="titlepage">
+				<div>
+					<div>
+						<h3 class="title">
+							<a name="N10047"></a>Extract text and images
+						</h3>
+					</div>
+				</div>
+			</div>
+			<p>Unzip the odt document, e.g. using 7-zip, into a separate
+				folder</p>
+		</div>
+		<div class="sect2">
+			<div class="titlepage">
+				<div>
+					<div>
+						<h3 class="title">
+							<a name="N1004C"></a>Transform into DocBook Format
+						</h3>
+					</div>
+				</div>
+			</div>
+			<p>Import content.xml from the unzipped file into the odf folder</p>
+			<p>Edit and run DocBookBuild.xml as an Ant Build</p>
+			<p>Note that you should set JRE to Run in the same JRE as the
+				workspace in Run, External Tools , External Tools Preferences tab
+				JRE</p>
+			<p>Check the output in the docbook folder</p>
+			<p>Rename .png files in the media folder to .png</p>
+		</div>
+		<div class="sect2">
+			<div class="titlepage">
+				<div>
+					<div>
+						<h3 class="title">
+							<a name="N10059"></a>Convert to Eclipse Help System
+						</h3>
+					</div>
+				</div>
+			</div>
+			<p>Edit and run eclipsehelpbuild.xml as an Ant Build, again using
+				the same JRE as the workspace.</p>
+			<p>Import the media folder as a subfolder under the html folder.</p>
+		</div>
+		<div class="sect2">
+			<div class="titlepage">
+				<div>
+					<div>
+						<h3 class="title">
+							<a name="N10060"></a>Add to HRE Help system
+						</h3>
+					</div>
+				</div>
+			</div>
+			<p>Create a new folder in the HRE Help system project html folder
+				and import the contents of the generated html subfolder.</p>
+			<p>Rename the images and copy them to the images folder.</p>
+			<p>Rename toc.xml and copy it into the xml folder. Edit it in the
+				Table of Contents editor by changing &ldquo;Name&rdquo; to the image
+				title, &ldquo;Anchor&rdquo; to an anchor name in a higher-level
+				table of content, e.g. &ldquo;toc.html#toolbox&rdquo;, and specify
+				the location of the index.html file in the html subfolder</p>
+			<p>Edit the higher-level table of content to include the new
+				table of content and HTML pages.</p>
+			<p>Switch to source mode and change all href=&rdquo;html/&hellip;
+				to the html subdirectory under the new folder.</p>
+			<p>Each new table of contents needs to be registered in the
+				plugin.xml file, while unselecting &ldquo;primary&rdquo;.</p>
+		</div>
+	</div>
+</body>
+</html>

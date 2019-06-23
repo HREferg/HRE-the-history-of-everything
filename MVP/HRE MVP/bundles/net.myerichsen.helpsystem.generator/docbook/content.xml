@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="">
+<sect1>
+<title>Programming
+				Principles</title>
+<para>HRE is built on an object-oriented
+				programming model, which especially prescribes encapsulation,
+				inheritance and polymorphism.</para>
+<para>Best practices for client-server
+				development prescribes extensible and loosely coupled interfaces.
+			</para>
+<para>Best practices for interfaces
+				prescribes using open, established standards, clearly defined
+				protocols and avoiding side-effects.</para>
+</sect1>
+<sect1>
+<title>The
+				Logical Technology Model</title>
+<para>The HRE skeleton and sample are
+				developed according to this Logical Technology Model:</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						
+						<para>
+							
+								
+									<inlinegraphic fileref="media/image1.jpg" width="" depth=""/>
+									
+									
+								
+							
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+<para>The red parts are the immediate
+				targets for development, but the infrastructure is from the
+				beginning designed to support all the models.</para>
+</sect1>
+<sect1>
+<title>
+				Designing the
+				 
+				Use Case
+				 
+				for a Feature
+			</title>
+<para>The first thing to do is to define the
+				use case that the new feature will implement.</para>
+<para>Which kinds of users will need which
+				functions, and which data and external systems will they need to
+				use?</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						<para>
+							
+								
+									<inlinegraphic fileref="media/image2.jpeg" width="" depth=""/>
+									
+									
+								
+							
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+<para>Will the feature be read-only or also
+				update?</para>
+</sect1>
+<sect1>
+<title>
+				Defining the
+				 
+				Data Model
+			</title>
+<para>Define the logical data model as the
+				data items that the feature will expose to the user, and which
+				supporting data is needed.</para>
+<para>
+				Define the physical data model as the tables, view and columns in
+				the HRE data base that should be used by the feature.
+				 
+				SQL Power Architect can be used as a tool for this. The Community
+				Edition is available at
+				 
+				<ulink url="http://www.bestofbi.com/page/architect_download_os">
+					http://www.bestofbi.com/page/architect_download_os
+					
+				</ulink>
+				.
+			</para>
+<para>In this example we have created a
+				database view to implement the physical data model:</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						
+						<para>
+							
+								
+									<inlinegraphic fileref="media/image3.tmp" width="" depth=""/>
+									
+									
+								
+							
+						</para>
+					</entry>
+				</row>
+				<row>
+					<entry>
+						<para>
+							
+								
+									<inlinegraphic fileref="media/image4.tmp" width="" depth=""/>
+									
+									
+								
+							
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+</sect1>
+<sect1>
+<title>
+				Getting
+				 
+				HRE
+				 
+				from Github
+			</title>
+<para>
+				Please clone, branch, fork or whatever is best to create your own
+				copy of HRE v0.1
+				 
+				from
+				 
+				<ulink url="https://github.com/History-Research-Environment/HRE--History-Research-Environment/tree/develop">
+					https://github.com/History-Research-Environment/HRE--History-Research-Environment/tree/develop
+					
+				</ulink>
+			</para>
+</sect1>
+<sect1>
+<title>
+				Creating
+				 
+				Eclipse
+				 
+				Plug-in and Feature
+				 
+				Projects
+			</title>
+<para>
+				We would normally create a feature project with
+				 
+				three or
+				 
+				four
+				 
+				plug-in projects:
+			</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						
+						<para>
+							
+								
+									<inlinegraphic fileref="media/image5.tmp" width="" depth=""/>
+									
+									
+								
+							
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+<para>Data access could be combined into
+				server, if that makes better sense.</para>
+<para>For each plug-in project you should
+				create a subfolder with the same name in the bundles folder of HRE.
+				Then you should create the project and take care not to create it in
+				the default location, but in the new folder.</para>
+<para>
+				The client project should be
+				 
+				created as a Fragment Project with
+				 
+				org.historyresearchenvironment.client
+				 
+				as
+				 
+				the
+				 
+				host plug-in.
+			</para>
+<para>The help project should use the
+				available template called “Sample Help Content”.</para>
+<para>
+				The
+				 
+				server
+				 
+				project should be created as
+				 
+				a
+				 
+				simple plug-in project.
+			</para>
+<para>
+				The data access project should be created from the Eclipse JPA
+				perspective
+				 
+				as a JPA project, if you need to create classes not already present
+				in the base data access project.
+			</para>
+<para>The feature project should be created
+				as a Feature Project and add the plug-in projects.</para>
+</sect1>
+<sect1>
+<title>Application
+				Structure</title>
+<para>The java classes of the feature will
+				normally follow this structure:</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						
+						<para>
+							
+								
+									<inlinegraphic fileref="media/image6.jpg" width="" depth=""/>
+									
+									
+								
+							
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+</sect1>
+<sect1>
+<title>Implementing
+				Data Access</title>
+<para>
+				The mapping of the database tables can happen
+				 
+				using database views or by using composite data model classes, where
+				the SQL statements accesses one or more tables.
+			</para>
+<para>
+				Eclipse can generate java classes from H2 tables and views using
+				JPA, Java Persistency
+				 
+				Architecture, if they are not already available.
+				 
+				These classes have fields, getters and setters for each database
+				column.
+			</para>
+<para>
+				These classes should extend
+				 
+				AbstractHreDataAccess
+				 
+				and be enriched with methods for SELECT, SELECTALL, DELETE,
+				DELETEALL, INSERT and UPDATE.
+			</para>
+<para>They normally reside in the data
+				access plug-in.</para>
+<para>Please note that a database view needs
+				a trigger to permit updates.</para>
+</sect1>
+<sect1>
+<title>Implementing
+				the User Interface</title>
+<para>The most normal user interface parts
+				are navigators and editors.</para>
+<para>An editor is a view of a single
+				entity, while a navigator is a list or tree view of a set of
+				entities.</para>
+<para>The entities are implemented as view
+				model classes, one to encapsulate each field in the editor part, and
+				one to encapsulate a list of single models.</para>
+<sect2>
+<title>Editor
+				View Part</title>
+<para>
+				View Parts reside in the client plug-in and are created
+				 
+				using
+			</para>
+<para>
+				•
+				
+				File,
+				 
+				New,
+				 
+				Other,
+				 
+				Window Builder,
+				 
+				SWT Designer,
+				 
+				Eclipse 4,
+				 
+				ViewPart
+			</para>
+<para>
+				They
+				 
+				extend
+				 
+				AbstractHreGuiPart, which provides font support
+				 
+				and a business layer inteface.
+			</para>
+<para>
+				Design the view part using the Window Builder
+				 
+				and code
+				 
+				the
+				 
+				updateGui
+				 
+				method
+				 
+				to update the GUI from the underlying provider class.
+			</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						<para>SampleEditorProvider provider = new
+							SampleEditorProvider();</para>
+						<para>SampleBusinessLogic businessLogic =
+							new SampleBusinessLogic();</para>
+						<para>…</para>
+						<para>
+							callBusinessLayer
+							
+							(
+							"GET"
+							
+								,
+								 
+							
+							provider
+							
+								,
+								 
+							
+							businessLogic
+							
+								,
+								 
+							
+							textparamSetKey
+							.getText());
+						</para>
+						<para>
+							updateGui();
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+</sect2>
+<sect2>
+<title>AbstractHreGuiPart
+			</title>
+<para>Contains the callBusinessLayer method:
+			</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						<para>
+							protected
+							
+								 
+								BusinessLayerInterface
+								 
+							
+							bli
+							;
+						</para>
+						<para>
+							protected
+							
+								 
+								ServerRequest
+								 
+							
+							request
+							;
+						</para>
+						<para>
+							protected
+							
+								 
+								ServerResponse
+								 
+							
+							response
+							;
+						</para>
+						<para/>
+						<para>
+							bli
+							
+								 
+								= BusinessLayerInterfaceFactory.
+							
+							getBusinessLayerInterface
+							
+							();
+							
+								
+							
+						</para>
+						<para>
+							request
+							
+								 
+								=
+								 
+							
+							new
+							
+								 
+								ServerRequest(
+							
+							"GET"
+							
+								,
+								 
+							
+							provider, businessLogic
+							
+							);
+						</para>
+						<para>
+							response
+							
+								 
+								=
+								 
+							
+							bli
+							.callBusinessLayer(
+							
+							request
+							);
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+</sect2>
+<sect2>
+<title>
+				View
+				 
+				Provider
+			</title>
+<para>
+				The view provider extends
+				 
+				AbstractHreProvider
+				 
+				and encapsulates the data used by the view part.
+			</para>
+<para>
+				The provider must implement the readFromH2 method
+				 
+				to
+				 
+				invoke the
+				 
+				data access classes
+				 
+				that do the actual database access:
+			</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						<para>
+							
+								SubstnParamName
+								 
+							
+							spn
+							
+								 
+								=
+								 
+							
+							new
+							
+								 
+								SubstnParamName(
+							
+							this
+							.
+							paramSetKey
+							);
+						</para>
+						<para>
+							
+								SubstnParamValue
+								 
+							
+							spv
+							
+								 
+								=
+								 
+							
+							new
+							
+								 
+								SubstnParamValue(
+							
+							this
+							.
+							paramSetKey
+							);
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+</sect2>
+<sect2>
+<title>AbstractHreProvider
+			</title>
+<para>Provides generic methods to writeJson
+				and readJson, when running in client/server mode.</para>
+</sect2>
+<sect2>
+<title>BusinessLayerInterfaceFactory
+			</title>
+<para>
+				Implements the
+				 
+				getBusinessLayerInterface
+				 
+				method:
+			</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						<para>
+							if
+							
+								 
+								(
+							
+							servertype
+							.equals(
+							"DIRECT"
+							)) {
+						</para>
+						<para>
+							
+								
+							
+							return
+							
+								 
+							
+							new
+							
+								 
+								DirectBusinessLayerInterface();
+							
+						</para>
+						<para>
+							
+								}
+								 
+							
+							else
+							
+								 
+							
+							if
+							
+								 
+								(
+							
+							servertype
+							.equals(
+							"SERVER"
+							)) {
+						</para>
+						<para>
+							
+								
+							
+							return
+							
+								 
+							
+							new
+							
+								 
+								ServerBusinessLayerInterface();
+							
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+</sect2>
+<sect2>
+<title>DirectBusinessLayerInterface
+			</title>
+<para>
+				Implements
+				 
+				BusinessLayerInterface
+				 
+				by implementing the
+				 
+				callBusinessLayer
+				 
+				method to invoke the business logic class as requested by the
+				 
+				ServerRequest
+				 
+				and return a
+				 
+				ServerResponse:
+			</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						<para>
+							
+								AbstractHreBusinessLogic
+								 
+							
+							businessLogic
+							
+								 
+								=
+								 
+							
+							request
+							.getBusinessLogic();
+							
+						</para>
+						<para>
+							
+								ServerResponse
+								 
+							
+							response
+							
+								 
+								=
+								 
+							
+							businessLogic
+							.execute(
+							request
+							);
+						</para>
+						<para>
+							return
+							
+								 
+							
+							response
+							;
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+</sect2>
+<sect2>
+<title>ServerBusinessLayerInterface
+			</title>
+<para>Used for client/server mode.</para>
+</sect2>
+<sect2>
+<title>BusinessLayerInterface
+			</title>
+<para>
+				An interface
+				 
+				defining:
+			</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						<para>
+							public
+							
+								 
+							
+							abstract
+							
+								 
+								ServerResponse callBusinessLayer(ServerRequest
+								 
+							
+							request
+							);
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+</sect2>
+<sect2>
+<title>Business
+				Logic</title>
+<para>Extends AbstractHreBusinessLogic.
+			</para>
+<para>The business logic class executes the
+				provider readFromH2 method to access the database and any other
+				relevant business logic and rules:</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						<para>
+							
+								SampleEditorProvider
+								 
+							
+							provider
+							
+								 
+								= (SampleEditorProvider)
+								 
+							
+							request
+							.getProvider();
+						</para>
+						<para>
+							provider
+							.readFromH2(
+							paramSetKey
+							);
+						</para>
+						<para>
+							response
+							
+								 
+								=
+								 
+							
+							new
+							
+								 
+								ServerResponse(
+							
+							provider
+							
+								, 0,
+								 
+							
+							"OK"
+							);
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+</sect2>
+<sect2>
+<title>AbstractHreBusinessLogic
+			</title>
+<para>Defines:</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						<para>
+							public
+							
+								 
+							
+							abstract
+							
+								 
+								ServerResponse execute(
+							
+							request
+							);
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+</sect2>
+<sect2>
+<title/>
+</sect2>
+<sect2>
+<title>ServerRequest
+			</title>
+<para>Encapsulates:</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						<para>
+							private
+							
+								 
+								String
+								 
+							
+							operation
+							;
+						</para>
+						<para>
+							private
+							
+								 
+								AbstractHreProvider
+								 
+							
+							provider
+							;
+						</para>
+						<para>
+							private
+							
+								 
+								AbstractHreBusinessLogic
+								 
+							
+							businessLogic
+							;
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+</sect2>
+<sect2>
+<title>ServerResponse
+			</title>
+<para>Encapsulates:</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						<para>
+							private
+							
+								 
+								AbstractHreProvider
+								 
+							
+							provider
+							;
+						</para>
+						<para>
+							private
+							
+								 
+							
+							int
+							
+								 
+							
+							returnCode
+							;
+						</para>
+						<para>
+							private
+							
+								 
+								String
+								 
+							
+							returnMessage
+							;
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+</sect2>
+</sect1>
+<sect1>
+<title>
+				Adding
+				 
+				Help
+			</title>
+<para>
+				Use the
+				 
+				HRE_Helpsystem_Generator
+				 
+				project to generate a set of HTML pages and images – or do it all by
+				hand.
+			</para>
+<para>
+				Then replace the contents of the html folder in the Help project
+				with your pages and add toc.xml pages to the root of the project
+				folder.
+				 
+			</para>
+</sect1>
+<sect1>
+<title>Adding
+				the Feature to HRE</title>
+<para>
+				This is done by adding the feature to the
+				 
+				org.historyresearchenvironment.client.product
+				 
+				file in the
+				 
+				org.historyresearchenvironment.client.product
+				 
+				folder of the releng folder:
+			</para>
+<informaltable frame="all">
+<tgroup cols="1">
+				
+					
+				
+				<tbody><row>
+					<entry>
+						<para>
+							
+								
+									<inlinegraphic fileref="media/image7.tmp" width="" depth=""/>
+									
+									
+								
+							
+						</para>
+					</entry>
+				</row></tbody>
+			</tgroup>
+</informaltable>
+<para/>
+</sect1>
+</article>

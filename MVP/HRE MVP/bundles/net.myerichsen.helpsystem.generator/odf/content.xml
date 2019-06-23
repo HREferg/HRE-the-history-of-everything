@@ -1,0 +1,3096 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<office:document-content
+	xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0"
+	xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0"
+	xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0"
+	xmlns:db="urn:oasis:names:tc:opendocument:xmlns:database:1.0"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0"
+	xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"
+	xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
+	xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
+	xmlns:grddl="http://www.w3.org/2003/g/data-view#"
+	xmlns:math="http://www.w3.org/1998/Math/MathML"
+	xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0"
+	xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"
+	xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+	xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0"
+	xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0"
+	xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0"
+	xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+	xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0"
+	xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"
+	xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+	xmlns:xforms="http://www.w3.org/2002/xforms"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:xlink="http://www.w3.org/1999/xlink" office:version="1.2">
+	<office:font-face-decls>
+		<style:font-face style:name="Calibri"
+			svg:font-family="Calibri" style:font-family-generic="swiss"
+			style:font-pitch="variable" svg:panose-1="2 15 5 2 2 2 4 3 2 4" />
+		<style:font-face style:name="Times New Roman"
+			svg:font-family="Times New Roman" style:font-family-generic="roman"
+			style:font-pitch="variable" svg:panose-1="2 2 6 3 5 4 5 2 3 4" />
+		<style:font-face style:name="Calibri Light"
+			svg:font-family="Calibri Light" style:font-family-generic="swiss"
+			style:font-pitch="variable" svg:panose-1="2 15 3 2 2 2 4 3 2 4" />
+		<style:font-face style:name="Symbol"
+			style:font-charset="x-symbol" svg:font-family="Symbol"
+			style:font-family-generic="roman" style:font-pitch="variable"
+			svg:panose-1="5 5 1 2 1 7 6 2 5 7" />
+		<style:font-face style:name="Courier New"
+			svg:font-family="Courier New" style:font-family-generic="modern"
+			style:font-pitch="fixed" svg:panose-1="2 7 3 9 2 2 5 2 4 4" />
+		<style:font-face style:name="Wingdings"
+			style:font-charset="x-symbol" svg:font-family="Wingdings"
+			style:font-family-generic="system" style:font-pitch="variable"
+			svg:panose-1="5 0 0 0 0 0 0 0 0 0" />
+		<style:font-face style:name="Consolas"
+			svg:font-family="Consolas" style:font-family-generic="modern"
+			style:font-pitch="fixed" svg:panose-1="2 11 6 9 2 2 4 3 2 4" />
+	</office:font-face-decls>
+	<office:automatic-styles>
+		<text:list-style style:name="LFO1">
+			<text:list-level-style-bullet
+				text:level="1" text:style-name="WW_CharLFO1LVL1"
+				text:bullet-char="">
+				<style:list-level-properties
+					text:space-before="0.25in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="0.5in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Symbol" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="2" text:style-name="WW_CharLFO1LVL2"
+				text:bullet-char="o">
+				<style:list-level-properties
+					text:space-before="0.75in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="1in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Courier New" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="3" text:style-name="WW_CharLFO1LVL3"
+				text:bullet-char="">
+				<style:list-level-properties
+					text:space-before="1.25in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="1.5in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Wingdings" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="4" text:style-name="WW_CharLFO1LVL4"
+				text:bullet-char="">
+				<style:list-level-properties
+					text:space-before="1.75in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="2in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Symbol" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="5" text:style-name="WW_CharLFO1LVL5"
+				text:bullet-char="o">
+				<style:list-level-properties
+					text:space-before="2.25in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="2.5in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Courier New" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="6" text:style-name="WW_CharLFO1LVL6"
+				text:bullet-char="">
+				<style:list-level-properties
+					text:space-before="2.75in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="3in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Wingdings" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="7" text:style-name="WW_CharLFO1LVL7"
+				text:bullet-char="">
+				<style:list-level-properties
+					text:space-before="3.25in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="3.5in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Symbol" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="8" text:style-name="WW_CharLFO1LVL8"
+				text:bullet-char="o">
+				<style:list-level-properties
+					text:space-before="3.75in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="4in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Courier New" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="9" text:style-name="WW_CharLFO1LVL9"
+				text:bullet-char="">
+				<style:list-level-properties
+					text:space-before="4.25in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="4.5in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Wingdings" />
+			</text:list-level-style-bullet>
+		</text:list-style>
+		<text:list-style style:name="LFO2">
+			<text:list-level-style-bullet
+				text:level="1" text:style-name="WW_CharLFO2LVL1"
+				text:bullet-char="">
+				<style:list-level-properties
+					text:space-before="0.25in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="0.5in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Symbol" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="2" text:style-name="WW_CharLFO2LVL2"
+				text:bullet-char="o">
+				<style:list-level-properties
+					text:space-before="0.75in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="1in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Courier New" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="3" text:style-name="WW_CharLFO2LVL3"
+				text:bullet-char="">
+				<style:list-level-properties
+					text:space-before="1.25in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="1.5in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Wingdings" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="4" text:style-name="WW_CharLFO2LVL4"
+				text:bullet-char="">
+				<style:list-level-properties
+					text:space-before="1.75in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="2in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Symbol" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="5" text:style-name="WW_CharLFO2LVL5"
+				text:bullet-char="o">
+				<style:list-level-properties
+					text:space-before="2.25in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="2.5in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Courier New" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="6" text:style-name="WW_CharLFO2LVL6"
+				text:bullet-char="">
+				<style:list-level-properties
+					text:space-before="2.75in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="3in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Wingdings" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="7" text:style-name="WW_CharLFO2LVL7"
+				text:bullet-char="">
+				<style:list-level-properties
+					text:space-before="3.25in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="3.5in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Symbol" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="8" text:style-name="WW_CharLFO2LVL8"
+				text:bullet-char="o">
+				<style:list-level-properties
+					text:space-before="3.75in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="4in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Courier New" />
+			</text:list-level-style-bullet>
+			<text:list-level-style-bullet
+				text:level="9" text:style-name="WW_CharLFO2LVL9"
+				text:bullet-char="">
+				<style:list-level-properties
+					text:space-before="4.25in" text:min-label-width="0.25in"
+					text:list-level-position-and-space-mode="label-alignment">
+					<style:list-level-label-alignment
+						text:label-followed-by="listtab" fo:margin-left="4.5in"
+						fo:text-indent="-0.25in" />
+				</style:list-level-properties>
+				<style:text-properties
+					style:font-name="Wingdings" />
+			</text:list-level-style-bullet>
+		</text:list-style>
+		<style:style style:name="P1"
+			style:parent-style-name="Title" style:master-page-name="MP0"
+			style:family="paragraph">
+			<style:paragraph-properties
+				fo:break-before="page" />
+		</style:style>
+		<style:style style:name="TableColumn3"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table2" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow4"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell5"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="none" style:writing-mode="lr-tb" fo:padding-top="0in"
+				fo:padding-left="0.075in" fo:padding-bottom="0in"
+				fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P6"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T7"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties fo:font-weight="bold"
+				style:font-weight-asian="bold" style:font-weight-complex="bold" />
+		</style:style>
+		<style:style style:name="TableColumn9"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table8" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow10"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell11"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="none" style:writing-mode="lr-tb" fo:padding-top="0in"
+				fo:padding-left="0.075in" fo:padding-bottom="0in"
+				fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P12"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T13"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties fo:font-weight="bold"
+				style:font-weight-asian="bold" style:font-weight-complex="bold" />
+		</style:style>
+		<style:style style:name="TableColumn15"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.693in" />
+		</style:style>
+		<style:style style:name="Table14" style:family="table">
+			<style:table-properties style:width="6.693in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow16"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell17"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="none" style:writing-mode="lr-tb" fo:padding-top="0in"
+				fo:padding-left="0.075in" fo:padding-bottom="0in"
+				fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P18"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T19"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties fo:font-weight="bold"
+				style:font-weight-asian="bold" style:font-weight-complex="bold" />
+		</style:style>
+		<style:style style:name="TableRow20"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell21"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="none" fo:background-color="#F2F2F2"
+				style:writing-mode="lr-tb" fo:padding-top="0in"
+				fo:padding-left="0.075in" fo:padding-bottom="0in"
+				fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P22"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T23"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties fo:font-weight="bold"
+				style:font-weight-asian="bold" style:font-weight-complex="bold" />
+		</style:style>
+		<style:style style:name="TableColumn25"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table24" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow26"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell27"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="none" style:writing-mode="lr-tb" fo:padding-top="0in"
+				fo:padding-left="0.075in" fo:padding-bottom="0in"
+				fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P28"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T29"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties fo:font-weight="bold"
+				style:font-weight-asian="bold" style:font-weight-complex="bold" />
+		</style:style>
+		<style:style style:name="TableColumn31"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table30" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow32"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell33"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="none" style:writing-mode="lr-tb" fo:padding-top="0in"
+				fo:padding-left="0.075in" fo:padding-bottom="0in"
+				fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P34"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T35"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties fo:font-weight="bold"
+				style:font-weight-asian="bold" style:font-weight-complex="bold" />
+		</style:style>
+		<style:style style:name="TableColumn37"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table36" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow38"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell39"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="0.0069in solid #000000" style:writing-mode="lr-tb"
+				fo:padding-top="0in" fo:padding-left="0.075in"
+				fo:padding-bottom="0in" fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P40"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P41"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P42"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P43"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T44"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" style:text-underline-type="single"
+				style:text-underline-style="solid" style:text-underline-width="auto"
+				style:text-underline-mode="continuous" />
+		</style:style>
+		<style:style style:name="T45"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T46"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#2A00FF" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T47"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T48"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T49"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T50"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T51"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T52"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T53"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P54"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T55"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="TableColumn57"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table56" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow58"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell59"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="0.0069in solid #000000" style:writing-mode="lr-tb"
+				fo:padding-top="0in" fo:padding-left="0.075in"
+				fo:padding-bottom="0in" fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P60"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T61"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T62"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T63"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T64"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P65"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T66"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T67"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T68"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T69"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P70"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T71"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T72"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T73"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T74"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P75"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P76"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T77"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T78"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T79"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-style="italic" style:font-style-asian="italic"
+				style:font-style-complex="italic" fo:color="#000000"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T80"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T81"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P82"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T83"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T84"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T85"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T86"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T87"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#2A00FF" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T88"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T89"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T90"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P91"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T92"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T93"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T94"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T95"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T96"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T97"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="TableColumn99"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table98" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow100"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell101"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="0.0069in solid #000000" style:writing-mode="lr-tb"
+				fo:padding-top="0in" fo:padding-left="0.075in"
+				fo:padding-bottom="0in" fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P102"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T103"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T104"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T105"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T106"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T107"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T108"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T109"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T110"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T111"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P112"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T113"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T114"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T115"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T116"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T117"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T118"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T119"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T120"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T121"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="TableColumn123"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table122" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow124"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell125"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="0.0069in solid #000000" style:writing-mode="lr-tb"
+				fo:padding-top="0in" fo:padding-left="0.075in"
+				fo:padding-bottom="0in" fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P126"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T127"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T128"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T129"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T130"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T131"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#2A00FF" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T132"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P133"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T134"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T135"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#D4D4D4" />
+		</style:style>
+		<style:style style:name="T136"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#D4D4D4" />
+		</style:style>
+		<style:style style:name="T137"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#D4D4D4" />
+		</style:style>
+		<style:style style:name="T138"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#D4D4D4" />
+		</style:style>
+		<style:style style:name="P139"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T140"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T141"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T142"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T143"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T144"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T145"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T146"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T147"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#2A00FF" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T148"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P149"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T150"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T151"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#D4D4D4" />
+		</style:style>
+		<style:style style:name="T152"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#D4D4D4" />
+		</style:style>
+		<style:style style:name="T153"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#D4D4D4" />
+		</style:style>
+		<style:style style:name="T154"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#D4D4D4" />
+		</style:style>
+		<style:style style:name="TableColumn156"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table155" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow157"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell158"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="0.0069in solid #000000" style:writing-mode="lr-tb"
+				fo:padding-top="0in" fo:padding-left="0.075in"
+				fo:padding-bottom="0in" fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P159"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T160"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T161"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T162"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T163"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T164"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P165"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T166"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T167"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T168"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T169"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T170"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T171"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T172"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P173"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T174"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T175"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T176"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T177"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="TableColumn179"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table178" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow180"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell181"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="0.0069in solid #000000" style:writing-mode="lr-tb"
+				fo:padding-top="0in" fo:padding-left="0.075in"
+				fo:padding-bottom="0in" fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P182"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T183"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#E8F2FE" />
+		</style:style>
+		<style:style style:name="T184"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#E8F2FE" />
+		</style:style>
+		<style:style style:name="T185"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#E8F2FE" />
+		</style:style>
+		<style:style style:name="T186"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#E8F2FE" />
+		</style:style>
+		<style:style style:name="T187"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#E8F2FE" />
+		</style:style>
+		<style:style style:name="T188"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#E8F2FE" />
+		</style:style>
+		<style:style style:name="TableColumn190"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table189" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow191"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell192"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="0.0069in solid #000000" style:writing-mode="lr-tb"
+				fo:padding-top="0in" fo:padding-left="0.075in"
+				fo:padding-bottom="0in" fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P193"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T194"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T195"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T196"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T197"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T198"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P199"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T200"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T201"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T202"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T203"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P204"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T205"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T206"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T207"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T208"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T209"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#6A3E3E" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T210"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T211"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#2A00FF" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T212"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="TableColumn214"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table213" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow215"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell216"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="0.0069in solid #000000" style:writing-mode="lr-tb"
+				fo:padding-top="0in" fo:padding-left="0.075in"
+				fo:padding-bottom="0in" fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P217"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T218"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#E8F2FE" />
+		</style:style>
+		<style:style style:name="T219"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#E8F2FE" />
+		</style:style>
+		<style:style style:name="T220"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#E8F2FE" />
+		</style:style>
+		<style:style style:name="T221"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#E8F2FE" />
+		</style:style>
+		<style:style style:name="T222"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#E8F2FE" />
+		</style:style>
+		<style:style style:name="T223"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" fo:background-color="#E8F2FE" />
+		</style:style>
+		<style:style style:name="TableColumn225"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table224" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow226"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell227"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="0.0069in solid #000000" style:writing-mode="lr-tb"
+				fo:padding-top="0in" fo:padding-left="0.075in"
+				fo:padding-bottom="0in" fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P228"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T229"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T230"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T231"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T232"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P233"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T234"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T235"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T236"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T237"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P238"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T239"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T240"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T241"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T242"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="TableColumn244"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table243" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow245"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell246"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border="0.0069in solid #000000" style:writing-mode="lr-tb"
+				fo:padding-top="0in" fo:padding-left="0.075in"
+				fo:padding-bottom="0in" fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P247"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T248"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T249"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T250"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T251"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P252"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				style:text-autospace="none" fo:margin-bottom="0in"
+				fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T253"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T254"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T255"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T256"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T257"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T258"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="P259"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T260"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:font-weight="bold" style:font-weight-asian="bold"
+				style:font-weight-complex="bold" fo:color="#7F0055"
+				fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T261"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T262"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#0000C0" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="T263"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties
+				style:font-name="Consolas" style:font-name-complex="Consolas"
+				fo:color="#000000" fo:font-size="10pt" style:font-size-asian="10pt"
+				style:font-size-complex="10pt" />
+		</style:style>
+		<style:style style:name="TableColumn265"
+			style:family="table-column">
+			<style:table-column-properties
+				style:column-width="6.6861in" />
+		</style:style>
+		<style:style style:name="Table264" style:family="table">
+			<style:table-properties style:width="6.6861in"
+				fo:margin-left="0in" table:align="left" />
+		</style:style>
+		<style:style style:name="TableRow266"
+			style:family="table-row">
+			<style:table-row-properties />
+		</style:style>
+		<style:style style:name="TableCell267"
+			style:family="table-cell">
+			<style:table-cell-properties
+				fo:border-top="none" fo:border-left="none"
+				fo:border-bottom="0.0069in solid #7F7F7F" fo:border-right="none"
+				style:writing-mode="lr-tb" fo:padding-top="0in"
+				fo:padding-left="0.075in" fo:padding-bottom="0in"
+				fo:padding-right="0.075in" />
+		</style:style>
+		<style:style style:name="P268"
+			style:parent-style-name="Normal" style:family="paragraph">
+			<style:paragraph-properties
+				fo:margin-bottom="0in" fo:line-height="100%" />
+		</style:style>
+		<style:style style:name="T269"
+			style:parent-style-name="DefaultParagraphFont" style:family="text">
+			<style:text-properties fo:font-weight="bold"
+				style:font-weight-asian="bold" style:font-weight-complex="bold"
+				fo:text-transform="uppercase" />
+		</style:style>
+		<style:style style:family="graphic" style:name="a6"
+			style:parent-style-name="Graphics">
+			<style:graphic-properties fo:border="none"
+				fo:background-color="transparent" />
+		</style:style>
+		<style:style style:family="graphic" style:name="a0"
+			style:parent-style-name="Graphics">
+			<style:graphic-properties fo:border="none"
+				fo:background-color="transparent" />
+		</style:style>
+		<style:style style:family="graphic" style:name="a1"
+			style:parent-style-name="Graphics">
+			<style:graphic-properties fo:border="none"
+				fo:background-color="transparent" />
+		</style:style>
+		<style:style style:family="graphic" style:name="a2"
+			style:parent-style-name="Graphics">
+			<style:graphic-properties fo:border="none"
+				fo:background-color="transparent" />
+		</style:style>
+		<style:style style:family="graphic" style:name="a3"
+			style:parent-style-name="Graphics">
+			<style:graphic-properties fo:border="none"
+				fo:background-color="transparent" />
+		</style:style>
+		<style:style style:family="graphic" style:name="a4"
+			style:parent-style-name="Graphics">
+			<style:graphic-properties fo:border="none"
+				fo:background-color="transparent" />
+		</style:style>
+		<style:style style:family="graphic" style:name="a5"
+			style:parent-style-name="Graphics">
+			<style:graphic-properties fo:border="none"
+				fo:background-color="transparent" />
+		</style:style>
+	</office:automatic-styles>
+	<office:body>
+		<office:text text:use-soft-page-breaks="true">
+			<text:p text:style-name="P1">
+				Developing
+				<text:s />
+				a new HRE feature
+			</text:p>
+			<text:p text:style-name="Normal">Updated 2018-07-13</text:p>
+			<text:h text:style-name="Heading1" text:outline-level="1">Programming
+				Principles</text:h>
+			<text:p text:style-name="Normal">HRE is built on an object-oriented
+				programming model, which especially prescribes encapsulation,
+				inheritance and polymorphism.</text:p>
+			<text:p text:style-name="Normal">Best practices for client-server
+				development prescribes extensible and loosely coupled interfaces.
+			</text:p>
+			<text:p text:style-name="Normal">Best practices for interfaces
+				prescribes using open, established standards, clearly defined
+				protocols and avoiding side-effects.</text:p>
+			<text:h text:style-name="Heading1" text:outline-level="1">The
+				Logical Technology Model</text:h>
+			<text:p text:style-name="Normal">The HRE skeleton and sample are
+				developed according to this Logical Technology Model:</text:p>
+			<table:table table:style-name="Table2">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn3" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow4">
+					<table:table-cell table:style-name="TableCell5">
+						<text:soft-page-break />
+						<text:p text:style-name="P6">
+							<text:span text:style-name="T7">
+								<draw:frame draw:style-name="a0"
+									draw:name="Picture 3" text:anchor-type="as-char" svg:x="0in"
+									svg:y="0in" svg:width="6.49213in" svg:height="8.10842in"
+									style:rel-width="scale" style:rel-height="scale">
+									<draw:image xlink:href="media/image1.jpg"
+										xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" />
+									<svg:title />
+									<svg:desc />
+								</draw:frame>
+							</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+			<text:p text:style-name="Normal">The red parts are the immediate
+				targets for development, but the infrastructure is from the
+				beginning designed to support all the models.</text:p>
+			<text:soft-page-break />
+			<text:h text:style-name="Heading1" text:outline-level="1">
+				Designing the
+				<text:s />
+				Use Case
+				<text:s />
+				for a Feature
+			</text:h>
+			<text:p text:style-name="Normal">The first thing to do is to define the
+				use case that the new feature will implement.</text:p>
+			<text:p text:style-name="Normal">Which kinds of users will need which
+				functions, and which data and external systems will they need to
+				use?</text:p>
+			<table:table table:style-name="Table8">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn9" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow10">
+					<table:table-cell table:style-name="TableCell11">
+						<text:p text:style-name="P12">
+							<text:span text:style-name="T13">
+								<draw:frame draw:style-name="a1"
+									draw:name="Picture 1" text:anchor-type="as-char" svg:x="0in"
+									svg:y="0in" svg:width="5.32333in" svg:height="5.66667in"
+									style:rel-width="scale" style:rel-height="scale">
+									<draw:image xlink:href="media/image2.jpeg"
+										xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" />
+									<svg:title />
+									<svg:desc />
+								</draw:frame>
+							</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+			<text:p text:style-name="Normal">Will the feature be read-only or also
+				update?</text:p>
+			<text:h text:style-name="Heading1" text:outline-level="1">
+				Defining the
+				<text:s />
+				Data Model
+			</text:h>
+			<text:p text:style-name="Normal">Define the logical data model as the
+				data items that the feature will expose to the user, and which
+				supporting data is needed.</text:p>
+			<text:p text:style-name="Normal">
+				Define the physical data model as the tables, view and columns in
+				the HRE data base that should be used by the feature.
+				<text:s />
+				SQL Power Architect can be used as a tool for this. The Community
+				Edition is available at
+				<text:s />
+				<text:a
+					xlink:href="http://www.bestofbi.com/page/architect_download_os"
+					office:target-frame-name="_top" xlink:show="replace">
+					<text:span text:style-name="Hyperlink">http://www.bestofbi.com/page/architect_download_os
+					</text:span>
+				</text:a>
+				.
+			</text:p>
+			<text:p text:style-name="Normal">In this example we have created a
+				database view to implement the physical data model:</text:p>
+			<table:table table:style-name="Table14">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn15" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow16">
+					<table:table-cell table:style-name="TableCell17">
+						<text:soft-page-break />
+						<text:p text:style-name="P18">
+							<text:span text:style-name="T19">
+								<draw:frame draw:style-name="a2"
+									draw:name="Picture 4" text:anchor-type="as-char" svg:x="0in"
+									svg:y="0in" svg:width="6.69306in" svg:height="1.73611in"
+									style:rel-width="scale" style:rel-height="scale">
+									<draw:image xlink:href="media/image3.tmp"
+										xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" />
+									<svg:title />
+									<svg:desc />
+								</draw:frame>
+							</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+				<table:table-row table:style-name="TableRow20">
+					<table:table-cell table:style-name="TableCell21">
+						<text:p text:style-name="P22">
+							<text:span text:style-name="T23">
+								<draw:frame draw:style-name="a3"
+									draw:name="Picture 2" text:anchor-type="as-char" svg:x="0in"
+									svg:y="0in" svg:width="3.13585in" svg:height="3.89638in"
+									style:rel-width="scale" style:rel-height="scale">
+									<draw:image xlink:href="media/image4.tmp"
+										xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" />
+									<svg:title />
+									<svg:desc />
+								</draw:frame>
+							</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+			<text:h text:style-name="Heading1" text:outline-level="1">
+				Getting
+				<text:s />
+				HRE
+				<text:s />
+				from Github
+			</text:h>
+			<text:p text:style-name="Normal">
+				Please clone, branch, fork or whatever is best to create your own
+				copy of HRE v0.1
+				<text:s />
+				from
+				<text:s />
+				<text:a
+					xlink:href="https://github.com/History-Research-Environment/HRE--History-Research-Environment/tree/develop"
+					office:target-frame-name="_top" xlink:show="replace">
+					<text:span text:style-name="Hyperlink">https://github.com/History-Research-Environment/HRE--History-Research-Environment/tree/develop
+					</text:span>
+				</text:a>
+			</text:p>
+			<text:h text:style-name="Heading1" text:outline-level="1">
+				Creating
+				<text:s />
+				Eclipse
+				<text:s />
+				Plug-in and Feature
+				<text:s />
+				Projects
+			</text:h>
+			<text:p text:style-name="Normal">
+				We would normally create a feature project with
+				<text:s />
+				three or
+				<text:s />
+				four
+				<text:s />
+				plug-in projects:
+			</text:p>
+			<table:table table:style-name="Table24">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn25" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow26">
+					<table:table-cell table:style-name="TableCell27">
+						<text:soft-page-break />
+						<text:p text:style-name="P28">
+							<text:span text:style-name="T29">
+								<draw:frame draw:style-name="a4"
+									draw:name="Picture 5" text:anchor-type="as-char" svg:x="0in"
+									svg:y="0in" svg:width="4.26101in" svg:height="2.32324in"
+									style:rel-width="scale" style:rel-height="scale">
+									<draw:image xlink:href="media/image5.tmp"
+										xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" />
+									<svg:title />
+									<svg:desc />
+								</draw:frame>
+							</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+			<text:p text:style-name="Normal">Data access could be combined into
+				server, if that makes better sense.</text:p>
+			<text:p text:style-name="Normal">For each plug-in project you should
+				create a subfolder with the same name in the bundles folder of HRE.
+				Then you should create the project and take care not to create it in
+				the default location, but in the new folder.</text:p>
+			<text:p text:style-name="Normal">
+				The client project should be
+				<text:s />
+				created as a Fragment Project with
+				<text:s />
+				org.historyresearchenvironment.client
+				<text:s />
+				as
+				<text:s />
+				the
+				<text:s />
+				host plug-in.
+			</text:p>
+			<text:p text:style-name="Normal">The help project should use the
+				available template called “Sample Help Content”.</text:p>
+			<text:p text:style-name="Normal">
+				The
+				<text:s />
+				server
+				<text:s />
+				project should be created as
+				<text:s />
+				a
+				<text:s />
+				simple plug-in project.
+			</text:p>
+			<text:p text:style-name="Normal">
+				The data access project should be created from the Eclipse JPA
+				perspective
+				<text:s />
+				as a JPA project, if you need to create classes not already present
+				in the base data access project.
+			</text:p>
+			<text:p text:style-name="Normal">The feature project should be created
+				as a Feature Project and add the plug-in projects.</text:p>
+			<text:h text:style-name="Heading1" text:outline-level="1">Application
+				Structure</text:h>
+			<text:p text:style-name="Normal">The java classes of the feature will
+				normally follow this structure:</text:p>
+			<table:table table:style-name="Table30">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn31" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow32">
+					<table:table-cell table:style-name="TableCell33">
+						<text:soft-page-break />
+						<text:p text:style-name="P34">
+							<text:span text:style-name="T35">
+								<draw:frame draw:style-name="a5"
+									draw:name="Picture 7" text:anchor-type="as-char" svg:x="0in"
+									svg:y="0in" svg:width="6.30667in" svg:height="5.53937in"
+									style:rel-width="scale" style:rel-height="scale">
+									<draw:image xlink:href="media/image6.jpg"
+										xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" />
+									<svg:title />
+									<svg:desc />
+								</draw:frame>
+							</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+			<text:h text:style-name="Heading1" text:outline-level="1">Implementing
+				Data Access</text:h>
+			<text:p text:style-name="Normal">
+				The mapping of the database tables can happen
+				<text:s />
+				using database views or by using composite data model classes, where
+				the SQL statements accesses one or more tables.
+			</text:p>
+			<text:p text:style-name="Normal">
+				Eclipse can generate java classes from H2 tables and views using
+				JPA, Java Persistency
+				<text:s />
+				Architecture, if they are not already available.
+				<text:s />
+				These classes have fields, getters and setters for each database
+				column.
+			</text:p>
+			<text:p text:style-name="Normal">
+				These classes should extend
+				<text:s />
+				AbstractHreDataAccess
+				<text:s />
+				and be enriched with methods for SELECT, SELECTALL, DELETE,
+				DELETEALL, INSERT and UPDATE.
+			</text:p>
+			<text:p text:style-name="Normal">They normally reside in the data
+				access plug-in.</text:p>
+			<text:p text:style-name="Normal">Please note that a database view needs
+				a trigger to permit updates.</text:p>
+			<text:h text:style-name="Heading1" text:outline-level="1">Implementing
+				the User Interface</text:h>
+			<text:p text:style-name="Normal">The most normal user interface parts
+				are navigators and editors.</text:p>
+			<text:p text:style-name="Normal">An editor is a view of a single
+				entity, while a navigator is a list or tree view of a set of
+				entities.</text:p>
+			<text:soft-page-break />
+			<text:p text:style-name="Normal">The entities are implemented as view
+				model classes, one to encapsulate each field in the editor part, and
+				one to encapsulate a list of single models.</text:p>
+			<text:h text:style-name="Heading2" text:outline-level="2">Editor
+				View Part</text:h>
+			<text:p text:style-name="Normal">
+				View Parts reside in the client plug-in and are created
+				<text:s />
+				using
+			</text:p>
+			<text:p text:style-name="Normal">
+				•
+				<text:tab />
+				File,
+				<text:s />
+				New,
+				<text:s />
+				Other,
+				<text:s />
+				Window Builder,
+				<text:s />
+				SWT Designer,
+				<text:s />
+				Eclipse 4,
+				<text:s />
+				ViewPart
+			</text:p>
+			<text:p text:style-name="Normal">
+				They
+				<text:s />
+				extend
+				<text:s />
+				AbstractHreGuiPart, which provides font support
+				<text:s />
+				and a business layer inteface.
+			</text:p>
+			<text:p text:style-name="Normal">
+				Design the view part using the Window Builder
+				<text:s />
+				and code
+				<text:s />
+				the
+				<text:s />
+				updateGui
+				<text:s />
+				method
+				<text:s />
+				to update the GUI from the underlying provider class.
+			</text:p>
+			<table:table table:style-name="Table36">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn37" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow38">
+					<table:table-cell table:style-name="TableCell39">
+						<text:p text:style-name="P40">SampleEditorProvider provider = new
+							SampleEditorProvider();</text:p>
+						<text:p text:style-name="P41">SampleBusinessLogic businessLogic =
+							new SampleBusinessLogic();</text:p>
+						<text:p text:style-name="P42">…</text:p>
+						<text:p text:style-name="P43">
+							<text:span text:style-name="T44">callBusinessLayer
+							</text:span>
+							<text:span text:style-name="T45">(</text:span>
+							<text:span text:style-name="T46">"GET"</text:span>
+							<text:span text:style-name="T47">
+								,
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T48">provider</text:span>
+							<text:span text:style-name="T49">
+								,
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T50">businessLogic</text:span>
+							<text:span text:style-name="T51">
+								,
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T52">textparamSetKey</text:span>
+							<text:span text:style-name="T53">.getText());</text:span>
+						</text:p>
+						<text:p text:style-name="P54">
+							<text:span text:style-name="T55">updateGui();</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+			<text:h text:style-name="Heading2" text:outline-level="2">AbstractHreGuiPart
+			</text:h>
+			<text:p text:style-name="Normal">Contains the callBusinessLayer method:
+			</text:p>
+			<table:table table:style-name="Table56">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn57" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow58">
+					<table:table-cell table:style-name="TableCell59">
+						<text:p text:style-name="P60">
+							<text:span text:style-name="T61">protected</text:span>
+							<text:span text:style-name="T62">
+								<text:s />
+								BusinessLayerInterface
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T63">bli</text:span>
+							<text:span text:style-name="T64">;</text:span>
+						</text:p>
+						<text:p text:style-name="P65">
+							<text:span text:style-name="T66">protected</text:span>
+							<text:span text:style-name="T67">
+								<text:s />
+								ServerRequest
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T68">request</text:span>
+							<text:span text:style-name="T69">;</text:span>
+						</text:p>
+						<text:p text:style-name="P70">
+							<text:span text:style-name="T71">protected</text:span>
+							<text:span text:style-name="T72">
+								<text:s />
+								ServerResponse
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T73">response</text:span>
+							<text:span text:style-name="T74">;</text:span>
+						</text:p>
+						<text:p text:style-name="P75" />
+						<text:p text:style-name="P76">
+							<text:span text:style-name="T77">bli</text:span>
+							<text:span text:style-name="T78">
+								<text:s />
+								= BusinessLayerInterfaceFactory.
+							</text:span>
+							<text:span text:style-name="T79">getBusinessLayerInterface
+							</text:span>
+							<text:span text:style-name="T80">();</text:span>
+							<text:span text:style-name="T81">
+								<text:tab />
+							</text:span>
+						</text:p>
+						<text:p text:style-name="P82">
+							<text:span text:style-name="T83">request</text:span>
+							<text:span text:style-name="T84">
+								<text:s />
+								=
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T85">new</text:span>
+							<text:span text:style-name="T86">
+								<text:s />
+								ServerRequest(
+							</text:span>
+							<text:span text:style-name="T87">"GET"</text:span>
+							<text:span text:style-name="T88">
+								,
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T89">provider, businessLogic
+							</text:span>
+							<text:span text:style-name="T90">);</text:span>
+						</text:p>
+						<text:p text:style-name="P91">
+							<text:span text:style-name="T92">response</text:span>
+							<text:span text:style-name="T93">
+								<text:s />
+								=
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T94">bli</text:span>
+							<text:span text:style-name="T95">.callBusinessLayer(
+							</text:span>
+							<text:span text:style-name="T96">request</text:span>
+							<text:span text:style-name="T97">);</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+			<text:h text:style-name="Heading2" text:outline-level="2">
+				View
+				<text:s />
+				Provider
+			</text:h>
+			<text:p text:style-name="Normal">
+				The view provider extends
+				<text:s />
+				AbstractHreProvider
+				<text:s />
+				and encapsulates the data used by the view part.
+			</text:p>
+			<text:p text:style-name="Normal">
+				The provider must implement the readFromH2 method
+				<text:s />
+				to
+				<text:s />
+				invoke the
+				<text:s />
+				data access classes
+				<text:s />
+				that do the actual database access:
+			</text:p>
+			<table:table table:style-name="Table98">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn99" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow100">
+					<table:table-cell table:style-name="TableCell101">
+						<text:p text:style-name="P102">
+							<text:span text:style-name="T103">
+								SubstnParamName
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T104">spn</text:span>
+							<text:span text:style-name="T105">
+								<text:s />
+								=
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T106">new</text:span>
+							<text:span text:style-name="T107">
+								<text:s />
+								SubstnParamName(
+							</text:span>
+							<text:span text:style-name="T108">this</text:span>
+							<text:span text:style-name="T109">.</text:span>
+							<text:span text:style-name="T110">paramSetKey</text:span>
+							<text:span text:style-name="T111">);</text:span>
+						</text:p>
+						<text:p text:style-name="P112">
+							<text:span text:style-name="T113">
+								SubstnParamValue
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T114">spv</text:span>
+							<text:span text:style-name="T115">
+								<text:s />
+								=
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T116">new</text:span>
+							<text:span text:style-name="T117">
+								<text:s />
+								SubstnParamValue(
+							</text:span>
+							<text:span text:style-name="T118">this</text:span>
+							<text:span text:style-name="T119">.</text:span>
+							<text:span text:style-name="T120">paramSetKey</text:span>
+							<text:span text:style-name="T121">);</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+			<text:h text:style-name="Heading2" text:outline-level="2">AbstractHreProvider
+			</text:h>
+			<text:p text:style-name="Normal">Provides generic methods to writeJson
+				and readJson, when running in client/server mode.</text:p>
+			<text:h text:style-name="Heading2" text:outline-level="2">BusinessLayerInterfaceFactory
+			</text:h>
+			<text:p text:style-name="Normal">
+				Implements the
+				<text:s />
+				getBusinessLayerInterface
+				<text:s />
+				method:
+			</text:p>
+			<table:table table:style-name="Table122">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn123" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow124">
+					<table:table-cell table:style-name="TableCell125">
+						<text:p text:style-name="P126">
+							<text:span text:style-name="T127">if</text:span>
+							<text:span text:style-name="T128">
+								<text:s />
+								(
+							</text:span>
+							<text:span text:style-name="T129">servertype</text:span>
+							<text:span text:style-name="T130">.equals(</text:span>
+							<text:span text:style-name="T131">"DIRECT"</text:span>
+							<text:span text:style-name="T132">)) {</text:span>
+						</text:p>
+						<text:p text:style-name="P133">
+							<text:span text:style-name="T134">
+								<text:tab />
+							</text:span>
+							<text:span text:style-name="T135">return</text:span>
+							<text:span text:style-name="T136">
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T137">new</text:span>
+							<text:span text:style-name="T138">
+								<text:s />
+								DirectBusinessLayerInterface();
+							</text:span>
+						</text:p>
+						<text:p text:style-name="P139">
+							<text:span text:style-name="T140">
+								}
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T141">else</text:span>
+							<text:span text:style-name="T142">
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T143">if</text:span>
+							<text:span text:style-name="T144">
+								<text:s />
+								(
+							</text:span>
+							<text:span text:style-name="T145">servertype</text:span>
+							<text:span text:style-name="T146">.equals(</text:span>
+							<text:span text:style-name="T147">"SERVER"</text:span>
+							<text:span text:style-name="T148">)) {</text:span>
+						</text:p>
+						<text:p text:style-name="P149">
+							<text:span text:style-name="T150">
+								<text:tab />
+							</text:span>
+							<text:span text:style-name="T151">return</text:span>
+							<text:span text:style-name="T152">
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T153">new</text:span>
+							<text:span text:style-name="T154">
+								<text:s />
+								ServerBusinessLayerInterface();
+							</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+			<text:soft-page-break />
+			<text:h text:style-name="Heading2" text:outline-level="2">DirectBusinessLayerInterface
+			</text:h>
+			<text:p text:style-name="Normal">
+				Implements
+				<text:s />
+				BusinessLayerInterface
+				<text:s />
+				by implementing the
+				<text:s />
+				callBusinessLayer
+				<text:s />
+				method to invoke the business logic class as requested by the
+				<text:s />
+				ServerRequest
+				<text:s />
+				and return a
+				<text:s />
+				ServerResponse:
+			</text:p>
+			<table:table table:style-name="Table155">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn156" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow157">
+					<table:table-cell table:style-name="TableCell158">
+						<text:p text:style-name="P159">
+							<text:span text:style-name="T160">
+								AbstractHreBusinessLogic
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T161">businessLogic</text:span>
+							<text:span text:style-name="T162">
+								<text:s />
+								=
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T163">request</text:span>
+							<text:span text:style-name="T164">.getBusinessLogic();
+							</text:span>
+						</text:p>
+						<text:p text:style-name="P165">
+							<text:span text:style-name="T166">
+								ServerResponse
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T167">response</text:span>
+							<text:span text:style-name="T168">
+								<text:s />
+								=
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T169">businessLogic</text:span>
+							<text:span text:style-name="T170">.execute(</text:span>
+							<text:span text:style-name="T171">request</text:span>
+							<text:span text:style-name="T172">);</text:span>
+						</text:p>
+						<text:p text:style-name="P173">
+							<text:span text:style-name="T174">return</text:span>
+							<text:span text:style-name="T175">
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T176">response</text:span>
+							<text:span text:style-name="T177">;</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+			<text:h text:style-name="Heading2" text:outline-level="2">ServerBusinessLayerInterface
+			</text:h>
+			<text:p text:style-name="Normal">Used for client/server mode.</text:p>
+			<text:h text:style-name="Heading2" text:outline-level="2">BusinessLayerInterface
+			</text:h>
+			<text:p text:style-name="Normal">
+				An interface
+				<text:s />
+				defining:
+			</text:p>
+			<table:table table:style-name="Table178">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn179" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow180">
+					<table:table-cell table:style-name="TableCell181">
+						<text:p text:style-name="P182">
+							<text:span text:style-name="T183">public</text:span>
+							<text:span text:style-name="T184">
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T185">abstract</text:span>
+							<text:span text:style-name="T186">
+								<text:s />
+								ServerResponse callBusinessLayer(ServerRequest
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T187">request</text:span>
+							<text:span text:style-name="T188">);</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+			<text:h text:style-name="Heading2" text:outline-level="2">Business
+				Logic</text:h>
+			<text:p text:style-name="Normal">Extends AbstractHreBusinessLogic.
+			</text:p>
+			<text:p text:style-name="Normal">The business logic class executes the
+				provider readFromH2 method to access the database and any other
+				relevant business logic and rules:</text:p>
+			<table:table table:style-name="Table189">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn190" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow191">
+					<table:table-cell table:style-name="TableCell192">
+						<text:p text:style-name="P193">
+							<text:span text:style-name="T194">
+								SampleEditorProvider
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T195">provider</text:span>
+							<text:span text:style-name="T196">
+								<text:s />
+								= (SampleEditorProvider)
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T197">request</text:span>
+							<text:span text:style-name="T198">.getProvider();</text:span>
+						</text:p>
+						<text:p text:style-name="P199">
+							<text:span text:style-name="T200">provider</text:span>
+							<text:span text:style-name="T201">.readFromH2(</text:span>
+							<text:span text:style-name="T202">paramSetKey</text:span>
+							<text:span text:style-name="T203">);</text:span>
+						</text:p>
+						<text:p text:style-name="P204">
+							<text:span text:style-name="T205">response</text:span>
+							<text:span text:style-name="T206">
+								<text:s />
+								=
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T207">new</text:span>
+							<text:span text:style-name="T208">
+								<text:s />
+								ServerResponse(
+							</text:span>
+							<text:span text:style-name="T209">provider</text:span>
+							<text:span text:style-name="T210">
+								, 0,
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T211">"OK"</text:span>
+							<text:span text:style-name="T212">);</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+			<text:h text:style-name="Heading2" text:outline-level="2">AbstractHreBusinessLogic
+			</text:h>
+			<text:p text:style-name="Normal">Defines:</text:p>
+			<table:table table:style-name="Table213">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn214" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow215">
+					<table:table-cell table:style-name="TableCell216">
+						<text:p text:style-name="P217">
+							<text:span text:style-name="T218">public</text:span>
+							<text:span text:style-name="T219">
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T220">abstract</text:span>
+							<text:span text:style-name="T221">
+								<text:s />
+								ServerResponse execute(
+							</text:span>
+							<text:span text:style-name="T222">request</text:span>
+							<text:span text:style-name="T223">);</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:h text:style-name="Heading2" text:outline-level="2" />
+			<text:h text:style-name="Heading2" text:outline-level="2">ServerRequest
+			</text:h>
+			<text:p text:style-name="Normal">Encapsulates:</text:p>
+			<table:table table:style-name="Table224">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn225" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow226">
+					<table:table-cell table:style-name="TableCell227">
+						<text:p text:style-name="P228">
+							<text:span text:style-name="T229">private</text:span>
+							<text:span text:style-name="T230">
+								<text:s />
+								String
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T231">operation</text:span>
+							<text:span text:style-name="T232">;</text:span>
+						</text:p>
+						<text:p text:style-name="P233">
+							<text:span text:style-name="T234">private</text:span>
+							<text:span text:style-name="T235">
+								<text:s />
+								AbstractHreProvider
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T236">provider</text:span>
+							<text:span text:style-name="T237">;</text:span>
+						</text:p>
+						<text:p text:style-name="P238">
+							<text:span text:style-name="T239">private</text:span>
+							<text:span text:style-name="T240">
+								<text:s />
+								AbstractHreBusinessLogic
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T241">businessLogic</text:span>
+							<text:span text:style-name="T242">;</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+			<text:h text:style-name="Heading2" text:outline-level="2">ServerResponse
+			</text:h>
+			<text:p text:style-name="Normal">Encapsulates:</text:p>
+			<table:table table:style-name="Table243">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn244" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow245">
+					<table:table-cell table:style-name="TableCell246">
+						<text:p text:style-name="P247">
+							<text:span text:style-name="T248">private</text:span>
+							<text:span text:style-name="T249">
+								<text:s />
+								AbstractHreProvider
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T250">provider</text:span>
+							<text:span text:style-name="T251">;</text:span>
+						</text:p>
+						<text:p text:style-name="P252">
+							<text:span text:style-name="T253">private</text:span>
+							<text:span text:style-name="T254">
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T255">int</text:span>
+							<text:span text:style-name="T256">
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T257">returnCode</text:span>
+							<text:span text:style-name="T258">;</text:span>
+						</text:p>
+						<text:p text:style-name="P259">
+							<text:span text:style-name="T260">private</text:span>
+							<text:span text:style-name="T261">
+								<text:s />
+								String
+								<text:s />
+							</text:span>
+							<text:span text:style-name="T262">returnMessage</text:span>
+							<text:span text:style-name="T263">;</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+			<text:soft-page-break />
+			<text:h text:style-name="Heading1" text:outline-level="1">
+				Adding
+				<text:s />
+				Help
+			</text:h>
+			<text:p text:style-name="Normal">
+				Use the
+				<text:s />
+				HRE_Helpsystem_Generator
+				<text:s />
+				project to generate a set of HTML pages and images – or do it all by
+				hand.
+			</text:p>
+			<text:p text:style-name="Normal">
+				Then replace the contents of the html folder in the Help project
+				with your pages and add toc.xml pages to the root of the project
+				folder.
+				<text:s />
+			</text:p>
+			<text:h text:style-name="Heading1" text:outline-level="1">Adding
+				the Feature to HRE</text:h>
+			<text:p text:style-name="Normal">
+				This is done by adding the feature to the
+				<text:s />
+				org.historyresearchenvironment.client.product
+				<text:s />
+				file in the
+				<text:s />
+				org.historyresearchenvironment.client.product
+				<text:s />
+				folder of the releng folder:
+			</text:p>
+			<table:table table:style-name="Table264">
+				<table:table-columns>
+					<table:table-column
+						table:style-name="TableColumn265" />
+				</table:table-columns>
+				<table:table-row table:style-name="TableRow266">
+					<table:table-cell table:style-name="TableCell267">
+						<text:p text:style-name="P268">
+							<text:span text:style-name="T269">
+								<draw:frame draw:style-name="a6"
+									draw:name="Picture 6" text:anchor-type="as-char" svg:x="0in"
+									svg:y="0in" svg:width="5.32366in" svg:height="3.28171in"
+									style:rel-width="scale" style:rel-height="scale">
+									<draw:image xlink:href="media/image7.tmp"
+										xlink:type="simple" xlink:show="embed" xlink:actuate="onLoad" />
+									<svg:title />
+									<svg:desc />
+								</draw:frame>
+							</text:span>
+						</text:p>
+					</table:table-cell>
+				</table:table-row>
+			</table:table>
+			<text:p text:style-name="Normal" />
+		</office:text>
+	</office:body>
+</office:document-content>

@@ -1,0 +1,12 @@
+<toc label="Class Structure" link_to="xml/tocdevelopment.xml#classstructure" topic="html/classstructure/index.html">
+	<topic href="html/classstructure/index.html#N10004" label="Overview"></topic>
+	<topic href="html/classstructure/ar01s02.html" label="View Part"></topic>
+	<topic href="html/classstructure/ar01s03.html" label="Content Provider"></topic>
+	<topic href="html/classstructure/ar01s04.html" label="Label Provider"></topic>
+	<topic href="html/classstructure/ar01s05.html" label="View Model"></topic>
+	<topic href="html/classstructure/ar01s06.html" label="Navigator"></topic>
+	<topic href="html/classstructure/ar01s07.html" label="Business Layer Interface"></topic>
+	<topic href="html/classstructure/ar01s08.html" label="Server Implementation"></topic>
+	<topic href="html/classstructure/ar01s09.html" label="Business Logic Layer"></topic>
+	<topic href="html/classstructure/ar01s10.html" label="Data Base Table Models"></topic>
+</toc>

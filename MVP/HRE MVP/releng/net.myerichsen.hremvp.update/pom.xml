@@ -1,0 +1,11 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>net.myerichsen.hremvp</groupId>
+        <artifactId>net.myerichsen.hremvp.releng</artifactId>
+        <version>0.2.2-SNAPSHOT</version>
+    </parent>
+    <artifactId>net.myerichsen.hremvp.update</artifactId>
+    <version>0.2.2-SNAPSHOT</version>
+    <packaging>eclipse-repository</packaging>
+</project>

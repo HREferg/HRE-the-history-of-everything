@@ -1,0 +1,41 @@
+<toc label="Development Cookbook" link_to="xml/tocdevelopment.xml#devcookbook" topic="html/devcookbook/index.html">
+	<topic href="html/devcookbook/index.html#N10004" label="Preface"></topic>
+	<topic href="html/devcookbook/ar01s02.html" label="Development Toolbox Installation">
+		<topic href="html/devcookbook/ar01s02.html#N10012" label="Java"></topic>
+		<topic href="html/devcookbook/ar01s02.html#N10022" label="Eclipse"></topic>
+		<topic href="html/devcookbook/ar01s02.html#N10032" label="Eclipse e4 Tools Developer Resources"></topic>
+		<topic href="html/devcookbook/ar01s02.html#N10051" label="Window Builder Pro"></topic>
+		<topic href="html/devcookbook/ar01s02.html#N10072" label="H2 database"></topic>
+		<topic href="html/devcookbook/ar01s02.html#N10082" label="Eclipse Data Tools Platform"></topic>
+		<topic href="html/devcookbook/ar01s02.html#N100A9" label="Dali"></topic>
+		<topic href="html/devcookbook/ar01s02.html#N100AD" label="Zest"></topic>
+		<topic href="html/devcookbook/ar01s02.html#N100C7" label="Logger"></topic>
+		<topic href="html/devcookbook/ar01s02.html#N100D0" label="Tycho"></topic>
+		<topic href="html/devcookbook/ar01s02.html#N100D5" label="GIT"></topic>
+		<topic href="html/devcookbook/ar01s02.html#N100E7" label="Progress bar"></topic>
+	</topic>
+	<topic href="html/devcookbook/ar01s03.html" label="Project Configuration"></topic>
+	<topic href="html/devcookbook/ar01s04.html" label="Building project from scratch">
+		<topic href="html/devcookbook/ar01s04.html#N100FD" label="Create project"></topic>
+		<topic href="html/devcookbook/ar01s04.html#N10105" label="Add to GIT"></topic>
+		<topic href="html/devcookbook/ar01s04.html#N10137" label="Create project structure"></topic>
+	</topic>
+	<topic href="html/devcookbook/ar01s05.html" label="Fetching project from Github">
+		<topic href="html/devcookbook/ar01s05.html#N10194"
+			label="Get HRE GUI Mock Up Projects directly from Github into Eclipse"></topic>
+		<topic href="html/devcookbook/ar01s05.html#N10211" label="Alternative: Import projects from a zip file"></topic>
+	</topic>
+	<topic href="html/devcookbook/ar01s06.html" label="Ecore, EMF, GEF and GMF"></topic>
+	<topic href="html/devcookbook/ar01s07.html" label="HRE Debugging">
+		<topic href="html/devcookbook/ar01s07.html#N10297" label="Create a Run Configuration for debugging"></topic>
+		<topic href="html/devcookbook/ar01s07.html#N102C7" label="Set one or more breakpoints in the source"></topic>
+		<topic href="html/devcookbook/ar01s07.html#N102E6" label="Create a Debug Configuration"></topic>
+	</topic>
+	<topic href="html/devcookbook/ar01s08.html" label="HRE Testing"></topic>
+	<topic href="html/devcookbook/ar01s09.html" label="HRE Deployment"></topic>
+	<topic href="html/devcookbook/ar01s10.html" label="Program Usage">
+		<topic href="html/devcookbook/ar01s10.html#N10388" label="Run the application"></topic>
+	</topic>
+	<topic href="html/devcookbook/ar01s11.html" label="Unsorted material"></topic>
+	<topic href="html/devcookbook/ar01s12.html" label="Bibliography"></topic>
+</toc>

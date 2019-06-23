@@ -1,0 +1,12 @@
+<toc label="Convert Word to Eclipse Help System" link_to="xml/tocdevelopment.xml#wordtoeclipsehelp" topic="html/wordtoeclipsehelp/index.html">
+	<topic href="html/wordtoeclipsehelp/index.html#N10004" label="Create Eclipse Development Environment"></topic>
+	<topic href="html/wordtoeclipsehelp/ar01s02.html" label="Create a project"></topic>
+	<topic href="html/wordtoeclipsehelp/ar01s03.html" label="Transform a Word Document">
+		<topic href="html/wordtoeclipsehelp/ar01s03.html#N10040" label="Edit Microsoft Office Word Document"></topic>
+		<topic href="html/wordtoeclipsehelp/ar01s03.html#N10047" label="Extract text and images"></topic>
+		<topic href="html/wordtoeclipsehelp/ar01s03.html#N1004C" label="Transform into DocBook Format"></topic>
+		<topic href="html/wordtoeclipsehelp/ar01s03.html#N10059" label="Convert to Eclipse Help System"></topic>
+		<topic href="html/wordtoeclipsehelp/ar01s03.html#N10060" label="Add to HRE Help system"></topic>
+	</topic>
+	<topic href="html/wordtoeclipsehelp/ar01s04.html" label="GitHub"></topic>
+</toc>

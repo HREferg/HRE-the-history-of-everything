@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/net.myerichsen.hremvp.feature_0.2.2.qualifier.jar" id="net.myerichsen.hremvp.feature" version="0.2.2.qualifier">
+      <category name="hremvp"/>
+   </feature>
+   <feature url="features/com.opcoach.e4.preferences.feature_1.0.0.qualifier.jar" id="com.opcoach.e4.preferences.feature" version="1.0.0.qualifier">
+      <category name="hremvp"/>
+   </feature>
+   <category-def name="hremvp" label="HRE MVP"/>
+</site>

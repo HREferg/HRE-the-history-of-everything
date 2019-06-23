@@ -1,0 +1,22 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>HRE Debugging</title><meta content="DocBook XSL Stylesheets V1.79.1" name="generator"><link rel="home" href="index.html" title=""><link rel="up" href="index.html" title=""><link rel="prev" href="ar01s06.html" title="Ecore, EMF, GEF and GMF"><link rel="next" href="ar01s08.html" title="HRE Testing"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N1028F"></a>
+<a name="_Toc498592733"></a>HRE Debugging</h2></div></div></div><p>How to debug an Eclipse RCP application</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N10297"></a>
+<a name="_Toc498592734"></a>Create a Run Configuration for debugging</h3></div></div></div><p>Use these VM arguments in the Arguments tab:</p><p>-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=9000,server=y,suspend=y</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+<p>
+<img src="media/image26.png" width="NaN">Run Configurations</p>
+</td></tr></tbody></table></div><p></p><p>And click run.</p><p>It suspends until we start the debugger, because we specified &ldquo;suspend=y&rdquo;:</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+<p>
+<img src="media/image27.png" width="NaN">Screen Clipping</p>
+</td></tr></tbody></table></div><p></p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N102C7"></a>
+<a name="_Toc498592735"></a>Set one or more breakpoints in the source</h3></div></div></div><p>Double click in the margin or right click to set a break point.</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+<p>
+<img src="media/image28.png" width="NaN">Screen Clipping</p>
+</td></tr></tbody></table></div><p>
+<img src="media/image29.png" width="NaN">
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N102E6"></a>
+<a name="_Toc498592736"></a>Create a Debug Configuration</h3></div></div></div><p>Use the same port as above (in this case 9000):</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+<p>
+<img src="media/image30.png" width="NaN">Debug Configurations</p>
+</td></tr></tbody></table></div><p></p><p>And click debug.</p><p>After a cup of coffee or two, you will get a debug session running.</p><p>It might not be activated until you reach a breakpoint:</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+<p>
+<img src="media/image31.png" width="NaN">HRE - org.historyresearchenvironment.usergui/src/org/historyresearchenvironment/usergui/parts/DescendantTree.java - C:\Workspaces\HRE - Eclipse Platform</p>
+</td></tr></tbody></table></div><p></p><p>From here you can single-step, watch or change variables, etc.</p></div></div></body></html>

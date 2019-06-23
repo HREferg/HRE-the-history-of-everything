@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Help System Generator
+Bundle-SymbolicName: HRE_Helpsystem_Generator
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: History Research Environment Ltd.

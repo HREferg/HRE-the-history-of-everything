@@ -1,0 +1,62 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Creating &nbsp; Eclipse &nbsp; Plug-in and Feature &nbsp; Projects</title><meta content="DocBook XSL Stylesheets V1.79.1" name="generator"><link rel="home" href="index.html" title=""><link rel="up" href="index.html" title=""><link rel="prev" href="ar01s05.html" title="Getting &nbsp; HRE &nbsp; from Github"><link rel="next" href="ar01s07.html" title="Application Structure"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N10071"></a>
+				Creating
+				&nbsp;
+				Eclipse
+				&nbsp;
+				Plug-in and Feature
+				&nbsp;
+				Projects
+			</h2></div></div></div><p>
+				We would normally create a feature project with
+				&nbsp;
+				three or
+				&nbsp;
+				four
+				&nbsp;
+				plug-in projects:
+			</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+						
+						<p>
+							
+								
+									<img src="media/image5.png" width="NaN">
+									
+									
+								
+							
+						</p>
+					</td></tr></tbody></table></div><p></p><p>Data access could be combined into
+				server, if that makes better sense.</p><p>For each plug-in project you should
+				create a subfolder with the same name in the bundles folder of HRE.
+				Then you should create the project and take care not to create it in
+				the default location, but in the new folder.</p><p>
+				The client project should be
+				&nbsp;
+				created as a Fragment Project with
+				&nbsp;
+				org.historyresearchenvironment.client
+				&nbsp;
+				as
+				&nbsp;
+				the
+				&nbsp;
+				host plug-in.
+			</p><p>The help project should use the
+				available template called &ldquo;Sample Help Content&rdquo;.</p><p>
+				The
+				&nbsp;
+				server
+				&nbsp;
+				project should be created as
+				&nbsp;
+				a
+				&nbsp;
+				simple plug-in project.
+			</p><p>
+				The data access project should be created from the Eclipse JPA
+				perspective
+				&nbsp;
+				as a JPA project, if you need to create classes not already present
+				in the base data access project.
+			</p><p>The feature project should be created
+				as a Feature Project and add the plug-in projects.</p></div></body></html>

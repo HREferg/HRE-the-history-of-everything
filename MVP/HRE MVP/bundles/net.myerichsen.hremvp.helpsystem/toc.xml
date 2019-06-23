@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="History Research Environment Help" topic="html/HRE.html">
+   <topic href="html/gettingstarted/gettingstarted.html" label="Getting Started">
+      <anchor id="gettingstarted"/>
+   </topic>
+   <topic href="html/faq/faq.html" label="Frequently Asked Questions">
+      <anchor id="faq"/>
+   </topic>
+   <topic href="html/installation/index.html" label="Installation">
+      <anchor id="installation"/>
+   </topic>
+   <topic href="html/development/maintopic.html" label="Development">
+      <anchor id="development"/>
+   </topic>
+   <topic href="html/rodstest/index.html" label="Rod&apos;s Test">
+      <anchor id="rodstest"/>
+   </topic>
+</toc>

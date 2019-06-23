@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>net.myerichsen.hremvp.features</artifactId>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>net.myerichsen.hremvp</groupId>
+		<artifactId>net.myerichsen.hremvp.root</artifactId>
+		<version>0.2.2-SNAPSHOT</version>
+	</parent>
+
+	<modules>
+		<module>net.myerichsen.hremvp.feature</module>
+		<module>com.opcoach.e4.preferences.feature</module>
+		<module>org.xBaseJ.feature</module>
+		<module>org.json.feature</module>
+		<module>com.hypotemoose.cal.feature</module>
+	</modules>
+</project>

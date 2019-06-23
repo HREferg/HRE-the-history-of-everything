@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extensions>
+	<tocOrder>
+		<toc id="/net.myerichsen.hremvp.helpsystem/toc.xml" />
+	</tocOrder>
+	<hidden>
+		<toc id="/org.eclipse.platform.doc.user/toc.xml" />
+		<toc id="/org.eclipse.jdt.doc.user/toc.xml" />
+		<toc id="/org.eclipse.platform.doc.isv/toc.xml" />
+		<toc id="/org.eclipse.jdt.doc.isv/toc.xml" />
+		<toc id="/org.eclipse.pde.doc.user/toc.xml" />
+		<toc id="/org.eclipse.epp.mpc.help/toc.xml" />
+		<toc id="/org.eclipse.egit.doc/toc.xml" />
+		<toc id="/org.eclipse.wst.doc.user/toc.xml" />
+	</hidden>
+</extensions>

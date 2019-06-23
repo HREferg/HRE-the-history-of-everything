@@ -1,0 +1,495 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Implementing the User Interface</title><meta content="DocBook XSL Stylesheets V1.79.1" name="generator"><link rel="home" href="index.html" title=""><link rel="up" href="index.html" title=""><link rel="prev" href="ar01s08.html" title="Implementing Data Access"><link rel="next" href="ar01s10.html" title="Adding &nbsp; Help"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="N100B8"></a>Implementing
+				the User Interface</h2></div></div></div><p>The most normal user interface parts
+				are navigators and editors.</p><p>An editor is a view of a single
+				entity, while a navigator is a list or tree view of a set of
+				entities.</p><p>The entities are implemented as view
+				model classes, one to encapsulate each field in the editor part, and
+				one to encapsulate a list of single models.</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N100C1"></a>Editor
+				View Part</h3></div></div></div><p>
+				View Parts reside in the client plug-in and are created
+				&nbsp;
+				using
+			</p><p>
+				&bull;
+				
+				File,
+				&nbsp;
+				New,
+				&nbsp;
+				Other,
+				&nbsp;
+				Window Builder,
+				&nbsp;
+				SWT Designer,
+				&nbsp;
+				Eclipse 4,
+				&nbsp;
+				ViewPart
+			</p><p>
+				They
+				&nbsp;
+				extend
+				&nbsp;
+				AbstractHreGuiPart, which provides font support
+				&nbsp;
+				and a business layer inteface.
+			</p><p>
+				Design the view part using the Window Builder
+				&nbsp;
+				and code
+				&nbsp;
+				the
+				&nbsp;
+				updateGui
+				&nbsp;
+				method
+				&nbsp;
+				to update the GUI from the underlying provider class.
+			</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+						<p>SampleEditorProvider provider = new
+							SampleEditorProvider();</p>
+						<p>SampleBusinessLogic businessLogic =
+							new SampleBusinessLogic();</p>
+						<p>&hellip;</p>
+						<p>
+							callBusinessLayer
+							
+							(
+							"GET"
+							
+								,
+								&nbsp;
+							
+							provider
+							
+								,
+								&nbsp;
+							
+							businessLogic
+							
+								,
+								&nbsp;
+							
+							textparamSetKey
+							.getText());
+						</p>
+						<p>
+							updateGui();
+						</p>
+					</td></tr></tbody></table></div><p></p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N100E4"></a>AbstractHreGuiPart
+			</h3></div></div></div><p>Contains the callBusinessLayer method:
+			</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+						<p>
+							protected
+							
+								&nbsp;
+								BusinessLayerInterface
+								&nbsp;
+							
+							bli
+							;
+						</p>
+						<p>
+							protected
+							
+								&nbsp;
+								ServerRequest
+								&nbsp;
+							
+							request
+							;
+						</p>
+						<p>
+							protected
+							
+								&nbsp;
+								ServerResponse
+								&nbsp;
+							
+							response
+							;
+						</p>
+						<p></p>
+						<p>
+							bli
+							
+								&nbsp;
+								= BusinessLayerInterfaceFactory.
+							
+							getBusinessLayerInterface
+							
+							();
+							
+								
+							
+						</p>
+						<p>
+							request
+							
+								&nbsp;
+								=
+								&nbsp;
+							
+							new
+							
+								&nbsp;
+								ServerRequest(
+							
+							"GET"
+							
+								,
+								&nbsp;
+							
+							provider, businessLogic
+							
+							);
+						</p>
+						<p>
+							response
+							
+								&nbsp;
+								=
+								&nbsp;
+							
+							bli
+							.callBusinessLayer(
+							
+							request
+							);
+						</p>
+					</td></tr></tbody></table></div><p></p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N10106"></a>
+				View
+				&nbsp;
+				Provider
+			</h3></div></div></div><p>
+				The view provider extends
+				&nbsp;
+				AbstractHreProvider
+				&nbsp;
+				and encapsulates the data used by the view part.
+			</p><p>
+				The provider must implement the readFromH2 method
+				&nbsp;
+				to
+				&nbsp;
+				invoke the
+				&nbsp;
+				data access classes
+				&nbsp;
+				that do the actual database access:
+			</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+						<p>
+							
+								SubstnParamName
+								&nbsp;
+							
+							spn
+							
+								&nbsp;
+								=
+								&nbsp;
+							
+							new
+							
+								&nbsp;
+								SubstnParamName(
+							
+							this
+							.
+							paramSetKey
+							);
+						</p>
+						<p>
+							
+								SubstnParamValue
+								&nbsp;
+							
+							spv
+							
+								&nbsp;
+								=
+								&nbsp;
+							
+							new
+							
+								&nbsp;
+								SubstnParamValue(
+							
+							this
+							.
+							paramSetKey
+							);
+						</p>
+					</td></tr></tbody></table></div><p></p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N1011C"></a>AbstractHreProvider
+			</h3></div></div></div><p>Provides generic methods to writeJson
+				and readJson, when running in client/server mode.</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N10121"></a>BusinessLayerInterfaceFactory
+			</h3></div></div></div><p>
+				Implements the
+				&nbsp;
+				getBusinessLayerInterface
+				&nbsp;
+				method:
+			</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+						<p>
+							if
+							
+								&nbsp;
+								(
+							
+							servertype
+							.equals(
+							"DIRECT"
+							)) {
+						</p>
+						<p>
+							
+								
+							
+							return
+							
+								&nbsp;
+							
+							new
+							
+								&nbsp;
+								DirectBusinessLayerInterface();
+							
+						</p>
+						<p>
+							
+								}
+								&nbsp;
+							
+							else
+							
+								&nbsp;
+							
+							if
+							
+								&nbsp;
+								(
+							
+							servertype
+							.equals(
+							"SERVER"
+							)) {
+						</p>
+						<p>
+							
+								
+							
+							return
+							
+								&nbsp;
+							
+							new
+							
+								&nbsp;
+								ServerBusinessLayerInterface();
+							
+						</p>
+					</td></tr></tbody></table></div><p></p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N1013B"></a>DirectBusinessLayerInterface
+			</h3></div></div></div><p>
+				Implements
+				&nbsp;
+				BusinessLayerInterface
+				&nbsp;
+				by implementing the
+				&nbsp;
+				callBusinessLayer
+				&nbsp;
+				method to invoke the business logic class as requested by the
+				&nbsp;
+				ServerRequest
+				&nbsp;
+				and return a
+				&nbsp;
+				ServerResponse:
+			</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+						<p>
+							
+								AbstractHreBusinessLogic
+								&nbsp;
+							
+							businessLogic
+							
+								&nbsp;
+								=
+								&nbsp;
+							
+							request
+							.getBusinessLogic();
+							
+						</p>
+						<p>
+							
+								ServerResponse
+								&nbsp;
+							
+							response
+							
+								&nbsp;
+								=
+								&nbsp;
+							
+							businessLogic
+							.execute(
+							request
+							);
+						</p>
+						<p>
+							return
+							
+								&nbsp;
+							
+							response
+							;
+						</p>
+					</td></tr></tbody></table></div><p></p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N10152"></a>ServerBusinessLayerInterface
+			</h3></div></div></div><p>Used for client/server mode.</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N10157"></a>BusinessLayerInterface
+			</h3></div></div></div><p>
+				An interface
+				&nbsp;
+				defining:
+			</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+						<p>
+							public
+							
+								&nbsp;
+							
+							abstract
+							
+								&nbsp;
+								ServerResponse callBusinessLayer(ServerRequest
+								&nbsp;
+							
+							request
+							);
+						</p>
+					</td></tr></tbody></table></div><p></p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N10168"></a>Business
+				Logic</h3></div></div></div><p>Extends AbstractHreBusinessLogic.
+			</p><p>The business logic class executes the
+				provider readFromH2 method to access the database and any other
+				relevant business logic and rules:</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+						<p>
+							
+								SampleEditorProvider
+								&nbsp;
+							
+							provider
+							
+								&nbsp;
+								= (SampleEditorProvider)
+								&nbsp;
+							
+							request
+							.getProvider();
+						</p>
+						<p>
+							provider
+							.readFromH2(
+							paramSetKey
+							);
+						</p>
+						<p>
+							response
+							
+								&nbsp;
+								=
+								&nbsp;
+							
+							new
+							
+								&nbsp;
+								ServerResponse(
+							
+							provider
+							
+								, 0,
+								&nbsp;
+							
+							"OK"
+							);
+						</p>
+					</td></tr></tbody></table></div><p></p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N10181"></a>AbstractHreBusinessLogic
+			</h3></div></div></div><p>Defines:</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+						<p>
+							public
+							
+								&nbsp;
+							
+							abstract
+							
+								&nbsp;
+								ServerResponse execute(
+							
+							request
+							);
+						</p>
+					</td></tr></tbody></table></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N10191"></a></h3></div></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N10193"></a>ServerRequest
+			</h3></div></div></div><p>Encapsulates:</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+						<p>
+							private
+							
+								&nbsp;
+								String
+								&nbsp;
+							
+							operation
+							;
+						</p>
+						<p>
+							private
+							
+								&nbsp;
+								AbstractHreProvider
+								&nbsp;
+							
+							provider
+							;
+						</p>
+						<p>
+							private
+							
+								&nbsp;
+								AbstractHreBusinessLogic
+								&nbsp;
+							
+							businessLogic
+							;
+						</p>
+					</td></tr></tbody></table></div><p></p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="N101AA"></a>ServerResponse
+			</h3></div></div></div><p>Encapsulates:</p><div class="informaltable"><table class="informaltable" border="1"><colgroup><col></colgroup><tbody><tr><td>
+						<p>
+							private
+							
+								&nbsp;
+								AbstractHreProvider
+								&nbsp;
+							
+							provider
+							;
+						</p>
+						<p>
+							private
+							
+								&nbsp;
+							
+							int
+							
+								&nbsp;
+							
+							returnCode
+							;
+						</p>
+						<p>
+							private
+							
+								&nbsp;
+								String
+								&nbsp;
+							
+							returnMessage
+							;
+						</p>
+					</td></tr></tbody></table></div><p></p></div></div></body></html>

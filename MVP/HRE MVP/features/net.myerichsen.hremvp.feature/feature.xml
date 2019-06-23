@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="net.myerichsen.hremvp.feature"
+      label="HRE MVP Base Feature"
+      version="0.2.2.qualifier"
+      provider-name="History Research Environment Ltd.">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <includes
+         id="com.opcoach.e4.preferences.feature"
+         version="0.0.0"/>
+
+   <requires>
+      <import plugin="javax.inject"/>
+      <import plugin="org.eclipse.swt"/>
+      <import plugin="org.eclipse.e4.ui.model.workbench"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="org.eclipse.e4.ui.services"/>
+      <import plugin="org.eclipse.e4.ui.workbench"/>
+      <import plugin="org.eclipse.e4.core.di"/>
+      <import plugin="org.eclipse.e4.ui.di"/>
+      <import plugin="org.eclipse.e4.core.contexts"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.e4.core.commands"/>
+      <import plugin="org.eclipse.e4.core.services"/>
+      <import plugin="org.eclipse.ui.workbench"/>
+      <import plugin="org.eclipse.ui.console"/>
+      <import plugin="org.eclipse.jetty.server"/>
+      <import plugin="javax.servlet"/>
+      <import plugin="org.apache.httpcomponents.httpclient"/>
+      <import plugin="org.apache.httpcomponents.httpcore"/>
+      <import plugin="org.eclipse.e4.core.di.extensions"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.e4.ui.workbench.swt"/>
+      <import plugin="com.opcoach.e4.preferences"/>
+      <import plugin="org.eclipse.help.base"/>
+      <import plugin="org.eclipse.equinox.preferences"/>
+      <import plugin="org.eclipse.help.ui"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.equinox.p2.operations"/>
+      <import plugin="org.eclipse.equinox.p2.core"/>
+      <import plugin="org.eclipse.wb.core.lib"/>
+      <import plugin="org.xBaseJ"/>
+      <import plugin="org.apache.commons.logging"/>
+      <import plugin="org.json"/>
+      <import plugin="com.hypotemoose.cal"/>
+      <import plugin="org.eclipse.equinox.p2.engine"/>
+      <import plugin="org.eclipse.equinox.p2.metadata.repository"/>
+      <import plugin="org.eclipse.help.webapp"/>
+      <import plugin="org.eclipse.jetty.util"/>
+      <import plugin="javax.annotation"/>
+      <import plugin="org.h2"/>
+   </requires>
+
+   <plugin
+         id="net.myerichsen.hremvp"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

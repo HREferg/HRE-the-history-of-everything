@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toc label="Getting Started" link_to="toc.xml#gettingstarted">
+   <topic href="html/gettingstarted/windows.html" label="Windows">
+   </topic>
+   <topic href="html/gettingstarted/linux.html" label="Linux">
+   </topic>
+   <topic href="html/gettingstarted/mac.html" label="Mac">
+   </topic>
+</toc>

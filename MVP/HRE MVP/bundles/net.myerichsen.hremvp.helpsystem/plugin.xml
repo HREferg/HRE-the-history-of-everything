@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="4.8"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.help.base.helpApplication"
+            description="InfoCenter type guide"
+            name="History Research Environment Help System">
+         <property
+               name="preferenceCustomization "
+               value="plugin_customization.ini ">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.help.toc">
+      <toc
+            file="toc.xml"
+            primary="true">
+      </toc>
+      <toc
+            file="xml/tocinstallation.xml"
+            primary="false">
+      </toc>
+      <toc
+            file="xml/tocdevelopment.xml"
+            primary="false">
+      </toc>
+      <toc
+            file="xml/tocfaq.xml"
+            primary="false">
+      </toc>
+      <toc
+            file="xml/wordtoeclipsehelptoc.xml"
+            primary="false">
+      </toc>
+      <toc
+            file="xml/devcookbook.xml"
+            primary="false">
+      </toc>
+      <toc
+            file="xml/gettingstarted.xml"
+            primary="false">
+      </toc>
+      <toc
+            file="xml/classstructure.xml"
+            primary="false">
+      </toc>
+      <toc
+            file="xml/tocrodstest.xml"
+            primary="false">
+      </toc>
+      <toc
+            file="xml/javadoc.xml"
+            primary="false">
+      </toc>
+   </extension>
+   <extension
+         point="org.eclipse.help.index">
+      <index
+            file="xml/index.xml">
+      </index>
+   </extension>
+</plugin>

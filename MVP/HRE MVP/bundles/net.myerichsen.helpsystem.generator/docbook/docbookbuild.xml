@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- Michael Erichsen, 2015-06-08 -->
+
+<project default="create-docbook" basedir="..">
+
+	<property name="current-loc" location="." />
+	<property name="sourcename" value="content" />
+	<property name="stylesheet" value="${current-loc}/stylesheets/Odt2DocBook.xsl" />
+	<property name="docbookdir" value="${current-loc}/DocBook" />
+	<property name="odfsource" value="${current-loc}/odf" />
+	<property name="xalan"
+		value="org.apache.xalan.processor.TransformerFactoryImpl" />
+
+	<target name="create-docbook">
+		<xslt in="${odfsource}/${sourcename}.xml" out="${current-loc}/DocBook/${sourcename}.xml"
+			style="${stylesheet}" force="true">
+			<factory name="${xalan}" />
+			<param name="titlestyle" expression="P48" />
+			<param name="subtitlestyle" expression="Document_20_SubTitle" />
+			<param name="bodystyle" expression="P1" />
+		</xslt>
+	</target>
+</project>

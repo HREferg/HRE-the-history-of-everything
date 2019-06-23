@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: XBaseJ
+Bundle-SymbolicName: org.xBaseJ
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: org.xBaseJ
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: org.apache.commons.logging
+Export-Package: org.xBaseJ,
+ org.xBaseJ.fields

@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.myerichsen.hremvp</groupId>
+	<artifactId>net.myerichsen.hremvp.root</artifactId>
+	<version>0.2.2-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<parent>
+		<groupId>net.myerichsen.hremvp</groupId>
+		<artifactId>net.myerichsen.hremvp.configuration</artifactId>
+		<version>0.2.2-SNAPSHOT</version>
+		<relativePath>./releng/net.myerichsen.hremvp.configuration</relativePath>
+	</parent>
+
+	<modules>
+		<module>bundles</module>
+		<module>features</module>
+		<module>releng</module>
+	</modules>
+</project>

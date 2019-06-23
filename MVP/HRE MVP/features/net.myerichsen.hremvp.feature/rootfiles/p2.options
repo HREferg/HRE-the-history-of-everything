@@ -1,0 +1,2 @@
+org.eclipse.equinox.p2.core/debug=true
+org.eclipse.equinox.p2.core/artifacts/mirrors=true

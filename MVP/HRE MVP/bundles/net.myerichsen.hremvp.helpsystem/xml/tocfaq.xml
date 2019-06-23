@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toc label="Frequently Asked Questions" link_to="toc.xml#faq" topic="html/faq/faq.html">
+   <topic href="html/faq/faq.html" label="Project and timeline">
+      <topic href="html/faq/What has driven the creation of this project.html" label="What has driven the creation of this project?">
+      </topic>
+      <topic href="html/faq/faq.html#faq2" label="How much will HRE cost?">
+      </topic>
+      <topic href="html/faq/faq.html#faq3" label="Who supports it?">
+      </topic>
+      <topic href="html/faq/faq.html#faq4" label="Will multiple user languages be supported?">
+      </topic>
+      <topic href="html/faq/faq.html#faq5" label="Where can I download HRE?">
+      </topic>
+      <topic href="html/faq/faq.html#faq6" label="When do you expect to have working software available?">
+      </topic>
+      <topic href="html/faq/faq.html#faq7" label="Will I be able to get my data onto a website?">
+      </topic>
+      <topic href="html/faq/faq.html#faq8" label="What about GEDCOM import?">
+      </topic>
+      <topic href="html/faq/HRE for historical and cultural research" label="What areas of research are you targeting, apart from genealogy?">
+      </topic>
+   </topic>
+   <topic href="html/faq/faq.html#faq10" label="Family history and The Master Genealogist (TMG)">
+      <topic href="html/faq/faq.html#faq11" label="Is HRE a new version of TMG?">
+      </topic>
+      <topic href="html/faq/faq.html#faq12" label="Can I get my TMG data into HRE?">
+      </topic>
+      <topic href="html/faq/faq.html#faq13" label="Is this a Wholly Genes project?">
+         <topic href="html/faq/HRE for users of The Master Genealogist.html" label="HRE for users of The Master Genealogist">
+            <topic href="html/faq/HRE Disclaimer.html" label="HRE Disclaimer">
+            </topic>
+         </topic>
+      </topic>
+   </topic>
+   <topic href="html/faq/faq.html#faq14" label="Technical">
+      <topic href="html/faq/faq.html#faq15" label="What hardware will the program run on?">
+      </topic>
+      <topic href="html/faq/faq.html#faq16" label="What language is HRE written in?">
+      </topic>
+   </topic>
+</toc>
